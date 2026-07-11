@@ -50,10 +50,22 @@ const dishes: Dish[] = [
 ];
 
 const specials = [
-  ["MON", "Margarita Mondays", "$10 all night"], ["TUE", "Taco Tuesday", "3 tacos · $30"],
-  ["WED", "Hump Day", "Happy Hour all day"], ["THU", "AYCE Tacos", "$29.95 per person"],
-  ["FRI", "Friday Funday", "$6 bar rail"], ["SAT + SUN", "Brunch", "10 AM–2 PM"],
+  ["MON", "Monday at La Chingada", "Ask the team what’s on"], ["TUE", "Taco Tuesday", "3 tacos · $30"],
+  ["WED", "Hump Day Small Bites", "Food menu all day"], ["THU", "AYCE Tacos", "$29.95 per person"],
+  ["FRI", "Friday at La Chingada", "Ask the team what’s on"], ["SAT + SUN", "Brunch", "10 AM–2 PM"],
 ];
+
+const specialDetails: Record<string, {title:string;kicker:string;body:string;note:string}> = {
+  happy: {title:"Happy Hour Small Bites", kicker:"Every day · 4–7 PM", body:"A rotating selection of small bites from the Happy Hour food menu.", note:"Dine-in only · Ask your server for today’s available food menu."},
+  ayce: {title:"All You Can Eat Tacos", kicker:"Every Thursday · $29.95 per person", body:"Choose three tacos to begin, then order them one at a time after.", note:"One-hour limit · No sharing · Conditions apply."},
+  Monday: {title:"Today at La Chingada", kicker:"Monday", body:"See what is happening at the restaurant today.", note:"Dine-in only · Ask the team for today’s details."},
+  Tuesday: {title:"Taco Tuesday", kicker:"Tuesday · 3 tacos for $30", body:"Choose three tacos from the available Taco Tuesday selection.", note:"Dine-in only · Availability and conditions apply."},
+  Wednesday: {title:"Hump Day Small Bites", kicker:"Wednesday · All day", body:"The Happy Hour food menu is available all day Wednesday.", note:"Dine-in only · Ask your server for today’s available food menu."},
+  Thursday: {title:"AYCE Tacos", kicker:"Thursday · $29.95 per person", body:"All you can eat, all flavour, served one round at a time.", note:"One-hour limit · No sharing · Conditions apply."},
+  Friday: {title:"Today at La Chingada", kicker:"Friday", body:"See what is happening at the restaurant today.", note:"Dine-in only · Ask the team for today’s details."},
+  Saturday: {title:"Weekend Brunch", kicker:"Saturday · 10 AM–2 PM", body:"Chilaquiles, huevos, breakfast tacos and more.", note:"Available during brunch hours only."},
+  Sunday: {title:"Weekend Brunch", kicker:"Sunday · 10 AM–2 PM", body:"Chilaquiles, huevos, breakfast tacos and more.", note:"Available during brunch hours only."},
+};
 
 export default function Home() {
   const [group, setGroup] = useState("Tacos");
@@ -61,6 +73,7 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [openDish, setOpenDish] = useState<Dish | null>(null);
   const [ageOpen, setAgeOpen] = useState(false);
+  const [openSpecial, setOpenSpecial] = useState<string | null>(null);
   const filtered = useMemo(() => dishes.filter(d => d.group === group && (filter === "ALL" || d.tags?.includes(filter)) && d.name.toLowerCase().includes(query.toLowerCase())), [group, filter, query]);
   const day = new Intl.DateTimeFormat("en-CA", {weekday:"long"}).format(new Date());
 
@@ -72,7 +85,11 @@ export default function Home() {
       <div className="hero-art"><div className="sun">☀</div><div className="taco-illustration">🌮</div><p>GOOD FOOD.<br/>NO FUSS.</p></div>
     </section>
 
-    <section className="today"><div><span>HAPPENING TODAY</span><strong>{day}</strong></div><p>{day === "Thursday" ? "All You Can Eat Tacos · $29.95" : day === "Tuesday" ? "3 tacos for $30" : day === "Saturday" || day === "Sunday" ? "Brunch · 10 AM–2 PM" : "Happy Hour · Every day 4–7"}</p><a href="#specials">See all specials →</a></section>
+    <section className="poster-row" aria-label="Featured offers">
+      <button className="poster poster-happy" onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7</span><h2>HAPPY HOUR<br/>SMALL BITES</h2><p>Tap for food details →</p></button>
+      <button className="poster poster-ayce" onClick={()=>setOpenSpecial("ayce")}><span>EVERY THURSDAY</span><h2>AYCE<br/>TACOS</h2><p>$29.95 per person →</p></button>
+      <button className="poster poster-today" onClick={()=>setOpenSpecial(day)}><i>HAPPENING TODAY</i><span>{day.toUpperCase()}</span><h2>{specialDetails[day]?.title}</h2><p>Open today’s card →</p></button>
+    </section>
 
     <section className="menu-section" id="menu"><div className="section-head"><div><p className="eyebrow">Tap around. Find your thing.</p><h2>THE MENU</h2></div><p>Use the filters, open any dish for details, and build your order before you even sit down.</p></div>
       <div className="menu-tools"><div className="tabs">{["Appetizers","Tacos","Meals","Desserts","Brunch"].map(x=><button key={x} className={group===x?"active":""} onClick={()=>setGroup(x)}>{x}</button>)}</div><div className="filters"><input aria-label="Search menu" placeholder="Search this menu…" value={query} onChange={e=>setQuery(e.target.value)}/>{["ALL","GF","V","VG"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</div></div>
@@ -80,7 +97,7 @@ export default function Home() {
       {!filtered.length && <p className="empty">Nothing matches that filter yet.</p>}
     </section>
 
-    <section className="specials" id="specials"><div className="section-head light"><div><p className="eyebrow">There’s always something going on</p><h2>WEEKLY<br/>SPECIALS</h2></div><p>Dine-in only. Ask the team for today’s details.</p></div><div className="special-grid">{specials.map((s,i)=><article key={s[0]} className={`special s${i}`}><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p></article>)}</div></section>
+    <section className="specials" id="specials"><div className="section-head light"><div><p className="eyebrow">There’s always something going on</p><h2>WEEKLY<br/>SPECIALS</h2></div><p>Dine-in only. Ask the team for today’s details.</p></div><div className="special-grid">{specials.map((s,i)=><button key={s[0]} className={`special s${i}`} onClick={()=>setOpenSpecial(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][i])}><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p><b>Open details +</b></button>)}</div></section>
 
     <section className="agave" id="agave"><div><p className="eyebrow">For adult guests · 19+</p><h2>THE AGAVE<br/>LIBRARY</h2><p className="agave-copy">A field guide to the bottles behind the bar: where they come from, who makes them, which agave they use, and the stories worth knowing.</p><button className="button pink" onClick={()=>setAgeOpen(true)}>Enter the library →</button></div><div className="library-card"><span>FIELD NOTES · 001</span><div className="plant">♆</div><h3>100+ BOTTLES.<br/>A LOT OF STORIES.</h3><p>Search by region, producer, agave, and flavour profile. Informational catalogue for adults.</p></div></section>
 
@@ -90,6 +107,7 @@ export default function Home() {
 
     {openDish && <div className="modal" onClick={()=>setOpenDish(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenDish(null)}>×</button><p className="eyebrow">{openDish.group}</p><h2>{openDish.name}</h2><strong className="modal-price">{openDish.price}</strong><div className="tags">{openDish.tags?.map(t=><i key={t}>{t}</i>)}</div><p>{openDish.desc}</p><hr/><small>Dietary needs or allergies? Please speak with your server. Our kitchen handles multiple ingredients.</small></article></div>}
     {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This educational catalogue is intended for guests of legal drinking age. Please enjoy responsibly and speak with licensed restaurant staff for service information.</p><button className="button green" onClick={()=>setAgeOpen(false)}>I understand</button></article></div>}
+    {openSpecial && specialDetails[openSpecial] && <div className="modal special-modal" onClick={()=>setOpenSpecial(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenSpecial(null)}>×</button><p className="eyebrow">{specialDetails[openSpecial].kicker}</p><h2>{specialDetails[openSpecial].title}</h2><p>{specialDetails[openSpecial].body}</p><div className="torn-note">{specialDetails[openSpecial].note}</div><div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Explore the menu</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table</a></div></article></div>}
     <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><a href="mailto:reservations@lachingada.ca">Reserve</a></div>
   </main>
 }
