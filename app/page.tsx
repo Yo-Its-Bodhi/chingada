@@ -88,7 +88,7 @@ export default function Home() {
   ), [agaveCategory, agaveQuery]);
 
   return <main>
-    <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a></nav><a className="reserve small" href="mailto:reservations@lachingada.ca">Reserve</a></header>
+    <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className="reserve small" href="mailto:reservations@lachingada.ca">Reserve</a></header>
 
     <section className="hero" id="top">
       <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><h1>A NEW MENU<br/>HAS LANDED.</h1><p className="deck">Come hungry. Stay awhile. We saved you a seat.</p><div className="actions"><a className="button red" href="#menu">View the new menu ↓</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table →</a></div></div>
@@ -110,6 +110,33 @@ export default function Home() {
     <section className="specials" id="specials"><div className="section-head light"><div><p className="eyebrow">There’s always something going on</p><h2>WEEKLY<br/>SPECIALS</h2></div><p>Dine-in only. Ask the team for today’s details.</p></div><div className="special-grid">{specials.map((s,i)=><button key={s[0]} className={`special s${i}`} onClick={()=>setOpenSpecial(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][i])}><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p><b>Open details +</b></button>)}</div></section>
 
     <section className="agave" id="agave"><div><p className="eyebrow">For adult guests · 19+</p><h2>THE AGAVE<br/>LIBRARY</h2><p className="agave-copy">A field guide to the bottles behind the bar: where they come from, who makes them, which agave they use, and the stories worth knowing.</p><button className="button pink" onClick={()=>setAgeOpen(true)}>Enter the library →</button></div><div className="library-card"><span>FIELD NOTES · 001</span><div className="plant">♆</div><h3>100+ BOTTLES.<br/>A LOT OF STORIES.</h3><p>Search by region, producer, agave, and flavour profile. Informational catalogue for adults.</p></div></section>
+
+    <section className="craft" id="about">
+      <div className="craft-hero"><p className="eyebrow">The work before the welcome</p><h2>BEFORE<br/>WE OPEN.</h2><div className="craft-manifesto"><strong>YOU SEE A TACO.</strong><span>We see everything it took to make it.</span><p>Before the first guest arrives, the kitchen is already cooking, grinding, pressing, blending, infusing and preparing. We make the things most restaurants simply buy.</p></div><img className="chingadito chingadito-corn" src="/images/chingadito-corn.png" alt="Chingadito carrying a sack of corn"/></div>
+
+      <div className="corn-journey"><div className="journey-intro"><p className="eyebrow">One tortilla. The whole story.</p><h3>FROM MEXICAN CORN<br/>TO YOUR TABLE.</h3></div><div className="journey-line" aria-hidden="true"></div>
+        {[
+          ["01","CORN FROM MEXICO","The story begins with the ingredient itself—not a packet of finished tortillas."],
+          ["02","COOKED IN-HOUSE","The corn is prepared slowly before the restaurant opens."],
+          ["03","FRESHLY GROUND","We grind it into masa in our own kitchen."],
+          ["04","PRESSED BY HAND","Every tortilla is individually shaped."],
+          ["05","COOKED THAT MORNING","Fresh on the grill, ready for that day’s service."],
+          ["06","UNDERNEATH YOUR TACO","The part you hold began as corn that very morning."],
+        ].map((step,i)=><article className={`journey-step step-${i+1}`} key={step[0]}><span>{step[0]}</span><div><h4>{step[1]}</h4><p>{step[2]}</p></div>{i===3&&<img className="chingadito chingadito-press" src="/images/chingadito-press.png" alt="Chingadito caught under a tortilla press"/>}</article>)}
+        <blockquote>THAT TORTILLA STARTED<br/>AS CORN THIS MORNING.</blockquote>
+      </div>
+
+      <div className="prep-wall"><div className="prep-title"><p className="eyebrow">The things you never see</p><h3>WE MAKE THE STUFF<br/>OTHER PLACES ORDER.</h3></div><div className="prep-grid">
+        <article className="prep-card orange"><strong>EVERY MORNING</strong><h4>Fresh tortillas</h4><p>Cooked, ground, pressed and made fresh for service.</p></article>
+        <article className="prep-card pink"><strong>FROM SCRATCH</strong><h4>House hot sauces</h4><p>Built here from whole ingredients—not tipped from a commercial bottle.</p></article>
+        <article className="prep-card green"><strong>48 HOURS → 2 WEEKS</strong><h4>Bar infusions</h4><p>Some preparations take days. Others are left to develop for weeks.</p></article>
+        <article className="prep-card cream"><strong>HOURS OF PREP</strong><h4>Dehydrated garnishes</h4><p>Sliced, dried and prepared by the team.</p></article>
+        <article className="prep-card yellow"><strong>OUR OWN RECIPES</strong><h4>Salts, rims and purées</h4><p>Every extra detail is created specifically for La Chingada.</p></article>
+        <article className="prep-card teal"><strong>MADE FRESH</strong><h4>Aguas frescas</h4><p>Prepared in-house as part of the daily rhythm.</p></article>
+      </div></div>
+
+      <div className="about-place"><div className="place-collage"><div className="place-photo patio"><span>THE HIDDEN PATIO</span></div><div className="place-photo bar"><span>THE BAR</span></div><div className="place-photo inside"><span>INSIDE LA CHINGADA</span></div><img className="chingadito chingadito-peek" src="/images/chingadito-peek.png" alt="Chingadito peeking from behind the restaurant photographs"/></div><div className="place-copy"><p className="eyebrow">After all that work</p><h3>WE SET<br/>THE TABLE.</h3><p>La Chingada should feel like arriving at a friend’s place—if your friend made fresh tortillas every morning, had a hidden patio and refused to take shortcuts.</p><strong>MEXICAN CORN.<br/>TORONTO HANDS.<br/>MADE HERE. EVERY DAY.</strong><div className="actions"><a className="button red" href="#menu">See what we make</a><a className="button paper" href="mailto:reservations@lachingada.ca">Come experience it</a></div></div></div>
+    </section>
 
     <section className="qr"><div className="fake-qr" aria-hidden="true">▦</div><div><p className="eyebrow">At the table?</p><h2>SCAN. EXPLORE. PICK.</h2><p>Put the QR on printed menus and table cards. Guests land straight in the interactive menu—not on a cluttered homepage.</p></div></section>
 
