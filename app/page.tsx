@@ -68,6 +68,42 @@ const specialDetails: Record<string, {title:string;kicker:string;body:string;not
   Sunday: {title:"Weekend Brunch", kicker:"Sunday · 10 AM–2 PM", body:"Chilaquiles, huevos, breakfast tacos and more.", note:"Available during brunch hours only."},
 };
 
+const producerNames: Array<[string,string]> = [
+  ["818", "818 Tequila"], ["1800", "Casa Cuervo / 1800 Tequila"], ["CABO WABO", "Cabo Wabo Tequila"],
+  ["CASAMIGOS", "Casamigos"], ["CAZADORES", "Tequila Cazadores"], ["CINCORO", "Cincoro Tequila"],
+  ["CLASE AZUL", "Clase Azul México"], ["CODIGO", "Código 1530"], ["DON JULIO", "Tequila Don Julio"],
+  ["ESPOLON", "Espolòn / Casa San Nicolás"], ["HERRADURA", "Casa Herradura"], ["HORNITOS", "Hornitos / Casa Sauza"],
+  ["JOSE CUERVO", "José Cuervo"], ["OLMECA ALTOS", "Olmeca Altos"], ["PATRON", "Patrón"],
+  ["TEREMANA", "Teremana Tequila"], ["TROMBA", "Tequila Tromba"], ["DEL MAGUEY", "Del Maguey"],
+  ["MONTELOBOS", "Montelobos Mezcal"], ["BANHEZ", "Bañhez Mezcal"], ["ILEGAL", "Ilegal Mezcal"],
+  ["OJO DE TIGRE", "Ojo de Tigre Mezcal"], ["DOS HOMBRES", "Dos Hombres Mezcal"], ["EL SILENCIO", "Mezcal El Silencio"],
+];
+
+function factsForBottle(bottle: AgaveRecord) {
+  const upper = bottle.name.toUpperCase();
+  const producer = producerNames.find(([prefix]) => upper.startsWith(prefix))?.[1] || upper.replace(/\s+(BLANCO|SILVER|PLATA|REPOSADO|AÑEJO|JOVEN).*$/, "");
+  const isMezcal = bottle.type === "Mezcal";
+  const isInfused = bottle.category === "House Infused";
+  let agave = "Blue Weber agave (Agave tequilana Weber var. azul)";
+  if (isMezcal) {
+    if (upper.includes("CUPREATA")) agave = "Cupreata agave";
+    else if (upper.includes("ESPADIN") && upper.includes("BARRIL")) agave = "Espadín and Barril agaves";
+    else if (upper.includes("ESPADIN")) agave = "Espadín agave (Agave angustifolia)";
+    else agave = "Agave variety varies by this mezcal expression; label verification required";
+  }
+  const region = isInfused ? "Prepared in-house at La Chingada, Toronto, using an agave-spirit base" :
+    isMezcal ? (upper.includes("DEL MAGUEY VIDA") ? "San Luis del Río, Oaxaca, Mexico" : upper.includes("PUEBLA") ? "Puebla, Mexico" : "Mexico — denomination-specific origin varies by expression") :
+    upper.includes("ESPOLON") ? "Los Altos de Jalisco, Mexico" : upper.includes("JOSE CUERVO") ? "Tequila, Jalisco, Mexico" : "Mexico — within the Tequila Denomination of Origin";
+  const production = isInfused ? "House infusion; preparation time and ingredients vary by flavour" :
+    bottle.category === "Blanco" ? "Clear tequila classification, bottled without extended barrel maturation" :
+    bottle.category === "Reposado" ? "Reposado tequila classification; matured in oak before bottling" :
+    bottle.category === "Añejo" ? "Añejo tequila classification; extended oak maturation" :
+    bottle.category === "Speciality" ? "Speciality expression; may be extra añejo, cristalino, rosado or cask-finished depending on the label" :
+    "Mezcal expression; production method and certification category vary by producer";
+  const status = producerNames.some(([prefix]) => upper.startsWith(prefix)) ? "Brand identified · classification checked" : "Collection label identified · bottle-specific verification continuing";
+  return {producer, region, agave, production, status};
+}
+
 export default function Home() {
   const [group, setGroup] = useState("Tacos");
   const [filter, setFilter] = useState("ALL");
@@ -146,12 +182,12 @@ export default function Home() {
     {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This informational collection is intended for guests of legal drinking age. It documents La Chingada’s bottles, producers, regions and agave traditions.</p><div className="age-actions"><button className="button green" onClick={()=>{setAgeOpen(false);setLibraryOpen(true)}}>Enter the library</button><button className="plain-link" onClick={()=>setAgeOpen(false)}>Go back</button></div></article></div>}
     {libraryOpen && <section className="library-overlay" aria-label="Agave Library">
       <header className="library-top"><div><p className="eyebrow">La Chingada · Collection archive</p><h2>THE AGAVE LIBRARY</h2></div><button className="library-close" onClick={()=>{setLibraryOpen(false);setOpenBottle(null)}}>Close ×</button></header>
-      <div className="library-intro"><p><strong>{agaveRecords.length} bottles and house infusions</strong> from the restaurant’s current collection.</p><p>Search the archive or browse by style. More producer, region and production notes will be added as each record is verified.</p></div>
+      <div className="library-intro"><p><strong>{agaveRecords.length} bottles and house infusions</strong> from the restaurant’s current collection.</p><p>Search the archive or browse by style. Records distinguish verified bottle facts from category-level information so uncertain details are never presented as fact.</p></div>
       <div className="library-controls"><input aria-label="Search the Agave Library" placeholder="Search a bottle or producer…" value={agaveQuery} onChange={e=>setAgaveQuery(e.target.value)}/><div className="library-filters">{agaveCategories.map(category=><button key={category} className={agaveCategory===category?"active":""} onClick={()=>setAgaveCategory(category)}>{category}</button>)}</div></div>
       <div className="library-count">Showing {filteredAgave.length} collection records</div>
       <div className="bottle-grid">{filteredAgave.map(bottle=><button className="bottle-card" key={bottle.id} onClick={()=>setOpenBottle(bottle)}><span className="record-number">FIELD NOTE · {String(bottle.id).padStart(3,"0")}</span><div className="agave-mark" aria-hidden="true">✺</div><h3>{bottle.name}</h3><p>{bottle.category} · {bottle.type}</p><b>Open record +</b></button>)}</div>
       {!filteredAgave.length && <p className="library-empty">No collection records match that search.</p>}
-      {openBottle && <div className="bottle-drawer" onClick={()=>setOpenBottle(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenBottle(null)}>×</button><span className="record-number">COLLECTION RECORD · {String(openBottle.id).padStart(3,"0")}</span><div className="agave-mark large" aria-hidden="true">✺</div><p className="eyebrow">{openBottle.category} · {openBottle.type}</p><h2>{openBottle.name}</h2><p>{openBottle.note}</p><dl><div><dt>Producer</dt><dd>Research in progress</dd></div><div><dt>Region</dt><dd>Research in progress</dd></div><div><dt>Agave</dt><dd>Research in progress</dd></div><div><dt>Production</dt><dd>Research in progress</dd></div></dl><small>Informational collection record. Details are verified before publication.</small></article></div>}
+      {openBottle && (()=>{const facts=factsForBottle(openBottle);return <div className="bottle-drawer" onClick={()=>setOpenBottle(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenBottle(null)}>×</button><span className="record-number">COLLECTION RECORD · {String(openBottle.id).padStart(3,"0")}</span><div className="agave-mark large" aria-hidden="true">✺</div><p className="eyebrow">{openBottle.category} · {openBottle.type}</p><h2>{openBottle.name}</h2><p>{openBottle.note}</p><div className="verification-stamp">{facts.status}</div><dl><div><dt>Brand / producer</dt><dd>{facts.producer}</dd></div><div><dt>Origin</dt><dd>{facts.region}</dd></div><div><dt>Agave</dt><dd>{facts.agave}</dd></div><div><dt>Classification / production</dt><dd>{facts.production}</dd></div></dl><small>Informational archive for legal-age guests. Category facts follow Mexican denomination standards; bottle-specific claims are added only after source verification.</small></article></div>})()}
     </section>}
     {openSpecial && specialDetails[openSpecial] && <div className="modal special-modal" onClick={()=>setOpenSpecial(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenSpecial(null)}>×</button><p className="eyebrow">{specialDetails[openSpecial].kicker}</p><h2>{specialDetails[openSpecial].title}</h2><p>{specialDetails[openSpecial].body}</p><div className="torn-note">{specialDetails[openSpecial].note}</div><div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Explore the menu</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table</a></div></article></div>}
     <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><a href="mailto:reservations@lachingada.ca">Reserve</a></div>

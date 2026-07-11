@@ -44,3 +44,5 @@
 
 /* Generated La Chingada motif tile, deliberately softened beneath content. */
 .craft{background-image:linear-gradient(#f2e4c8eb,#f2e4c8eb),url('/images/la-chingada-pattern.png');background-position:0 0,center top;background-size:auto,560px 560px}
+
+.verification-stamp{display:inline-block;margin:16px 0 4px;padding:9px 12px;border:2px solid var(--green);color:var(--green);font-size:10px;font-weight:1000;letter-spacing:1.3px;text-transform:uppercase;transform:rotate(-1deg)}
