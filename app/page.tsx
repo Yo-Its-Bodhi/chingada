@@ -79,9 +79,32 @@ const producerNames: Array<[string,string]> = [
   ["OJO DE TIGRE", "Ojo de Tigre Mezcal"], ["DOS HOMBRES", "Dos Hombres Mezcal"], ["EL SILENCIO", "Mezcal El Silencio"],
 ];
 
+type VerifiedBrand = {producer:string;region:string;nom:string;source:string};
+const verifiedBrands: Array<[string,VerifiedBrand]> = [
+  ["818",{producer:"818 Tequila",region:"Jalisco · Los Valles",nom:"NOM 1607",source:"https://www.agavematchmaker.com/brands/2614-818-tequila"}],
+  ["1800",{producer:"Casa Cuervo / 1800 Tequila",region:"Jalisco · Los Valles",nom:"NOM 1122",source:"https://www.agavematchmaker.com/brands"}],
+  ["CASAMIGOS",{producer:"Casamigos Tequila",region:"Jalisco · Ciénega",nom:"NOM 1609",source:"https://www.agavematchmaker.com/brands/1354-casamigos-tequila"}],
+  ["CAZADORES",{producer:"Tequila Cazadores",region:"Jalisco · Los Altos Southern",nom:"NOM 1487",source:"https://www.agavematchmaker.com/brands/75-cazadores"}],
+  ["CENOTE",{producer:"Cenote Tequila",region:"Jalisco · Los Valles",nom:"NOM 1472",source:"https://www.agavematchmaker.com/brands?page=15"}],
+  ["CINCORO",{producer:"Cincoro Tequila",region:"Jalisco · Los Valles",nom:"NOM 1438",source:"https://www.agavematchmaker.com/brands/2280-cincoro-tequila"}],
+  ["DON JULIO",{producer:"Tequila Don Julio",region:"Jalisco · Ciénega",nom:"NOM 1449",source:"https://www.agavematchmaker.com/brands/875-don-julio"}],
+  ["EL MEXICANO",{producer:"El Mexicano",region:"Jalisco · Los Altos Southern",nom:"NOM 1588",source:"https://www.agavematchmaker.com/brands"}],
+  ["EL TEQUILENO",{producer:"El Tequileño",region:"Jalisco · Los Valles",nom:"NOM 1108",source:"https://www.agavematchmaker.com/brands"}],
+  ["EL TESORO",{producer:"El Tesoro de Don Felipe",region:"Jalisco · Los Altos Southern",nom:"NOM 1139",source:"https://www.agavematchmaker.com/brands"}],
+  ["ELEVACION 1250",{producer:"Elevación1250",region:"Jalisco · Los Valles",nom:"NOM 1522",source:"https://www.agavematchmaker.com/brands"}],
+  ["ESPOLON",{producer:"Espolòn / Casa San Nicolás",region:"Jalisco · Los Altos Southern",nom:"NOM 1440",source:"https://www.agavematchmaker.com/brands"}],
+  ["FLECHA AZUL",{producer:"Flecha Azul",region:"Jalisco · Los Valles",nom:"NOM 1110",source:"https://www.agavematchmaker.com/brands"}],
+  ["JOSE CUERVO",{producer:"José Cuervo",region:"Jalisco · Los Valles",nom:"NOM 1122",source:"https://www.agavematchmaker.com/brands/128-jose-cuervo"}],
+  ["MALA VIDA",{producer:"Mala Vida",region:"Jalisco · Los Altos Southern",nom:"NOM 1588",source:"https://www.agavematchmaker.com/brands"}],
+  ["SAUZA TRES GENERACIONES",{producer:"Casa Sauza / Tres Generaciones",region:"Jalisco · Los Valles",nom:"NOM 1102",source:"https://www.agavematchmaker.com/brands/982-sauza-tequila"}],
+  ["SIEMPRE",{producer:"Siempre Tequila",region:"Jalisco · Los Altos Southern",nom:"NOM 1414",source:"https://www.agavematchmaker.com/brands"}],
+  ["VOLCAN",{producer:"Volcan de Mi Tierra",region:"Jalisco · Los Valles",nom:"NOM 1523",source:"https://www.agavematchmaker.com/brands"}],
+];
+
 function factsForBottle(bottle: AgaveRecord) {
   const upper = bottle.name.toUpperCase();
-  const producer = producerNames.find(([prefix]) => upper.startsWith(prefix))?.[1] || upper.replace(/\s+(BLANCO|SILVER|PLATA|REPOSADO|AÑEJO|JOVEN).*$/, "");
+  const verified = verifiedBrands.find(([prefix]) => upper.startsWith(prefix))?.[1];
+  const producer = verified?.producer || producerNames.find(([prefix]) => upper.startsWith(prefix))?.[1] || upper.replace(/\s+(BLANCO|SILVER|PLATA|REPOSADO|AÑEJO|JOVEN).*$/, "");
   const isMezcal = bottle.type === "Mezcal";
   const isInfused = bottle.category === "House Infused";
   let agave = "Blue Weber agave (Agave tequilana Weber var. azul)";
@@ -91,17 +114,19 @@ function factsForBottle(bottle: AgaveRecord) {
     else if (upper.includes("ESPADIN")) agave = "Espadín agave (Agave angustifolia)";
     else agave = "Agave variety varies by this mezcal expression; label verification required";
   }
-  const region = isInfused ? "Prepared in-house at La Chingada, Toronto, using an agave-spirit base" :
+  const region = isInfused ? "Prepared in-house at La Chingada, Toronto, using an agave-spirit base" : verified?.region ||
     isMezcal ? (upper.includes("DEL MAGUEY VIDA") ? "San Luis del Río, Oaxaca, Mexico" : upper.includes("PUEBLA") ? "Puebla, Mexico" : "Mexico — denomination-specific origin varies by expression") :
     upper.includes("ESPOLON") ? "Los Altos de Jalisco, Mexico" : upper.includes("JOSE CUERVO") ? "Tequila, Jalisco, Mexico" : "Mexico — within the Tequila Denomination of Origin";
   const production = isInfused ? "House infusion; preparation time and ingredients vary by flavour" :
-    bottle.category === "Blanco" ? "Clear tequila classification, bottled without extended barrel maturation" :
-    bottle.category === "Reposado" ? "Reposado tequila classification; matured in oak before bottling" :
-    bottle.category === "Añejo" ? "Añejo tequila classification; extended oak maturation" :
-    bottle.category === "Speciality" ? "Speciality expression; may be extra añejo, cristalino, rosado or cask-finished depending on the label" :
+    bottle.category === "Blanco" ? "Blanco tequila: bottled without maturation or rested in oak for no more than two months" :
+    bottle.category === "Reposado" ? "Reposado tequila: matured in oak for at least two months" :
+    bottle.category === "Añejo" ? "Añejo tequila: matured in oak containers of 600 litres or less for at least one year" :
+    bottle.category === "Speciality" ? (upper.includes("EXTRA AÑEJO") || upper.includes("X.A.") ? "Extra añejo tequila: matured in oak for at least three years" : upper.includes("CRISTALINO") || upper.includes("EL CIELO") || upper.includes("'70") ? "Cristalino-style expression: matured tequila filtered to remove most of its colour" : "Speciality expression; maturation or cask treatment depends on the exact label") :
     "Mezcal expression; production method and certification category vary by producer";
-  const status = producerNames.some(([prefix]) => upper.startsWith(prefix)) ? "Brand identified · classification checked" : "Collection label identified · bottle-specific verification continuing";
-  return {producer, region, agave, production, status};
+  const nom = isMezcal ? "Mezcal certification / producer record varies" : isInfused ? "House-prepared record" : verified?.nom || "NOM verification continuing";
+  const source = verified?.source || (isMezcal ? "https://www.mezcalreviews.com/" : "https://www.agavematchmaker.com/");
+  const status = verified ? "Region and NOM matched · classification checked" : producerNames.some(([prefix]) => upper.startsWith(prefix)) ? "Brand identified · bottle verification continuing" : "Collection label identified · bottle verification continuing";
+  return {producer, region, agave, production, nom, source, status};
 }
 
 export default function Home() {
@@ -118,10 +143,11 @@ export default function Home() {
   const filtered = useMemo(() => dishes.filter(d => d.group === group && (filter === "ALL" || d.tags?.includes(filter)) && d.name.toLowerCase().includes(query.toLowerCase())), [group, filter, query]);
   const day = new Intl.DateTimeFormat("en-CA", {weekday:"long"}).format(new Date());
   const agaveCategories = ["All", "Blanco", "Reposado", "Añejo", "Mezcal", "Speciality", "House Infused"];
-  const filteredAgave = useMemo(() => agaveRecords.filter(bottle =>
-    (agaveCategory === "All" || bottle.category === agaveCategory) &&
-    bottle.name.toLowerCase().includes(agaveQuery.toLowerCase())
-  ), [agaveCategory, agaveQuery]);
+  const filteredAgave = useMemo(() => agaveRecords.filter(bottle => {
+    const facts = factsForBottle(bottle);
+    const haystack = [bottle.name,bottle.category,bottle.type,facts.producer,facts.region,facts.agave,facts.nom].join(" ").toLowerCase();
+    return (agaveCategory === "All" || bottle.category === agaveCategory) && haystack.includes(agaveQuery.toLowerCase());
+  }), [agaveCategory, agaveQuery]);
 
   return <main>
     <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className="reserve small" href="mailto:reservations@lachingada.ca">Reserve</a></header>
@@ -197,7 +223,7 @@ export default function Home() {
       <div className="library-count">Showing {filteredAgave.length} collection records</div>
       <div className="bottle-grid">{filteredAgave.map(bottle=><button className="bottle-card" key={bottle.id} onClick={()=>setOpenBottle(bottle)}><span className="record-number">FIELD NOTE · {String(bottle.id).padStart(3,"0")}</span><div className="agave-mark" aria-hidden="true">✺</div><h3>{bottle.name}</h3><p>{bottle.category} · {bottle.type}</p><b>Open record +</b></button>)}</div>
       {!filteredAgave.length && <p className="library-empty">No collection records match that search.</p>}
-      {openBottle && (()=>{const facts=factsForBottle(openBottle);return <div className="bottle-drawer" onClick={()=>setOpenBottle(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenBottle(null)}>×</button><span className="record-number">COLLECTION RECORD · {String(openBottle.id).padStart(3,"0")}</span><div className="agave-mark large" aria-hidden="true">✺</div><p className="eyebrow">{openBottle.category} · {openBottle.type}</p><h2>{openBottle.name}</h2><p>{openBottle.note}</p><div className="verification-stamp">{facts.status}</div><dl><div><dt>Brand / producer</dt><dd>{facts.producer}</dd></div><div><dt>Origin</dt><dd>{facts.region}</dd></div><div><dt>Agave</dt><dd>{facts.agave}</dd></div><div><dt>Classification / production</dt><dd>{facts.production}</dd></div></dl><small>Informational archive for legal-age guests. Category facts follow Mexican denomination standards; bottle-specific claims are added only after source verification.</small></article></div>})()}
+      {openBottle && (()=>{const facts=factsForBottle(openBottle);return <div className="bottle-drawer" onClick={()=>setOpenBottle(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenBottle(null)}>×</button><span className="record-number">COLLECTION RECORD · {String(openBottle.id).padStart(3,"0")}</span><div className="agave-mark large" aria-hidden="true">✺</div><p className="eyebrow">{openBottle.category} · {openBottle.type}</p><h2>{openBottle.name}</h2><p>{openBottle.note}</p><div className="verification-stamp">{facts.status}</div><dl><div><dt>Brand / producer</dt><dd>{facts.producer}</dd></div><div><dt>Origin</dt><dd>{facts.region}</dd></div><div><dt>Agave</dt><dd>{facts.agave}</dd></div><div><dt>NOM / certification</dt><dd>{facts.nom}</dd></div><div className="wide-fact"><dt>Classification / maturation</dt><dd>{facts.production}</dd></div></dl><a className="source-link" href={facts.source} target="_blank" rel="noreferrer">View research source ↗</a><small>Informational archive for legal-age guests. Bottle facts are separated from category-level information and expanded as source records are verified.</small></article></div>})()}
     </section>}
     {openSpecial && specialDetails[openSpecial] && <div className="modal special-modal" onClick={()=>setOpenSpecial(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenSpecial(null)}>×</button><p className="eyebrow">{specialDetails[openSpecial].kicker}</p><h2>{specialDetails[openSpecial].title}</h2><p>{specialDetails[openSpecial].body}</p><div className="torn-note">{specialDetails[openSpecial].note}</div><div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Explore the menu</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table</a></div></article></div>}
     <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><a href="mailto:reservations@lachingada.ca">Reserve</a></div>
