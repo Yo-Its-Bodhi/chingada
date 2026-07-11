@@ -82,7 +82,7 @@ export default function Home() {
 
     <section className="hero" id="top">
       <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><h1>A NEW MENU<br/>HAS LANDED.</h1><p className="deck">Come hungry. Stay awhile. We saved you a seat.</p><div className="actions"><a className="button red" href="#menu">View the new menu ↓</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table →</a></div></div>
-      <div className="hero-art"><div className="sun">☀</div><div className="taco-illustration">🌮</div><p>GOOD FOOD.<br/>NO FUSS.</p></div>
+      <div className="hero-art"><img src="/images/street-corn-hero.jpg" alt="La Chingada Mexican street corn served on a wooden board"/><div className="sunburst" aria-hidden="true">✹</div><p>GOOD FOOD.<br/>NO FUSS.</p></div>
     </section>
 
     <section className="poster-row" aria-label="Featured offers">

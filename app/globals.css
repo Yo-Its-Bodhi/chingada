@@ -21,3 +21,13 @@
 .torn-note{border-top:3px dashed var(--ink);border-bottom:3px dashed var(--ink);padding:16px 0;margin:24px 0;font-weight:900}
 .modal-actions{display:flex;gap:12px;flex-wrap:wrap}
 @media(max-width:760px){.poster-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:12px;gap:10px}.poster{min-width:86vw;min-height:215px;scroll-snap-align:center}.poster h2{font-size:50px}}
+
+/* Real-food hero matching the approved editorial direction. */
+.hero-art{background:var(--orange);isolation:isolate;clip-path:polygon(5% 0,100% 0,100% 100%,5% 100%,0 82%,4% 65%,0 48%,5% 29%,0 12%)}
+.hero-art img{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);object-fit:cover;object-position:54% center;filter:saturate(1.06) contrast(1.04);z-index:-1}
+.hero-art:before{inset:14px;border:5px solid var(--ink);transform:rotate(-.5deg);z-index:2;pointer-events:none}
+.hero-art:after{content:"";position:absolute;inset:18px;z-index:1;pointer-events:none;background:linear-gradient(180deg,transparent 58%,#1714119b 100%),radial-gradient(#f2e4c822 1px,transparent 1px);background-size:auto,4px 4px}
+.hero-art p{z-index:3;color:var(--paper);text-shadow:3px 3px 0 var(--ink)}
+.sunburst{position:absolute;z-index:3;left:25px;top:18px;width:92px;height:92px;display:grid;place-items:center;color:var(--orange);font-size:92px;line-height:1;text-shadow:2px 2px 0 var(--ink)}
+.hero h1,.brand,.section-head h2,.agave h2,.qr h2{background-image:radial-gradient(#f2e4c8 0.7px,transparent .9px);background-size:4px 4px;background-clip:text;-webkit-background-clip:text}
+@media(max-width:760px){.hero-art{clip-path:polygon(0 5%,16% 0,34% 4%,52% 0,72% 4%,88% 0,100% 5%,100% 100%,0 100%)}.hero-art img{object-position:43% center}.sunburst{font-size:65px;width:65px;height:65px}.hero-art p{bottom:30px;right:28px}}
