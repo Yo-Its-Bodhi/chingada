@@ -6,7 +6,7 @@ import { agaveRecords, type AgaveRecord } from "./agave-data";
 type Dish = { name: string; price: string; desc: string; tags?: string[]; spicy?: boolean; group: string };
 
 const dishes: Dish[] = [
-  {group:"Appetizers",name:"Chips & Salsa",price:"$14",tags:["V","VG"],desc:"Corn chips with guacamole, chunky salsa, and salsa morita."},
+  {group:"Appetizers",name:"Chips & Salsa",price:"$14",tags:["V","VG"],desc:"Corn chips with guacamole, chunky salsa, and salsa borracha."},
   {group:"Appetizers",name:"Guacamole Bowl",price:"$15",tags:["V","VG"],desc:"Corn chips with avocado, onion, jalapeño, tomato, lime, and cilantro."},
   {group:"Appetizers",name:"Chilaquiles",price:"$14",tags:["V"],desc:"Corn chips tossed in warm salsa with queso fresco, crema, pickled onions, and cilantro."},
   {group:"Appetizers",name:"Barbacoa Sliders",price:"$15",desc:"Two toasted sliders with barbacoa, cheese, Valentina mayo, red onion, and cilantro."},
@@ -21,7 +21,7 @@ const dishes: Dish[] = [
   {group:"Tacos",name:"Barbacoa Taco",price:"$8",tags:["GF"],desc:"Braised beef, caramelized onions, white onions, and salsa roja."},
   {group:"Tacos",name:"Baja Fish Taco",price:"$8",desc:"Beer-battered basa, mango-pineapple slaw, pickled onions, and Valentina mayo."},
   {group:"Tacos",name:"Blackened Fish Taco",price:"$8",tags:["GF"],desc:"Cajun-grilled basa, creamy slaw, and avocado salsa."},
-  {group:"Tacos",name:"Carne Asada Taco",price:"$8",desc:"Marinated steak, potato sticks, and salsa morita."},
+  {group:"Tacos",name:"Carne Asada Taco",price:"$8",desc:"Marinated steak, potato sticks, and salsa borracha."},
   {group:"Tacos",name:"Carnitas Taco",price:"$8",tags:["GF"],desc:"Braised pork, refried beans, pico de gallo, and salsa verde."},
   {group:"Tacos",name:"Chingada Taco",price:"$9",desc:"Melted cheese, carne asada, chorizo, potato sticks, salsa verde, and salsa chingada."},
   {group:"Tacos",name:"Chorizo Taco",price:"$8",tags:["GF"],desc:"Marinated ground pork, chicharrón, and salsa verde."},
@@ -37,12 +37,12 @@ const dishes: Dish[] = [
   {group:"Meals",name:"Taco Bowl",price:"$17",tags:["V","VG"],desc:"Rice, beans, guacamole, pico, lettuce, pickled onions, avocado salsa, and tostadas. Add a topping +$6."},
   {group:"Meals",name:"Chicken Enchiladas",price:"$22",tags:["GF"],desc:"Four corn tortillas with tinga de pollo, salsa verde, crema fresca, and queso fresco."},
   {group:"Meals",name:"Empanadas",price:"$17",desc:"Choose two: cheese, chorizo & cheese, or chicken & cheese. Served with all the fixings."},
-  {group:"Meals",name:"Carne Asada Meal",price:"$21",tags:["GF"],desc:"Grilled steak with esquites, rice, beans, jalapeño, salsa borracha, and corn tortillas."},
-  {group:"Meals",name:"Mole con Pollo",price:"$21",desc:"Grilled chicken thigh with mole sauce, rice, and beans. Contains nuts."},
+  {group:"Meals",name:"Carne Asada Meal",price:"$22",tags:["GF"],desc:"Grilled steak with esquites, rice, beans, jalapeño, salsa borracha, and corn tortillas."},
+  {group:"Meals",name:"Mole con Pollo",price:"$22",desc:"Grilled chicken thigh with mole sauce, rice, and beans. CONTAINS NUTS."},
   {group:"Meals",name:"Fajitas",price:"$22",desc:"Chicken, steak, shrimp, or veggie with peppers, onions, jalapeños, and tortillas. GF and V/VG options available."},
   {group:"Desserts",name:"Churro Bites",price:"$10",tags:["V"],desc:"Bite-sized churros tossed in cinnamon sugar."},
   {group:"Desserts",name:"Tres Leches Cake",price:"$10",tags:["V"],desc:"Vanilla sponge cake soaked in our three-milk sauce."},
-  {group:"Desserts",name:"Diablito",price:"$10",tags:["GF","V","VG"],desc:"Mango sorbet, chamoy, Tajín, and candied mango."},
+  {group:"Desserts",name:"Diablito",price:"$8",tags:["GF","V","VG"],desc:"Mango sorbet, chamoy, Tajín, and candied mango."},
   {group:"Brunch",name:"Huevos Rancheros",price:"$18",tags:["GF","V"],desc:"Two fried eggs on handmade tortillas with black beans, avocado, queso fresco, ranchera sauce, and cilantro."},
   {group:"Brunch",name:"Breakfast Tacos",price:"$15",tags:["GF","V"],desc:"House-made corn tortillas, scrambled eggs, pico, guacamole, crema, avocado crema, and cilantro."},
   {group:"Brunch",name:"Mexican Toast",price:"$16",tags:["V"],desc:"Rye toast with avocado, corn salsa, queso fresco, red chilis, and cilantro."},
@@ -51,7 +51,7 @@ const dishes: Dish[] = [
 ];
 
 const specials = [
-  ["MON", "Monday at La Chingada", "Ask the team what’s on"], ["TUE", "Taco Tuesday", "3 tacos · $30"],
+  ["MON", "Monday at La Chingada", "Ask the team what’s on"], ["TUE", "Taco Tuesday", "Any 3 tacos · $20"],
   ["WED", "Hump Day Small Bites", "Food menu all day"], ["THU", "AYCE Tacos", "$29.95 per person"],
   ["FRI", "Friday at La Chingada", "Ask the team what’s on"], ["SAT + SUN", "Brunch", "10 AM–2 PM"],
 ];
@@ -60,7 +60,7 @@ const specialDetails: Record<string, {title:string;kicker:string;body:string;not
   happy: {title:"Happy Hour Small Bites", kicker:"Every day · 4–7 PM", body:"A rotating selection of small bites from the Happy Hour food menu.", note:"Dine-in only · Ask your server for today’s available food menu."},
   ayce: {title:"All You Can Eat Tacos", kicker:"Every Thursday · $29.95 per person", body:"Choose three tacos to begin, then order them one at a time after.", note:"One-hour limit · No sharing · Conditions apply."},
   Monday: {title:"Today at La Chingada", kicker:"Monday", body:"See what is happening at the restaurant today.", note:"Dine-in only · Ask the team for today’s details."},
-  Tuesday: {title:"Taco Tuesday", kicker:"Tuesday · 3 tacos for $30", body:"Choose three tacos from the available Taco Tuesday selection.", note:"Dine-in only · Availability and conditions apply."},
+  Tuesday: {title:"Taco Tuesday", kicker:"Tuesday · Any 3 tacos for $20", body:"Choose any three tacos from the available Taco Tuesday selection.", note:"Dine-in only · Availability and conditions apply."},
   Wednesday: {title:"Hump Day Small Bites", kicker:"Wednesday · All day", body:"The Happy Hour food menu is available all day Wednesday.", note:"Dine-in only · Ask your server for today’s available food menu."},
   Thursday: {title:"AYCE Tacos", kicker:"Thursday · $29.95 per person", body:"All you can eat, all flavour, served one round at a time.", note:"One-hour limit · No sharing · Conditions apply."},
   Friday: {title:"Today at La Chingada", kicker:"Friday", body:"See what is happening at the restaurant today.", note:"Dine-in only · Ask the team for today’s details."},
@@ -127,7 +127,7 @@ export default function Home() {
     <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className="reserve small" href="mailto:reservations@lachingada.ca">Reserve</a></header>
 
     <section className="hero" id="top">
-      <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><h1>A NEW MENU<br/>HAS LANDED.</h1><p className="deck">Come hungry. Stay awhile. We saved you a seat.</p><div className="actions"><a className="button red" href="#menu">View the new menu ↓</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table →</a></div></div>
+      <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><h1>A NEW MENU<br/>HAS LANDED.</h1><p className="deck">Come hungry. Stay awhile. We saved you a seat.</p><div className="actions"><a className="button red" href="#menu">View the new menu ↓</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table →</a></div><img className="hero-chingadito" src="/images/chingadito-peek.png" alt="Chingadito peeking into the La Chingada homepage"/></div>
       <div className="hero-art"><img src="/images/street-corn-hero.jpg" alt="La Chingada Mexican street corn served on a wooden board"/><div className="sunburst" aria-hidden="true">✹</div><p>GOOD FOOD.<br/>NO FUSS.</p></div>
     </section>
 
@@ -137,7 +137,8 @@ export default function Home() {
       <button className="poster poster-today" onClick={()=>setOpenSpecial(day)}><i>HAPPENING TODAY</i><span>{day.toUpperCase()}</span><h2>{specialDetails[day]?.title}</h2><p>Open today’s card →</p></button>
     </section>
 
-    <section className="menu-section" id="menu"><div className="section-head"><div><p className="eyebrow">Tap around. Find your thing.</p><h2>THE MENU</h2></div><p>Use the filters, open any dish for details, and build your order before you even sit down.</p></div>
+    <section className="menu-section patterned" id="menu"><div className="section-head"><div><p className="eyebrow">Tap around. Find your thing.</p><h2>THE MENU</h2></div><p>Use the filters, open any dish for details, and build your order before you even sit down.</p></div>
+      <div className="menu-feature"><img src="/images/street-corn-hero.jpg" alt="Mexican street corn made at La Chingada"/><div><p className="eyebrow">Made here. Every morning.</p><h3>REAL FOOD.<br/>REAL WORK.</h3><p>Open a dish for ingredients, dietary information and the story behind it. More original food photography is being added selectively—never as a delivery-app grid.</p></div><img className="menu-chingadito" src="/images/chingadito-press.png" alt="Chingadito under the tortilla press"/></div>
       <div className="menu-tools"><div className="tabs">{["Appetizers","Tacos","Meals","Desserts","Brunch"].map(x=><button key={x} className={group===x?"active":""} onClick={()=>setGroup(x)}>{x}</button>)}</div><div className="filters"><input aria-label="Search menu" placeholder="Search this menu…" value={query} onChange={e=>setQuery(e.target.value)}/>{["ALL","GF","V","VG"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</div></div>
       <div className="dish-grid">{filtered.map(d=><button className="dish" key={d.name} onClick={()=>setOpenDish(d)}><div><h3>{d.name} {d.spicy && <span title="Spicy">🌶</span>}</h3><div className="tags">{d.tags?.map(t=><i key={t}>{t}</i>)}</div></div><strong>{d.price}</strong><p>{d.desc}</p><span className="more">More details +</span></button>)}</div>
       {!filtered.length && <p className="empty">Nothing matches that filter yet.</p>}
@@ -174,7 +175,16 @@ export default function Home() {
       <div className="about-place"><div className="place-collage"><div className="place-photo patio"><span>THE HIDDEN PATIO</span></div><div className="place-photo bar"><span>THE BAR</span></div><div className="place-photo inside"><span>INSIDE LA CHINGADA</span></div><img className="chingadito chingadito-peek" src="/images/chingadito-peek.png" alt="Chingadito peeking from behind the restaurant photographs"/></div><div className="place-copy"><p className="eyebrow">After all that work</p><h3>WE SET<br/>THE TABLE.</h3><p>La Chingada should feel like arriving at a friend’s place—if your friend made fresh tortillas every morning, had a hidden patio and refused to take shortcuts.</p><strong>MEXICAN CORN.<br/>TORONTO HANDS.<br/>MADE HERE. EVERY DAY.</strong><div className="actions"><a className="button red" href="#menu">See what we make</a><a className="button paper" href="mailto:reservations@lachingada.ca">Come experience it</a></div></div></div>
     </section>
 
-    <section className="qr"><div className="fake-qr" aria-hidden="true">▦</div><div><p className="eyebrow">At the table?</p><h2>SCAN. EXPLORE. PICK.</h2><p>Put the QR on printed menus and table cards. Guests land straight in the interactive menu—not on a cluttered homepage.</p></div></section>
+    <section className="visit" id="visit"><div className="visit-heading"><p className="eyebrow">Come find us</p><h2>VISIT LA<br/>CHINGADA.</h2><p>Mexican street food on Dundas West, with a hidden back patio and room for walk-ins.</p><img className="visit-chingadito" src="/images/chingadito-corn.png" alt="Chingadito arriving at La Chingada"/></div><div className="visit-grid">
+      <article><span>01</span><h3>Find us</h3><p>1242 Dundas Street West<br/>Toronto, Ontario</p><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Open in Maps →</a></article>
+      <article><span>02</span><h3>Get in touch</h3><p><a href="tel:+14165352242">416-535-2242</a><br/><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></p><a href="https://www.instagram.com/lachingadatoronto/" target="_blank" rel="noreferrer">Instagram →</a></article>
+      <article><span>03</span><h3>Reservations</h3><p>Reservations are available for groups of up to six. One table is held per booking. Walk-ins are welcome.</p><a href="mailto:reservations@lachingada.ca">Request a table →</a></article>
+      <article><span>04</span><h3>The patio</h3><p>Our hidden back patio is first come, first served and weather dependent.</p><a href="tel:+14165352242">Call with questions →</a></article>
+      <article><span>05</span><h3>Getting here</h3><p>The 505 Dundas streetcar serves the neighbourhood. Street parking is limited, so transit is recommended.</p></article>
+      <article><span>06</span><h3>Hours & access</h3><p>Check our current listing or call before travelling. For accessibility requirements, contact the team so we can help plan your visit.</p><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">View current hours →</a></article>
+    </div></section>
+
+    <section className="qr patterned"><img className="qr-chingadito" src="/images/chingadito-peek.png" alt="Chingadito pointing toward the menu QR area"/><div className="fake-qr" aria-hidden="true">▦</div><div><p className="eyebrow">At the table?</p><h2>SCAN. EXPLORE. PICK.</h2><p>Put the QR on printed menus and table cards. Guests land straight in the interactive menu—not on a cluttered homepage.</p></div></section>
 
     <footer><div className="brand">LA CHINGADA<span>✦</span></div><p>1242 Dundas St West · Toronto<br/>416-535-2242 · reservations@lachingada.ca</p><p>Mexican street food, made for sharing.<br/>Dine-in specials subject to availability.</p></footer>
 
