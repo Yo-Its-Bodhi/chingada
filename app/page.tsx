@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { agaveRecords, type AgaveRecord } from "./agave-data";
 
 type Dish = { name: string; price: string; desc: string; tags?: string[]; spicy?: boolean; group: string };
 
@@ -73,9 +74,18 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [openDish, setOpenDish] = useState<Dish | null>(null);
   const [ageOpen, setAgeOpen] = useState(false);
+  const [libraryOpen, setLibraryOpen] = useState(false);
+  const [agaveQuery, setAgaveQuery] = useState("");
+  const [agaveCategory, setAgaveCategory] = useState("All");
+  const [openBottle, setOpenBottle] = useState<AgaveRecord | null>(null);
   const [openSpecial, setOpenSpecial] = useState<string | null>(null);
   const filtered = useMemo(() => dishes.filter(d => d.group === group && (filter === "ALL" || d.tags?.includes(filter)) && d.name.toLowerCase().includes(query.toLowerCase())), [group, filter, query]);
   const day = new Intl.DateTimeFormat("en-CA", {weekday:"long"}).format(new Date());
+  const agaveCategories = ["All", "Blanco", "Reposado", "Añejo", "Mezcal", "Speciality", "House Infused"];
+  const filteredAgave = useMemo(() => agaveRecords.filter(bottle =>
+    (agaveCategory === "All" || bottle.category === agaveCategory) &&
+    bottle.name.toLowerCase().includes(agaveQuery.toLowerCase())
+  ), [agaveCategory, agaveQuery]);
 
   return <main>
     <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a></nav><a className="reserve small" href="mailto:reservations@lachingada.ca">Reserve</a></header>
@@ -106,7 +116,16 @@ export default function Home() {
     <footer><div className="brand">LA CHINGADA<span>✦</span></div><p>1242 Dundas St West · Toronto<br/>416-535-2242 · reservations@lachingada.ca</p><p>Mexican street food, made for sharing.<br/>Dine-in specials subject to availability.</p></footer>
 
     {openDish && <div className="modal" onClick={()=>setOpenDish(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenDish(null)}>×</button><p className="eyebrow">{openDish.group}</p><h2>{openDish.name}</h2><strong className="modal-price">{openDish.price}</strong><div className="tags">{openDish.tags?.map(t=><i key={t}>{t}</i>)}</div><p>{openDish.desc}</p><hr/><small>Dietary needs or allergies? Please speak with your server. Our kitchen handles multiple ingredients.</small></article></div>}
-    {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This educational catalogue is intended for guests of legal drinking age. Please enjoy responsibly and speak with licensed restaurant staff for service information.</p><button className="button green" onClick={()=>setAgeOpen(false)}>I understand</button></article></div>}
+    {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This informational collection is intended for guests of legal drinking age. It documents La Chingada’s bottles, producers, regions and agave traditions.</p><div className="age-actions"><button className="button green" onClick={()=>{setAgeOpen(false);setLibraryOpen(true)}}>Enter the library</button><button className="plain-link" onClick={()=>setAgeOpen(false)}>Go back</button></div></article></div>}
+    {libraryOpen && <section className="library-overlay" aria-label="Agave Library">
+      <header className="library-top"><div><p className="eyebrow">La Chingada · Collection archive</p><h2>THE AGAVE LIBRARY</h2></div><button className="library-close" onClick={()=>{setLibraryOpen(false);setOpenBottle(null)}}>Close ×</button></header>
+      <div className="library-intro"><p><strong>{agaveRecords.length} bottles and house infusions</strong> from the restaurant’s current collection.</p><p>Search the archive or browse by style. More producer, region and production notes will be added as each record is verified.</p></div>
+      <div className="library-controls"><input aria-label="Search the Agave Library" placeholder="Search a bottle or producer…" value={agaveQuery} onChange={e=>setAgaveQuery(e.target.value)}/><div className="library-filters">{agaveCategories.map(category=><button key={category} className={agaveCategory===category?"active":""} onClick={()=>setAgaveCategory(category)}>{category}</button>)}</div></div>
+      <div className="library-count">Showing {filteredAgave.length} collection records</div>
+      <div className="bottle-grid">{filteredAgave.map(bottle=><button className="bottle-card" key={bottle.id} onClick={()=>setOpenBottle(bottle)}><span className="record-number">FIELD NOTE · {String(bottle.id).padStart(3,"0")}</span><div className="agave-mark" aria-hidden="true">✺</div><h3>{bottle.name}</h3><p>{bottle.category} · {bottle.type}</p><b>Open record +</b></button>)}</div>
+      {!filteredAgave.length && <p className="library-empty">No collection records match that search.</p>}
+      {openBottle && <div className="bottle-drawer" onClick={()=>setOpenBottle(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenBottle(null)}>×</button><span className="record-number">COLLECTION RECORD · {String(openBottle.id).padStart(3,"0")}</span><div className="agave-mark large" aria-hidden="true">✺</div><p className="eyebrow">{openBottle.category} · {openBottle.type}</p><h2>{openBottle.name}</h2><p>{openBottle.note}</p><dl><div><dt>Producer</dt><dd>Research in progress</dd></div><div><dt>Region</dt><dd>Research in progress</dd></div><div><dt>Agave</dt><dd>Research in progress</dd></div><div><dt>Production</dt><dd>Research in progress</dd></div></dl><small>Informational collection record. Details are verified before publication.</small></article></div>}
+    </section>}
     {openSpecial && specialDetails[openSpecial] && <div className="modal special-modal" onClick={()=>setOpenSpecial(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenSpecial(null)}>×</button><p className="eyebrow">{specialDetails[openSpecial].kicker}</p><h2>{specialDetails[openSpecial].title}</h2><p>{specialDetails[openSpecial].body}</p><div className="torn-note">{specialDetails[openSpecial].note}</div><div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Explore the menu</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table</a></div></article></div>}
     <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><a href="mailto:reservations@lachingada.ca">Reserve</a></div>
   </main>
