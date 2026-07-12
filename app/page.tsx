@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { agaveRecords, type AgaveRecord } from "./agave-data";
 import { archiveDetails } from "./agave-archive";
 import { catalogDetails } from "./agave-catalog";
+import { houseInfusions } from "./house-infusions";
 
 type Dish = { name: string; price: string; desc: string; tags?: string[]; spicy?: boolean; group: string };
 
@@ -152,14 +153,16 @@ export default function Home() {
   const [agaveCategory, setAgaveCategory] = useState("All");
   const [openBottle, setOpenBottle] = useState<AgaveRecord | null>(null);
   const [openSpecial, setOpenSpecial] = useState<string | null>(null);
+  const [day, setDay] = useState("Monday");
   const filtered = useMemo(() => dishes.filter(d => d.group === group && (filter === "ALL" || d.tags?.includes(filter)) && d.name.toLowerCase().includes(query.toLowerCase())), [group, filter, query]);
-  const day = new Intl.DateTimeFormat("en-CA", {weekday:"long"}).format(new Date());
+  useEffect(()=>setDay(new Intl.DateTimeFormat("en-CA", {weekday:"long"}).format(new Date())),[]);
   const agaveCategories = ["All", "Blanco", "Reposado", "Añejo", "Mezcal", "Speciality", "House Infused"];
-  const filteredAgave = useMemo(() => agaveRecords.filter(bottle => {
+  const collectionRecords = useMemo(()=>[...agaveRecords,...houseInfusions],[]);
+  const filteredAgave = useMemo(() => collectionRecords.filter(bottle => {
     const facts = factsForBottle(bottle);
     const haystack = [bottle.name,bottle.category,bottle.type,facts.producer,facts.region,facts.agave,facts.nom].join(" ").toLowerCase();
     return (agaveCategory === "All" || bottle.category === agaveCategory) && haystack.includes(agaveQuery.toLowerCase());
-  }).sort((a,b)=>Number(Boolean(archiveDetails[b.name]?.image))-Number(Boolean(archiveDetails[a.name]?.image)) || a.name.localeCompare(b.name)), [agaveCategory, agaveQuery]);
+  }).sort((a,b)=>Number(Boolean(archiveDetails[b.name]?.image))-Number(Boolean(archiveDetails[a.name]?.image)) || a.name.localeCompare(b.name)), [agaveCategory, agaveQuery, collectionRecords]);
 
   return <main>
     <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className="reserve small" href="mailto:reservations@lachingada.ca">Reserve</a></header>
@@ -185,7 +188,7 @@ export default function Home() {
 
     <section className="specials" id="specials"><div className="section-head light"><div><p className="eyebrow">There’s always something going on</p><h2>WEEKLY<br/>SPECIALS</h2></div><p>Dine-in only. Ask the team for today’s details.</p></div><div className="special-grid">{specials.map((s,i)=><button key={s[0]} className={`special s${i}`} onClick={()=>setOpenSpecial(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][i])}><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p><b>Open details +</b></button>)}</div></section>
 
-    <section className="agave" id="agave"><div><p className="eyebrow">For adult guests · 19+</p><h2>THE AGAVE<br/>LIBRARY</h2><p className="agave-copy">A field guide to the bottles behind the bar: where they come from, who makes them, which agave they use, and the stories worth knowing.</p><button className="button pink" onClick={()=>setAgeOpen(true)}>Enter the library →</button></div><div className="library-card"><span>FIELD NOTES · 001</span><div className="plant">♆</div><h3>100+ BOTTLES.<br/>A LOT OF STORIES.</h3><p>Search by region, producer, agave, and flavour profile. Informational catalogue for adults.</p></div></section>
+    <section className="agave" id="agave"><div><p className="eyebrow">For adult guests · 19+</p><h2>THE AGAVE<br/>LIBRARY</h2><p className="agave-copy">A field guide to the bottles behind the bar: where they come from, who makes them, which agave they use, and the stories worth knowing.</p><button className="button pink" onClick={()=>setAgeOpen(true)}>Enter the library →</button></div><div className="library-card"><span>FIELD NOTES · 001</span><div className="plant">♆</div><h3>150+ BOTTLES.<br/>A LOT OF STORIES.</h3><p>Search by region, producer, agave, and flavour profile. Informational catalogue for adults.</p></div></section>
 
     <section className="craft" id="about">
       <div className="craft-hero"><p className="eyebrow">The work before the welcome</p><h2>BEFORE<br/>WE OPEN.</h2><div className="craft-manifesto"><strong>YOU SEE A TACO.</strong><span>We see everything it took to make it.</span><p>Before the first guest arrives, the kitchen is already cooking, grinding, pressing, blending, infusing and preparing. We make the things most restaurants simply buy.</p></div><img className="chingadito chingadito-corn" src="/images/chingadito-corn.png" alt="Chingadito carrying a sack of corn"/></div>
@@ -231,7 +234,7 @@ export default function Home() {
     {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This informational collection is intended for guests of legal drinking age. It documents La Chingada’s bottles, producers, regions and agave traditions.</p><div className="age-actions"><button className="button green" onClick={()=>{setAgeOpen(false);setLibraryOpen(true)}}>Enter the library</button><button className="plain-link" onClick={()=>setAgeOpen(false)}>Go back</button></div></article></div>}
     {libraryOpen && <section className="library-overlay" aria-label="Agave Library">
       <header className="library-top"><div><p className="eyebrow">La Chingada · Collection archive</p><h2>THE AGAVE LIBRARY</h2></div><button className="library-close" onClick={()=>{setLibraryOpen(false);setOpenBottle(null)}}>Close ×</button></header>
-      <div className="library-intro"><p><strong>{agaveRecords.length} bottles and house infusions</strong> from the restaurant’s current collection.</p><p>Search the archive or browse by style. Records distinguish verified bottle facts from category-level information so uncertain details are never presented as fact.</p></div>
+      <div className="library-intro"><p><strong>{collectionRecords.length} bottles and house infusions</strong> from the restaurant’s current collection.</p><p>Search the archive or browse by style. Records distinguish verified bottle facts from category-level information so uncertain details are never presented as fact.</p></div>
       <div className="library-controls"><input aria-label="Search the Agave Library" placeholder="Search a bottle or producer…" value={agaveQuery} onChange={e=>setAgaveQuery(e.target.value)}/><div className="library-filters">{agaveCategories.map(category=><button key={category} className={agaveCategory===category?"active":""} onClick={()=>setAgaveCategory(category)}>{category}</button>)}</div></div>
       <div className="library-count">Showing {filteredAgave.length} collection records</div>
       <div className="bottle-grid">{filteredAgave.map(bottle=>{const archive=archiveDetails[bottle.name];return <button className={`bottle-card ${archive?.image?"has-bottle":""}`} key={bottle.id} onClick={()=>setOpenBottle(bottle)}><span className="record-number">FIELD NOTE · {String(bottle.id).padStart(3,"0")}</span>{archive?.image?<img className="bottle-thumb" src={archive.image} alt={`${bottle.name} bottle`}/>:<div className="agave-mark" aria-hidden="true">✺</div>}<h3>{bottle.name}</h3><p>{bottle.category} · {bottle.type}</p>{catalogDetails[bottle.name]&&<em>Complete Drink Bible record</em>}<b>Open record +</b></button>})}</div>
