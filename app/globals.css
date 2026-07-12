@@ -68,6 +68,7 @@
 .bottle-card{display:flex;flex-direction:column;padding-bottom:20px}
 .bottle-card p{margin:0 0 5px}.bottle-card em{line-height:1.25;margin-bottom:0}
 .bottle-card b{position:static;margin-top:auto;padding-top:15px;line-height:1.2}
+.food-photo-ribbon{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 45px}.food-photo-ribbon figure{margin:0;position:relative;min-height:235px;border:3px solid var(--ink);overflow:hidden;box-shadow:5px 5px 0 var(--ink);transform:rotate(-.5deg)}.food-photo-ribbon figure:nth-child(even){transform:rotate(.5deg)}.food-photo-ribbon img{width:100%;height:100%;min-height:235px;display:block;object-fit:cover;transition:transform .25s ease}.food-photo-ribbon figure:hover img{transform:scale(1.035)}.food-photo-ribbon figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:var(--paper);border:2px solid var(--ink);padding:8px;font-size:10px;font-weight:1000;letter-spacing:1px;text-align:center}
 @media(min-width:1000px){
   .bottle-drawer{align-items:center;padding:16px 24px}
   .bottle-drawer article.rich-record{width:min(1220px,calc(100vw - 48px))!important;height:auto;max-height:calc(100vh - 32px);border:4px solid var(--ink);box-shadow:12px 12px 0 var(--pink);padding:30px 38px!important;display:grid;grid-template-columns:minmax(300px,.75fr) minmax(500px,1.45fr);grid-template-rows:auto auto auto auto 1fr auto;column-gap:38px;row-gap:16px;overflow-y:auto}
@@ -85,5 +86,15 @@
   .rich-record .catalog-how{padding:14px 17px;box-shadow:4px 4px 0 var(--ink)}
   .rich-record .process h3,.rich-record .sensory-grid h3{font-size:29px;margin-bottom:10px}
   .rich-record .note-chips i{padding:6px 8px}
+  .rich-record>.record-hero{background:var(--orange);margin:-8px 0 -8px -8px;padding:24px 34px 24px 24px;box-shadow:8px 8px 0 var(--pink)}
+  .rich-record>.quick-facts>div:nth-child(1),.rich-record>.quick-facts>div:nth-child(5){background:var(--yellow)}
+  .rich-record>.quick-facts>div:nth-child(2),.rich-record>.quick-facts>div:nth-child(6){background:#f7cadc}
+  .rich-record>.quick-facts>div:nth-child(3),.rich-record>.quick-facts>div:nth-child(4){background:#d4ead7}
+  .rich-record>.process .catalog-how{background:var(--yellow)}
+  .rich-record>.sensory-grid>div:first-child{background:#f7cadc;padding:15px;border:3px solid var(--ink)}
+  .rich-record>.sensory-grid>div:last-child{background:var(--green);color:white;padding:15px;border:3px solid var(--ink)}
+  .rich-record>.sensory-grid>div:last-child .note-chips i{background:var(--paper);color:var(--ink)}
+  .rich-record>.archive-note{background:var(--pink);color:white;border-left-color:var(--yellow)}
 }
-@media(max-width:760px){.agave{background:var(--green)}.bottle-card b{left:auto}.rich-record>.record-hero{position:relative}}
+@media(max-width:900px){.food-photo-ribbon{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.agave{background:var(--green)}.bottle-card b{left:auto}.rich-record>.record-hero{position:relative}.food-photo-ribbon{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 4px 15px}.food-photo-ribbon figure{min-width:78vw;scroll-snap-align:center}.quick-facts>div:nth-child(1),.quick-facts>div:nth-child(4){background:var(--yellow)}.quick-facts>div:nth-child(2),.quick-facts>div:nth-child(5){background:#f7cadc}.quick-facts>div:nth-child(3),.quick-facts>div:nth-child(6){background:#d4ead7}.catalog-how{background:var(--yellow)}.archive-note{background:var(--pink);color:white}}
