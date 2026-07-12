@@ -6,7 +6,7 @@ import { archiveDetails } from "./agave-archive";
 import { catalogDetails } from "./agave-catalog";
 import { houseInfusions } from "./house-infusions";
 
-type Dish = { name: string; price: string; desc: string; tags?: string[]; spicy?: boolean; group: string };
+type Dish = { name: string; price: string; desc: string; tags?: string[]; spicy?: boolean; group: string; image?: string; feature?: string };
 
 const dishes: Dish[] = [
   {group:"Appetizers",name:"Chips & Salsa",price:"$14",tags:["V","VG"],desc:"Corn chips with guacamole, chunky salsa, and salsa borracha."},
@@ -21,7 +21,7 @@ const dishes: Dish[] = [
   {group:"Appetizers",name:"Rollitos de Birria",price:"$16",desc:"Corn tortilla layered with braised beef, cheese, onions, and cilantro; grilled and served with birria jus."},
   {group:"Appetizers",name:"Mexican Potatoes",price:"$15",desc:"Cajun potatoes with chorizo, queso fresco, chilis, scallions, crema, and cilantro."},
   {group:"Appetizers",name:"Queso Fundido",price:"$14",tags:["V"],desc:"House cheese sauce served hot in a skillet with corn chips. Add chorizo +$4."},
-  {group:"Tacos",name:"Barbacoa Taco",price:"$8",tags:["GF"],desc:"Braised beef, caramelized onions, white onions, and salsa roja."},
+  {group:"Tacos",name:"Barbacoa Taco",price:"$8",tags:["GF"],desc:"Braised beef, caramelized onions, white onions, and salsa roja.",image:"/images/barbacoa-taco.png",feature:"CHINGADITO SAYS: START HERE"},
   {group:"Tacos",name:"Baja Fish Taco",price:"$8",desc:"Beer-battered basa, mango-pineapple slaw, pickled onions, and Valentina mayo."},
   {group:"Tacos",name:"Blackened Fish Taco",price:"$8",tags:["GF"],desc:"Cajun-grilled basa, creamy slaw, and avocado salsa."},
   {group:"Tacos",name:"Carne Asada Taco",price:"$8",desc:"Marinated steak, potato sticks, and salsa borracha."},
@@ -185,7 +185,7 @@ export default function Home() {
       <div className="special-menu-strip" aria-label="Special food menus"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7 PM</span><h3>HAPPY HOUR FOOD</h3><p>8 snacks · Wednesday all day</p><b>See every item +</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95 PP</span><h3>AYCE TACOS</h3><p>9 taco choices · one-hour limit</p><b>See tacos & rules +</b></button></div>
       <div className="menu-tools"><div className="tabs">{["Special Menus","Appetizers","Tacos","Meals","Desserts","Brunch"].map(x=><button key={x} className={group===x?"active":""} onClick={()=>setGroup(x)}>{x}</button>)}</div><div className="filters"><input aria-label="Search menu" placeholder="Search this menu…" value={query} onChange={e=>setQuery(e.target.value)}/>{["ALL","GF","V","VG"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</div></div>
       {group==="Special Menus"&&<div className="integrated-specials"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7</span><h3>HAPPY HOUR</h3><p>12 small bites · 4 drink deals</p><b>Clock out early →</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95</span><h3>AYCE TACOS</h3><p>14 tacos · one glorious hour</p><b>Stretch first →</b></button></div>}
-      <div className="dish-grid">{filtered.map(d=><button className="dish" key={d.name} onClick={()=>setOpenDish(d)}><div><h3>{d.name} {d.spicy && <span title="Spicy">🌶</span>}</h3><div className="tags">{d.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div></div><strong>{d.price}</strong><p>{d.desc}</p><span className="more">More details +</span></button>)}</div>
+      <div className="dish-grid">{filtered.map(d=><button className={`dish ${d.image?"dish-featured":""}`} key={d.name} onClick={()=>setOpenDish(d)}>{d.image&&<img src={d.image} alt={d.name}/>}<div>{d.feature&&<em>{d.feature}</em>}<h3>{d.name} {d.spicy && <span title="Spicy">🌶</span>}</h3><div className="tags">{d.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div></div><strong>{d.price}</strong><p>{d.desc}</p><span className="more">More details +</span></button>)}</div>
       {!filtered.length && group!=="Special Menus" && <p className="empty">Nothing matches that filter yet.</p>}
     </section>
 
@@ -233,7 +233,7 @@ export default function Home() {
 
     <footer><div className="brand">LA CHINGADA<span>✦</span></div><p>1242 Dundas St West · Toronto<br/>416-535-2242 · reservations@lachingada.ca</p><p>Mexican street food, made for sharing.<br/>Dine-in specials subject to availability.</p></footer>
 
-    {openDish && <div className="modal" onClick={()=>setOpenDish(null)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenDish(null)}>×</button><p className="eyebrow">{openDish.group}</p><h2>{openDish.name}</h2><strong className="modal-price">{openDish.price}</strong><div className="tags">{openDish.tags?.map(t=><i key={t}>{t}</i>)}</div><p>{openDish.desc}</p><hr/><small>Dietary needs or allergies? Please speak with your server. Our kitchen handles multiple ingredients.</small></article></div>}
+    {openDish && <div className="modal" onClick={()=>setOpenDish(null)}><article className="dish-modal" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenDish(null)}>×</button>{openDish.image&&<img className="dish-modal-image" src={openDish.image} alt={openDish.name}/>}<div><p className="eyebrow">{openDish.group}</p>{openDish.feature&&<span className="staff-pick">{openDish.feature}</span>}<h2>{openDish.name}</h2><strong className="modal-price">{openDish.price}</strong><div className="tags">{openDish.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div><p>{openDish.desc}</p><hr/><small>Dietary needs or allergies? Please speak with your server. Our kitchen handles multiple ingredients.</small></div></article></div>}
     {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This informational collection is intended for guests of legal drinking age. It documents La Chingada’s bottles, producers, regions and agave traditions.</p><div className="age-actions"><button className="button green" onClick={()=>{setAgeOpen(false);setLibraryOpen(true)}}>Enter the library</button><button className="plain-link" onClick={()=>setAgeOpen(false)}>Go back</button></div></article></div>}
     {libraryOpen && <section className="library-overlay" aria-label="Agave Library">
       <header className="library-top"><div><p className="eyebrow">La Chingada · Collection archive</p><h2>THE AGAVE LIBRARY</h2></div><button className="library-close" onClick={()=>{setLibraryOpen(false);setOpenBottle(null)}}>Close ×</button></header>
