@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from "react";
 import { agaveRecords, type AgaveRecord } from "./agave-data";
 import { archiveDetails } from "./agave-archive";
 import { catalogDetails } from "./agave-catalog";
@@ -114,12 +114,74 @@ const happyHourFood = ["Chips & guac", "Chips & queso", "Chips & salsa", "Empana
 const happyHourDrinks = ["$10 margaritas", "$2 off beer", "$6 bar rail", "20% off wine bottles"];
 const ayceTacos = ["Barbacoa", "Baja fish", "Blackened fish", "Carne asada", "Carnitas", "The Chingada", "Chorizo", "Fried chicken", "Halloumi", "Pastor", "Mushroom", "Tinga de pollo", "Shrimp", "Sweet potato"];
 const ayceRules = ["Pick three tacos for your first round", "Then order one taco at a time", "One-hour time limit", "One AYCE order per guest", "No sharing — nice try", "Dine-in only · conditions apply"];
+
+const happyHourGroups = [
+  { title: "CHIPS & DIPS", note: "Cold drinks need company.", items: ["Chips & guac", "Chips & queso", "Chips & salsa"] },
+  { title: "TACOS", note: "Same taco. Same size. Better price.", items: ["Mushroom taco", "Blackened fish taco", "Fried chicken taco", "Carnitas taco"] },
+  { title: "MORE GOOD STUFF", note: "For people pretending they came for one drink.", items: ["Cheese quesadilla", "Empanada — chorizo or chicken & cheese", "Esquites", "Ceviche tostada", "Buñuelos"] },
+];
+
+function RuleGraphic({ index }: { index: number }) {
+  const taco = (x: number, y: number, key: string) => <g key={key} transform={`translate(${x} ${y})`}>
+    <path d="M2 31C8 8 42 8 48 31Z" fill="var(--yellow)" stroke="currentColor" strokeWidth="4"/>
+    <path d="M9 23l8-7 7 5 8-8 9 10" stroke="var(--pink)" strokeWidth="4" strokeLinecap="round"/>
+  </g>;
+  const common = { viewBox: "0 0 180 112", className: "rule-graphic", fill: "none", xmlns: "http://www.w3.org/2000/svg" };
+
+  if (index === 0) return <svg {...common} aria-hidden="true">
+    {taco(8, 49, "a")}{taco(65, 49, "b")}{taco(122, 49, "c")}
+    <circle cx="151" cy="23" r="19" fill="var(--pink)" stroke="currentColor" strokeWidth="4"/>
+    <text x="151" y="31" textAnchor="middle" fill="white" fontSize="24" fontWeight="900">3</text>
+  </svg>;
+
+  if (index === 1) return <svg {...common} aria-hidden="true">
+    <rect x="12" y="20" width="66" height="76" rx="4" fill="var(--paper)" stroke="currentColor" strokeWidth="4"/>
+    <path d="M27 39h36M27 54h25M27 69h31" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
+    <path d="M83 58h37m-12-12 13 12-13 12" stroke="var(--pink)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+    {taco(125, 47, "one")}
+    <circle cx="151" cy="24" r="17" fill="var(--teal)" stroke="currentColor" strokeWidth="4"/>
+    <text x="151" y="31" textAnchor="middle" fill="white" fontSize="22" fontWeight="900">1</text>
+  </svg>;
+
+  if (index === 2) return <svg {...common} aria-hidden="true">
+    <circle cx="90" cy="61" r="39" fill="var(--paper)" stroke="currentColor" strokeWidth="5"/>
+    <path d="M90 31v31l22 13M76 12h28M90 12v10" stroke="currentColor" strokeWidth="5" strokeLinecap="round"/>
+    <path d="M127 29l10-10" stroke="var(--pink)" strokeWidth="5" strokeLinecap="round"/>
+    <path d="M63 80c4-17 25-27 39-14 7 6 10 15 11 25H65Z" fill="var(--yellow)" stroke="currentColor" strokeWidth="4"/>
+    <text x="90" y="70" textAnchor="middle" fill="var(--pink)" fontSize="18" fontWeight="900">60</text>
+  </svg>;
+
+  if (index === 3) return <svg {...common} aria-hidden="true">
+    <circle cx="58" cy="34" r="18" fill="var(--yellow)" stroke="currentColor" strokeWidth="4"/>
+    <path d="M30 94c2-28 12-42 28-42s26 14 28 42" fill="var(--teal)" stroke="currentColor" strokeWidth="4"/>
+    <ellipse cx="125" cy="77" rx="42" ry="18" fill="var(--paper)" stroke="currentColor" strokeWidth="4"/>
+    {taco(101, 45, "guest")}
+    <circle cx="148" cy="29" r="17" fill="var(--pink)" stroke="currentColor" strokeWidth="4"/>
+    <text x="148" y="36" textAnchor="middle" fill="white" fontSize="22" fontWeight="900">1</text>
+  </svg>;
+  if (index === 4) return <svg {...common} aria-hidden="true">
+    <ellipse cx="48" cy="73" rx="34" ry="16" fill="var(--yellow)" stroke="currentColor" strokeWidth="4"/>
+    <ellipse cx="132" cy="73" rx="34" ry="16" fill="var(--teal)" stroke="currentColor" strokeWidth="4"/>
+    <path d="M38 27c18 8 27 19 32 34M142 27c-18 8-27 19-32 34" stroke="currentColor" strokeWidth="7" strokeLinecap="round"/>
+    <path d="M49 17l82 82M131 17L49 99" stroke="var(--pink)" strokeWidth="8" strokeLinecap="round"/>
+  </svg>;
+
+  return <svg {...common} aria-hidden="true">
+    <path d="M22 48 90 12l68 36" fill="var(--pink)" stroke="currentColor" strokeWidth="5" strokeLinejoin="round"/>
+    <rect x="34" y="47" width="112" height="55" fill="var(--paper)" stroke="currentColor" strokeWidth="5"/>
+    <rect x="76" y="62" width="28" height="40" fill="var(--teal)" stroke="currentColor" strokeWidth="4"/>
+    <circle cx="98" cy="82" r="3" fill="var(--yellow)"/>
+    <path d="M14 103h152" stroke="currentColor" strokeWidth="5" strokeLinecap="round"/>
+    <path d="M123 65h13M123 76h13" stroke="var(--orange)" strokeWidth="4" strokeLinecap="round"/>
+  </svg>;
+}
+
 const specialDetails: Record<string, SpecialDetail> = {
-  happy: {title:"Happy Hour Small Bites", kicker:"Every damn day · 4–7 PM", body:"Your excuse to clock out early: twelve small bites, cold drinks and absolutely no emails.", items:happyHourFood, drinks:happyHourDrinks, note:"Wednesday keeps the Happy Hour food going all day. Dine-in only. Welcome to La Chingada."},
-  ayce: {title:"All You Can Eat Tacos", kicker:"Every Thursday · $29.95 per person", body:"Fourteen tacos. One glorious hour. Come hungry and choose irresponsibly well.", items:ayceTacos, rules:ayceRules, note:"Ask your server about dietary needs and current conditions before ordering."},
+  happy: {title:"Happy Hour", kicker:"Every damn day · 4–7 PM", body:"All twelve Happy Hour food items are $6 each. Same food. Same portions. A much better reason to leave work on time.", items:happyHourFood, drinks:happyHourDrinks, note:"Wednesday keeps the complete $6 food lineup going all day. Dine-in only. Welcome to La Chingada."},
+  ayce: {title:"All You Can Eat Tacos", kicker:"Every Thursday · $29.95 per person", body:"Fourteen proper tacos. One glorious hour. Come hungry and choose irresponsibly well.", items:ayceTacos, rules:ayceRules, note:"Ask your server about dietary needs and current conditions before ordering."},
   Monday: {title:"Margarita Monday", kicker:"Monday · all margaritas $10", body:"Ten margaritas. Ten bucks each. Monday has officially stopped being useless.", note:"Dine-in only · Ten margaritas to choose from. Pace yourself, legend."},
   Tuesday: {title:"Taco Tuesday", kicker:"Tuesday · any 3 tacos for $20", body:"Build a responsible trio—or choose entirely based on vibes. We support both methods.", note:"Dine-in only · Available taco selection and conditions apply."},
-  Wednesday: {title:"Happy Hour All Day", kicker:"Wednesday · yes, all day", body:"The complete Happy Hour food menu keeps going. Time is merely a suggestion.", items:happyHourFood, drinks:happyHourDrinks, note:"Food menu all day; drink offers remain subject to current service conditions. Dine-in only."},
+  Wednesday: {title:"Happy Hour All Day", kicker:"Wednesday · all damn day", body:"All twelve Happy Hour food items are $6 each from open to close. Time is merely a suggestion.", items:happyHourFood, drinks:happyHourDrinks, note:"All twelve $6 food items run all day. Drink offers remain subject to current service conditions. Dine-in only."},
   Thursday: {title:"AYCE Tacos", kicker:"Thursday · $29.95 per person", body:"Fourteen tacos. One hour. Stretch first.", items:ayceTacos, rules:ayceRules, note:"Ask your server about dietary needs and current conditions before ordering."},
   Friday: {title:"Friday Bar Rail", kicker:"Friday · $6 bar rail", body:"Vodka, tequila, gin, rum or rye—with a mixer or as a shot. Friday understood the assignment.", note:"Dine-in only · Responsible service and availability apply."},
   Saturday: {title:"Weekend Brunch", kicker:"Saturday · 10 AM–2 PM", body:"Come for breakfast. Stay until it quietly becomes lunch.", note:"Available during brunch hours only."},
@@ -217,8 +279,63 @@ export default function Home() {
   const [openSpecial, setOpenSpecial] = useState<string | null>(null);
   const [day, setDay] = useState("Monday");
   const [liveStatus, setLiveStatus] = useState({day:"",label:"CHECK TODAY’S HOURS",detail:"TORONTO TIME",state:"closed"});
+  const [reservationOpen, setReservationOpen] = useState(false);
+  const [reservationLoaded, setReservationLoaded] = useState(false);
+  const [reservationSlow, setReservationSlow] = useState(false);
+  const reservationOpener = useRef<HTMLElement | null>(null);
+  const reservationDialog = useRef<HTMLDivElement | null>(null);
+  const reservationCloseButton = useRef<HTMLButtonElement | null>(null);
+
+  const openReservation = (event: ReactMouseEvent<HTMLElement>) => {
+    event.preventDefault();
+    reservationOpener.current = event.currentTarget;
+    setReservationLoaded(false);
+    setReservationSlow(false);
+    setReservationOpen(true);
+  };
+
+  const closeReservation = () => {
+    setReservationOpen(false);
+    setReservationSlow(false);
+    window.requestAnimationFrame(() => reservationOpener.current?.focus());
+  };
+
   const filtered = useMemo(() => dishes.filter(d => d.group === group && (filter === "ALL" || d.tags?.includes(filter)) && d.name.toLowerCase().includes(query.toLowerCase())), [group, filter, query]);
   useEffect(()=>{const update=()=>{const status=torontoStatus();setDay(status.day);setLiveStatus(status)};update();const timer=setInterval(update,60000);return()=>clearInterval(timer)},[]);
+  useEffect(() => {
+    if (!reservationOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const focusTimer = window.setTimeout(() => reservationCloseButton.current?.focus(), 0);
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setReservationOpen(false);
+        window.requestAnimationFrame(() => reservationOpener.current?.focus());
+        return;
+      }
+      if (event.key !== "Tab" || !reservationDialog.current) return;
+      const focusable = Array.from(reservationDialog.current.querySelectorAll<HTMLElement>('button,[href],iframe,input,select,textarea,[tabindex]:not([tabindex="-1"])'))
+        .filter(element => !element.hasAttribute("disabled"));
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.clearTimeout(focusTimer);
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [reservationOpen]);
+  useEffect(() => {
+    if (!reservationOpen || reservationLoaded) return;
+    const timer = window.setTimeout(() => setReservationSlow(true), 10000);
+    return () => window.clearTimeout(timer);
+  }, [reservationOpen, reservationLoaded]);
+
+
   const agaveCategories = ["All", "Blanco", "Reposado", "Añejo", "Mezcal", "Speciality", "House Infused"];
   const collectionRecords = useMemo(()=>[...agaveRecords,...houseInfusions],[]);
   const filteredAgave = useMemo(() => collectionRecords.filter(bottle => {
@@ -228,15 +345,15 @@ export default function Home() {
   }).sort((a,b)=>Number(Boolean(archiveDetails[b.name]?.image))-Number(Boolean(archiveDetails[a.name]?.image)) || a.name.localeCompare(b.name)), [agaveCategory, agaveQuery, collectionRecords]);
 
   return <main>
-    <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className={`live-status ${liveStatus.state}`} href="#visit"><b>{liveStatus.label}</b><span>{liveStatus.detail}</span></a><a className="reserve small" href="mailto:reservations@lachingada.ca">Reserve</a></header>
+    <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className={`live-status ${liveStatus.state}`} href="#visit"><b>{liveStatus.label}</b><span>{liveStatus.detail}</span></a><button type="button" className="reserve small" onClick={openReservation}>Reserve</button></header>
 
     <section className="hero" id="top">
-      <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><span className="launch-stamp">NEW MENU · NOW SERVING</span><h1>SERIOUS TACOS.<br/>QUESTIONABLE<br/>BEHAVIOUR.</h1><p className="deck">Fresh tortillas every morning, obsessive margaritas every night, and absolutely no interest in doing things the easy way.</p><div className="actions"><a className="button red" href="#menu">Explore the menu ↓</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve →</a><a className="button yellow" href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></div><img className="hero-chingadito" src="/images/chingadito-peek.png" alt="Chingadito peeking into the La Chingada homepage"/></div>
+      <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><span className="launch-stamp">NEW MENU · NOW SERVING</span><h1>SERIOUS TACOS.<br/>QUESTIONABLE<br/>BEHAVIOUR.</h1><p className="deck">Fresh tortillas every morning, obsessive margaritas every night, and absolutely no interest in doing things the easy way.</p><div className="actions"><a className="button red" href="#menu">Explore the menu ↓</a><button type="button" className="button paper" onClick={openReservation}>Reserve →</button><a className="button yellow" href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></div><img className="hero-chingadito" src="/images/chingadito-peek.png" alt="Chingadito peeking into the La Chingada homepage"/></div>
       <div className="hero-art"><img src="/images/street-corn-hero.jpg" alt="La Chingada Mexican street corn served on a wooden board"/><div className="sunburst" aria-hidden="true">✹</div><p>GOOD FOOD.<br/>NO FUSS.</p></div>
     </section>
 
     <section className="poster-row" aria-label="Featured offers">
-      <button className="poster poster-happy" onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7</span><h2>HAPPY HOUR<br/>SMALL BITES</h2><p>Tap for food details →</p></button>
+      <button className="poster poster-happy" onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7</span><h2>HAPPY HOUR<br/>$6 FOOD</h2><p>12 food items · $6 each →</p></button>
       <button className="poster poster-ayce" onClick={()=>setOpenSpecial("ayce")}><span>EVERY THURSDAY</span><h2>AYCE<br/>TACOS</h2><p>$29.95 per person →</p></button>
       <button className="poster poster-today" onClick={()=>setOpenSpecial(day)}><i>HAPPENING TODAY</i><span>{day.toUpperCase()}</span><h2>{specialDetails[day]?.title}</h2><p>Open today’s card →</p></button>
     </section>
@@ -247,9 +364,9 @@ export default function Home() {
     </section>
 
     <section className="menu-section patterned"><div className="section-head"><div><p className="eyebrow">Tap around. Find your thing.</p><h2>THE MENU</h2></div><p>Food, drinks, specials and enough detail to decide before you sit down.</p></div>
-      <div className="special-menu-strip" aria-label="Special food menus"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7 PM</span><h3>HAPPY HOUR FOOD</h3><p>12 small bites · Wednesday food all day</p><b>See every item +</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95 PP</span><h3>AYCE TACOS</h3><p>14 taco choices · one-hour limit</p><b>See tacos & rules +</b></button></div>
+      <div className="special-menu-strip" aria-label="Special food menus"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7 PM</span><h3>HAPPY HOUR FOOD</h3><p>12 food items · $6 each · Wednesday all day</p><b>See every item +</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95 PP</span><h3>AYCE TACOS</h3><p>14 taco choices · one-hour limit</p><b>See tacos & rules +</b></button></div>
       <div className="menu-tools" id="menu"><div className="menu-kind-labels"><span>FOOD</span><span>BAR</span></div><div className="tabs">{["Special Menus","Appetizers","Tacos","Meals","Desserts","Brunch","Margaritas","Cocktails","Beer","Wine","Non-Alcoholic"].map(x=><button key={x} className={group===x?"active":""} onClick={()=>{setGroup(x);setFilter("ALL")}}>{x}</button>)}</div><div className="filters"><input aria-label="Search menu" placeholder="Search this menu…" value={query} onChange={e=>setQuery(e.target.value)}/>{["ALL","GF","V","VG"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</div></div>
-      {group==="Special Menus"&&<div className="integrated-specials"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7</span><h3>HAPPY HOUR</h3><p>12 small bites · 4 drink deals</p><b>Clock out early →</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95</span><h3>AYCE TACOS</h3><p>14 tacos · one glorious hour</p><b>Stretch first →</b></button></div>}
+      {group==="Special Menus"&&<div className="integrated-specials"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7</span><h3>HAPPY HOUR</h3><p>12 food items · $6 each · 4 drink deals</p><b>Clock out early →</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95</span><h3>AYCE TACOS</h3><p>14 tacos · one glorious hour</p><b>Stretch first →</b></button></div>}
       <div className="dish-grid">{filtered.map(d=><button className={`dish ${d.image?"dish-featured":""}`} key={d.name} onClick={()=>setOpenDish(d)}>{d.image&&<img src={d.image} alt={d.name}/>}<div>{d.feature&&<em>{d.feature}</em>}<h3>{d.name} {d.spicy && <span title="Spicy">🌶</span>}</h3><div className="tags">{d.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div></div><strong>{d.price}</strong><p>{d.desc}</p><span className="more">More details +</span></button>)}</div>
       {!filtered.length && group!=="Special Menus" && <p className="empty">Nothing matches that filter yet.</p>}
     </section>
@@ -282,13 +399,13 @@ export default function Home() {
         <article className="prep-card teal"><strong>REAL FRUIT · REAL INGREDIENTS</strong><h4>Fresh aguas frescas</h4><p>Strawberry, hibiscus, citrus, horchata, pineapple and mango—fresh, bright and sparkling to lift them even more. No store-bought filler hiding in the jug.</p></article>
       </div></div>
 
-      <div className="about-place"><div className="place-collage"><div className="place-photo patio"><span>THE HIDDEN PATIO</span></div><div className="place-photo bar"><span>THE BAR</span></div><div className="place-photo inside"><span>INSIDE LA CHINGADA</span></div><img className="chingadito chingadito-peek" src="/images/chingadito-peek.png" alt="Chingadito peeking from behind the restaurant photographs"/></div><div className="place-copy"><p className="eyebrow">After all that work</p><h3>WE SET<br/>THE TABLE.</h3><p>La Chingada should feel like arriving at a friend’s place—if your friend made fresh tortillas every morning, had a hidden patio and refused to take shortcuts.</p><strong>MEXICAN CORN.<br/>TORONTO HANDS.<br/>MADE HERE. EVERY DAY.</strong><div className="actions"><a className="button red" href="#menu">See what we make</a><a className="button paper" href="mailto:reservations@lachingada.ca">Come experience it</a></div></div></div>
+      <div className="about-place"><div className="place-collage"><div className="place-photo patio"><span>THE HIDDEN PATIO</span></div><div className="place-photo bar"><span>THE BAR</span></div><div className="place-photo inside"><span>INSIDE LA CHINGADA</span></div><img className="chingadito chingadito-peek" src="/images/chingadito-peek.png" alt="Chingadito peeking from behind the restaurant photographs"/></div><div className="place-copy"><p className="eyebrow">After all that work</p><h3>WE SET<br/>THE TABLE.</h3><p>La Chingada should feel like arriving at a friend’s place—if your friend made fresh tortillas every morning, had a hidden patio and refused to take shortcuts.</p><strong>MEXICAN CORN.<br/>TORONTO HANDS.<br/>MADE HERE. EVERY DAY.</strong><div className="actions"><a className="button red" href="#menu">See what we make</a><button type="button" className="button paper" onClick={openReservation}>Come experience it</button></div></div></div>
     </section>
 
     <section className="visit" id="visit"><div className="visit-heading"><p className="eyebrow">Come find us</p><h2>VISIT LA<br/>CHINGADA.</h2><p>Mexican street food on Dundas West, with a hidden back patio and room for walk-ins.</p><img className="visit-chingadito" src="/images/chingadito-corn.png" alt="Chingadito arriving at La Chingada"/></div><div className="visit-grid">
       <article><span>01</span><h3>Find us</h3><p>1242 Dundas Street West<br/>Toronto, Ontario</p><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Open in Maps →</a></article>
       <article><span>02</span><h3>Get it here—or there</h3><p><a href="tel:+14165352242">416-535-2242</a><br/><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></p><a href="https://www.instagram.com/lachingadatoronto/" target="_blank" rel="noreferrer">Instagram →</a><br/><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></article>
-      <article><span>03</span><h3>Reservations</h3><p>Reservations are available for groups of up to six. One table is held per booking. Walk-ins are welcome.</p><a href="mailto:reservations@lachingada.ca">Request a table →</a></article>
+      <article><span>03</span><h3>Reservations</h3><p>Reservations are available for groups of up to six. One table is held per booking. Walk-ins are welcome.</p><button type="button" className="visit-action" onClick={openReservation}>Request a table →</button></article>
       <article><span>04</span><h3>The patio</h3><p>Our hidden back patio is first come, first served and weather dependent.</p><a href="tel:+14165352242">Call with questions →</a></article>
       <article><span>05</span><h3>Getting here</h3><p>The 505 Dundas streetcar serves the neighbourhood. Street parking is limited, so transit is recommended.</p></article>
       <article className="hours-card"><span>06</span><h3>Hours</h3><div className="hours-status"><b>{liveStatus.label}</b> · {liveStatus.detail}</div><ul>{Object.entries(weeklyHours).map(([name,[open,close]])=><li className={day===name?"today-hours":""} key={name}><strong>{name}</strong><span>{open>12?open-12:open}:00 {open>=12?"PM":"AM"}–{close>12?close-12:close}:00 PM</span></li>)}</ul><small>Toronto time · Happy Hour every day, 4–7 PM.</small></article>
@@ -309,7 +426,63 @@ export default function Home() {
       {!filteredAgave.length && <p className="library-empty">No collection records match that search.</p>}
       {openBottle && (()=>{const facts=factsForBottle(openBottle);const a=facts.archive;const c=facts.catalog;return <div className="bottle-drawer" onClick={()=>setOpenBottle(null)}><article className={(a||c)?"rich-record":""} onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenBottle(null)}>×</button><span className="record-number">COLLECTION RECORD · {String(openBottle.id).padStart(3,"0")}</span><div className="record-hero">{a?.image?<img src={a.image} alt={`${openBottle.name} bottle`}/>:<div className="agave-mark large" aria-hidden="true">✺</div>}<div><p className="eyebrow">{openBottle.category} · {openBottle.type}</p><h2>{openBottle.name}</h2><div className="verification-stamp">{facts.status}</div></div></div>{c?<><div className="quick-facts"><div><span>Origin</span><strong>{c.origin||facts.region}</strong></div><div><span>ABV</span><strong>{c.abv||"Check current bottle"}</strong></div><div><span>Style</span><strong>{openBottle.category}</strong></div><div><span>Agave</span><strong>{a?.agave||facts.agave}</strong></div><div><span>Aging</span><strong>{c.aging||"Unaged / not listed"}</strong></div><div><span>NOM</span><strong>{facts.nom}</strong></div></div><div className="process"><h3>HOW IT’S MADE</h3><p className="catalog-how">{c.how}</p></div><div className="sensory-grid"><div><h3>AROMA</h3><div className="note-chips">{noteTags(c.aroma).map(x=><i key={x}>{x}</i>)}</div></div><div><h3>PROFILE</h3><div className="note-chips taste">{noteTags(c.taste).map(x=><i key={x}>{x}</i>)}</div></div></div><div className="archive-note"><strong>DID YOU KNOW?</strong><p>{c.fact}</p></div></>:a?<><div className="quick-facts"><div><span>Origin</span><strong>{facts.region}</strong></div>{a.abv&&<div><span>ABV / proof</span><strong>{a.abv}</strong></div>}<div><span>Agave</span><strong>{a.agave||facts.agave}</strong></div><div><span>NOM</span><strong>{facts.nom}</strong></div></div></>:<><p>{openBottle.note}</p><dl><div><dt>Brand / producer</dt><dd>{facts.producer}</dd></div><div><dt>Origin</dt><dd>{facts.region}</dd></div><div><dt>Agave</dt><dd>{facts.agave}</dd></div><div><dt>NOM / certification</dt><dd>{facts.nom}</dd></div><div className="wide-fact"><dt>Classification / maturation</dt><dd>{facts.production}</dd></div></dl></>}<a className="source-link" href={facts.source} target="_blank" rel="noreferrer">View current research source ↗</a><small>Informational archive for legal-age guests. Drink Bible records should be checked against the current physical bottle when labels or production details change.</small></article></div>})()}
     </section>}
-    {openSpecial && specialDetails[openSpecial] && (()=>{const detail=specialDetails[openSpecial];return <div className="modal special-modal" onClick={()=>setOpenSpecial(null)}><article className={detail.items?"menu-special-record":""} onClick={e=>e.stopPropagation()}><button className="close" aria-label="Close special details" onClick={()=>setOpenSpecial(null)}>×</button><header className="special-intro"><p className="eyebrow">{detail.kicker}</p><h2>{detail.title}</h2><p>{detail.body}</p></header>{detail.items&&<div className="special-items"><strong>{openSpecial==="ayce"||openSpecial==="Thursday"?"CHOOSE YOUR TACOS":"THE FOOD MENU"}</strong><ul>{detail.items.map(item=><li key={item}>{item}</li>)}</ul></div>}{detail.drinks&&<div className="special-drinks">{detail.drinks.map((drink,i)=><div key={drink}><span>{["◒","↘","●","◇"][i]}</span><strong>{drink}</strong></div>)}</div>}{detail.rules&&<div className="special-rules"><strong>HOW LA CHINGADA WORKS</strong><ol>{detail.rules.map(rule=><li key={rule}>{rule}</li>)}</ol></div>}<footer className="special-footer"><div className="torn-note">{detail.note}</div><div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Browse the full menu</a><a className="button paper" href="mailto:reservations@lachingada.ca">Reserve a table</a></div></footer></article></div>})()}
-    <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><a href="mailto:reservations@lachingada.ca">Reserve</a><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order</a></div>
+    {openSpecial && specialDetails[openSpecial] && (()=>{
+      const detail = specialDetails[openSpecial];
+      const isHappy = openSpecial === "happy" || openSpecial === "Wednesday";
+      const isAyce = openSpecial === "ayce" || openSpecial === "Thursday";
+      const isMenuOffer = isHappy || isAyce;
+      return <div className={`modal special-modal ${isHappy ? "happy-modal" : isAyce ? "ayce-modal" : ""}`} onClick={()=>setOpenSpecial(null)}>
+        <article className={isMenuOffer ? `menu-special-record special-record-v2 ${isHappy ? "happy-record" : "ayce-record"}` : ""} onClick={event=>event.stopPropagation()}>
+          <button className="close" aria-label="Close special details" onClick={()=>setOpenSpecial(null)}>×</button>
+          {isHappy && <>
+            <header className="special-intro promo-intro happy-intro">
+              <p className="eyebrow">{detail.kicker}</p>
+              <h2>{detail.title}</h2>
+              <p>{detail.body}</p>
+              <div className="promo-price happy-price"><span>ALL 12 FOOD ITEMS</span><strong>$6</strong><em>EACH</em></div>
+            </header>
+            <section className="promo-menu-panel happy-menu-panel">
+              <div className="promo-panel-title"><span>THE $6 FOOD LINEUP</span><p>No tiny portions. No sad compromise.</p></div>
+              <div className="happy-group-grid">{happyHourGroups.map(group=><article className="happy-food-group" key={group.title}><div><h3>{group.title}</h3><p>{group.note}</p></div><ul>{group.items.map(item=><li key={item}>{item}</li>)}</ul></article>)}</div>
+            </section>
+            <section className="special-drinks promo-offers" aria-label="Happy Hour drink offers">{happyHourDrinks.map((drink,index)=><div key={drink}><span>{["◒","↘","●","◇"][index]}</span><strong>{drink}</strong></div>)}</section>
+          </>}
+          {isAyce && <>
+            <header className="special-intro promo-intro ayce-intro">
+              <p className="eyebrow">{detail.kicker}</p>
+              <h2>{detail.title}</h2>
+              <p>{detail.body}</p>
+              <div className="promo-price ayce-price"><strong>$29.95</strong><span>PER PERSON</span><em>ONE GLORIOUS HOUR</em></div>
+            </header>
+            <section className="promo-menu-panel ayce-menu-panel">
+              <div className="promo-panel-title"><span>CHOOSE YOUR TACOS</span><p>14 proper tacos. First round: pick three.</p></div>
+              <ul className="ayce-taco-grid">{ayceTacos.map((taco,index)=><li key={taco}><span>{String(index+1).padStart(2,"0")}</span><strong>{taco}</strong></li>)}</ul>
+            </section>
+            <section className="rule-card-grid" aria-label="How All You Can Eat Tacos works">
+              {ayceRules.map((rule,index)=><article className={`rule-card rule-card-${index+1}`} key={rule}><RuleGraphic index={index}/><div className="rule-copy"><span>{String(index+1).padStart(2,"0")}</span><strong>{rule}</strong></div></article>)}
+            </section>
+          </>}
+          {!isMenuOffer && <header className="special-intro"><p className="eyebrow">{detail.kicker}</p><h2>{detail.title}</h2><p>{detail.body}</p></header>}
+          <footer className="special-footer">
+            <div className="torn-note">{detail.note}</div>
+            <div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Browse the full menu</a><button type="button" className="button paper" onClick={openReservation}>Reserve a table</button></div>
+          </footer>
+        </article>
+      </div>;
+    })()}
+    {reservationOpen && <div className="reservation-modal" onMouseDown={event=>{if(event.target===event.currentTarget) closeReservation()}}>
+      <div className="reservation-dialog" ref={reservationDialog} role="dialog" aria-modal="true" aria-labelledby="reservation-title">
+        <header className="reservation-modal-header">
+          <div><p className="eyebrow">LA CHINGADA · DUNDAS WEST</p><h2 id="reservation-title">BOOK A TABLE.</h2><p>Pick your party, date and time without leaving the website.</p></div>
+          <div className="reservation-header-actions"><a href="tel:+14165352242">Same-day help: 416-535-2242</a><button type="button" ref={reservationCloseButton} onClick={closeReservation} aria-label="Close reservation window">Close ×</button></div>
+        </header>
+        <div className="reservation-frame-shell" aria-busy={!reservationLoaded}>
+          {!reservationLoaded && <div className="reservation-loader"><span className="loader-sun" aria-hidden="true">✹</span><strong>CHECKING THE BOOK...</strong><p>Finding you a table and pretending we are organised.</p></div>}
+          <iframe className={`reservation-frame ${reservationLoaded?"is-ready":""}`} src="https://rezzo.bodhix.io" title="Book a table at La Chingada" onLoad={()=>{setReservationLoaded(true);setReservationSlow(false)}}/>
+          {reservationSlow && !reservationLoaded && <div className="reservation-slow"><strong>TAKING LONGER THAN IT SHOULD?</strong><p>The booking system may be having a moment. Call <a href="tel:+14165352242">416-535-2242</a> and we’ll sort it out.</p><button type="button" onClick={()=>{setReservationSlow(false);setReservationLoaded(false)}}>Keep trying</button></div>}
+        </div>
+      </div>
+    </div>}
+    <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><button type="button" onClick={openReservation}>Reserve</button><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order</a></div>
   </main>
 }
