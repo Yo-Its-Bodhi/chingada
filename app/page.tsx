@@ -106,7 +106,7 @@ const dishes: Dish[] = [
 const specials = [
   ["MON", "Margarita Monday", "$10 margs · Monday is useful again"], ["TUE", "Taco Tuesday", "Any 3 tacos · $20 · choose by vibes"],
   ["WED", "Happy Hour All Day", "Time is merely a suggestion"], ["THU", "AYCE Tacos", "$29.95 · stretch first"],
-  ["FRI", "$6 Bar Rail", "Friday understood the assignment"], ["SAT + SUN", "Brunch", "10 AM–2 PM · breakfast becomes lunch"],
+  ["FRI", "$6 Bar Rail", "Friday understood the assignment"], ["SAT + SUN", "Brunch", "COMING SOON · 10 AM–2 PM · we’re close"],
 ];
 
 type SpecialDetail = {title:string;kicker:string;body:string;note:string;items?:string[];rules?:string[];drinks?:string[]};
@@ -184,8 +184,8 @@ const specialDetails: Record<string, SpecialDetail> = {
   Wednesday: {title:"Happy Hour All Day", kicker:"Wednesday · all damn day", body:"All twelve Happy Hour food items are $6 each from open to close. Time is merely a suggestion.", items:happyHourFood, drinks:happyHourDrinks, note:"All twelve $6 food items run all day. Drink offers remain subject to current service conditions. Dine-in only."},
   Thursday: {title:"AYCE Tacos", kicker:"Thursday · $29.95 per person", body:"Fourteen tacos. One hour. Stretch first.", items:ayceTacos, rules:ayceRules, note:"Ask your server about dietary needs and current conditions before ordering."},
   Friday: {title:"Friday Bar Rail", kicker:"Friday · $6 bar rail", body:"Vodka, tequila, gin, rum or rye—with a mixer or as a shot. Friday understood the assignment.", note:"Dine-in only · Responsible service and availability apply."},
-  Saturday: {title:"Weekend Brunch", kicker:"Saturday · 10 AM–2 PM", body:"Come for breakfast. Stay until it quietly becomes lunch.", note:"Available during brunch hours only."},
-  Sunday: {title:"Weekend Brunch", kicker:"Sunday · 10 AM–2 PM", body:"Come for breakfast. Stay until it quietly becomes lunch.", note:"Available during brunch hours only."},
+  Saturday: {title:"Weekend Brunch · Coming Soon", kicker:"Saturday · coming soon · 10 AM–2 PM", body:"We’re close. Weekend brunch is nearly ready — proper La Chingada breakfast food, without suddenly becoming sensible.", note:"Coming soon. We’ll announce the launch date as soon as the kitchen is ready."},
+  Sunday: {title:"Weekend Brunch · Coming Soon", kicker:"Sunday · coming soon · 10 AM–2 PM", body:"We’re close. Weekend brunch is nearly ready — proper La Chingada breakfast food, without suddenly becoming sensible.", note:"Coming soon. We’ll announce the launch date as soon as the kitchen is ready."},
 };
 
 const producerNames: Array<[string,string]> = [
@@ -376,16 +376,16 @@ export default function Home() {
     <section className="agave" id="agave"><div><p className="eyebrow">For adult guests · 19+</p><h2>THE AGAVE<br/>LIBRARY</h2><p className="agave-copy">A field guide to the bottles behind the bar: where they come from, who makes them, which agave they use, and the stories worth knowing.</p><button className="button pink" onClick={()=>setAgeOpen(true)}>Enter the library →</button></div><div className="library-card"><span>FIELD NOTES · 001</span><div className="plant">♆</div><h3>150+ BOTTLES.<br/>A LOT OF STORIES.</h3><p>Search by region, producer, agave, and flavour profile. Informational catalogue for adults.</p></div></section>
 
     <section className="craft" id="about">
-      <div className="craft-hero"><p className="eyebrow">The work before the welcome</p><h2>BEFORE<br/>WE OPEN.</h2><div className="craft-manifesto"><strong>YOU SEE A TACO.</strong><span>We see everything it took to make it.</span><p>Before the first guest arrives, the kitchen is already cooking, grinding, pressing, blending, infusing and preparing. We make the things most restaurants simply buy.</p></div><img className="chingadito chingadito-corn" src="/images/chingadito-corn.png" alt="Chingadito carrying a sack of corn"/></div>
+      <div className="craft-hero"><p className="eyebrow">The work before the welcome</p><h2>BEFORE<br/>WE OPEN.</h2><div className="craft-manifesto"><strong>YOU SEE A TACO.</strong><span>What you don’t see is everything it took to make it.</span><p>Before the first guest arrives, the kitchen is already cooking, grinding, pressing, blending, infusing and preparing. We make the things most restaurants simply buy.</p></div><img className="chingadito chingadito-corn" src="/images/chingadito-corn.png" alt="Chingadito carrying a sack of corn"/></div>
 
       <div className="corn-journey"><div className="journey-intro"><p className="eyebrow">One tortilla. The whole story.</p><h3>FROM MEXICAN CORN<br/>TO YOUR TABLE.</h3></div><div className="journey-line" aria-hidden="true"></div>
         {[
-          ["01","CORN FROM MEXICO","The story begins with the ingredient itself—not a packet of finished tortillas."],
-          ["02","COOKED IN-HOUSE","The corn is prepared slowly before the restaurant opens."],
-          ["03","FRESHLY GROUND","We grind it into masa in our own kitchen."],
-          ["04","PRESSED BY HAND","Every tortilla is individually shaped."],
-          ["05","COOKED THAT MORNING","Fresh on the grill, ready for that day’s service."],
-          ["06","UNDERNEATH YOUR TACO","The part you hold began as corn that very morning."],
+          ["01","FROM MEXICO, BY THE TONNE","Every six months, we import one tonne of corn from Mexico to Canada. We start at the origin, because a better tortilla starts with the corn itself."],
+          ["02","COOKED EVERY DAY","Every morning, we cook the corn in-house, then let it cool properly before the next step. Tomorrow, we do it all again."],
+          ["03","GROUND FRESH INTO MASA","Once cooled, the corn is ground into fresh masa in our own kitchen. No ready-made dough — just a fresh batch, every day."],
+          ["04","MACHINE-PRESSED","Every morning, the fresh masa is machine-pressed and shaped to our own size and thickness, so every tortilla is consistent before it hits the grill."],
+          ["05","GRILLED FOR THE DAY","Fresh off the press, the tortillas are pre-cooked on the grill, cooled properly, then packed and held ready for that day’s service."],
+          ["06","FRESH BENEATH YOUR TACO","By service, that tortilla has gone from Mexican corn to masa, press and grill in our kitchen. The one beneath your taco was made here that morning."],
         ].map((step,i)=><article className={`journey-step step-${i+1}`} key={step[0]}><span>{step[0]}</span><div><h4>{step[1]}</h4><p>{step[2]}</p></div>{i===3&&<img className="chingadito chingadito-press" src="/images/chingadito-press.png" alt="Chingadito caught under a tortilla press"/>}</article>)}
         <blockquote>THAT TORTILLA STARTED<br/>AS CORN THIS MORNING.</blockquote>
       </div>
