@@ -311,3 +311,10 @@
   .marg-stats{margin-top:20px}.marg-stats>div{padding:11px 10px}.marg-stats strong{font-size:27px}
   .marg-visual{height:620px;min-height:620px}
 }
+
+/* Real bar photography inside the About collage. */
+.place-photo{overflow:hidden}
+.place-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:saturate(1.08) contrast(1.05)}
+.place-photo>span{position:relative;z-index:2}
+.place-photo.bar{background:#09070c}
+@media(max-width:760px){.place-photo>img{object-position:50% 28%}}
