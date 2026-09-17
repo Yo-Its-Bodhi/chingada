@@ -1,0 +1,21 @@
+{
+  "name": "La Chingada Toronto",
+  "short_name": "La Chingada",
+  "description": "Mexican street food, fresh tacos, house margaritas, daily Happy Hour, Thursday AYCE tacos and a hidden patio on Dundas West.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2e4c8",
+  "theme_color": "#171411",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

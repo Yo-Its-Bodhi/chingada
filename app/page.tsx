@@ -372,7 +372,44 @@ export default function Home() {
 
     <section className="identity-intro patterned" aria-label="What makes La Chingada different">
       <div className="menu-feature"><img src="/images/tacos-real-food.png" alt="Two fresh tacos made at La Chingada"/><div><p className="eyebrow">Made here. Every morning.</p><h3>REAL FOOD.<br/>REAL WORK.</h3><p>Fresh masa, whole ingredients and no invisible shortcuts. Open a dish for ingredients, dietary information and the story behind it.</p></div><img className="menu-chingadito" src="/images/chingadito-press.png" alt="Chingadito under the tortilla press"/></div>
-      <section className="margarita-manifesto"><div className="marg-copy"><p className="eyebrow">The bar is not an afterthought</p><h3>THE BEST MARGS<br/>IN TORONTO.</h3><p>Yeah, we said it. You gonna argue with us? They’re $10 during Happy Hour. Come try.</p><button onClick={()=>{setGroup("Margaritas");document.querySelector("#menu")?.scrollIntoView()}}>Meet all ten margaritas →</button></div><div className="marg-work"><article><span>48 HRS → 2 WEEKS</span><strong>House-infused tequila</strong><p>Real fruit, flowers, herbs and chilis—from blueberry, pineapple and lavender to jalapeño, habanero and ghost pepper. Some need two quiet days. The stubborn ones take two full weeks.</p></article><article><span>ORANGE PEEL · GRAPEFRUIT ZEST</span><strong>Our own triple sec</strong><p>It started because we juiced mountains of citrus and hated wasting the zest. Now it’s our secret weapon: bright, vibrant and built to lift the sweet roasted notes of agave. Ours versus store-bought? Night and day.</p></article><article><span>UP TO 7 DAYS</span><strong>Infused salts & sugars</strong><p>Lime salt, chili salts and lavender sugar—slowly dried, then ground by hand. Some are for flavour. Some are for the ’gram. All are made with love and a slightly unreasonable level of commitment.</p></article><article><span>48 HRS → 1 WEEK</span><strong>Syrups & liqueurs</strong><p>Some are infused, some carefully boiled. Vanilla, strawberry, ginger and more are measured, rested and repeatedly tasted so Toronto’s best margs stay Toronto’s best margs.</p></article><article><span>17 → 48 HOURS</span><strong>Garnishes with a work ethic</strong><p>Sliced precisely, sometimes candied overnight, meticulously separated and dehydrated to the right texture. Some are sprayed with our triple sec, then tossed in sugar and citric acid—all to look pretty for four seconds.</p></article><article><span>REAL FRUIT · REAL INGREDIENTS</span><strong>Fresh aguas frescas</strong><p>Strawberry, hibiscus, lemon, lime, horchata, pineapple and mango. No mystery filler. Fresh, bright and sparkling to lift them even more. Add a spirit if you want; they don’t need one to hide behind.</p></article></div><div className="happy-proof"><strong>SAME POUR. SAME GLASS. SAME TACO.</strong><p>Happy Hour and AYCE are not where we cut corners. The margarita gets the same alcohol in the same glass. The taco is the same size. It is not a con—it is a good time to share the table, try more, drink something properly made and wonder if we misunderstood capitalism.</p><button onClick={()=>setOpenSpecial("happy")}>See the ridiculous deal →</button></div><div className="marg-stamp">SERIOUS BAR.<br/>NOT-SO-SERIOUS PEOPLE.</div></section>
+      <section className="margarita-manifesto" aria-labelledby="margarita-title">
+        <div className="marg-hero">
+          <div className="marg-copy">
+            <div className="marg-overline"><span>HOUSE BAR PROGRAM</span><b>11 SIGNATURE MARGARITAS</b></div>
+            <p className="eyebrow">The bar is not an afterthought</p>
+            <h3 id="margarita-title"><span>THE BEST MARGS</span><em>IN TORONTO.</em></h3>
+            <p>House-infused tequila, our own triple sec, real fruit and rims built from scratch. Bold drinks with proper prep behind every glass.</p>
+            <div className="marg-actions">
+              <button onClick={()=>{setGroup("Margaritas");document.querySelector("#menu")?.scrollIntoView()}}>Meet the lineup →</button>
+              <button className="marg-happy-link" onClick={()=>setOpenSpecial("happy")}>Happy Hour details →</button>
+            </div>
+            <div className="marg-stats" aria-label="Margarita program highlights">
+              <div><strong>11</strong><span>signature margaritas</span></div>
+              <div><strong>$10</strong><span>during Happy Hour</span></div>
+              <div><strong>100%</strong><span>house-built flavour</span></div>
+            </div>
+          </div>
+          <figure className="marg-visual">
+            <img src="/images/margarita-program-hero.webp" alt="A colourful lineup of handcrafted La Chingada margaritas" loading="lazy" decoding="async"/>
+            <figcaption><span>HOUSE PROGRAM · BUILT FROM SCRATCH</span><strong>Fresh ingredients. Serious prep. No mystery mix.</strong></figcaption>
+            <div className="marg-price-stamp"><small>HAPPY HOUR</small><b>$10</b><span>MARGARITAS</span></div>
+          </figure>
+        </div>
+        <div className="marg-work" aria-label="How La Chingada builds its margarita program">
+          <article><i>01</i><span>48 HRS → 2 WEEKS</span><strong>House-infused tequila</strong><p>Blueberry, pineapple, lavender, jalapeño, habanero and ghost pepper. Some infusions take two days; the stubborn ones rest for two weeks.</p></article>
+          <article><i>02</i><span>ORANGE PEEL · GRAPEFRUIT ZEST</span><strong>Our own triple sec</strong><p>Citrus peel becomes a brighter, fresher liqueur built specifically to lift the roasted sweetness of agave.</p></article>
+          <article><i>03</i><span>UP TO 7 DAYS</span><strong>Infused salts & sugars</strong><p>Lime salt, chili salts and lavender sugar are slowly dried and ground in-house for flavour, aroma and texture.</p></article>
+          <article><i>04</i><span>48 HRS → 1 WEEK</span><strong>Syrups & liqueurs</strong><p>Vanilla, strawberry, ginger and more are infused or carefully cooked, then measured, rested and repeatedly tasted.</p></article>
+          <article><i>05</i><span>17 → 48 HOURS</span><strong>Garnishes with a work ethic</strong><p>Fruit is sliced, sometimes candied overnight, and dehydrated to finish each drink with the right aroma, flavour and texture.</p></article>
+          <article><i>06</i><span>REAL FRUIT · REAL INGREDIENTS</span><strong>Fresh aguas frescas</strong><p>Strawberry, hibiscus, citrus, horchata, pineapple and mango. Fresh, bright and made without mystery filler.</p></article>
+        </div>
+        <div className="happy-proof">
+          <strong>SAME POUR.<br/>SAME GLASS.<br/>SAME TACO.</strong>
+          <p>Happy Hour and AYCE are not where we cut corners. The margarita gets the same alcohol in the same glass, and the taco stays the same size—just at a better time to share the table and try more.</p>
+          <button onClick={()=>setOpenSpecial("happy")}>See Happy Hour →</button>
+        </div>
+        <div className="marg-stamp"><span>SERIOUS BAR.</span><span>NOT-SO-SERIOUS PEOPLE.</span></div>
+      </section>
     </section>
 
     <section className="menu-section patterned"><div className="section-head"><div><p className="eyebrow">Tap around. Find your thing.</p><h2>THE MENU</h2></div><p>Food, drinks, specials and enough detail to decide before you sit down.</p></div>
@@ -433,8 +470,8 @@ export default function Home() {
         <aside className="visit-intro-card"><p>Mexican street food on Dundas West, a hidden back patio and room for walk-ins.</p><div><button type="button" onClick={openReservation}>Book a spot →</button><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Get directions →</a></div><img src="/images/chingadito-corn.png" alt="Chingadito arriving at La Chingada"/></aside>
       </header>
       <div className="visit-compact-grid">
-        <article className="visit-card visit-find"><span>01</span><h3>Find us</h3><p>1242 Dundas Street West<br/>Toronto, Ontario</p><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Open in Maps →</a></article>
-        <article className="visit-card visit-contact"><span>02</span><h3>Call, follow or order</h3><p><a href="tel:+14165352242">416-535-2242</a><br/><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></p><a href="https://www.instagram.com/lachingadatoronto/" target="_blank" rel="noreferrer">Instagram →</a><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></article>
+        <article className="visit-card visit-find"><span>01</span><h3>Find us</h3><p>1242 Dundas Street West<br/>Toronto, Ontario · M6J 1X5</p><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Open in Maps →</a></article>
+        <article className="visit-card visit-contact"><span>02</span><h3>Call, follow or order</h3><p><a href="tel:+14165352242">416-535-2242</a><br/><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></p><a href="https://www.instagram.com/la_chingada/" target="_blank" rel="noreferrer">@la_chingada →</a><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></article>
         <article className="visit-card visit-book"><span>03</span><h3>Book a spot</h3><p>Reservations are available for groups of up to six. Walk-ins are always welcome when service allows.</p><button type="button" className="visit-action" onClick={openReservation}>Check availability →</button></article>
         <article className="visit-card visit-arrival"><span>04</span><h3>Patio & getting here</h3><p>The hidden back patio is first come, first served and weather dependent. The 505 Dundas streetcar serves the neighbourhood; street parking is limited.</p><a href="tel:+14165352242">Call with questions →</a></article>
         <article className="visit-card visit-hours"><div className="visit-hours-head"><div><span>05</span><h3>Hours</h3></div><div className="hours-status"><b>{liveStatus.label}</b> · {liveStatus.detail}</div></div><ul>{Object.entries(weeklyHours).map(([name,[open,close]])=><li className={day===name?"today-hours":""} key={name}><strong>{name}</strong><span>{open>12?open-12:open}:00 {open>=12?"PM":"AM"}–{close>12?close-12:close}:00 PM</span></li>)}</ul><small>Toronto time · Happy Hour every day, 4–7 PM.</small></article>
@@ -464,11 +501,11 @@ export default function Home() {
         <div className="footer-brand-block">
           <a className="brand" href="#top">LA CHINGADA<span>✦</span></a>
           <p>Mexican street food, fresh masa and obsessive margaritas on Dundas West.</p>
-          <button type="button" className="footer-reserve" onClick={openReservation}>Reserve a table →</button>
+          <button type="button" className="footer-reserve" onClick={openReservation}>Book a spot →</button>
         </div>
         <nav className="footer-column" aria-label="Footer navigation"><h3>Explore</h3><a href="#menu">Menu</a><a href="#specials">Weekly specials</a><a href="#agave">Agave Library</a><a href="#about">Our story</a></nav>
-        <div className="footer-column"><h3>Visit</h3><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">1242 Dundas Street West<br/>Toronto, Ontario</a><a href="tel:+14165352242">416-535-2242</a><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></div>
-        <div className="footer-column"><h3>Follow & order</h3><a className="footer-social" href="https://www.instagram.com/lachingadatoronto/" target="_blank" rel="noreferrer" aria-label="La Chingada Toronto on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a><a href="#visit">Hours & directions →</a></div>
+        <div className="footer-column"><h3>Visit</h3><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">1242 Dundas Street West<br/>Toronto, Ontario · M6J 1X5</a><a href="tel:+14165352242">416-535-2242</a><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></div>
+        <div className="footer-column"><h3>Follow & order</h3><a className="footer-social" href="https://www.instagram.com/la_chingada/" target="_blank" rel="noreferrer" aria-label="La Chingada Toronto on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>@la_chingada</span></a><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a><a href="#visit">Hours & directions →</a></div>
       </div>
       <div className="footer-bottom"><p>© 2026 La Chingada Toronto. All rights reserved.</p><p>Dine-in specials are subject to availability. Please drink responsibly.</p><a href="#top">Back to top ↑</a></div>
     </footer>
@@ -523,7 +560,7 @@ export default function Home() {
           {!isMenuOffer && <header className="special-intro"><p className="eyebrow">{detail.kicker}</p><h2>{detail.title}</h2><p>{detail.body}</p></header>}
           <footer className="special-footer">
             <div className="torn-note">{detail.note}</div>
-            <div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Browse the full menu</a><button type="button" className="button paper" onClick={openReservation}>Reserve a table</button></div>
+            <div className="modal-actions"><a className="button red" href="#menu" onClick={()=>setOpenSpecial(null)}>Browse the full menu</a><button type="button" className="button paper" onClick={openReservation}>Book a spot</button></div>
           </footer>
         </article>
       </div>;
