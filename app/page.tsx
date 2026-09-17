@@ -266,6 +266,17 @@ function torontoStatus(now = new Date()) {
   return {day,label:"CLOSED",detail:minutes<open*60?`BACK AT ${fmt(open)}`:"SEE YOU TOMORROW",state:"closed"};
 }
 
+
+function SpecialIcon({ index }: { index: number }) {
+  const common = { viewBox: "0 0 64 64", className: "special-icon", fill: "none", xmlns: "http://www.w3.org/2000/svg" };
+  if (index === 0) return <svg {...common} aria-hidden="true"><path d="M14 12h36L34 35v12h10M24 51h20" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/><circle cx="47" cy="15" r="8" fill="var(--yellow)" stroke="currentColor" strokeWidth="3"/><path d="M43 10l8 10" stroke="currentColor" strokeWidth="2"/></svg>;
+  if (index === 1) return <svg {...common} aria-hidden="true"><path d="M9 43c4-20 19-31 23-31s19 11 23 31Z" fill="var(--yellow)" stroke="currentColor" strokeWidth="4"/><path d="M16 35l9-9 8 7 8-10 9 12" stroke="var(--pink)" strokeWidth="4" strokeLinecap="round"/><path d="M13 47h38" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/></svg>;
+  if (index === 2) return <svg {...common} aria-hidden="true"><circle cx="32" cy="32" r="15" fill="var(--yellow)" stroke="currentColor" strokeWidth="4"/><path d="M32 7v8M32 49v8M7 32h8M49 32h8M14 14l6 6M44 44l6 6M50 14l-6 6M20 44l-6 6" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/><path d="M32 23v10l8 5" stroke="var(--pink)" strokeWidth="4" strokeLinecap="round"/></svg>;
+  if (index === 3) return <svg {...common} aria-hidden="true"><path d="M6 45c3-14 13-22 17-22s14 8 17 22Z" fill="var(--yellow)" stroke="currentColor" strokeWidth="3"/><path d="M25 45c3-18 14-29 19-29s12 9 15 29Z" fill="var(--orange)" stroke="currentColor" strokeWidth="3"/><path d="M12 39l7-7 6 6M34 37l8-9 8 9" stroke="var(--pink)" strokeWidth="3" strokeLinecap="round"/></svg>;
+  if (index === 4) return <svg {...common} aria-hidden="true"><path d="M17 15h30l-4 32H21Z" fill="var(--teal)" stroke="currentColor" strokeWidth="4"/><path d="M22 24h20M24 33h16" stroke="white" strokeWidth="3" strokeLinecap="round"/><path d="M15 51h34" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/></svg>;
+  return <svg {...common} aria-hidden="true"><ellipse cx="32" cy="42" rx="23" ry="10" fill="var(--paper)" stroke="currentColor" strokeWidth="4"/><path d="M17 38c5-15 10-21 15-21s10 6 15 21" fill="var(--yellow)" stroke="currentColor" strokeWidth="4"/><circle cx="32" cy="28" r="6" fill="var(--pink)"/><path d="M11 14h13M40 14h13" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/></svg>;
+}
+
 export default function Home() {
   const [group, setGroup] = useState("Tacos");
   const [filter, setFilter] = useState("ALL");
@@ -345,10 +356,11 @@ export default function Home() {
   }).sort((a,b)=>Number(Boolean(archiveDetails[b.name]?.image))-Number(Boolean(archiveDetails[a.name]?.image)) || a.name.localeCompare(b.name)), [agaveCategory, agaveQuery, collectionRecords]);
 
   return <main>
-    <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className={`live-status ${liveStatus.state}`} href="#visit"><b>{liveStatus.label}</b><span>{liveStatus.detail}</span></a><button type="button" className="reserve small" onClick={openReservation}>Reserve</button></header>
+    <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className={`live-status ${liveStatus.state}`} href="#visit"><b>{liveStatus.label}</b><span>{liveStatus.detail}</span></a><button type="button" className="reserve small" onClick={openReservation}>Book a spot</button></header>
+    <div className="brunch-ticker" role="status" aria-label="Brunch coming soon. We're almost there."><div className="brunch-ticker-track" aria-hidden="true"><span>BRUNCH COMING SOON! · WE’RE ALMOST THERE · BEAR WITH US — THE EGGS ARE STILL GETTING THEIR ACT TOGETHER ·</span><span>BRUNCH COMING SOON! · WE’RE ALMOST THERE · BEAR WITH US — THE EGGS ARE STILL GETTING THEIR ACT TOGETHER ·</span><span>BRUNCH COMING SOON! · WE’RE ALMOST THERE · BEAR WITH US — THE EGGS ARE STILL GETTING THEIR ACT TOGETHER ·</span></div></div>
 
     <section className="hero" id="top">
-      <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><span className="launch-stamp">NEW MENU · NOW SERVING</span><h1>SERIOUS TACOS.<br/>QUESTIONABLE<br/>BEHAVIOUR.</h1><p className="deck">Fresh tortillas every morning, obsessive margaritas every night, and absolutely no interest in doing things the easy way.</p><div className="actions"><a className="button red" href="#menu">Explore the menu ↓</a><button type="button" className="button paper" onClick={openReservation}>Reserve →</button><a className="button yellow" href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></div><img className="hero-chingadito" src="/images/chingadito-peek.png" alt="Chingadito peeking into the La Chingada homepage"/></div>
+      <div className="hero-copy"><p className="eyebrow">Mexican Street Food · Dundas West</p><span className="launch-stamp">NEW MENU · NOW SERVING</span><h1>SERIOUS TACOS.<br/>QUESTIONABLE<br/>BEHAVIOUR.</h1><p className="deck">Fresh tortillas every morning, obsessive margaritas every night, and absolutely no interest in doing things the easy way.</p><div className="actions"><a className="button red" href="#menu">Explore the menu ↓</a><button type="button" className="button paper" onClick={openReservation}>Book a spot →</button><a className="button yellow" href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></div><img className="hero-chingadito" src="/images/chingadito-peek.png" alt="Chingadito peeking into the La Chingada homepage"/></div>
       <div className="hero-art"><img src="/images/street-corn-hero.jpg" alt="La Chingada Mexican street corn served on a wooden board"/><div className="sunburst" aria-hidden="true">✹</div><p>GOOD FOOD.<br/>NO FUSS.</p></div>
     </section>
 
@@ -371,7 +383,7 @@ export default function Home() {
       {!filtered.length && group!=="Special Menus" && <p className="empty">Nothing matches that filter yet.</p>}
     </section>
 
-    <section className="specials" id="specials"><div className="section-head light"><div><p className="eyebrow">There’s always something going on</p><h2>WEEKLY<br/>SPECIALS</h2></div><p>Dine-in only. Ask the team for today’s details.</p></div><div className="special-grid">{specials.map((s,i)=><button key={s[0]} className={`special s${i}`} onClick={()=>setOpenSpecial(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][i])}><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p><b>Open details +</b></button>)}</div></section>
+    <section className="specials" id="specials"><div className="section-head light"><div><p className="eyebrow">There’s always something going on</p><h2>WEEKLY<br/>SPECIALS</h2></div><p>Dine-in only. Ask the team for today’s details.</p></div><div className="special-grid">{specials.map((s,i)=><button key={s[0]} className={`special s${i}`} onClick={()=>setOpenSpecial(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][i])}><SpecialIcon index={i}/><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p><b>Open details +</b></button>)}</div></section>
 
     <section className="agave" id="agave"><div><p className="eyebrow">For adult guests · 19+</p><h2>THE AGAVE<br/>LIBRARY</h2><p className="agave-copy">A field guide to the bottles behind the bar: where they come from, who makes them, which agave they use, and the stories worth knowing.</p><button className="button pink" onClick={()=>setAgeOpen(true)}>Enter the library →</button></div><div className="library-card"><span>FIELD NOTES · 001</span><div className="plant">♆</div><h3>150+ BOTTLES.<br/>A LOT OF STORIES.</h3><p>Search by region, producer, agave, and flavour profile. Informational catalogue for adults.</p></div></section>
 
@@ -415,14 +427,19 @@ export default function Home() {
       <div className="about-place"><div className="place-collage"><div className="place-photo patio"><span>THE HIDDEN PATIO</span></div><div className="place-photo bar"><span>THE BAR</span></div><div className="place-photo inside"><span>INSIDE LA CHINGADA</span></div><img className="chingadito chingadito-peek" src="/images/chingadito-peek.png" alt="Chingadito peeking from behind the restaurant photographs"/></div><div className="place-copy"><p className="eyebrow">After all that work</p><h3>WE SET<br/>THE TABLE.</h3><p>La Chingada should feel like arriving at a friend’s place—if your friend made fresh tortillas every morning, had a hidden patio and refused to take shortcuts.</p><strong>MEXICAN CORN.<br/>TORONTO HANDS.<br/>MADE HERE. EVERY DAY.</strong><div className="actions"><a className="button red" href="#menu">See what we make</a><button type="button" className="button paper" onClick={openReservation}>Come experience it</button></div></div></div>
     </section>
 
-    <section className="visit" id="visit"><div className="visit-heading"><p className="eyebrow">Come find us</p><h2>VISIT LA<br/>CHINGADA.</h2><p>Mexican street food on Dundas West, with a hidden back patio and room for walk-ins.</p><img className="visit-chingadito" src="/images/chingadito-corn.png" alt="Chingadito arriving at La Chingada"/></div><div className="visit-grid">
-      <article><span>01</span><h3>Find us</h3><p>1242 Dundas Street West<br/>Toronto, Ontario</p><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Open in Maps →</a></article>
-      <article><span>02</span><h3>Get it here—or there</h3><p><a href="tel:+14165352242">416-535-2242</a><br/><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></p><a href="https://www.instagram.com/lachingadatoronto/" target="_blank" rel="noreferrer">Instagram →</a><br/><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></article>
-      <article><span>03</span><h3>Reservations</h3><p>Reservations are available for groups of up to six. One table is held per booking. Walk-ins are welcome.</p><button type="button" className="visit-action" onClick={openReservation}>Request a table →</button></article>
-      <article><span>04</span><h3>The patio</h3><p>Our hidden back patio is first come, first served and weather dependent.</p><a href="tel:+14165352242">Call with questions →</a></article>
-      <article><span>05</span><h3>Getting here</h3><p>The 505 Dundas streetcar serves the neighbourhood. Street parking is limited, so transit is recommended.</p></article>
-      <article className="hours-card"><span>06</span><h3>Hours</h3><div className="hours-status"><b>{liveStatus.label}</b> · {liveStatus.detail}</div><ul>{Object.entries(weeklyHours).map(([name,[open,close]])=><li className={day===name?"today-hours":""} key={name}><strong>{name}</strong><span>{open>12?open-12:open}:00 {open>=12?"PM":"AM"}–{close>12?close-12:close}:00 PM</span></li>)}</ul><small>Toronto time · Happy Hour every day, 4–7 PM.</small></article>
-    </div></section>
+    <section className="visit visit-compact" id="visit">
+      <header className="visit-compact-head">
+        <div><p className="eyebrow">Come find us</p><h2>VISIT LA CHINGADA.</h2></div>
+        <aside className="visit-intro-card"><p>Mexican street food on Dundas West, a hidden back patio and room for walk-ins.</p><div><button type="button" onClick={openReservation}>Book a spot →</button><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Get directions →</a></div><img src="/images/chingadito-corn.png" alt="Chingadito arriving at La Chingada"/></aside>
+      </header>
+      <div className="visit-compact-grid">
+        <article className="visit-card visit-find"><span>01</span><h3>Find us</h3><p>1242 Dundas Street West<br/>Toronto, Ontario</p><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">Open in Maps →</a></article>
+        <article className="visit-card visit-contact"><span>02</span><h3>Call, follow or order</h3><p><a href="tel:+14165352242">416-535-2242</a><br/><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></p><a href="https://www.instagram.com/lachingadatoronto/" target="_blank" rel="noreferrer">Instagram →</a><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a></article>
+        <article className="visit-card visit-book"><span>03</span><h3>Book a spot</h3><p>Reservations are available for groups of up to six. Walk-ins are always welcome when service allows.</p><button type="button" className="visit-action" onClick={openReservation}>Check availability →</button></article>
+        <article className="visit-card visit-arrival"><span>04</span><h3>Patio & getting here</h3><p>The hidden back patio is first come, first served and weather dependent. The 505 Dundas streetcar serves the neighbourhood; street parking is limited.</p><a href="tel:+14165352242">Call with questions →</a></article>
+        <article className="visit-card visit-hours"><div className="visit-hours-head"><div><span>05</span><h3>Hours</h3></div><div className="hours-status"><b>{liveStatus.label}</b> · {liveStatus.detail}</div></div><ul>{Object.entries(weeklyHours).map(([name,[open,close]])=><li className={day===name?"today-hours":""} key={name}><strong>{name}</strong><span>{open>12?open-12:open}:00 {open>=12?"PM":"AM"}–{close>12?close-12:close}:00 PM</span></li>)}</ul><small>Toronto time · Happy Hour every day, 4–7 PM.</small></article>
+      </div>
+    </section>
 
     <section className="reservation-cta patterned" id="reserve">
       <div className="reservation-cta-copy">
@@ -524,6 +541,6 @@ export default function Home() {
         </div>
       </div>
     </div>}
-    <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><button type="button" onClick={openReservation}>Reserve</button><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order</a></div>
+    <div className="mobile-nav"><a href="#menu">Menu</a><a href="#specials">Today</a><button type="button" onClick={openReservation}>Book</button><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order</a></div>
   </main>
 }
