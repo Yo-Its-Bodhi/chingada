@@ -6,7 +6,7 @@ import { archiveDetails } from "./agave-archive";
 import { catalogDetails } from "./agave-catalog";
 import { houseInfusions } from "./house-infusions";
 
-type Dish = { name: string; price: string; desc: string; tags?: string[]; spicy?: boolean; group: string; image?: string; feature?: string };
+type Dish = { name: string; price: string; desc: string; tags?: string[]; spicy?: boolean | number; group: string; image?: string; feature?: string };
 
 const dishes: Dish[] = [
   {group:"Appetizers",name:"Chips & Salsa",price:"$14",tags:["V","VG"],desc:"Corn chips with guacamole, chunky salsa, and salsa borracha."},
@@ -49,13 +49,14 @@ const dishes: Dish[] = [
   {group:"Margaritas",name:"Classic Margarita",price:"$15",desc:"Blanco tequila, triple sec, lime juice, and agave."},
   {group:"Margaritas",name:"Mezcalita",price:"$16",desc:"Mezcal, triple sec, lime juice, and agave."},
   {group:"Margaritas",name:"Lavender & Violette",price:"$15",desc:"Lavender tequila, violette liqueur, lemon juice, hibiscus, and simple syrup."},
-  {group:"Margaritas",name:"Habanero Margarita",price:"$15",spicy:true,desc:"Habanero tequila, triple sec, lime juice, and agave."},
-  {group:"Margaritas",name:"Mad Mango",price:"$16",spicy:true,desc:"Habanero tequila, triple sec, mango, lemon juice, and simple syrup."},
-  {group:"Margaritas",name:"Dirty Margarita",price:"$15",desc:"Blanco tequila, triple sec, lime juice, agave, pickled jalapeño juice, and jalapeños."},
+  {group:"Margaritas",name:"Habanero Margarita",price:"$15",spicy:3,desc:"Habanero tequila, triple sec, lime juice, and agave."},
+  {group:"Margaritas",name:"Mad Mango",price:"$16",spicy:2,desc:"Habanero tequila, triple sec, mango, lemon juice, and simple syrup."},
+  {group:"Margaritas",name:"Dirty Margarita",price:"$15",spicy:1,desc:"Blanco tequila, triple sec, lime juice, agave, pickled jalapeño juice, and jalapeños."},
   {group:"Margaritas",name:"Guava Margarita",price:"$16",desc:"Raspberry tequila, pomegranate liqueur, guava, lemon juice, and simple syrup."},
   {group:"Margaritas",name:"Tamarind & Ginger",price:"$16",desc:"Tamarind tequila, ginger liqueur, ginger, lemon juice, and agave."},
   {group:"Margaritas",name:"A Night in Oaxaca",price:"$16",desc:"Mezcal, triple sec, lime juice, and hibiscus."},
-  {group:"Margaritas",name:"Strawberry Margarita",price:"$16",desc:"Strawberry tequila, strawberry liqueur, hibiscus, strawberry, lemon juice, and chamoy."},
+  {group:"Margaritas",name:"Pineapple Paradise",price:"$16",desc:"Pineapple tequila, triple sec, lemon juice, pineapple, and simple syrup."},
+  {group:"Margaritas",name:"Strawberry + Basil Margarita",price:"$16",desc:"Strawberry tequila, strawberry liqueur, basil, strawberry, lemon juice, and strawberry + basil syrup."},
   {group:"Cocktails",name:"Pepino Fresco",price:"$15",desc:"Pineapple tequila, guanabana, cucumber, lime, and simple syrup."},
   {group:"Cocktails",name:"Mezcal Mule",price:"$15",desc:"Mezcal, lime juice, ginger beer, and bitters."},
   {group:"Cocktails",name:"Paloma",price:"$16",desc:"Tequila, grapefruit juice, grapefruit bitters, lime juice, simple syrup, and soda water."},
@@ -267,6 +268,13 @@ function torontoStatus(now = new Date()) {
 }
 
 
+function SpiceLevel({ level }: { level: number }) {
+  const count = Math.max(1, Math.min(3, level));
+  return <span className="spice-level" aria-label={`${count} chilli${count === 1 ? "" : "s"} spicy`} title={`${count}/3 heat`}>
+    {Array.from({length:count},(_,index)=><svg key={index} viewBox="0 0 24 24" aria-hidden="true"><path className="chilli-body" d="M4.5 15.5c2.1-4 5.2-5.2 8.2-5.2 4.2 0 6.2-2.3 6.9-6.3 2.5 7.2-.8 14.3-7.4 15.7-3.7.8-6.7-.9-7.7-4.2Z"/><path className="chilli-stem" d="M18.8 7.7c-.2-2.3 1-4 3-4.8"/></svg>)}
+  </span>;
+}
+
 function SpecialIcon({ index }: { index: number }) {
   const common = { viewBox: "0 0 64 64", className: "special-icon", fill: "none", xmlns: "http://www.w3.org/2000/svg" };
   if (index === 0) return <svg {...common} aria-hidden="true"><path d="M14 12h36L34 35v12h10M24 51h20" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/><circle cx="47" cy="15" r="8" fill="var(--yellow)" stroke="currentColor" strokeWidth="3"/><path d="M43 10l8 10" stroke="currentColor" strokeWidth="2"/></svg>;
@@ -419,7 +427,7 @@ export default function Home() {
       <div className="special-menu-strip" aria-label="Special food menus"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7 PM</span><h3>HAPPY HOUR FOOD</h3><p>12 food items · $6 each · Wednesday all day</p><b>See every item +</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95 PP</span><h3>AYCE TACOS</h3><p>14 taco choices · one-hour limit</p><b>See tacos & rules +</b></button></div>
       <div className="menu-tools" id="menu"><div className="menu-kind-labels"><span>FOOD</span><span>BAR</span></div><div className="tabs">{["Special Menus","Appetizers","Tacos","Meals","Desserts","Brunch","Margaritas","Cocktails","Beer","Wine","Non-Alcoholic"].map(x=><button key={x} className={group===x?"active":""} onClick={()=>{setGroup(x);setFilter("ALL")}}>{x}</button>)}</div><div className="filters"><input aria-label="Search menu" placeholder="Search this menu…" value={query} onChange={e=>setQuery(e.target.value)}/>{["ALL","GF","V","VG"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</div></div>
       {group==="Special Menus"&&<div className="integrated-specials"><button onClick={()=>setOpenSpecial("happy")}><span>EVERY DAY · 4–7</span><h3>HAPPY HOUR</h3><p>12 food items · $6 each · 4 drink deals</p><b>Clock out early →</b></button><button onClick={()=>setOpenSpecial("ayce")}><span>THURSDAY · $29.95</span><h3>AYCE TACOS</h3><p>14 tacos · one glorious hour</p><b>Stretch first →</b></button></div>}
-      <div className="dish-grid">{filtered.map(d=><button className={`dish ${d.image?"dish-featured":""}`} key={d.name} onClick={()=>setOpenDish(d)}>{d.image&&<img src={d.image} alt={d.name}/>}<div>{d.feature&&<em>{d.feature}</em>}<h3>{d.name} {d.spicy && <span title="Spicy">🌶</span>}</h3><div className="tags">{d.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div></div><strong>{d.price}</strong><p>{d.desc}</p><span className="more">More details +</span></button>)}</div>
+      <div className="dish-grid">{filtered.map(d=><button className={`dish ${d.image?"dish-featured":""}`} key={d.name} onClick={()=>setOpenDish(d)}>{d.image&&<img src={d.image} alt={d.name}/>}<div>{d.feature&&<em>{d.feature}</em>}<h3>{d.name} {d.spicy && <SpiceLevel level={typeof d.spicy === "number" ? d.spicy : 1}/>}</h3><div className="tags">{d.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div></div><strong>{d.price}</strong><p>{d.desc}</p><span className="more">More details +</span></button>)}</div>
       {!filtered.length && group!=="Special Menus" && <p className="empty">Nothing matches that filter yet.</p>}
     </section>
 
@@ -513,7 +521,7 @@ export default function Home() {
       <div className="footer-bottom"><p>© 2026 La Chingada Toronto. All rights reserved.</p><p>Dine-in specials are subject to availability. Please drink responsibly.</p><a href="#top">Back to top ↑</a></div>
     </footer>
 
-    {openDish && <div className="modal" onClick={()=>setOpenDish(null)}><article className="dish-modal" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenDish(null)}>×</button>{openDish.image&&<img className="dish-modal-image" src={openDish.image} alt={openDish.name}/>}<div><p className="eyebrow">{openDish.group}</p>{openDish.feature&&<span className="staff-pick">{openDish.feature}</span>}<h2>{openDish.name}</h2><strong className="modal-price">{openDish.price}</strong><div className="tags">{openDish.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div><p>{openDish.desc}</p><hr/><small>Dietary needs or allergies? Please speak with your server. Our kitchen handles multiple ingredients.</small></div></article></div>}
+    {openDish && <div className="modal" onClick={()=>setOpenDish(null)}><article className="dish-modal" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenDish(null)}>×</button>{openDish.image&&<img className="dish-modal-image" src={openDish.image} alt={openDish.name}/>}<div><p className="eyebrow">{openDish.group}</p>{openDish.feature&&<span className="staff-pick">{openDish.feature}</span>}<h2>{openDish.name} {openDish.spicy && <SpiceLevel level={typeof openDish.spicy === "number" ? openDish.spicy : 1}/>}</h2><strong className="modal-price">{openDish.price}</strong><div className="tags">{openDish.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div><p>{openDish.desc}</p><hr/><small>Dietary needs or allergies? Please speak with your server. Our kitchen handles multiple ingredients.</small></div></article></div>}
     {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This informational collection is intended for guests of legal drinking age. It documents La Chingada’s bottles, producers, regions and agave traditions.</p><div className="age-actions"><button className="button green" onClick={()=>{setAgeOpen(false);setLibraryOpen(true)}}>Enter the library</button><button className="plain-link" onClick={()=>setAgeOpen(false)}>Go back</button></div></article></div>}
     {libraryOpen && <section className="library-overlay" aria-label="Agave Library">
       <header className="library-top"><div><p className="eyebrow">La Chingada · Collection archive</p><h2>THE AGAVE LIBRARY</h2></div><button className="library-close" onClick={()=>{setLibraryOpen(false);setOpenBottle(null)}}>Close ×</button></header>
