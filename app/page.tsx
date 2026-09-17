@@ -378,16 +378,29 @@ export default function Home() {
     <section className="craft" id="about">
       <div className="craft-hero"><p className="eyebrow">The work before the welcome</p><h2>BEFORE<br/>WE OPEN.</h2><div className="craft-manifesto"><strong>YOU SEE A TACO.</strong><span>What you don’t see is everything it took to make it.</span><p>Before the first guest arrives, the kitchen is already cooking, grinding, pressing, blending, infusing and preparing. We make the things most restaurants simply buy.</p></div><img className="chingadito chingadito-corn" src="/images/chingadito-corn.png" alt="Chingadito carrying a sack of corn"/></div>
 
-      <div className="corn-journey"><div className="journey-intro"><p className="eyebrow">One tortilla. The whole story.</p><h3>FROM MEXICAN CORN<br/>TO YOUR TABLE.</h3></div><div className="journey-line" aria-hidden="true"></div>
-        {[
-          ["01","FROM MEXICO, BY THE TONNE","Every six months, we import one tonne of corn from Mexico to Canada. We start at the origin, because a better tortilla starts with the corn itself."],
-          ["02","COOKED EVERY DAY","Every morning, we cook the corn in-house, then let it cool properly before the next step. Tomorrow, we do it all again."],
-          ["03","GROUND FRESH INTO MASA","Once cooled, the corn is ground into fresh masa in our own kitchen. No ready-made dough — just a fresh batch, every day."],
-          ["04","MACHINE-PRESSED","Every morning, the fresh masa is machine-pressed and shaped to our own size and thickness, so every tortilla is consistent before it hits the grill."],
-          ["05","GRILLED FOR THE DAY","Fresh off the press, the tortillas are pre-cooked on the grill, cooled properly, then packed and held ready for that day’s service."],
-          ["06","FRESH BENEATH YOUR TACO","By service, that tortilla has gone from Mexican corn to masa, press and grill in our kitchen. The one beneath your taco was made here that morning."],
-        ].map((step,i)=><article className={`journey-step step-${i+1}`} key={step[0]}><span>{step[0]}</span><div><h4>{step[1]}</h4><p>{step[2]}</p></div>{i===3&&<img className="chingadito chingadito-press" src="/images/chingadito-press.png" alt="Chingadito caught under a tortilla press"/>}</article>)}
-        <blockquote>THAT TORTILLA STARTED<br/>AS CORN THIS MORNING.</blockquote>
+      <div className="corn-journey">
+        <div className="journey-intro">
+          <p className="eyebrow">One tortilla. The whole story.</p>
+          <h3>FROM MEXICAN CORN<br/>TO YOUR TABLE.</h3>
+          <p className="journey-deck">Six steps. One daily process. The tortilla beneath your taco begins long before service.</p>
+        </div>
+        <div className="journey-grid">
+          {[
+            {number:"01",stage:"SOURCE",title:"FROM MEXICO, BY THE TONNE",body:"Every six months, we import one tonne of corn from Mexico to Canada. It starts at the source.",image:"/images/corn-journey-01.webp",alt:"Chingadito carrying a large sack of corn on its journey from Mexico"},
+            {number:"02",stage:"COOK",title:"COOKED EVERY DAY",body:"Each morning, the corn is cooked in-house, then cooled properly before the next step.",image:"/images/corn-journey-02.webp",alt:"Chingadito stirring corn in a large steaming kitchen pot"},
+            {number:"03",stage:"GRIND",title:"GROUND INTO MASA",body:"The cooked corn is ground fresh into masa in our kitchen every day.",image:"/images/corn-journey-03.webp",alt:"Chingadito grinding cooked corn into fresh masa"},
+            {number:"04",stage:"PRESS",title:"MACHINE-PRESSED",body:"Each tortilla is pressed every morning to La Chingada’s own size and shape.",image:"/images/corn-journey-04.webp",alt:"Chingadito using the tortilla pressing machine"},
+            {number:"05",stage:"GRILL",title:"GRILLED FOR SERVICE",body:"The tortillas are cooked, cooled and prepared for that day’s service.",image:"/images/corn-journey-05.webp",alt:"Chingadito grilling fresh tortillas on the flat top"},
+            {number:"06",stage:"SERVE",title:"ON YOUR TACO",body:"The tortilla under your taco started as corn from Mexico and was made here that morning.",image:"/images/corn-journey-06.webp",alt:"Chingadito proudly presenting a tray of finished tacos"},
+          ].map((step,index)=><article className={`journey-card journey-card-${index+1}`} key={step.number}>
+            <div className="journey-art"><img src={step.image} alt={step.alt} loading="lazy" decoding="async"/></div>
+            <div className="journey-copy">
+              <span className="journey-number">{step.number}</span>
+              <div className="journey-text"><i>{step.stage}</i><h4>{step.title}</h4><p>{step.body}</p></div>
+            </div>
+          </article>)}
+        </div>
+        <blockquote><span>THE WHOLE POINT</span>THE TORTILLA UNDER YOUR TACO WAS MADE HERE THAT MORNING.</blockquote>
       </div>
 
       <div className="prep-wall"><div className="prep-title"><p className="eyebrow">The things you never see</p><h3>WE MAKE THE STUFF<br/>OTHER PLACES ORDER.</h3></div><div className="prep-grid">
