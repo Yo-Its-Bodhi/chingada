@@ -319,7 +319,7 @@ export default function Home() {
   };
 
   const filtered = useMemo(() => dishes.filter(d => d.group === group && (filter === "ALL" || d.tags?.includes(filter)) && d.name.toLowerCase().includes(query.toLowerCase())), [group, filter, query]);
-  useEffect(()=>{const update=()=>{const status=torontoStatus();setDay(status.day);setLiveStatus(status)};update();const timer=setInterval(update,60000);return()=>clearInterval(timer)},[]);
+  useEffect(()=>{let cancelled=false;const update=async()=>{let now=new Date();try{const response=await fetch("/",{method:"HEAD",cache:"no-store"});const serverDate=response.headers.get("date");if(serverDate) now=new Date(serverDate)}catch{}if(cancelled)return;const status=torontoStatus(now);setDay(status.day);setLiveStatus(status)};void update();const timer=setInterval(()=>void update(),60000);return()=>{cancelled=true;clearInterval(timer)}},[]);
   useEffect(() => {
     if (!reservationOpen) return;
     const previousOverflow = document.body.style.overflow;
