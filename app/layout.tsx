@@ -89,9 +89,9 @@ const restaurantJsonLd = {
   image: [
     `${siteUrl}/images/street-corn-hero.jpg`,
     `${siteUrl}/images/tacos-real-food.png`,
-    `${siteUrl}/images/margarita-program-hero.webp`,
+    `${siteUrl}/images/margarita-rocks-lineup.svg`,
   ],
-  logo: `${siteUrl}/favicon.png`,
+  logo: `${siteUrl}/images/la-chingada-logo-white.png`,
   telephone: "+1-416-535-2242",
   email: "reservations@lachingada.ca",
   priceRange: "$$",

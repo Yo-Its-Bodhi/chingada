@@ -356,7 +356,11 @@ export default function Home() {
   }).sort((a,b)=>Number(Boolean(archiveDetails[b.name]?.image))-Number(Boolean(archiveDetails[a.name]?.image)) || a.name.localeCompare(b.name)), [agaveCategory, agaveQuery, collectionRecords]);
 
   return <main>
-    <header className="topbar"><a className="brand" href="#top">LA CHINGADA<span>✦</span></a><nav><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a></nav><a className={`live-status ${liveStatus.state}`} href="#visit"><b>{liveStatus.label}</b><span>{liveStatus.detail}</span></a><button type="button" className="reserve small" onClick={openReservation}>Book a spot</button></header>
+    <header className="topbar">
+      <a className="site-logo nav-logo" href="#top" aria-label="La Chingada home"><img src="/images/la-chingada-logo-white.png" alt="La Chingada"/></a>
+      <nav className="primary-nav" aria-label="Primary navigation"><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#agave">Agave Library</a><a href="#about">Our Story</a><a href="#visit">Contact</a></nav>
+      <div className="nav-actions"><a className={`live-status ${liveStatus.state}`} href="#visit"><b>{liveStatus.label}</b><span>{liveStatus.detail}</span></a><button type="button" className="reserve small" onClick={openReservation}>Book a spot</button></div>
+    </header>
     <div className="brunch-ticker" role="status" aria-label="Brunch coming soon. We're almost there."><div className="brunch-ticker-track" aria-hidden="true"><span>BRUNCH COMING SOON! · WE’RE ALMOST THERE · BEAR WITH US — THE EGGS ARE STILL GETTING THEIR ACT TOGETHER ·</span><span>BRUNCH COMING SOON! · WE’RE ALMOST THERE · BEAR WITH US — THE EGGS ARE STILL GETTING THEIR ACT TOGETHER ·</span><span>BRUNCH COMING SOON! · WE’RE ALMOST THERE · BEAR WITH US — THE EGGS ARE STILL GETTING THEIR ACT TOGETHER ·</span></div></div>
 
     <section className="hero" id="top">
@@ -390,8 +394,7 @@ export default function Home() {
             </div>
           </div>
           <figure className="marg-visual">
-            <img src="/images/margarita-program-hero.webp" alt="A colourful lineup of handcrafted La Chingada margaritas" loading="lazy" decoding="async"/>
-            <figcaption><span>HOUSE PROGRAM · BUILT FROM SCRATCH</span><strong>Fresh ingredients. Serious prep. No mystery mix.</strong></figcaption>
+            <img src="/images/margarita-patio-photo.webp" alt="A diamond-cut rocks glass margarita on La Chingada’s patio beside tacos" loading="lazy" decoding="async"/>
             <div className="marg-price-stamp"><small>HAPPY HOUR</small><b>$10</b><span>MARGARITAS</span></div>
           </figure>
         </div>
@@ -499,7 +502,7 @@ export default function Home() {
     <footer className="site-footer">
       <div className="footer-top">
         <div className="footer-brand-block">
-          <a className="brand" href="#top">LA CHINGADA<span>✦</span></a>
+          <a className="site-logo footer-logo" href="#top" aria-label="La Chingada home"><img src="/images/la-chingada-logo-white.png" alt="La Chingada"/></a>
           <p>Mexican street food, fresh masa and obsessive margaritas on Dundas West.</p>
           <button type="button" className="footer-reserve" onClick={openReservation}>Book a spot →</button>
         </div>
