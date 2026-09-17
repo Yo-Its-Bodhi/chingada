@@ -424,9 +424,37 @@ export default function Home() {
       <article className="hours-card"><span>06</span><h3>Hours</h3><div className="hours-status"><b>{liveStatus.label}</b> · {liveStatus.detail}</div><ul>{Object.entries(weeklyHours).map(([name,[open,close]])=><li className={day===name?"today-hours":""} key={name}><strong>{name}</strong><span>{open>12?open-12:open}:00 {open>=12?"PM":"AM"}–{close>12?close-12:close}:00 PM</span></li>)}</ul><small>Toronto time · Happy Hour every day, 4–7 PM.</small></article>
     </div></section>
 
-    <section className="qr patterned"><img className="qr-chingadito" src="/images/chingadito-peek.png" alt="Chingadito pointing toward the menu QR area"/><div className="fake-qr" aria-hidden="true">▦</div><div><p className="eyebrow">At the table?</p><h2>SCAN. EXPLORE. PICK.</h2><p>Put the QR on printed menus and table cards. Guests land straight in the interactive menu—not on a cluttered homepage.</p></div></section>
+    <section className="reservation-cta patterned" id="reserve">
+      <div className="reservation-cta-copy">
+        <p className="eyebrow">Planning ahead?</p>
+        <h2>MAKE A<br/>RESERVATION.</h2>
+        <p className="reservation-lede">We’ll always do what we can to get you in. Happy Hour, AYCE Tacos and peak dinner service can fill quickly, so your first choice may not always be available.</p>
+        <p className="reservation-guidance">Try another time or day—or come by and ask about a walk-in table. Reservations are available for groups of up to six.</p>
+        <div className="reservation-pills"><span>HAPPY HOUR GETS BUSY</span><span>AYCE THURSDAYS FILL FAST</span><span>GROUPS UP TO 6</span></div>
+        <div className="actions"><button type="button" className="button pink" onClick={openReservation}>Check availability →</button><a className="button paper" href="tel:+14165352242">Call 416-535-2242</a></div>
+      </div>
+      <aside className="reservation-cta-card">
+        <span className="reservation-card-kicker">A LITTLE HEADS-UP</span>
+        <h3>BUSY DOESN’T ALWAYS MEAN IMPOSSIBLE.</h3>
+        <p>If your preferred time is gone, the next available slot may only be a little earlier or later. Check a second time, try another day, or stop by—we keep room for walk-ins when service allows.</p>
+        <div className={`reservation-card-status ${liveStatus.state}`}><b>{liveStatus.label}</b><span>{liveStatus.detail}</span></div>
+        <img src="/images/chingadito-peek.png" alt="Chingadito peeking into the reservation section"/>
+      </aside>
+    </section>
 
-    <footer><div className="brand">LA CHINGADA<span>✦</span></div><p>1242 Dundas St West · Toronto<br/>416-535-2242 · reservations@lachingada.ca</p><p>Mexican street food, made for sharing.<br/>Dine-in specials subject to availability.</p></footer>
+    <footer className="site-footer">
+      <div className="footer-top">
+        <div className="footer-brand-block">
+          <a className="brand" href="#top">LA CHINGADA<span>✦</span></a>
+          <p>Mexican street food, fresh masa and obsessive margaritas on Dundas West.</p>
+          <button type="button" className="footer-reserve" onClick={openReservation}>Reserve a table →</button>
+        </div>
+        <nav className="footer-column" aria-label="Footer navigation"><h3>Explore</h3><a href="#menu">Menu</a><a href="#specials">Weekly specials</a><a href="#agave">Agave Library</a><a href="#about">Our story</a></nav>
+        <div className="footer-column"><h3>Visit</h3><a href="https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto" target="_blank" rel="noreferrer">1242 Dundas Street West<br/>Toronto, Ontario</a><a href="tel:+14165352242">416-535-2242</a><a href="mailto:reservations@lachingada.ca">reservations@lachingada.ca</a></div>
+        <div className="footer-column"><h3>Follow & order</h3><a className="footer-social" href="https://www.instagram.com/lachingadatoronto/" target="_blank" rel="noreferrer" aria-label="La Chingada Toronto on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a><a href="https://order.store/store/la-chingada-1242-dundas-st-w/GAGuGYkPR1WXgc_LV9VxDQ" target="_blank" rel="noreferrer">Order delivery →</a><a href="#visit">Hours & directions →</a></div>
+      </div>
+      <div className="footer-bottom"><p>© 2026 La Chingada Toronto. All rights reserved.</p><p>Dine-in specials are subject to availability. Please drink responsibly.</p><a href="#top">Back to top ↑</a></div>
+    </footer>
 
     {openDish && <div className="modal" onClick={()=>setOpenDish(null)}><article className="dish-modal" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setOpenDish(null)}>×</button>{openDish.image&&<img className="dish-modal-image" src={openDish.image} alt={openDish.name}/>}<div><p className="eyebrow">{openDish.group}</p>{openDish.feature&&<span className="staff-pick">{openDish.feature}</span>}<h2>{openDish.name}</h2><strong className="modal-price">{openDish.price}</strong><div className="tags">{openDish.tags?.map(t=><i className={`tag-${t.toLowerCase()}`} key={t}>{t}</i>)}</div><p>{openDish.desc}</p><hr/><small>Dietary needs or allergies? Please speak with your server. Our kitchen handles multiple ingredients.</small></div></article></div>}
     {ageOpen && <div className="modal" onClick={()=>setAgeOpen(false)}><article onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setAgeOpen(false)}>×</button><p className="eyebrow">Agave Library · 19+</p><h2>ADULT GUESTS ONLY</h2><p>This informational collection is intended for guests of legal drinking age. It documents La Chingada’s bottles, producers, regions and agave traditions.</p><div className="age-actions"><button className="button green" onClick={()=>{setAgeOpen(false);setLibraryOpen(true)}}>Enter the library</button><button className="plain-link" onClick={()=>setAgeOpen(false)}>Go back</button></div></article></div>}
