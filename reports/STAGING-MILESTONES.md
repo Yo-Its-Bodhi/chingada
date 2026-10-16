@@ -14,35 +14,39 @@ Updated 15 October 2026. This is the execution checklist for the restaurant, arc
 
 - [x] Restaurant identity, food photography, vivid page colours, interactive menu, taco picker, weekly offers, venue/patio and arcade section.
 - [x] Dedicated Agave Library route and primary navigation link.
-- [ ] Final merged library facts, transparent bottle exports, provenance and named missing-photo slots.
+- [x] Final merged library facts, transparent bottle exports, provenance and named missing-photo slots.
 - [x] Matching Rezzo reservation, confirmation and management flow with isolated sample state.
-- [ ] Complete all arcade preview gateway/origin/persistence work.
-- [ ] Link all three staged builds to one another.
+- [x] Complete all arcade preview gateway/origin/persistence work.
+- [x] Link all three staged builds to one another.
 
 ## 3. Audit and repair
 
-- [ ] Restaurant TypeScript, production build, Worker HTML/schema/routes/assets and all-record library checks.
-- [ ] Browser menu/search/filter/taco-picker, specials, modal keyboard/focus and library search/filter/pagination/details.
-- [ ] Desktop and phone visual checks with saved screenshots.
-- [ ] Arcade regression suite, built routes, real game interactions and private-room workflow.
-- [ ] Rezzo tests/lint/typecheck/build and sample-only booking/management flow.
-- [ ] Verify preview noindex and blocked development endpoints.
+- [x] Restaurant TypeScript, production build, Worker HTML/schema/routes/assets and all-record library checks.
+- [x] Browser menu/search/filter/taco-picker, specials, modal keyboard/focus and library search/filter/pagination/details.
+- [x] Desktop and phone visual checks with saved screenshots.
+- [x] Arcade regression suite, built routes, real game interactions and private-room workflow.
+- [x] Rezzo tests/lint/typecheck/build and sample-only booking/management flow.
+- [x] Verify preview noindex and blocked development endpoints.
 
 ## 4. Save and publish
 
-- [ ] Scan changes for credentials, runtime data and oversized files.
-- [ ] Commit and push restaurant review branch.
-- [ ] Commit and push arcade review branch.
-- [ ] Commit and push Rezzo review branch.
-- [ ] Start three production-built local staging services and HTTPS tunnels.
-- [ ] Verify all three from public HTTPS URLs, including cross-links and booking embed.
+- [x] Scan changes for credentials, runtime data and oversized files.
+- [x] Commit and push restaurant review branch.
+- [x] Commit and push arcade review branch.
+- [x] Commit and push Rezzo review branch.
+- [x] Start three production-built local staging services and HTTPS tunnels.
+- [x] Verify all three from public HTTPS URLs, including cross-links and booking embed.
 
 ## 5. Owner handoff
 
-- [ ] Publish a short review guide, screenshots, GitHub links, verified preview links and known limits.
-- [ ] Explain temporary preview lifetime and restart procedure; preserve container packages for later VPS staging.
-- [ ] Mark goal complete only when the verified staging demonstration is ready.
+- [x] Publish a short review guide, screenshots, GitHub links, verified preview links and known limits.
+- [x] Explain temporary preview lifetime and restart procedure; preserve container packages for later VPS staging.
+- [x] Mark goal complete only when the verified staging demonstration is ready.
 
 ## Recovered state
 
 The restaurant was largely redesigned but still uncommitted. The arcade baseline was pushed at `0e618f7`, with further preview/security updates uncommitted. Rezzo's matching demo was implemented but uncommitted. Twenty-two restaurant Worker checks passed before interruption; Rezzo had previously passed 145 tests and the arcade 350, with final rebuilt integration checks still outstanding. Old temporary tunnel URLs and process IDs are stale and must be revalidated or replaced.
+
+## Completed staging release
+
+Restaurant: 5d9a207 (application and staging package). Arcade: bf45761. Rezzo: 739c761. All three review branches are pushed. The restaurant passes 27 tests and 147 public HTTPS checks; arcade passes 354 tests plus five integration suites; Rezzo passes 145 tests. Browser checks and screenshots are recorded in HANDOFF.md. The completed owner demonstration uses temporary HTTPS tunnels; durable VPS/container execution remains the explicitly documented later hosting step.

@@ -44,3 +44,15 @@ Technical SEO is implemented and the preview is noindex. Google first place, liv
 - Rezzo: https://github.com/Yo-Its-Bodhi/rezzo/tree/codex/rezzo-staging
 
 These review branches preserve the proposal without merging it into the live applications.
+
+## Restarting the temporary Windows preview
+
+Use Node 24 and the three saved review branches. The current portable Cloudflare helper is in ignored `work/tools/cloudflared.exe`; if it is absent, obtain it from Cloudflare’s official distribution. Keep certificate verification enabled.
+
+Start one tunnel for each local port (7344 restaurant, 7343 arcade, 7341 Rezzo) with `cloudflared tunnel --url http://127.0.0.1:PORT --protocol quic --no-autoupdate`. Keep the tunnel processes running and record their newly printed HTTPS addresses. Then rebuild public cross-links using those addresses:
+
+- Restaurant: set `NEXT_PUBLIC_ARCADE_URL`, `NEXT_PUBLIC_RESERVATION_URL`, and `NEXT_PUBLIC_ARCADE_REQUIRES_SIGN_IN=false`; run `npm run build:windows`. Set `PORT=7344` and `WORKER_PORT=7345`, then `npm run preview:staging`.
+- Arcade: set `NEXT_PUBLIC_RESTAURANT_URL` and run `npm run build`. Set `PORT=7343`, `ARCADE_PREVIEW_PUBLIC_ORIGIN` to its exact HTTPS origin, and `ARCADE_PREVIEW_STATE_DIR` to an absolute project-local writable folder. Run `node scripts/start-preview.mjs`. Reuse the same state folder to preserve this preview’s scores/migrations. See its `docs/VPS_PREVIEW.md` for the full contract.
+- Rezzo: set `NEXT_PUBLIC_RESTAURANT_URL` and `NEXT_PUBLIC_MENU_URL` before `npm run build`. Copy `public` to `.next/standalone/public` and `.next/static` to `.next/standalone/.next/static` (Next standalone does not copy these itself). Set `PORT=7341`, `HOSTNAME=127.0.0.1`, `NODE_ENV=production`, `REZZO_DEMO_MODE=true`, and `REZZO_DEMO_PREVIEW=true`; run `node .next/standalone/server.js`. Supply no database or messaging credentials. See its `docs/STAGING_PREVIEW.md`.
+
+Recheck all three public URLs, the restaurant booking iframe, arcade write API and the Rezzo sample-data notice before sharing replacement links. Closing a tunnel or sleeping/restarting the computer interrupts its temporary URL. For a continuously available owner preview, use the separate Compose package on a configured HTTPS staging host.
