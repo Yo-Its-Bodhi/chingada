@@ -1,6 +1,6 @@
 # Agave card pricing
 
-The restaurant-provided POS price list supplies 149 matched bottle prices, stored by stable inventory ID in `app/agave-prices.json`. Original POS names are retained beside the price to make spelling/alias matches reviewable. Front-card prices align at the bottom right above the divider, including when names wrap. Currency and taxes are stated once above the grid; accessible card names retain CAD. No serving volume or whole-bottle sale is inferred.
+The restaurant-provided POS price list supplies 149 matched bottle prices, stored by stable inventory ID in `app/agave-prices.json`. Original POS names are retained beside the price to make spelling/alias matches reviewable. Front-card prices sit at the top right opposite the bottle style, replacing the arrow. The bottom text invites guests to explore the bottle. Currency and taxes are stated once above the grid; accessible card names retain CAD. No serving volume or whole-bottle sale is inferred.
 
 House-infusion cards and their category are withheld from the public catalogue at the owner's request. Their original records remain preserved. La Pinta is a commercial liqueur and retains its own $12 price.
 

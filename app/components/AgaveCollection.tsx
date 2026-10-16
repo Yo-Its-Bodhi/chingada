@@ -189,18 +189,18 @@ export function AgaveCollection() {
               setOpenBottle(bottle);
             }}
           >
-            <span className="agave-card-type">
-              {styleFor(bottle)} <span aria-hidden="true">↗</span>
+            <span className="agave-card-head">
+              <span className="agave-card-type">{styleFor(bottle)}</span>
+              <span className="agave-card-price">
+                {agavePrice(bottle.id) !== undefined ? (
+                  <strong>{formatAgavePrice(agavePrice(bottle.id)!)}</strong>
+                ) : (
+                  <span className="agave-price-pending">Ask at the bar</span>
+                )}
+              </span>
             </span>
             <BottlePhoto bottle={bottle} />
             <h3>{titleFor(bottle)}</h3>
-            <span className="agave-card-price">
-              {agavePrice(bottle.id) !== undefined ? (
-                <strong>{formatAgavePrice(agavePrice(bottle.id)!)}</strong>
-              ) : (
-                <span className="agave-price-pending">Ask at the bar</span>
-              )}
-            </span>
             <span className="agave-card-detail">
               Explore the bottle <span aria-hidden="true">+</span>
             </span>
