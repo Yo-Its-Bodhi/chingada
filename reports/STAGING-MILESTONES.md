@@ -49,4 +49,4 @@ The restaurant was largely redesigned but still uncommitted. The arcade baseline
 
 ## Completed staging release
 
-Restaurant: 5d9a207 (application and staging package). Arcade: bf45761. Rezzo: 739c761. All three review branches are pushed. The restaurant passes 27 tests and 147 public HTTPS checks; arcade passes 354 tests plus five integration suites; Rezzo passes 145 tests. Browser checks and screenshots are recorded in HANDOFF.md. The completed owner demonstration uses temporary HTTPS tunnels; durable VPS/container execution remains the explicitly documented later hosting step.
+Restaurant: 5d9a207 (application and staging package). Arcade: bf45761. Rezzo: 02ca775. All three review branches are pushed. The restaurant passes 27 tests and 147 public HTTPS checks; arcade passes 354 tests plus five integration suites; Rezzo passes 150 tests. Browser checks and screenshots are recorded in HANDOFF.md. The completed owner demonstration uses temporary HTTPS tunnels; durable VPS/container execution remains the explicitly documented later hosting step.

@@ -53,6 +53,7 @@ See `reports/STAGING-MILESTONES.md`, `reports/STAGING-REVIEW.md` and `reports/HA
 - `reports/AUDIT.md`: baseline findings and evidence.
 - `reports/BRAND.md`: palette, fonts, identity assets and photo optimization.
 - `reports/PHOTO-SLOTS.md`: named camera placeholders and instructions for adding each missing food photograph.
+- `reports/AGAVE-PHOTO-SLOTS.md`: the remaining 46 bottle/house-infusion camera slots, exact inventory IDs and research reasons.
 - `reports/DRIVE-PHOTOS.md` and `reports/NEW-PHOTOS.md`: provenance for owner-provided menu, kitchen, restaurant and patio photos.
 - `reports/PHOTO-AUDIT.md`: inherited bottle-photo corrections, when available.
 - `reports/SEO-PLAN.md`: implementation and account/hosting work for search visibility.
