@@ -1,14 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  instagramUrl,
+  mapsUrl,
+  reservationUrl,
+  restaurantId,
+  safeJsonLd,
+  siteUrl,
+} from "./site-config";
 import "./globals.css";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://la-chingada-toronto.druwbi.chatgpt.site";
-const seoDescription = "Mexican street food on Dundas West, Toronto: fresh tacos, house margaritas, daily Happy Hour, Thursday AYCE tacos and a hidden patio.";
+const seoDescription =
+  "Mexican street food on Dundas West, Toronto: fresh tacos, house margaritas, daily Happy Hour, Thursday AYCE tacos and a hidden patio.";
 
 export const viewport: Viewport = {
-  themeColor: "#171411",
+  themeColor: "#bd3026",
   colorScheme: "light",
 };
 
@@ -23,20 +28,6 @@ export const metadata: Metadata = {
   category: "restaurant",
   creator: "La Chingada Toronto",
   publisher: "La Chingada Toronto",
-  keywords: [
-    "La Chingada Toronto",
-    "Mexican restaurant Toronto",
-    "Mexican restaurant Dundas West",
-    "tacos Toronto",
-    "margaritas Toronto",
-    "happy hour Toronto",
-    "patio Toronto",
-    "all you can eat tacos Toronto",
-    "AYCE tacos Toronto",
-    "Mexican street food Toronto",
-    "Dundas West restaurant",
-    "fresh corn tortillas Toronto",
-  ],
   alternates: { canonical: "/" },
   formatDetection: { telephone: true, address: true, email: true },
   openGraph: {
@@ -46,18 +37,20 @@ export const metadata: Metadata = {
     siteName: "La Chingada Toronto",
     title: "La Chingada Toronto — Tacos, Margaritas, Happy Hour & Patio",
     description: seoDescription,
-    images: [{
-      url: "/images/street-corn-hero.jpg",
-      width: 2048,
-      height: 1120,
-      alt: "Mexican street corn at La Chingada Toronto",
-    }],
+    images: [
+      {
+        url: "/brand/social-card.jpg",
+        width: 1200,
+        height: 630,
+        alt: "La Chingada — Mexican street food, Toronto",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "La Chingada Toronto — Tacos, Margaritas, Happy Hour & Patio",
     description: seoDescription,
-    images: ["/images/street-corn-hero.jpg"],
+    images: ["/brand/social-card.jpg"],
   },
   robots: {
     index: true,
@@ -71,7 +64,6 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    "codex-preview": "development",
     "geo.region": "CA-ON",
     "geo.placename": "Toronto",
   },
@@ -80,29 +72,30 @@ export const metadata: Metadata = {
 const restaurantJsonLd = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
-  "@id": `${siteUrl}/#restaurant`,
+  "@id": restaurantId,
   name: "La Chingada",
   alternateName: "La Chingada Toronto",
   description: seoDescription,
-  slogan: "Serious tacos. Questionable behaviour.",
+  slogan: "Mexican corn. Toronto hands.",
   url: siteUrl,
   image: [
-    `${siteUrl}/images/street-corn-hero.jpg`,
-    `${siteUrl}/images/tacos-real-food.png`,
-    `${siteUrl}/images/margarita-rocks-lineup.svg`,
+    `${siteUrl}/images/optimized/street-corn-hero-1440.webp`,
+    `${siteUrl}/images/optimized/tacos-real-food-1280.webp`,
+    `${siteUrl}/images/optimized/margarita-patio-photo-1023.webp`,
   ],
-  logo: `${siteUrl}/images/la-chingada-logo-white.png`,
+  logo: `${siteUrl}/brand/la-chingada-logo.png`,
   telephone: "+1-416-535-2242",
   email: "reservations@lachingada.ca",
   priceRange: "$$",
   currenciesAccepted: "CAD",
-  servesCuisine: ["Mexican", "Mexican street food", "Tacos", "Margaritas"],
+  servesCuisine: ["Mexican", "Mexican street food"],
   acceptsReservations: true,
-  menu: `${siteUrl}/#menu`,
+  menu: `${siteUrl}/menu`,
   hasMenu: {
     "@type": "Menu",
     name: "La Chingada Food and Drinks Menu",
-    url: `${siteUrl}/#menu`,
+    "@id": `${siteUrl}/menu#menu`,
+    url: `${siteUrl}/menu`,
   },
   address: {
     "@type": "PostalAddress",
@@ -113,23 +106,47 @@ const restaurantJsonLd = {
     addressCountry: "CA",
   },
   areaServed: { "@type": "City", name: "Toronto" },
-  hasMap: "https://www.google.com/maps/search/?api=1&query=La+Chingada+1242+Dundas+Street+West+Toronto",
-  sameAs: ["https://www.instagram.com/la_chingada/"],
+  hasMap: mapsUrl,
+  sameAs: [instagramUrl],
   amenityFeature: [
-    { "@type": "LocationFeatureSpecification", name: "Hidden back patio", value: true },
-    { "@type": "LocationFeatureSpecification", name: "Walk-ins welcome", value: true },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Hidden back patio",
+      value: true,
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Walk-ins welcome",
+      value: true,
+    },
   ],
   openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Sunday", opens: "12:00", closes: "21:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday"], opens: "16:00", closes: "22:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Thursday", "Friday", "Saturday"], opens: "12:00", closes: "23:00" },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Sunday",
+      opens: "12:00",
+      closes: "21:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday"],
+      opens: "16:00",
+      closes: "22:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Thursday", "Friday", "Saturday"],
+      opens: "12:00",
+      closes: "23:00",
+    },
   ],
   makesOffer: [
     {
       "@type": "Offer",
       name: "Daily Happy Hour",
-      description: "Daily from 4–7 PM with $10 margaritas and twelve $6 food items; the food menu runs all day Wednesday.",
-      url: `${siteUrl}/#specials`,
+      description:
+        "Daily from 4–7 PM with $10 margaritas and twelve $6 food items; the food menu runs all day Wednesday.",
+      url: `${siteUrl}/happy-hour`,
     },
     {
       "@type": "Offer",
@@ -137,29 +154,58 @@ const restaurantJsonLd = {
       description: "Fourteen taco choices with a one-hour dining limit.",
       price: "29.95",
       priceCurrency: "CAD",
-      url: `${siteUrl}/#specials`,
+      url: `${siteUrl}/all-you-can-eat-tacos`,
     },
   ],
   potentialAction: {
     "@type": "ReserveAction",
-    target: `${siteUrl}/#reserve`,
+    target: reservationUrl,
     result: { "@type": "FoodEstablishmentReservation" },
   },
 };
 
-const jsonLd = JSON.stringify(restaurantJsonLd).replace(/</g, "\\u003c");
+const jsonLd = safeJsonLd(restaurantJsonLd);
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-CA">
       <head>
-        <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png" />
+        <link
+          rel="preload"
+          href="/fonts/barlow-condensed-extrabold-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/dm-sans-latin-variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link
+          rel="icon"
+          href="/favicon-48.png"
+          sizes="48x48"
+          type="image/png"
+        />
         <link rel="icon" href="/favicon.png" sizes="512x512" type="image/png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+          sizes="180x180"
+        />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
+        />
         {children}
       </body>
     </html>

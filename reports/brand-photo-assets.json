@@ -1,0 +1,162 @@
+[
+  {
+    "source": "tacos-real-food.png",
+    "sourceWidth": 1280,
+    "sourceHeight": 721,
+    "sourceBytes": 2137257,
+    "output": "/images/optimized/tacos-real-food-640.webp",
+    "width": 640,
+    "height": 361,
+    "bytes": 66870
+  },
+  {
+    "source": "tacos-real-food.png",
+    "sourceWidth": 1280,
+    "sourceHeight": 721,
+    "sourceBytes": 2137257,
+    "output": "/images/optimized/tacos-real-food-960.webp",
+    "width": 960,
+    "height": 541,
+    "bytes": 132268
+  },
+  {
+    "source": "tacos-real-food.png",
+    "sourceWidth": 1280,
+    "sourceHeight": 721,
+    "sourceBytes": 2137257,
+    "output": "/images/optimized/tacos-real-food-1280.webp",
+    "width": 1280,
+    "height": 721,
+    "bytes": 206352
+  },
+  {
+    "source": "street-corn-hero.jpg",
+    "sourceWidth": 2048,
+    "sourceHeight": 1120,
+    "sourceBytes": 492504,
+    "output": "/images/optimized/street-corn-hero-640.webp",
+    "width": 640,
+    "height": 350,
+    "bytes": 46334
+  },
+  {
+    "source": "street-corn-hero.jpg",
+    "sourceWidth": 2048,
+    "sourceHeight": 1120,
+    "sourceBytes": 492504,
+    "output": "/images/optimized/street-corn-hero-960.webp",
+    "width": 960,
+    "height": 525,
+    "bytes": 82794
+  },
+  {
+    "source": "street-corn-hero.jpg",
+    "sourceWidth": 2048,
+    "sourceHeight": 1120,
+    "sourceBytes": 492504,
+    "output": "/images/optimized/street-corn-hero-1440.webp",
+    "width": 1440,
+    "height": 788,
+    "bytes": 139910
+  },
+  {
+    "source": "street-corn-hero.jpg",
+    "sourceWidth": 2048,
+    "sourceHeight": 1120,
+    "sourceBytes": 492504,
+    "output": "/images/optimized/street-corn-hero-2048.webp",
+    "width": 2048,
+    "height": 1120,
+    "bytes": 215652
+  },
+  {
+    "source": "barbacoa-taco.png",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "sourceBytes": 602374,
+    "output": "/images/optimized/barbacoa-taco-600.webp",
+    "width": 600,
+    "height": 600,
+    "bytes": 62146
+  },
+  {
+    "source": "hh-carnitas.png",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "sourceBytes": 589078,
+    "output": "/images/optimized/hh-carnitas-600.webp",
+    "width": 600,
+    "height": 600,
+    "bytes": 48632
+  },
+  {
+    "source": "hh-fish.png",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "sourceBytes": 547073,
+    "output": "/images/optimized/hh-fish-600.webp",
+    "width": 600,
+    "height": 600,
+    "bytes": 47678
+  },
+  {
+    "source": "hh-guacamole.png",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "sourceBytes": 534071,
+    "output": "/images/optimized/hh-guacamole-600.webp",
+    "width": 600,
+    "height": 600,
+    "bytes": 31120
+  },
+  {
+    "source": "hh-salsa.png",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "sourceBytes": 542515,
+    "output": "/images/optimized/hh-salsa-600.webp",
+    "width": 600,
+    "height": 600,
+    "bytes": 34624
+  },
+  {
+    "source": "margarita-patio-photo.webp",
+    "sourceWidth": 1023,
+    "sourceHeight": 1537,
+    "sourceBytes": 184720,
+    "output": "/images/optimized/margarita-patio-photo-640.webp",
+    "width": 640,
+    "height": 962,
+    "bytes": 72982
+  },
+  {
+    "source": "margarita-patio-photo.webp",
+    "sourceWidth": 1023,
+    "sourceHeight": 1537,
+    "sourceBytes": 184720,
+    "output": "/images/optimized/margarita-patio-photo-960.webp",
+    "width": 960,
+    "height": 1442,
+    "bytes": 118210
+  },
+  {
+    "source": "margarita-patio-photo.webp",
+    "sourceWidth": 1023,
+    "sourceHeight": 1537,
+    "sourceBytes": 184720,
+    "output": "/images/optimized/margarita-patio-photo-1023.webp",
+    "width": 1023,
+    "height": 1537,
+    "bytes": 143902
+  },
+  {
+    "source": "la-chingada-bar-interior.jpg",
+    "sourceWidth": 591,
+    "sourceHeight": 1280,
+    "sourceBytes": 109367,
+    "output": "/images/optimized/la-chingada-bar-interior-591.webp",
+    "width": 591,
+    "height": 1280,
+    "bytes": 79226
+  }
+]

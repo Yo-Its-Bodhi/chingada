@@ -1,0 +1,75 @@
+name: chingada-staging
+
+services:
+  restaurant:
+    build:
+      context: "${RESTAURANT_CONTEXT:-..}"
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_ARCADE_URL: "${ARCADE_PUBLIC_URL:?Set ARCADE_PUBLIC_URL to the arcade HTTPS origin}"
+        NEXT_PUBLIC_RESERVATION_URL: "${REZZO_PUBLIC_URL:?Set REZZO_PUBLIC_URL to the demo booking HTTPS origin}"
+        NEXT_PUBLIC_ARCADE_REQUIRES_SIGN_IN: "false"
+    init: true
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${RESTAURANT_PORT:-7344}:8787"
+    environment:
+      NODE_ENV: production
+      PORT: "8787"
+      WORKER_PORT: "8786"
+      PREVIEW_HOST: 0.0.0.0
+      PREVIEW_STATE_DIR: /data/main
+    volumes:
+      - restaurant-preview-state:/data/main
+
+  arcade:
+    build:
+      context: "${ARCADE_CONTEXT:-../../arcade}"
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_RESTAURANT_URL: "${RESTAURANT_PUBLIC_URL:?Set RESTAURANT_PUBLIC_URL to the restaurant HTTPS origin}"
+    init: true
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${ARCADE_PORT:-7343}:8787"
+    environment:
+      NODE_ENV: production
+      PORT: "8787"
+      ARCADE_PREVIEW_WORKER_PORT: "8788"
+      ARCADE_PREVIEW_STATE_DIR: /data/arcade
+      ARCADE_PREVIEW_PUBLIC_ORIGIN: "${ARCADE_PUBLIC_URL:?Set ARCADE_PUBLIC_URL to the arcade HTTPS origin}"
+    volumes:
+      - arcade-preview-state:/data/arcade
+
+  rezzo:
+    build:
+      context: "${REZZO_CONTEXT:-../../rezzo}"
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_RESTAURANT_URL: "${RESTAURANT_PUBLIC_URL:?Set RESTAURANT_PUBLIC_URL to the restaurant HTTPS origin}"
+        NEXT_PUBLIC_MENU_URL: "${RESTAURANT_PUBLIC_URL:?Set RESTAURANT_PUBLIC_URL to the restaurant HTTPS origin}/menu"
+    init: true
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${REZZO_PORT:-7341}:3000"
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      REZZO_DEMO_MODE: "true"
+      REZZO_DEMO_PREVIEW: "true"
+      NEXT_TELEMETRY_DISABLED: "1"
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+
+volumes:
+  restaurant-preview-state:
+  arcade-preview-state:

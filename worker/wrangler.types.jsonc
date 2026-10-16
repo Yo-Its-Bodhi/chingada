@@ -1,0 +1,6 @@
+// Type generation only. Deployment configuration remains in vite.config.ts.
+{
+  "name": "la-chingada-runtime-types",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"]
+}

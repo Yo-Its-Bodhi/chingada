@@ -1,0 +1,562 @@
+{
+  "researchedAt": "2026-10-15",
+  "scope": "26 owner-listed house infusions and one commercially bottled La Pinta liqueur",
+  "records": [
+    {
+      "id": 152,
+      "name": "APPLE TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 153,
+      "name": "BANANA TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 154,
+      "name": "BLUEBERRY TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 155,
+      "name": "BLUE-RASPBERRY TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 156,
+      "name": "CINNAMON TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 157,
+      "name": "COCONUT TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 158,
+      "name": "GRAPEFRUIT TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 159,
+      "name": "HABANERO TEQUILA — SPICY",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 160,
+      "name": "HIBISCUS TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 161,
+      "name": "JALAPEÑO TEQUILA — SPICY",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 162,
+      "name": "LA PINTA POMEGRANATE TEQUILA",
+      "type": "Tequila",
+      "category": "Flavoured",
+      "status": "label-and-retailer-verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.wineandbeyond.ca/products/la-pinta-pomegranate-tequila-liqueur-750ml-1011044",
+          "title": "La Pinta · Canadian product listing & bottle label"
+        },
+        {
+          "url": "https://www.instacart.com/landing?product_id=249585&retailer_id=204",
+          "title": "La Pinta · transcribed product label"
+        }
+      ],
+      "facts": {
+        "abv": "19% (38 proof), shown on the pictured 750 mL bottle.",
+        "origin": "Mexico.",
+        "production": "A commercially bottled pomegranate liqueur made with tequila. Kept separately from the restaurant’s house-prepared infusions."
+      },
+      "image": {
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0753/2802/8983/files/1011044_1_35cdf32e-6d54-40f6-af68-d5b3d86946cc.webp?v=1791253129",
+        "sourcePage": "https://www.wineandbeyond.ca/products/la-pinta-pomegranate-tequila-liqueur-750ml-1011044",
+        "localPath": "/images/agave-researched/162-la-pinta-pomegranate-background-removed.png",
+        "width": 725,
+        "height": 2170,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "processing": "Background removed with imagegen from the exact retailer photograph; original source retained locally. Label and expression checked against that photograph."
+      },
+      "unresolvedReason": "",
+      "displayName": "LA PINTA POMEGRANATE LIQUEUR",
+      "displayType": "Liqueur"
+    },
+    {
+      "id": 163,
+      "name": "LAVENDER TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 164,
+      "name": "LEMON TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 165,
+      "name": "LIME TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 166,
+      "name": "MINT TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 167,
+      "name": "MIXED-BERRY TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 168,
+      "name": "ORANGE TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 169,
+      "name": "PEACH TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 170,
+      "name": "PINEAPPLE TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 171,
+      "name": "RASPBERRY TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 172,
+      "name": "SKITTLE TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 173,
+      "name": "SOUR SKITTLE TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 174,
+      "name": "STRAWBERRY TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 175,
+      "name": "TAMARIND TEQUILA",
+      "type": "Tequila",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house tequila infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 176,
+      "name": "HABANERO MEZCAL — SPICY",
+      "type": "Mezcal",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house mezcal infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 177,
+      "name": "ORANGE MEZCAL",
+      "type": "Mezcal",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house mezcal infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    },
+    {
+      "id": 178,
+      "name": "MINT MEZCAL",
+      "type": "Mezcal",
+      "category": "House Infused",
+      "status": "owner-record",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://lachingada.ca/",
+          "title": "La Chingada · house bar program"
+        }
+      ],
+      "facts": {
+        "origin": "Prepared at La Chingada, Toronto, Canada.",
+        "production": "A house mezcal infusion from the restaurant’s collection. Preparation time depends on the flavour; the bar’s infusions range from 48 hours to two weeks."
+      },
+      "image": null,
+      "unresolvedReason": "Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion."
+    }
+  ]
+}

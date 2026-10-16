@@ -1,0 +1,442 @@
+.agave-collection {
+  margin-top: 50px;
+  scroll-margin-top: 24px;
+}
+.agave-collection-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.agave-collection-heading h2 {
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1;
+  margin-top: 16px;
+}
+.agave-collection-heading > p {
+  max-width: 260px;
+  font-size: 13px;
+}
+.agave-collection-tools {
+  padding: 28px;
+  background: var(--ink);
+  color: white;
+}
+.agave-search {
+  display: block;
+  max-width: 540px;
+}
+.agave-search > span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.agave-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 15px 17px;
+  border: 1px solid white;
+  background: white;
+  color: var(--ink);
+  font-size: 14px;
+}
+.agave-style-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+.agave-style-filters button {
+  min-height: 44px;
+  background: transparent;
+  color: white;
+  border: 1px solid #ffffff80;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.agave-style-filters button span {
+  margin-left: 12px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.agave-style-filters button[aria-pressed="true"],
+.agave-style-filters button:hover {
+  background: var(--sun);
+  border-color: var(--sun);
+  color: var(--ink);
+}
+.agave-results {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 22px 0;
+  font-size: 11px;
+}
+.agave-results button {
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  min-height: 44px;
+  font-size: 12px;
+}
+.agave-results button span {
+  margin-left: 10px;
+}
+.agave-collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.agave-collection-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  padding: 18px;
+  min-width: 0;
+  background: white;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  box-shadow: none;
+}
+.agave-card-type {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.agave-card-type > span {
+  font-size: 17px;
+  color: var(--chile);
+}
+.agave-bottle-photo {
+  height: 250px;
+  aspect-ratio: auto;
+  background: transparent;
+  color: var(--teal);
+  margin: 18px 0;
+}
+.agave-bottle-photo img {
+  object-fit: contain;
+  background: transparent;
+  filter: none;
+  box-shadow: none;
+  mix-blend-mode: normal;
+}
+.agave-bottle-photo .photo-placeholder {
+  padding: 18px 10px;
+}
+.agave-bottle-photo .photo-placeholder strong {
+  font-size: 19px;
+}
+.agave-bottle-photo .photo-placeholder::before {
+  inset: 10px 0;
+  border-style: dashed;
+  opacity: 0.4;
+}
+.agave-collection-card h3 {
+  font-size: clamp(23px, 2.1vw, 31px);
+  line-height: 1.05;
+  margin: 0 0 20px;
+  overflow-wrap: anywhere;
+}
+.agave-card-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #25231e40;
+  padding-top: 15px;
+  margin-top: auto;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--chile);
+}
+.agave-card-detail > span {
+  font-size: 19px;
+  line-height: 1;
+}
+.agave-collection-card:hover {
+  border-color: var(--chile);
+  outline: 1px solid var(--chile);
+}
+.agave-collection-card:hover h3 {
+  color: var(--chile);
+}
+.agave-show-more {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 60px;
+}
+.agave-show-more .button {
+  background: var(--ink);
+  color: white;
+}
+.agave-no-results {
+  padding: 50px 20px;
+  text-align: center;
+  background: var(--teal);
+  color: white;
+}
+.agave-no-results h3 {
+  font-size: 36px;
+}
+.agave-no-results p {
+  margin: 15px 0 25px;
+  font-size: 13px;
+}
+.agave-record-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  background: #151512d9;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 36px 24px;
+  overflow: auto;
+}
+.agave-record-overlay > article {
+  position: relative;
+  padding: 45px;
+  width: min(900px, 100%);
+  background: white;
+  color: var(--ink);
+  border-top: 6px solid var(--chile);
+  box-shadow: none;
+  outline: none;
+}
+.agave-record-overlay > article > .close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--ink);
+  color: white;
+  display: grid;
+  place-items: center;
+  border: 0;
+  width: 44px;
+  height: 44px;
+}
+.agave-record-hero {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 30px;
+}
+.agave-bottle-photo--large {
+  height: 320px;
+  margin: 0;
+}
+.agave-record-hero h2 {
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1;
+  margin: 20px 0;
+  overflow-wrap: anywhere;
+}
+.agave-record-hero .eyebrow {
+  color: var(--teal);
+}
+.agave-record-status {
+  font-size: 11px;
+  padding-top: 15px;
+  border-top: 1px solid #25231e40;
+}
+.agave-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  padding: 25px 0;
+  border-block: 1px solid #25231e40;
+}
+.agave-facts dt {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 7px;
+  color: #59564e;
+}
+.agave-facts dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.agave-record-note {
+  margin: 25px 0;
+}
+.agave-record-note h3,
+.agave-record-sources h3 {
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+.agave-record-note p {
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 75ch;
+}
+.agave-record-note p + p {
+  margin-top: 10px;
+}
+.agave-record-sources {
+  padding: 22px;
+  background: var(--teal);
+  color: white;
+  margin-top: 25px;
+}
+.agave-record-sources a {
+  display: block;
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  line-height: 1.8;
+  padding: 4px 0;
+}
+.agave-research-pending,
+.agave-record-footer {
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 24px 0 0;
+}
+.agave-archive-notes {
+  margin-top: 25px;
+  border-block: 1px solid #25231e40;
+}
+.agave-archive-notes summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  list-style: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+.agave-archive-notes summary::-webkit-details-marker {
+  display: none;
+}
+.agave-archive-notes summary span {
+  font-size: 20px;
+}
+.agave-archive-notes[open] summary span {
+  transform: rotate(45deg);
+}
+.agave-archive-notes p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0 0 15px;
+}
+.agave-archive-notes p strong {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.agave-archive-notes .agave-archive-label {
+  color: #655f54;
+  font-size: 11px;
+}
+@media (max-width: 1100px) {
+  .agave-collection-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .agave-collection-heading {
+    display: block;
+  }
+  .agave-collection-heading > p {
+    margin-top: 18px;
+    max-width: none;
+  }
+  .agave-collection-tools {
+    padding: 20px;
+  }
+  .agave-style-filters button {
+    padding: 9px 11px;
+  }
+  .agave-style-filters button span {
+    margin-left: 7px;
+  }
+  .agave-collection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .agave-collection-card {
+    padding: 14px 12px;
+  }
+  .agave-bottle-photo {
+    height: 200px;
+    margin: 14px 0;
+  }
+  .agave-collection-card h3 {
+    font-size: 25px;
+  }
+  .agave-card-type {
+    font-size: 9px;
+    letter-spacing: 0;
+  }
+  .agave-card-detail {
+    font-size: 10px;
+  }
+  .agave-bottle-photo .photo-placeholder strong {
+    font-size: 17px;
+  }
+  .agave-record-overlay {
+    padding: 12px;
+  }
+  .agave-record-overlay > article {
+    padding: 65px 24px 28px;
+  }
+  .agave-record-hero {
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 18px;
+  }
+  .agave-bottle-photo--large {
+    height: 220px;
+  }
+  .agave-record-hero h2 {
+    font-size: 34px;
+  }
+  .agave-record-hero .eyebrow {
+    font-size: 9px;
+  }
+  .agave-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .agave-collection-card h3 {
+    font-size: 22px;
+  }
+  .agave-collection-card {
+    padding: 12px 9px;
+  }
+  .agave-bottle-photo {
+    height: 175px;
+  }
+  .agave-bottle-photo .photo-placeholder {
+    padding: 15px 4px;
+  }
+  .agave-bottle-photo .photo-placeholder strong {
+    font-size: 15px;
+  }
+  .agave-card-detail {
+    font-size: 9px;
+  }
+  .agave-record-hero {
+    grid-template-columns: 1fr;
+  }
+  .agave-record-hero .agave-bottle-photo--large {
+    height: 230px;
+  }
+}

@@ -1,0 +1,3403 @@
+{
+  "researchedAt": "2026-10-15",
+  "scope": "All non-Tequila records plus Tequila names beginning N–Z after diacritic normalization. Numeric-prefix names excluded.",
+  "count": 56,
+  "method": "Producer/distributor facts with explicit sources and market/batch caveats. Exact single-bottle PNG/WebP assets checked for real alpha and visually composited on cyan to reject opaque mats, awards, boxes and multiple bottles. Small natural contact shadows retained when embedded in authentic source cutouts; no artificial shadows added. Only fully transparent padding was trimmed before WebP optimization; bottle pixels were not retouched. Every record has reviewed sources; unresolved bottles remain photo requests.",
+  "records": [
+    {
+      "id": 34,
+      "name": "OLMECA ALTOS REPOSADO",
+      "type": "Tequila",
+      "category": "Reposado",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+          "title": "Pernod Ricard USA · Olmeca Altos Reposado",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US 750 ml listing)",
+        "origin": "Los Altos, Jalisco, Mexico",
+        "agave": "100% Blue agave",
+        "aging": "6–8 months in barrels previously used for whiskey",
+        "tastingNotes": "Citrus, oak, cooked agave, vanilla, nutmeg and allspice; orange peel, caramel and smoke."
+      },
+      "factSources": {
+        "abv": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+        "origin": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+        "agave": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+        "aging": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+        "tastingNotes": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/"
+      },
+      "image": {
+        "sourceUrl": "https://images.salsify.com/image/upload/s--dWNHrYuQ--/db860399172773b819942bf1da9abf393a31c8cf.png",
+        "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+        "localPath": "/images/agave-researched/bottle-34-olmeca-altos-reposado.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-34-olmeca-altos-reposado.png",
+        "width": 481,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "2a95d139e52810ac4f3c3ee973843f3cf3e53091f0993e647e57c2ca0db1bcfe",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-34-olmeca-altos-reposado.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://images.salsify.com/image/upload/s--dWNHrYuQ--/db860399172773b819942bf1da9abf393a31c8cf.png",
+          "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708081/Olmeca-Altos-Reposado-Tequila-750-ml-Bottle-80-Proof/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "PATRON REPOSADO",
+      "type": "Tequila",
+      "category": "Reposado",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-reposado.html",
+          "title": "Patrón · Reposado",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US producer listing)",
+        "origin": "Jalisco, Mexico",
+        "agave": "100% Blue Weber agave",
+        "aging": "At least four months in American oak barrels",
+        "production": "Uses tahona and roller-mill extraction.",
+        "tastingNotes": "Cooked agave, honey, vanilla and tropical fruit; light oak."
+      },
+      "factSources": {
+        "abv": "https://www.patrontequila.com/products/patron-reposado.html",
+        "origin": "https://www.patrontequila.com/products/patron-reposado.html",
+        "agave": "https://www.patrontequila.com/products/patron-reposado.html",
+        "aging": "https://www.patrontequila.com/products/patron-reposado.html",
+        "production": "https://www.patrontequila.com/products/patron-reposado.html",
+        "tastingNotes": "https://www.patrontequila.com/products/patron-reposado.html"
+      },
+      "image": {
+        "sourceUrl": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-reposado/2025_bottle_repo.png",
+        "sourcePage": "https://www.patrontequila.com/products/patron-reposado.html",
+        "localPath": "/images/agave-researched/bottle-35-patron-reposado.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-35-patron-reposado.png",
+        "width": 811,
+        "height": 1388,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "babb6a278da1d745e5e1fcd9ebbbc956f91a03161708cfa00588c6356c3462b6",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-35-patron-reposado.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-reposado.html",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-reposado/2025_bottle_repo.png",
+          "sourcePage": "https://www.patrontequila.com/products/patron-reposado.html",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "SAUZA TRES GENERACIONES REPOSADO",
+      "type": "Tequila",
+      "category": "Reposado",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+          "title": "Tres Generaciones · Reposado",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (producer global listing)",
+        "origin": "Mexico",
+        "agave": "100% Blue agave",
+        "aging": "At least four months in American oak barrels",
+        "production": "Triple-distilled.",
+        "aroma": "Pepper, spice and herbs with light oak.",
+        "taste": "Spice and toasted oak over fresh agave and herbs."
+      },
+      "factSources": {
+        "abv": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+        "origin": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+        "agave": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+        "aging": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+        "production": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+        "aroma": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+        "taste": "https://www.tresgeneraciones.com/our-tequilas/reposado"
+      },
+      "image": {
+        "sourceUrl": "https://www.tresgeneraciones.com/sites/default/files/styles/original/public/2025-09/reposado.png.webp?itok=PEz2xxSM",
+        "sourcePage": "https://www.tresgeneraciones.com/our-tequilas",
+        "localPath": "/images/agave-researched/bottle-36-sauza-tres-generaciones-reposado.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-36-sauza-tres-generaciones-reposado.webp",
+        "width": 305,
+        "height": 643,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "c208f71c2aeac23883b5d2ed9331e52b8d7423f26055d40c0756f298dfcc11dd",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-36-sauza-tres-generaciones-reposado.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.tresgeneraciones.com/our-tequilas/reposado",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.tresgeneraciones.com/sites/default/files/styles/original/public/2025-09/reposado.png.webp?itok=PEz2xxSM",
+          "sourcePage": "https://www.tresgeneraciones.com/our-tequilas",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "SIEMPRE REPOSADO",
+      "type": "Tequila",
+      "category": "Reposado",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://siempretequila.com/tequila/reposado",
+          "title": "Siempre · Reposado",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (current producer listing)",
+        "origin": "Los Altos Southern, Jalisco",
+        "agave": "Tequilana Weber",
+        "aging": "Oak-rested reposado",
+        "tastingNotes": "Apple, dried fruit, vanilla, caramel, honey and oak."
+      },
+      "factSources": {
+        "abv": "https://siempretequila.com/tequila/reposado",
+        "origin": "https://siempretequila.com/tequila/reposado",
+        "agave": "https://siempretequila.com/tequila/reposado",
+        "aging": "https://siempretequila.com/tequila/reposado",
+        "tastingNotes": "https://siempretequila.com/tequila/reposado"
+      },
+      "image": {
+        "sourceUrl": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/reposado-ChfXEHRi.webp",
+        "sourcePage": "https://siempretequila.com/tequila/reposado",
+        "localPath": "/images/agave-researched/bottle-37-siempre-reposado.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-37-siempre-reposado.webp",
+        "width": 570,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "3432989989040b4f86786d5ec7609a42fb787d4813ed99962da921ede4f95ac3",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-37-siempre-reposado.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Current producer product page lists NOM 1414. Historical venue stock and older producer pages may describe other releases; confirm the physical bottle."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://siempretequila.com/tequila/reposado",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/reposado-ChfXEHRi.webp",
+          "sourcePage": "https://siempretequila.com/tequila/reposado",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "TEREMANA REPOSADO",
+      "type": "Tequila",
+      "category": "Reposado",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://teremana.com/pages/tequila",
+          "title": "Teremana · Tequila details",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Jalisco Highlands, Mexico",
+        "agave": "100% Blue Weber Highlands agave",
+        "aging": "Aged in American whiskey barrels",
+        "production": "Brick-oven roasted for three days, open-tank fermented and distilled in handmade copper pot stills.",
+        "nom": "1613",
+        "tastingNotes": "Oak and vanilla with a smooth, rich finish."
+      },
+      "factSources": {
+        "origin": "https://teremana.com/pages/tequila",
+        "agave": "https://teremana.com/pages/tequila",
+        "aging": "https://teremana.com/pages/tequila",
+        "production": "https://teremana.com/pages/tequila",
+        "nom": "https://teremana.com/pages/tequila",
+        "tastingNotes": "https://teremana.com/pages/tequila"
+      },
+      "image": {
+        "sourceUrl": "https://teremana.com/cdn/shop/files/Reposado-bottle.png?v=1613700200",
+        "sourcePage": "https://teremana.com/pages/tequila",
+        "localPath": "/images/agave-researched/bottle-38-teremana-reposado.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-38-teremana-reposado.png",
+        "width": 495,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "f65be5d8810d54501d8a5a1dc61d8b3a90ca0c1d539494a7f9fc6de698b50fec",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-38-teremana-reposado.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "ABV should be read from the actual venue bottle; the producer detail page did not give a numeric ABV in its text."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://teremana.com/pages/tequila",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://teremana.com/cdn/shop/files/Reposado-bottle.png?v=1613700200",
+          "sourcePage": "https://teremana.com/pages/tequila",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "TROMBA REPOSADO",
+      "type": "Tequila",
+      "category": "Reposado",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://tequilatromba.mx/",
+          "title": "Tequila Tromba México · Reposado",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "aging": "6–8 months",
+        "tastingNotes": "Producer describes a warm, toasted profile."
+      },
+      "factSources": {
+        "aging": "https://tequilatromba.mx/",
+        "tastingNotes": "https://tequilatromba.mx/"
+      },
+      "image": {
+        "sourceUrl": "https://tequilatromba.mx/wp-content/uploads/2019/11/tequila-tromba-botella-reposado-4.png",
+        "sourcePage": "https://tequilatromba.mx/",
+        "localPath": "/images/agave-researched/bottle-39-tromba-reposado.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-39-tromba-reposado.png",
+        "width": 176,
+        "height": 698,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "b63055f6092867e1191a9e42753b117fee028d766dbf00c3642dc67a6fef9db5",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-39-tromba-reposado.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Mexico producer packaging is shown. Confirm market presentation and ABV against the venue bottle."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://tequilatromba.mx/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://tequilatromba.mx/wp-content/uploads/2019/11/tequila-tromba-botella-reposado-4.png",
+          "sourcePage": "https://tequilatromba.mx/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "PATRON EL CIELO",
+      "type": "Tequila",
+      "category": "Speciality",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.patrontequila.com/products/el-cielo.html",
+          "title": "Patrón · El Cielo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (producer listing)",
+        "origin": "Hacienda Patrón, Jalisco, Mexico",
+        "aging": "Unaged silver tequila",
+        "production": "Distilled four times.",
+        "tastingNotes": "Sweet cooked agave, orange rind, cinnamon and a hint of vanilla."
+      },
+      "factSources": {
+        "abv": "https://www.patrontequila.com/products/el-cielo.html",
+        "origin": "https://www.patrontequila.com/products/el-cielo.html",
+        "aging": "https://www.patrontequila.com/products/el-cielo.html",
+        "production": "https://www.patrontequila.com/products/el-cielo.html",
+        "tastingNotes": "https://www.patrontequila.com/products/el-cielo.html"
+      },
+      "image": {
+        "sourceUrl": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/el-cielo/v3/bottle.png",
+        "sourcePage": "https://www.patrontequila.com/products/el-cielo.html",
+        "localPath": "/images/agave-researched/bottle-53-patron-el-cielo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-53-patron-el-cielo.png",
+        "width": 343,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "6d51bae2c235b5a26539be64dc5766298991b51b90e24abbe689bf0febf3abef",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-53-patron-el-cielo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.patrontequila.com/products/el-cielo.html",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/el-cielo/v3/bottle.png",
+          "sourcePage": "https://www.patrontequila.com/products/el-cielo.html",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "PATRON EXTRA AÑEJO",
+      "type": "Tequila",
+      "category": "Speciality",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+          "title": "Patrón · Extra Añejo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US producer listing)",
+        "agave": "100% Blue Weber agave",
+        "aging": "At least three years in new and used American, French and Hungarian oak barrels",
+        "production": "Stone-oven cooking, roller-mill and tahona extraction, natural fermentation and copper-pot distillation.",
+        "tastingNotes": "Almonds, baking spices, oak, cinnamon, nutmeg, vanilla and agave."
+      },
+      "factSources": {
+        "abv": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+        "agave": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+        "aging": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+        "production": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+        "tastingNotes": "https://www.patrontequila.com/products/patron-extra-anejo.html"
+      },
+      "image": {
+        "sourceUrl": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-extra-anejo/v3/bottle-2025.png",
+        "sourcePage": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+        "localPath": "/images/agave-researched/bottle-54-patron-extra-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-54-patron-extra-a-ejo.png",
+        "width": 792,
+        "height": 1352,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "290f5bf5f4abca4a5f74c7da061221ba50c2f47c3e1595e63aa0ca3ba00bbcbe",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-54-patron-extra-a-ejo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-extra-anejo/v3/bottle-2025.png",
+          "sourcePage": "https://www.patrontequila.com/products/patron-extra-anejo.html",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "SIEMPRE REPOSADO REBEL CASK",
+      "type": "Tequila",
+      "category": "Speciality",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://siempretequila.com/tequila/rebel-cask",
+          "title": "Siempre · Rebel Cask",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "aging": "Single-barrel aged series; barrel type and time depend on release.",
+        "agave": "Tequilana Weber"
+      },
+      "factSources": {
+        "aging": "https://siempretequila.com/tequila/rebel-cask",
+        "agave": "https://siempretequila.com/tequila/rebel-cask"
+      },
+      "image": {
+        "sourceUrl": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/rebel-cask-DcFqgbgc.webp",
+        "sourcePage": "https://siempretequila.com/tequila/rebel-cask",
+        "localPath": "/images/agave-researched/bottle-55-siempre-reposado-rebel-cask.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-55-siempre-reposado-rebel-cask.webp",
+        "width": 567,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "dc7f2b86ec4d3af81b701b13f71f78d2628735a79c978f323c7792646f7debfc",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-55-siempre-reposado-rebel-cask.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "ABV, NOM and tasting notes vary by batch. No fixed ABV or barrel time is assigned to the venue bottle.",
+        "The generic Rebel Cask packshot shows a reposado label. Confirm the venue batch before publishing further specifications."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://siempretequila.com/tequila/rebel-cask",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/rebel-cask-DcFqgbgc.webp",
+          "sourcePage": "https://siempretequila.com/tequila/rebel-cask",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "SIEMPRE SUPREMO",
+      "type": "Tequila",
+      "category": "Speciality",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://siempretequila.com/",
+          "title": "Siempre · Supremo Tahona lineup",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "aging": "Unaged, high-proof blanco expression"
+      },
+      "factSources": {
+        "aging": "https://siempretequila.com/"
+      },
+      "image": {
+        "sourceUrl": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/supremo-Cgnbk4O-.webp",
+        "sourcePage": "https://siempretequila.com/tequila/anejo",
+        "localPath": "/images/agave-researched/bottle-56-siempre-supremo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-56-siempre-supremo.webp",
+        "width": 568,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "36c8f35bc4d31bfd0cb56eb0bedd74ed879ff7835e990e335703abfe2c420207",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-56-siempre-supremo.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The venue record does not identify a batch. Older producer material lists 55% and NOM 1137, while current material is bottle-specific. No fixed ABV or NOM is assigned."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://siempretequila.com/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/supremo-Cgnbk4O-.webp",
+          "sourcePage": "https://siempretequila.com/tequila/anejo",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "TROMBA CEDANO REPOSADO",
+      "type": "Tequila",
+      "category": "Speciality",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://tequilatromba.com/collections/all",
+          "title": "Tequila Tromba · Cedano Reposado collection listing",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://tequilatromba.com/products/tromba-cedano-reposado",
+          "title": "Tequila Tromba producer · Cedano Reposado",
+          "kind": "producer"
+        }
+      ],
+      "facts": {
+        "aging": "French oak cask finish",
+        "tastingNotes": "Sweet agave, vanilla and toasted oak with a silky finish.",
+        "origin": "Jalisco, Mexico",
+        "agave": "100% Blue Weber agave",
+        "aroma": "Sweet agave, vanilla, toasted oak and subtle spice.",
+        "taste": "Agave sweetness, oak and a rounded texture.",
+        "finish": "Warm and silky."
+      },
+      "factSources": {
+        "aging": "https://tequilatromba.com/products/tromba-cedano-reposado",
+        "tastingNotes": "https://tequilatromba.com/products/tromba-cedano-reposado",
+        "origin": "https://tequilatromba.com/products/tromba-cedano-reposado",
+        "agave": "https://tequilatromba.com/products/tromba-cedano-reposado",
+        "aroma": "https://tequilatromba.com/products/tromba-cedano-reposado",
+        "taste": "https://tequilatromba.com/products/tromba-cedano-reposado",
+        "finish": "https://tequilatromba.com/products/tromba-cedano-reposado"
+      },
+      "image": {
+        "sourceUrl": "https://tequilatromba.com/cdn/shop/files/750_CEDANOREPOSADO.png?v=1788149466&width=1200",
+        "sourcePage": "https://tequilatromba.com/products/tromba-cedano-reposado",
+        "localPath": "/images/agave-researched/bottle-57-tromba-cedano-reposado.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-57-tromba-cedano-reposado.png",
+        "width": 243,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "936691122ea9edf174ad7410adad3dc9772c17b92d05314b3aa0e28917571192",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-57-tromba-cedano-reposado.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Current producer product page and Cedano 50th bottle asset were verified. No numeric ABV or aging duration is added without a checked primary statement."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://tequilatromba.com/collections/all",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://tequilatromba.com/cdn/shop/files/750_CEDANOREPOSADO.png?v=1788149466&width=1200",
+          "sourcePage": "https://tequilatromba.com/products/tromba-cedano-reposado",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "VOLCAN CRISTALINO AÑEJO",
+      "type": "Tequila",
+      "category": "Speciality",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.volcan.com/products/cristalino/",
+          "title": "Volcan · Cristalino",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Lowlands of Jalisco, Mexico",
+        "agave": "100% Blue agave",
+        "aging": "American oak maturation followed by Old World cask finishing",
+        "tastingNotes": "Tobacco, dark chocolate and caramel."
+      },
+      "factSources": {
+        "origin": "https://www.volcan.com/products/cristalino/",
+        "agave": "https://www.volcan.com/products/cristalino/",
+        "aging": "https://www.volcan.com/products/cristalino/",
+        "tastingNotes": "https://www.volcan.com/products/cristalino/"
+      },
+      "image": {
+        "sourceUrl": "https://www.moethennessyjapan.com/sites/default/files/styles/large/public/2024-08/volcan_img_product03.png?itok=4cVI0Vey",
+        "sourcePage": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+        "localPath": "/images/agave-researched/bottle-58-volcan-cristalino-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-58-volcan-cristalino-a-ejo.png",
+        "width": 140,
+        "height": 334,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "7f8c0bf17ba651ce2c4e8d3940f4de06113422d45b945e6ce99ae8bf0dad6ca5",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-58-volcan-cristalino-a-ejo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.volcan.com/products/cristalino/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.moethennessyjapan.com/sites/default/files/styles/large/public/2024-08/volcan_img_product03.png?itok=4cVI0Vey",
+          "sourcePage": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "VOLCAN DE MI TIERRA X.A.",
+      "type": "Tequila",
+      "category": "Speciality",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+          "title": "Moët Hennessy Japan · Volcan X.A.",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Tequila, Jalisco, Mexico",
+        "aging": "A blend of reposado, añejo and extra añejo tequilas",
+        "production": "Producer describes maturation using American oak Grace Casks.",
+        "tastingNotes": "Cooked agave, spice, vanilla, caramel and dried fruit."
+      },
+      "factSources": {
+        "origin": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+        "aging": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+        "production": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+        "tastingNotes": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra"
+      },
+      "image": {
+        "sourceUrl": "https://www.moethennessyjapan.com/sites/default/files/styles/large/public/2024-08/volcan_img_product01.png?itok=aw0H0gw8",
+        "sourcePage": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+        "localPath": "/images/agave-researched/bottle-59-volcan-de-mi-tierra-x-a.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-59-volcan-de-mi-tierra-x-a.png",
+        "width": 83,
+        "height": 377,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "e4219d064b72ca4d2e8ce8cd611cfbea9c884333576cdefa831d3a41ebf4a16d",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-59-volcan-de-mi-tierra-x-a.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.moethennessyjapan.com/sites/default/files/styles/large/public/2024-08/volcan_img_product01.png?itok=aw0H0gw8",
+          "sourcePage": "https://www.moethennessyjapan.com/en/brands/volcan-de-mi-tierra",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "AGUA SANTA JOVEN MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mezcalaguasanta.com/",
+          "title": "Mezcal Agua Santa · Producer home",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Oaxaca, Mexico"
+      },
+      "factSources": {
+        "origin": "https://mezcalaguasanta.com/"
+      },
+      "image": null,
+      "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+      "notes": [
+        "The original record calls this Joven. More expression-specific details and its exact front bottle shot remain unverified."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mezcalaguasanta.com/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.bswliquor.com/products/mezcal-agua-santa-espadin",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://b2capi.mynslc.com/medias/zoom-nslc-b2c-workingFormat-1029672-1.jpg?context=bWFzdGVyfGltYWdlc3wxMDg5NTl8aW1hZ2UvcG5nfGFEazNMMmczTkM4NE9ESTRPVE01TlRrNU9UQXlMM3B2YjIxZmJuTnNZeTFpTW1NdGQyOXlhMmx1WjBadmNtMWhkRjh4TURJNU5qY3lYekV1YW5Cbnw5MzJlY2IwM2E3ODdkNzBjOTY4Y2MyNjgwZDkzODU1ZTZmYWNiZjQ1MjJiMGI2Njg2ZGU0YTYwOWYxYWJhZjMx",
+          "sourcePage": "https://www.mynslc.com/product/1029672/agua-santa-angustifolia-mezcal",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "HTTP 403"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: AGUA SANTA JOVEN MEZCAL. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 61,
+      "name": "AGUA SANTA PECHUGA MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mezcalaguasanta.com/new-expressions.php",
+          "title": "Mezcal Agua Santa · Pechuga",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "aging": "Unaged",
+        "agave": "Espadín (A. angustifolia)",
+        "production": "A third distillation of the producer’s Espadín mezcal passes vapour through turkey breast and spices.",
+        "abv": "46% on the producer’s photographed bottle"
+      },
+      "factSources": {
+        "aging": "https://mezcalaguasanta.com/new-expressions.php",
+        "agave": "https://mezcalaguasanta.com/new-expressions.php",
+        "production": "https://mezcalaguasanta.com/new-expressions.php",
+        "abv": "https://mezcalaguasanta.com/new-expressions.php"
+      },
+      "image": {
+        "sourceUrl": "https://mezcalaguasanta.com/images/pechuga0.png",
+        "sourcePage": "https://mezcalaguasanta.com/new-expressions.php",
+        "localPath": "/images/agave-researched/bottle-61-agua-santa-pechuga-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-61-agua-santa-pechuga-mezcal.png",
+        "width": 228,
+        "height": 516,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "9f86062b7d638eef69b538183b50f595b653ad662d8987604525cdeb8bac9298",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-61-agua-santa-pechuga-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Correction: the producer names turkey breast; the old catalogue incorrectly described chicken.",
+        "The front label says “destilado con pechuga” and 46% ABV; old catalogue ABV 41.81% does not match this producer bottle."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mezcalaguasanta.com/new-expressions.php",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://mezcalaguasanta.com/images/pechuga0.png",
+          "sourcePage": "https://mezcalaguasanta.com/new-expressions.php",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "AMORES CENZIO LOGIA MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mezcalamaras.com/pages/mezcal-amaras-logia",
+          "title": "Mezcal Amarás · Logia Cenizo / Reserva Especial",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "agave": "Wild Cenizo (A. durangensis), harvested at 14 years",
+        "production": "Cooked with mesquite and huizache wood; hand-axe milling; natural fermentation in ground-level rectangular vats.",
+        "tastingNotes": "Citrus smoke and roasted-coffee notes."
+      },
+      "factSources": {
+        "agave": "https://mezcalamaras.com/pages/mezcal-amaras-logia",
+        "production": "https://mezcalamaras.com/pages/mezcal-amaras-logia",
+        "tastingNotes": "https://mezcalamaras.com/pages/mezcal-amaras-logia"
+      },
+      "image": null,
+      "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+      "notes": [
+        "Record spelling “CENZIO” should be “CENIZO”. The current producer line is called Cenizo Reserva Especial.",
+        "No current exact old-Logia bottle cutout was verified.",
+        "Candidate PNGs contained an opaque white inner rectangle despite some transparent outer pixels; none was accepted as a bottle cutout."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mezcalamaras.com/pages/mezcal-amaras-logia",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.elpalaciodehierro.com/amores-mezcal-logia-cenizo-700-ml-39291791.html",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://www.elpalaciodehierro.com/amaras-mezcal-amaras-logia-cenizo-700-ml-44059171.html",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://theliquormallusa.com/cdn/shop/files/large-_1500x1500_eafefb62-48dc-4c6b-b611-272dff7d08e7.png?v=1715721121",
+          "sourcePage": "https://theliquormallusa.com/products/amaras-mezcal-logia-cenizo-86-700ml",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 0
+        }
+      ],
+      "photoNeeded": "Front bottle photo: AMORES CENZIO LOGIA MEZCAL. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 63,
+      "name": "AMORES CUPREATA MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mezcalamaras.com/products/amaras-cupreata",
+          "title": "Mezcal Amarás · Cupreata",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Guerrero, Mexico",
+        "agave": "Papalote (A. cupreata)",
+        "tastingNotes": "Fresh, herbal profile."
+      },
+      "factSources": {
+        "origin": "https://mezcalamaras.com/products/amaras-cupreata",
+        "agave": "https://mezcalamaras.com/products/amaras-cupreata",
+        "tastingNotes": "https://mezcalamaras.com/products/amaras-cupreata"
+      },
+      "image": {
+        "sourceUrl": "https://mezcalamaras.com/cdn/shop/files/5._Mezcal_Amaras_Cupreata.png?v=1736558292",
+        "sourcePage": "https://mezcalamaras.com/products/amaras-cupreata",
+        "localPath": "/images/agave-researched/bottle-63-amores-cupreata-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-63-amores-cupreata-mezcal.png",
+        "width": 291,
+        "height": 1009,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "11d97b9313c184142a0bf947f7380399ed9cc5aa3b0c61a1c7c3c3224add567f",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-63-amores-cupreata-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Current Mexico producer listing is 40.3%; the old catalogue says 40%. ABV for the venue’s market is not assumed.",
+        "Amarás producer packaging is current; confirm the venue’s Amores-branded presentation before publication."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mezcalamaras.com/products/amaras-cupreata",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://mezcalamaras.com/cdn/shop/files/5._Mezcal_Amaras_Cupreata.png?v=1736558292",
+          "sourcePage": "https://mezcalamaras.com/products/amaras-cupreata",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "AMORES ESPADIN MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mezcalamaras.com/products/amaras-espadin-joven",
+          "title": "Mezcal Amarás · Espadín Joven",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Mountains of Oaxaca, Mexico",
+        "agave": "Espadín (A. angustifolia), eight years old",
+        "tastingNotes": "Light, floral profile."
+      },
+      "factSources": {
+        "origin": "https://mezcalamaras.com/products/amaras-espadin-joven",
+        "agave": "https://mezcalamaras.com/products/amaras-espadin-joven",
+        "tastingNotes": "https://mezcalamaras.com/products/amaras-espadin-joven"
+      },
+      "image": {
+        "sourceUrl": "https://mezcalamaras.com/cdn/shop/files/1._Mezcal_Amaras_Espadin_Joven.png?v=1762201591",
+        "sourcePage": "https://mezcalamaras.com/products/amaras-espadin-joven",
+        "localPath": "/images/agave-researched/bottle-64-amores-espadin-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-64-amores-espadin-mezcal.png",
+        "width": 280,
+        "height": 1008,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "7928be5ac77b36514bc26de4d7e994e65a5bcc97b240d35cedaa3dd1b540e506",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-64-amores-espadin-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Current Mexico producer listing is 37%; the old catalogue says 41%. ABV for the venue’s market is not assumed.",
+        "Amarás producer packaging is current; confirm the venue’s Amores-branded presentation before publication."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mezcalamaras.com/products/amaras-espadin-joven",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://mezcalamaras.com/cdn/shop/files/1._Mezcal_Amaras_Espadin_Joven.png?v=1762201591",
+          "sourcePage": "https://mezcalamaras.com/products/amaras-espadin-joven",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "AMORES MOMENTO MEZCAL VERDE",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mezcalamaras.com/products/verde-amaras-2026",
+          "title": "Mezcal Verde Amarás · Producer 2026 expression",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "agave": "Espadín (A. angustifolia), eight years old",
+        "tastingNotes": "Cooked agave and light smoke."
+      },
+      "factSources": {
+        "agave": "https://mezcalamaras.com/products/verde-amaras-2026",
+        "tastingNotes": "https://mezcalamaras.com/products/verde-amaras-2026"
+      },
+      "image": {
+        "sourceUrl": "https://mezcalamaras.com/cdn/shop/files/Product_Shoot_EtiquetaVerde-Andy_Medina.png?v=1773451392",
+        "sourcePage": "https://mezcalamaras.com/products/verde-amaras-2026",
+        "localPath": "/images/agave-researched/bottle-65-amores-momento-mezcal-verde.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-65-amores-momento-mezcal-verde.png",
+        "width": 262,
+        "height": 1020,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "fb89817754a3ea9c29979219e090e46791ae93e20161a367422d43028ca0522e",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-65-amores-momento-mezcal-verde.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Artist labels change by edition. No exact older “Momento” label was selected.",
+        "Current 2026 producer listing is 40%; historic venue archive says 43% and old catalogue 42%. Venue bottle ABV remains unconfirmed.",
+        "Image shows the current producer’s Andy Medina artist edition; venue label artwork may differ."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mezcalamaras.com/products/verde-amaras-2026",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://mezcalamaras.com/cdn/shop/files/Product_Shoot_EtiquetaVerde-Andy_Medina.png?v=1773451392",
+          "sourcePage": "https://mezcalamaras.com/products/verde-amaras-2026",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "AMORES REPOSADO MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mezcalamaras.com/products/amaras-espadin-reposado",
+          "title": "Mezcal Amarás · Espadín Reposado",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "agave": "Espadín (A. angustifolia), eight years old",
+        "aging": "At least three months in barrels made from two types of oak",
+        "tastingNotes": "Caramel and maple."
+      },
+      "factSources": {
+        "agave": "https://mezcalamaras.com/products/amaras-espadin-reposado",
+        "aging": "https://mezcalamaras.com/products/amaras-espadin-reposado",
+        "tastingNotes": "https://mezcalamaras.com/products/amaras-espadin-reposado"
+      },
+      "image": {
+        "sourceUrl": "https://mezcalamaras.com/cdn/shop/files/2.-Mezcal-Amaras-Espadin-Reposado.png?v=1744760594",
+        "sourcePage": "https://mezcalamaras.com/products/amaras-espadin-reposado",
+        "localPath": "/images/agave-researched/bottle-66-amores-reposado-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-66-amores-reposado-mezcal.png",
+        "width": 296,
+        "height": 1009,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "a5ff94b820a1ec7eef584b93b268458069a67ab110ddf3a8ec7536c53b6ebd94",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-66-amores-reposado-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Current Mexico producer listing is 37%. Confirm the actual venue bottle and Amores/Amarás market packaging."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mezcalamaras.com/products/amaras-espadin-reposado",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://mezcalamaras.com/cdn/shop/files/2.-Mezcal-Amaras-Espadin-Reposado.png?v=1744760594",
+          "sourcePage": "https://mezcalamaras.com/products/amaras-espadin-reposado",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "BANHEZ ESPADIN & BARRIL MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.banhezmezcal.com/ensamble",
+          "title": "Banhez · Ensamble",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "42%",
+        "agave": "90% Espadín (A. angustifolia) and 10% Barril (A. karwinskii)",
+        "fermentation": "Natural yeast",
+        "tastingNotes": "Mild, floral and fruity, including pineapple and banana.",
+        "production": "Multiple producers and origins are listed by the cooperative."
+      },
+      "factSources": {
+        "abv": "https://www.banhezmezcal.com/ensamble",
+        "agave": "https://www.banhezmezcal.com/ensamble",
+        "fermentation": "https://www.banhezmezcal.com/ensamble",
+        "tastingNotes": "https://www.banhezmezcal.com/ensamble",
+        "production": "https://www.banhezmezcal.com/ensamble"
+      },
+      "image": null,
+      "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+      "notes": [
+        "Candidate PNGs contained an opaque white inner rectangle despite some transparent outer pixels; none was accepted as a bottle cutout."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.banhezmezcal.com/ensamble",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://shop.banhezmezcal.com/",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://www.caskers.com/banhes-espadin-barril-artesanal-mezcal-750/",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 403,
+          "result": "Unavailable during research"
+        },
+        {
+          "url": "https://media.thirstie.cloud/products/9eo7G6rqXGiLgjqRB9V9Ch.png",
+          "sourcePage": "https://shop.banhezmezcal.com/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 0
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/614a2f22d609052f42bb3f25/482f3fa5-c4e9-442f-87ef-da59f94e036c/ENSAMBLE.png",
+          "sourcePage": "https://www.cnibrands.com/banhez-mezcal-artesanal",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 0
+        }
+      ],
+      "photoNeeded": "Front bottle photo: BANHEZ ESPADIN & BARRIL MEZCAL. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 68,
+      "name": "BOSSCAL MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
+          "title": "Bosscal producer · Joven",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "42%",
+        "origin": "Agave from Nombre de Dios, Durango, Mexico",
+        "agave": "Cenizo (A. durangensis), ten years or older",
+        "aging": "Joven / unaged",
+        "production": "Volcanic-stone oven, hand-axe milling and wooden-vat fermentation; two distillations.",
+        "tastingNotes": "Smoke, minerals, orange blossom, grapefruit peel and dried fruit."
+      },
+      "factSources": {
+        "abv": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
+        "origin": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
+        "agave": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
+        "aging": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
+        "production": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
+        "tastingNotes": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/"
+      },
+      "image": {
+        "sourceUrl": "https://www.bosscal.com/wp-content/uploads/2021/10/Joven-500-1.png",
+        "sourcePage": "https://www.bosscal.com/products/",
+        "localPath": "/images/agave-researched/bottle-68-bosscal-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-68-bosscal-mezcal.png",
+        "width": 407,
+        "height": 838,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "1c3ee965d96653962807da5ce4e180e683f703bbf33abb3bdb7bc923a35b01c4",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-68-bosscal-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Existing catalogue identifies the generic BOSSCAL MEZCAL record as the Cenizo Joven expression.",
+        "Producer pages differ on still materials, so the still type is omitted."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.bosscal.com/wp-content/uploads/2021/10/Joven-500-1.png",
+          "sourcePage": "https://www.bosscal.com/products/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "CASAMIGOS MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+          "title": "Casamigos producer · Mezcal Joven",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40%",
+        "origin": "Oaxaca, Mexico",
+        "agave": "100% Espadín",
+        "aging": "Unaged",
+        "production": "Earthen-pit roasting, tahona crushing and two copper-pot distillations.",
+        "aroma": "Tamarind, pomegranate, mint and oregano with smoke.",
+        "taste": "Smoke and black pepper, with a long silky finish."
+      },
+      "factSources": {
+        "abv": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+        "origin": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+        "agave": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+        "aging": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+        "production": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+        "aroma": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+        "taste": "https://www.casamigos.com/en-us/our-tequilas/mezcal"
+      },
+      "image": null,
+      "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://bottleengraving.com/products/casamigos-mezcal",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://images.ctfassets.net/hpoa7h16o9wc/1iiLwmz6dMXcuXXjm2BIoB/4f46a013977710fc51288c5a24e38ef0/d1c5fc53e34953b03a9f91f7813b7ea03f3825d3.png",
+          "sourcePage": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 0
+        },
+        {
+          "url": "https://bevmo.com/cdn/shop/files/ffcfb159-bca8-4d1d-ad11-f28cbfc494c2-background_removed.png?v=1771358695",
+          "sourcePage": "https://bevmo.com/products/14411",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "HTTP 403"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: CASAMIGOS MEZCAL. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 70,
+      "name": "CLASE AZUL MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "unresolved",
+      "expressionVerified": false,
+      "sources": [
+        {
+          "url": "https://www.claseazul.com/clase-azul-family/clase-azul-mezcal-durango",
+          "title": "Clase Azul producer · family research",
+          "kind": "identity-research"
+        }
+      ],
+      "facts": {},
+      "factSources": {},
+      "image": null,
+      "unresolvedReason": "The record says only CLASE AZUL MEZCAL. The old catalogue suggests Cenizo/Durango, but no physical bottle or unambiguous expression name confirms Durango rather than another regional expression. Producer page currently presents an age gate. Exact expression and cutout need confirmation.",
+      "sourceAttempts": [
+        {
+          "url": "https://www.claseazul.com/clase-azul-family/clase-azul-mezcal-durango",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Identity remains ambiguous"
+        },
+        {
+          "url": "https://claseazul.com/age-gate/?redirect_to=https%3A%2F%2Fclaseazul.com%2Fspirits%2Ficons%2Fclase-azul-mezcal-durango%2F",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: CLASE AZUL MEZCAL. Exact expression, no gift box, label readable.",
+      "notes": []
+    },
+    {
+      "id": 71,
+      "name": "DEL MAGUEY VIDA MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+          "title": "Pernod Ricard USA · Del Maguey Vida Clásico",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "42%",
+        "origin": "San Luis del Río, Oaxaca, Mexico",
+        "agave": "100% Mature Espadín",
+        "production": "Twice distilled slowly in small wood-fired copper stills.",
+        "tastingNotes": "Fruit, honey, roast agave, ginger, cinnamon and tangerine with a soft finish."
+      },
+      "factSources": {
+        "abv": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+        "origin": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+        "agave": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+        "production": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+        "tastingNotes": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/"
+      },
+      "image": {
+        "sourceUrl": "https://images.salsify.com/image/upload/s--PlUagOJB--/sr0wpdrmc1j5k1u2phuy.png",
+        "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+        "localPath": "/images/agave-researched/bottle-71-del-maguey-vida-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-71-del-maguey-vida-mezcal.png",
+        "width": 323,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "d57dcb3136a0cf30c2acbd1ed28437791dd7adcdda471c711dc8ab1bfa0e53a6",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-71-del-maguey-vida-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://images.salsify.com/image/upload/s--PlUagOJB--/sr0wpdrmc1j5k1u2phuy.png",
+          "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/39708001/Del-Maguey-Vida-Clasico-Mezcal-Single-Village-750-ml-Bottle-84-Proof/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "DEL MAGUEY SINGLE VILLAGE LAS MILPAS MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://delmaguey.com/las-milpas/",
+          "title": "Del Maguey producer · Las Milpas",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "46%",
+        "origin": "Las Milpas, Oaxaca",
+        "agave": "Espadín",
+        "production": "Agave is roasted in an earthen oven carved into a granite hillside; copper stills.",
+        "palenquero": "Anastacio Cruz Antonio and sons Rigoberto, Abel and Pedro"
+      },
+      "factSources": {
+        "abv": "https://delmaguey.com/las-milpas/",
+        "origin": "https://delmaguey.com/las-milpas/",
+        "agave": "https://delmaguey.com/las-milpas/",
+        "production": "https://delmaguey.com/las-milpas/",
+        "palenquero": "https://delmaguey.com/las-milpas/"
+      },
+      "image": {
+        "sourceUrl": "https://assets.liquidcommerce.co/catalog/partner/img/049ce595-a82a-4d36-9eb5-3b152b49ca36.png",
+        "sourcePage": "https://www.reservebar.com/products/del-maguey-las-milpas-mezcal/00618397201902",
+        "localPath": "/images/agave-researched/bottle-72-del-maguey-single-village-las-milpas-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-72-del-maguey-single-village-las-milpas-mezcal.png",
+        "width": 325,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "0ae0faebb26443716113780d5b01362126cddfeda0e71a97e4490295bc832925",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-72-del-maguey-single-village-las-milpas-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Correction: the old catalogue incorrectly identifies this as Tobalá from San Luis del Río. The producer identifies Espadín and Las Milpas."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://delmaguey.com/las-milpas/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://delmaguey.com/wp-content/uploads/2023/04/MIL-1080x325-1.png",
+          "sourcePage": "https://delmaguey.com/las-milpas/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "HTTP 403"
+        },
+        {
+          "url": "https://assets.liquidcommerce.co/catalog/partner/img/049ce595-a82a-4d36-9eb5-3b152b49ca36.png",
+          "sourcePage": "https://www.reservebar.com/products/del-maguey-las-milpas-mezcal/00618397201902",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "DEL MAGUEY SINGLE VILLAGE PUEBLA MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "unresolved",
+      "expressionVerified": false,
+      "sources": [
+        {
+          "url": "https://delmaguey.com/vida-puebla/",
+          "title": "Del Maguey producer · Vida Puebla",
+          "kind": "identity-research"
+        }
+      ],
+      "facts": {},
+      "factSources": {},
+      "image": null,
+      "unresolvedReason": "The record says “Single Village Puebla” while the old catalogue says Papalote, 48%. Current Vida Puebla is Espadín, 40%, from Axocopan. This is a material identity conflict; do not silently replace the old record with Vida Puebla without checking the venue bottle.",
+      "sourceAttempts": [
+        {
+          "url": "https://delmaguey.com/vida-puebla/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Identity remains ambiguous"
+        },
+        {
+          "url": "https://delmaguey.com/our-mezcals/",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 403,
+          "result": "Unavailable during research"
+        },
+        {
+          "url": "https://delmaguey.com/wp-content/uploads/2023/02/FY23_Del_Maguey_Puebla.png",
+          "sourcePage": "https://delmaguey.com/vida-puebla/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "HTTP 403"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: DEL MAGUEY SINGLE VILLAGE PUEBLA MEZCAL. Exact expression, no gift box, label readable.",
+      "notes": []
+    },
+    {
+      "id": 74,
+      "name": "DOS HOMBRES MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.doshombres.com/products/espadin-mezcal",
+          "title": "Dos Hombres producer · Espadín",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "42%",
+        "origin": "San Luis del Río, Oaxaca, Mexico",
+        "agave": "Espadín, six to eight years at harvest",
+        "production": "Conical stone pit roasting, horse-driven tahona milling and copper-pot distillation.",
+        "maestro": "Gregorio Velasco",
+        "tastingNotes": "Apple, mango, sapote, wood and gentle smoke."
+      },
+      "factSources": {
+        "abv": "https://www.doshombres.com/products/espadin-mezcal",
+        "origin": "https://www.doshombres.com/products/espadin-mezcal",
+        "agave": "https://www.doshombres.com/products/espadin-mezcal",
+        "production": "https://www.doshombres.com/products/espadin-mezcal",
+        "maestro": "https://www.doshombres.com/products/espadin-mezcal",
+        "tastingNotes": "https://www.doshombres.com/products/espadin-mezcal"
+      },
+      "image": {
+        "sourceUrl": "https://www.doshombres.com/cdn/shop/files/DH_Mezcal_12_05_Hero_2.png?v=1777582038&width=1200",
+        "sourcePage": "https://www.doshombres.com/products/espadin-mezcal",
+        "localPath": "/images/agave-researched/bottle-74-dos-hombres-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-74-dos-hombres-mezcal.png",
+        "width": 481,
+        "height": 959,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "fc783cf82e5f458e5888dc4e251d1f4c6621226e6fdbfcebd38ba2d6a5b7e0db",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-74-dos-hombres-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The existing catalogue identifies the otherwise generic DOS HOMBRES record as Espadín, not the producer’s separate Tobalá."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.doshombres.com/products/espadin-mezcal",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.doshombres.com/cdn/shop/files/DH_Mezcal_12_05_Hero_2.png?v=1777582038&width=1200",
+          "sourcePage": "https://www.doshombres.com/products/espadin-mezcal",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "EL SILENCIO MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.silencio.com/",
+          "title": "El Silencio producer · Mezcal research",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://shop.silencio.com/products/espadin",
+          "title": "El Silencio producer shop · Espadín",
+          "kind": "producer"
+        }
+      ],
+      "facts": {
+        "origin": "Oaxaca, Mexico",
+        "agave": "100% Espadín agave",
+        "aroma": "Gentle smoke, citrus and earthy greens.",
+        "taste": "Cooked agave, roasted figs and sweet potatoes.",
+        "finish": "Charred stone fruit, clay, salt and spice."
+      },
+      "factSources": {
+        "origin": "https://shop.silencio.com/products/espadin",
+        "agave": "https://shop.silencio.com/products/espadin",
+        "aroma": "https://shop.silencio.com/products/espadin",
+        "taste": "https://shop.silencio.com/products/espadin",
+        "finish": "https://shop.silencio.com/products/espadin"
+      },
+      "image": null,
+      "unresolvedReason": "An exact transparent front-bottle cutout remains unverified. Producer and retailer PNG candidates were opaque or could not be downloaded.",
+      "notes": [
+        "Existing catalogue identifies the otherwise generic El Silencio record as Espadín. The current producer shop confirms this expression."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.silencio.com/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Identity remains ambiguous"
+        },
+        {
+          "url": "https://www.silencio.com/spirits/",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://shop.silencio.com/products/espadin",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/135361",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 403,
+          "result": "Unavailable during research"
+        },
+        {
+          "url": "https://bevmo.com/cdn/shop/files/90ac1752-343b-4ede-8611-97701f945929_6f160fb0-ef93-4fa7-bf1a-d080df4912c9.png?v=1718255144",
+          "sourcePage": "https://bevmo.com/products/33366",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "HTTP 403"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: EL SILENCIO MEZCAL. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 76,
+      "name": "ILEGAL REPOSADO MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.ilegalmezcal.com/mezcal/",
+          "title": "Ilegal producer · Reposado",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Oaxaca, Mexico",
+        "agave": "100% Espadín (A. angustifolia)",
+        "aging": "Six months in new and used American oak, medium-char barrels",
+        "production": "Earthen-pit roasting, tahona crushing, natural open-air fermentation in pine vats and two copper-still distillations."
+      },
+      "factSources": {
+        "origin": "https://www.ilegalmezcal.com/mezcal/",
+        "agave": "https://www.ilegalmezcal.com/mezcal/",
+        "aging": "https://www.ilegalmezcal.com/mezcal/",
+        "production": "https://www.ilegalmezcal.com/mezcal/"
+      },
+      "image": null,
+      "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+      "notes": [
+        "Correction: current producer page says six months, versus four months in the old catalogue. Market/batch differences should be checked against the actual bottle.",
+        "Candidate PNGs contained an opaque white inner rectangle despite some transparent outer pixels; none was accepted as a bottle cutout."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.ilegalmezcal.com/mezcal/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://bottleengraving.com/products/ilegal-reposado",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://www.thebarreltap.com/products/ilegal-mezcal-reposado",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://www.thebarreltap.com/cdn/shop/files/ilegal-mezcal-reposado-750ml-the-barrel-tap-www-thebarreltap-com_680d09eb-91cf-4c4e-8321-004ef63a5307.webp?v=1691180994",
+          "sourcePage": "https://www.thebarreltap.com/products/ilegal-mezcal-reposado",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 255
+        },
+        {
+          "url": "https://shop.ilegalmezcal.com/cdn/shop/files/IlegalMezcalReposado750mlBottle.png?v=1683384450&width=1920",
+          "sourcePage": "https://shop.ilegalmezcal.com/products/reposado-750",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 255
+        }
+      ],
+      "photoNeeded": "Front bottle photo: ILEGAL REPOSADO MEZCAL. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 77,
+      "name": "LEYENDA 'TLACUACHE' MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420",
+          "title": "LCBO · Leyenda Tlacuache Organic Mezcal",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "41% (Ontario distributor listing)",
+        "tastingNotes": "Smoke, earth, lemongrass and fresh herbs; citrus and vegetal notes with a long smoky finish."
+      },
+      "factSources": {
+        "abv": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420",
+        "tastingNotes": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420"
+      },
+      "image": null,
+      "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+      "notes": [
+        "LCBO’s description says Oaxaca while its “Made In” field says Jalisco; origin is withheld because the same source conflicts."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://dialabottle.com/shop/spirits/tequila/mezcal/leyenda-tlacuache-organic-mezcal-750-ml-bottle/",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://storka.com/products/leyenda-tlacuache-organic-mezcal",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: LEYENDA 'TLACUACHE' MEZCAL. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 78,
+      "name": "LOS SIETE MISTERIOS MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "unresolved",
+      "expressionVerified": false,
+      "sources": [
+        {
+          "url": "https://www.sietemisterios.com/",
+          "title": "Los Siete Misterios producer · Complete range",
+          "kind": "identity-research"
+        }
+      ],
+      "facts": {},
+      "factSources": {},
+      "image": null,
+      "unresolvedReason": "The record gives only the brand. The producer makes Doba-Yej, multiple ensambles and ancestral expressions. No exact bottle may be assigned from a generic brand name; request the full front label and batch.",
+      "sourceAttempts": [
+        {
+          "url": "https://www.sietemisterios.com/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Identity remains ambiguous"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: LOS SIETE MISTERIOS MEZCAL. Exact expression, no gift box, label readable.",
+      "notes": []
+    },
+    {
+      "id": 79,
+      "name": "LOS SIETE MISTERIOS ESPADIN",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.sietemisterios.com/",
+          "title": "Los Siete Misterios producer · Ancestral Espadín",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Sola de Vega, Oaxaca, Mexico",
+        "agave": "Espadín (A. angustifolia)",
+        "production": "Hand milling and clay-pot distillation; bottled from the distillation without adjusting alcohol strength.",
+        "cooking": "Conical underground oven using wood and river stones"
+      },
+      "factSources": {
+        "origin": "https://www.sietemisterios.com/",
+        "agave": "https://www.sietemisterios.com/",
+        "production": "https://www.sietemisterios.com/",
+        "cooking": "https://www.sietemisterios.com/"
+      },
+      "image": {
+        "sourceUrl": "https://www.sietemisterios.com/wp-content/uploads/2023/01/Espadin.png",
+        "sourcePage": "https://www.sietemisterios.com/",
+        "localPath": "/images/agave-researched/bottle-79-los-siete-misterios-espadin.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-79-los-siete-misterios-espadin.png",
+        "width": 305,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "4b1ac4e0fcc2804912e7c093461a55f84f24a0a30694d522cbebf4fa2deb7d85",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-79-los-siete-misterios-espadin.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "This is the producer’s Espadín ancestral expression, not Doba-Yej. ABV is batch-dependent; the old catalogue’s 44% is not generalized."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.sietemisterios.com/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/Espadin.png",
+          "sourcePage": "https://www.sietemisterios.com/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "MADRE MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://madremezcal.com/pages/mezcal",
+          "title": "Madre producer · Ensamble",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "45% (producer Ensamble listing)",
+        "origin": "Oaxaca, Mexico",
+        "agave": "Espadín and Cuishe blend",
+        "production": "Artisanal production in open-air palenques; agave roasted in earthen ovens.",
+        "tastingNotes": "Sweet and mineral notes, subtle sage and gentle smoke."
+      },
+      "factSources": {
+        "abv": "https://madremezcal.com/pages/mezcal",
+        "origin": "https://madremezcal.com/pages/mezcal",
+        "agave": "https://madremezcal.com/pages/mezcal",
+        "production": "https://madremezcal.com/pages/mezcal",
+        "tastingNotes": "https://madremezcal.com/pages/mezcal"
+      },
+      "image": {
+        "sourceUrl": "https://liquorloot.com/cdn/shop/files/MadreMezcalEnsamble.webp?v=1755668044",
+        "sourcePage": "https://liquorloot.com/products/madre-mezcal-ensamble-750ml",
+        "localPath": "/images/agave-researched/bottle-80-madre-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-80-madre-mezcal.webp",
+        "width": 303,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "ebf5c50c55c08d9fb1ea321eafc8faf2f30337044f8e39d2372a816aaae51c59",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-80-madre-mezcal.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The existing catalogue specifies the 45% Espadín/Cuishe blend, identifying this generic MADRE MEZCAL record as Ensamble."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://madremezcal.com/pages/mezcal",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://liquorloot.com/cdn/shop/files/MadreMezcalEnsamble.webp?v=1755668044",
+          "sourcePage": "https://liquorloot.com/products/madre-mezcal-ensamble-750ml",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "name": "MEZCAL UNION",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.thebar.com/en-us/brands/mezcal-union",
+          "title": "Diageo / The Bar · Mezcal Unión Uno",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Oaxaca, Mexico",
+        "agave": "Espadín and Cirial",
+        "tastingNotes": "Earthy and lightly smoky, with citrus and herbal notes."
+      },
+      "factSources": {
+        "origin": "https://www.thebar.com/en-us/brands/mezcal-union",
+        "agave": "https://www.thebar.com/en-us/brands/mezcal-union",
+        "tastingNotes": "https://www.thebar.com/en-us/brands/mezcal-union"
+      },
+      "image": {
+        "sourceUrl": "https://images.ctfassets.net/6xd9bjrzzm9l/020680f20a323df0fd99cbd74aefa3ac/f5bdd965c3eab1542c23c5d8309ae2fc/7503016230018_mezcal-union-uno_750ml_front.png?fit=pad&fm=webp&q=100&w=432",
+        "sourcePage": "https://us.thebar.com/products/mezcal-union-uno-joven",
+        "localPath": "/images/agave-researched/bottle-81-mezcal-union.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-81-mezcal-union.png",
+        "width": 96,
+        "height": 426,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "548349c9f0ed9a624e536b8bdd418f0344e7c3f845d05e0b7fdf68727433eebc",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-81-mezcal-union.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Existing catalogue identifies the Espadín/Cirial blend, consistent with Unión Uno. No ABV is inferred from the generic record."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.thebar.com/en-us/brands/mezcal-union",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://images.ctfassets.net/6xd9bjrzzm9l/020680f20a323df0fd99cbd74aefa3ac/f5bdd965c3eab1542c23c5d8309ae2fc/7503016230018_mezcal-union-uno_750ml_front.png?fit=pad&fm=webp&q=100&w=432",
+          "sourcePage": "https://us.thebar.com/products/mezcal-union-uno-joven",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "MONTELOBOS MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+          "title": "Montelobos producer · Espadín",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "43.2% (US producer listing)",
+        "origin": "Rancho Loma Larga, Santiago Matatlán, Oaxaca",
+        "agave": "Organically cultivated Espadín",
+        "cooking": "Conical underground stone oven using oak and pine",
+        "extraction": "Mule-drawn stone tahona",
+        "fermentation": "Wild fermentation in open pine vats without added yeast or nutrients",
+        "distillation": "Copper stills heated with firewood",
+        "tastingNotes": "Earth, grass, honey, citrus, agave, nuts, herbs and smoke."
+      },
+      "factSources": {
+        "abv": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "origin": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "agave": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "cooking": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "extraction": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "fermentation": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "distillation": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "tastingNotes": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/"
+      },
+      "image": {
+        "sourceUrl": "https://www.montelobos.com/app/uploads/2022/06/product-bottle-espadin-us-min.png",
+        "sourcePage": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+        "localPath": "/images/agave-researched/bottle-82-montelobos-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-82-montelobos-mezcal.png",
+        "width": 297,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "746034e336c27c968abe67419d5ac3edb83dd421fbfee537d91d129537d49a64",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-82-montelobos-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The existing catalogue identifies the generic Montelobos record as Espadín.",
+        "Producer page contains an apparent stray “third distillation with turkey” maestro text on this Espadín page; it is excluded because it conflicts with the named product."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.montelobos.com/app/uploads/2022/06/product-bottle-espadin-us-min.png",
+          "sourcePage": "https://www.montelobos.com/en-us/our-mezcals/montelobos-espadin/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "name": "SANTO PURO MEZQUILA",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.santospirits.com/types-of-tequila/mezquila-mezcal-tequila/",
+          "title": "Santo producer · Mezquila",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "agave": "A blend of Blue Weber agave tequila and Espadín agave mezcal",
+        "taste": "Lime, mesquite, grilled peppers and smoke with a warming finish."
+      },
+      "factSources": {
+        "agave": "https://www.santospirits.com/types-of-tequila/mezquila-mezcal-tequila/",
+        "taste": "https://www.santospirits.com/types-of-tequila/mezquila-mezcal-tequila/"
+      },
+      "image": {
+        "sourceUrl": "https://www.remedyliquor.com/cdn/shop/files/santo_mezquila.png?v=1747510021",
+        "sourcePage": "https://www.remedyliquor.com/products/santo-puro-mezquila-mezcal-tequila-750ml",
+        "localPath": "/images/agave-researched/bottle-83-santo-puro-mezquila.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-83-santo-puro-mezquila.png",
+        "width": 565,
+        "height": 1177,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "9d576726af5e73ff234f074ab23eb0b7f05e2d9a6e483d7ca9c05fb2d90653a9",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-83-santo-puro-mezquila.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Mezquila is a tequila-and-mezcal blend; do not present it as a pure mezcal or assume a 50:50 ratio from the old archive."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.santospirits.com/types-of-tequila/mezquila-mezcal-tequila/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.santospirits.com/wp-content/uploads/2024/01/MEZ.png",
+          "sourcePage": "https://www.santospirits.com/types-of-tequila/mezquila-mezcal-tequila/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 3
+        },
+        {
+          "url": "https://www.remedyliquor.com/cdn/shop/files/santo_mezquila.png?v=1747510021",
+          "sourcePage": "https://www.remedyliquor.com/products/santo-puro-mezquila-mezcal-tequila-750ml",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "name": "SERPIENTE JOVEN MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "unresolved",
+      "expressionVerified": false,
+      "sources": [
+        {
+          "url": "https://www.worldmezcalawards.com/winner-mezcal/mezcal/2023/best-joven-45115-world-mezcal-awards-2023",
+          "title": "Identity research · Serpiente named products",
+          "kind": "identity-research"
+        }
+      ],
+      "facts": {},
+      "factSources": {},
+      "image": null,
+      "unresolvedReason": "No unambiguous producer or distributor match was found for SERPIENTE JOVEN MEZCAL. Search finds Serpiente Emplumada Tobalá, which is not enough to identify this Espadín-like catalogue record. Do not substitute that bottle or its facts.",
+      "sourceAttempts": [
+        {
+          "url": "https://www.worldmezcalawards.com/winner-mezcal/mezcal/2023/best-joven-45115-world-mezcal-awards-2023",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Identity remains ambiguous"
+        }
+      ],
+      "photoNeeded": "Front bottle photo: SERPIENTE JOVEN MEZCAL. Exact expression, no gift box, label readable.",
+      "notes": []
+    },
+    {
+      "id": 85,
+      "name": "SOMBRA JOVEN MEZCAL",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+          "title": "Diageo Bar Academy · Sombra Mezcal",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Oaxacan Sierra, Mexico",
+        "agave": "Espadín",
+        "cooking": "Slow-roasted in earthen pits",
+        "extraction": "Mechanical limestone tahona",
+        "fermentation": "Natural fermentation with wild yeast",
+        "distillation": "Two copper-pot distillations",
+        "tastingNotes": "Spice, fruit and citrus."
+      },
+      "factSources": {
+        "origin": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+        "agave": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+        "cooking": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+        "extraction": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+        "fermentation": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+        "distillation": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+        "tastingNotes": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal"
+      },
+      "image": {
+        "sourceUrl": "https://www.saq.com/media/catalog/product/1/3/13518909-1_1643994658.png",
+        "sourcePage": "https://www.saq.com/en/13518909",
+        "localPath": "/images/agave-researched/bottle-85-sombra-joven-mezcal.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-85-sombra-joven-mezcal.png",
+        "width": 476,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "e6af0868e761bde0ccda7affd415ebb0c861d797f1f9e4f749fc465533c19548",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-85-sombra-joven-mezcal.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The Diageo producer/distributor text is search-indexed but its live URL currently returns 410. No ABV is added without a current primary or Ontario distributor listing."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.saq.com/media/catalog/product/1/3/13518909-1_1643994658.png",
+          "sourcePage": "https://www.saq.com/en/13518909",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "name": "THE LOST EXPLORER",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://thelostexplorer.com/mezcal/",
+          "title": "The Lost Explorer producer · Espadín",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "agave": "Espadín (A. angustifolia), eight years old",
+        "tastingNotes": "Sweet, herbal, red apple and ripe fruit with light smoke."
+      },
+      "factSources": {
+        "agave": "https://thelostexplorer.com/mezcal/",
+        "tastingNotes": "https://thelostexplorer.com/mezcal/"
+      },
+      "image": {
+        "sourceUrl": "https://assets.liquidcommerce.co/catalog/img/73949324-8908-4ba9-a214-2b5e75c6e855.png",
+        "sourcePage": "https://www.reservebar.com/products/the-lost-explorer-mezcal-espadin/GROUPING-1566088",
+        "localPath": "/images/agave-researched/bottle-86-the-lost-explorer.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-86-the-lost-explorer.png",
+        "width": 466,
+        "height": 1031,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "ca6bec951ce200299c31b357e78a84f877c47e325462493079ef4178baae2d90",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-86-the-lost-explorer.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The existing catalogue identifies the otherwise generic record as Espadín. The producer also sells Tobalá, Salmiana and other expressions; their facts and images are not used."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://thelostexplorer.com/mezcal/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://thelostexplorer.com/wp-content/uploads/2024/02/espadin-group-720x1142.webp",
+          "sourcePage": "https://thelostexplorer.com/mezcal/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 0
+        },
+        {
+          "url": "https://assets.liquidcommerce.co/catalog/img/73949324-8908-4ba9-a214-2b5e75c6e855.png",
+          "sourcePage": "https://www.reservebar.com/products/the-lost-explorer-mezcal-espadin/GROUPING-1566088",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "name": "OLMECA ALTOS PLATA",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/",
+          "title": "Pernod Ricard USA · Olmeca Altos Plata",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US listing)",
+        "origin": "Los Altos, Mexico",
+        "agave": "100% Blue agave",
+        "tastingNotes": "Sweet agave with lime and lemon.",
+        "production": "Distilled at almost 7,000 feet above sea level."
+      },
+      "factSources": {
+        "abv": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/",
+        "origin": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/",
+        "agave": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/",
+        "tastingNotes": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/",
+        "production": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/"
+      },
+      "image": {
+        "sourceUrl": "https://images.salsify.com/image/upload/s--ztFPECKZ--/170a70dd278efeb33408bd02b3d152ff78d566fb.png",
+        "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708083/Olmeca-Altos-Plata-Tequila-750-ml-Bottle-80-Proof/",
+        "localPath": "/images/agave-researched/bottle-119-olmeca-altos-plata.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-119-olmeca-altos-plata.png",
+        "width": 480,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "8e7dcfe066c27514776e043ea64c6645d8eace3c71c0baa9c092a1722304c78d",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-119-olmeca-altos-plata.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Verified 750 ml Plata image replaces the earlier 1.75 L candidate."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://images.salsify.com/image/upload/s--11JbBAHf--/148976be2c714704eb722cf438f0ada47ef7c554.png",
+          "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47712081/Olmeca-Altos-Plata-Tequila-1-75-L-Bottle-80-Proof/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 0
+        },
+        {
+          "url": "https://images.salsify.com/image/upload/s--ztFPECKZ--/170a70dd278efeb33408bd02b3d152ff78d566fb.png",
+          "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47708083/Olmeca-Altos-Plata-Tequila-750-ml-Bottle-80-Proof/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "PANTALONES ORGANIC BLANCO",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://pantalonestequila.com/products/pantalones-tequila-blanco",
+          "title": "Pantalones · Organic Blanco",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US producer listing)",
+        "agave": "100% Organic Blue Weber agave",
+        "tastingNotes": "Cooked agave sweetness, honey and citrus."
+      },
+      "factSources": {
+        "abv": "https://pantalonestequila.com/products/pantalones-tequila-blanco",
+        "agave": "https://pantalonestequila.com/products/pantalones-tequila-blanco",
+        "tastingNotes": "https://pantalonestequila.com/products/pantalones-tequila-blanco"
+      },
+      "image": {
+        "sourceUrl": "https://pantalonestequila.com/cdn/shop/files/Pantalones_Tequila_Blanco_Product_Shot.png?v=1759272918",
+        "sourcePage": "https://pantalonestequila.com/pages/awards",
+        "localPath": "/images/agave-researched/bottle-120-pantalones-organic-blanco.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-120-pantalones-organic-blanco.png",
+        "width": 511,
+        "height": 994,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "1d81f54f2396b0d0cf956387c8bbc6ae46ae14d42ed511bcf6ee70b7bf3b559f",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-120-pantalones-organic-blanco.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://pantalonestequila.com/products/pantalones-tequila-blanco",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://pantalonestequila.com/cdn/shop/files/3_c8c7f2ab-e24d-4599-bb93-f66c86793ecd.png?v=1758832918&width=660",
+          "sourcePage": "https://pantalonestequila.com/collections/frontpage",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 255
+        },
+        {
+          "url": "https://pantalonestequila.com/cdn/shop/files/Pantalones_Tequila_Blanco_Product_Shot.png?v=1759272918",
+          "sourcePage": "https://pantalonestequila.com/pages/awards",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "name": "PATRON SILVER",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-silver.html",
+          "title": "Patrón · Silver",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US producer listing)",
+        "origin": "Hacienda Patrón, Jalisco, Mexico",
+        "agave": "100% Blue Weber agave",
+        "aging": "Unaged",
+        "production": "Made using agave, water and yeast in small batches at Hacienda Patrón.",
+        "tastingNotes": "Agave and fruit aromas; citrus and a clean, lightly peppery finish."
+      },
+      "factSources": {
+        "abv": "https://www.patrontequila.com/products/patron-silver.html",
+        "origin": "https://www.patrontequila.com/products/patron-silver.html",
+        "agave": "https://www.patrontequila.com/products/patron-silver.html",
+        "aging": "https://www.patrontequila.com/products/patron-silver.html",
+        "production": "https://www.patrontequila.com/products/patron-silver.html",
+        "tastingNotes": "https://www.patrontequila.com/products/patron-silver.html"
+      },
+      "image": {
+        "sourceUrl": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-silver/2025_bottle_silver.png",
+        "sourcePage": "https://www.patrontequila.com/products/patron-silver.html",
+        "localPath": "/images/agave-researched/bottle-121-patron-silver.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-121-patron-silver.png",
+        "width": 804,
+        "height": 1375,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "605950b61378e56e143a45306ed270398a8e5fdc3824711c2634b494e15e01bb",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-121-patron-silver.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-silver.html",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-silver/2025_bottle_silver.png",
+          "sourcePage": "https://www.patrontequila.com/products/patron-silver.html",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "name": "ROOSTER ROJO BLANCO",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.lcbo.com/en/rooster-rojo-blanco-37611",
+          "title": "LCBO · Rooster Rojo Blanco",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (Ontario distributor listing)",
+        "origin": "Jalisco, Mexico",
+        "agave": "100% Blue Weber agave",
+        "aroma": "Fresh citrus.",
+        "taste": "Agave sweetness and pepper."
+      },
+      "factSources": {
+        "abv": "https://www.lcbo.com/en/rooster-rojo-blanco-37611",
+        "origin": "https://www.lcbo.com/en/rooster-rojo-blanco-37611",
+        "agave": "https://www.lcbo.com/en/rooster-rojo-blanco-37611",
+        "aroma": "https://www.lcbo.com/en/rooster-rojo-blanco-37611",
+        "taste": "https://www.lcbo.com/en/rooster-rojo-blanco-37611"
+      },
+      "image": {
+        "sourceUrl": "https://media.danmurphys.com.au/dmo/product/95892-1.png",
+        "sourcePage": "https://www.danmurphys.com.au/product/95892/rooster-rojo-blanco-tequila-700ml",
+        "localPath": "/images/agave-researched/bottle-122-rooster-rojo-blanco.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-122-rooster-rojo-blanco.png",
+        "width": 297,
+        "height": 1236,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "ce57b0318adbad74f06e064ab6c99143b32af09c853cb0d765241cdba579f957",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-122-rooster-rojo-blanco.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Image is the Australian 700 ml presentation; Ontario producer/distributor facts remain separately sourced."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.lcbo.com/en/rooster-rojo-blanco-37611",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/374859_cf100a9722e540f48b019a31ec164f9a~mv2.png",
+          "sourcePage": "https://www.contagia.com.tw/others",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 255
+        },
+        {
+          "url": "https://media.danmurphys.com.au/dmo/product/95892-1.png",
+          "sourcePage": "https://www.danmurphys.com.au/product/95892/rooster-rojo-blanco-tequila-700ml",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "name": "SAUZA TRES GENERACIONES PLATA",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.tresgeneraciones.com/our-tequilas/plata",
+          "title": "Tres Generaciones · Plata",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (producer global listing)",
+        "origin": "Mexico",
+        "agave": "100% Blue agave",
+        "aging": "Unaged",
+        "production": "Triple-distilled.",
+        "aroma": "Agave, citrus and sweet floral notes.",
+        "taste": "Fresh agave, herbs and spice, with a white-pepper finish."
+      },
+      "factSources": {
+        "abv": "https://www.tresgeneraciones.com/our-tequilas/plata",
+        "origin": "https://www.tresgeneraciones.com/our-tequilas/plata",
+        "agave": "https://www.tresgeneraciones.com/our-tequilas/plata",
+        "aging": "https://www.tresgeneraciones.com/our-tequilas/plata",
+        "production": "https://www.tresgeneraciones.com/our-tequilas/plata",
+        "aroma": "https://www.tresgeneraciones.com/our-tequilas/plata",
+        "taste": "https://www.tresgeneraciones.com/our-tequilas/plata"
+      },
+      "image": {
+        "sourceUrl": "https://www.tresgeneraciones.com/sites/default/files/styles/original/public/2024-02/plata-bottle-tres-generaciones.png.webp?itok=Sd8vxDst",
+        "sourcePage": "https://www.tresgeneraciones.com/our-tequilas",
+        "localPath": "/images/agave-researched/bottle-123-sauza-tres-generaciones-plata.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-123-sauza-tres-generaciones-plata.webp",
+        "width": 348,
+        "height": 726,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "a8bba1bdede29b69531fb0978e9bf4001433fe41b5512f17132b989cde9d69a6",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-123-sauza-tres-generaciones-plata.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.tresgeneraciones.com/our-tequilas/plata",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.tresgeneraciones.com/sites/default/files/styles/original/public/2024-02/plata-bottle-tres-generaciones.png.webp?itok=Sd8vxDst",
+          "sourcePage": "https://www.tresgeneraciones.com/our-tequilas",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "name": "SIEMPRE PLATA",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://siempretequila.com/tequila/plata",
+          "title": "Siempre · Plata",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (current producer listing)",
+        "origin": "Los Altos Southern, Jalisco",
+        "agave": "Tequilana Weber",
+        "aging": "Unaged",
+        "tastingNotes": "Cooked agave, citrus, herbs, pepper and mineral notes."
+      },
+      "factSources": {
+        "abv": "https://siempretequila.com/tequila/plata",
+        "origin": "https://siempretequila.com/tequila/plata",
+        "agave": "https://siempretequila.com/tequila/plata",
+        "aging": "https://siempretequila.com/tequila/plata",
+        "tastingNotes": "https://siempretequila.com/tequila/plata"
+      },
+      "image": {
+        "sourceUrl": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/plata-WkESaPpY.webp",
+        "sourcePage": "https://siempretequila.com/tequila/plata",
+        "localPath": "/images/agave-researched/bottle-124-siempre-plata.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-124-siempre-plata.webp",
+        "width": 567,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "f2656c1b1de6aa8365a333792c78796fc6458984273bf2f3418b3d5e443c5581",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-124-siempre-plata.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Current producer product page lists NOM 1414; confirm any older stock before applying batch-specific production details."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://siempretequila.com/tequila/plata",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/plata-WkESaPpY.webp",
+          "sourcePage": "https://siempretequila.com/tequila/plata",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "name": "TEREMANA BLANCO",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://teremana.com/pages/tequila",
+          "title": "Teremana · Tequila details",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Jalisco Highlands, Mexico",
+        "agave": "100% Blue Weber Highlands agave",
+        "aging": "Blanco expression; no barrel-aging claim added",
+        "production": "Brick-oven roasted for three days, open-tank fermented and distilled in handmade copper pot stills.",
+        "nom": "1613",
+        "tastingNotes": "Bright citrus with a smooth, fresh finish."
+      },
+      "factSources": {
+        "origin": "https://teremana.com/pages/tequila",
+        "agave": "https://teremana.com/pages/tequila",
+        "aging": "https://teremana.com/pages/tequila",
+        "production": "https://teremana.com/pages/tequila",
+        "nom": "https://teremana.com/pages/tequila",
+        "tastingNotes": "https://teremana.com/pages/tequila"
+      },
+      "image": {
+        "sourceUrl": "https://teremana.com/cdn/shop/files/Blanco-bottle.png?v=1613700200",
+        "sourcePage": "https://teremana.com/pages/tequila",
+        "localPath": "/images/agave-researched/bottle-125-teremana-blanco.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-125-teremana-blanco.png",
+        "width": 498,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "1b9da042ddb87c7b09f2a3c6b9847a600e139f01cc266d00b6817218747be241",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-125-teremana-blanco.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "ABV should be read from the actual venue bottle; the producer detail page did not give a numeric ABV in its text."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://teremana.com/pages/tequila",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://teremana.com/cdn/shop/files/Blanco-bottle.png?v=1613700200",
+          "sourcePage": "https://teremana.com/pages/tequila",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "name": "TROMBA BLANCO",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://tequilatromba.mx/",
+          "title": "Tequila Tromba México · Blanco",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "aging": "Unaged",
+        "tastingNotes": "Producer describes a clear, vibrant and versatile blanco."
+      },
+      "factSources": {
+        "aging": "https://tequilatromba.mx/",
+        "tastingNotes": "https://tequilatromba.mx/"
+      },
+      "image": {
+        "sourceUrl": "https://tequilatromba.mx/wp-content/uploads/2019/11/tequila-tromba-botella-blanco-3.png",
+        "sourcePage": "https://tequilatromba.mx/",
+        "localPath": "/images/agave-researched/bottle-126-tromba-blanco.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-126-tromba-blanco.png",
+        "width": 179,
+        "height": 697,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "8392f1afca38dea4ad1f3f254fee251ccfba7d0660a02bd5c2d565dda4df67c4",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-126-tromba-blanco.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Mexico producer packaging is shown. Confirm market presentation and ABV against the venue bottle."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://tequilatromba.mx/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://tequilatromba.mx/wp-content/uploads/2019/11/tequila-tromba-botella-blanco-3.png",
+          "sourcePage": "https://tequilatromba.mx/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "name": "XICOTE BLANCO",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "facts-verified-image-pending",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf",
+          "title": "Mexcor distributor · Xicote Blanco",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US distributor listing)",
+        "origin": "Mexico",
+        "agave": "100% Blue agave",
+        "tastingNotes": "Herbal and fruity aromas with citrus and a fresh, soft profile."
+      },
+      "factSources": {
+        "abv": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf",
+        "origin": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf",
+        "agave": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf",
+        "tastingNotes": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf"
+      },
+      "image": null,
+      "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+      "notes": [
+        "Do not infer detailed distillation or aging from the name alone."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.delmesaliquor.com/products/xicote-blanco-tequila",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://chipsliquor.com/products/xicote-blanco-tequila",
+          "method": "Direct public HTTP fetch",
+          "httpStatus": 200,
+          "result": "Page and image candidates reviewed"
+        },
+        {
+          "url": "https://d9n7s0cf8h13p.cloudfront.net/tbgv2602069912064/images/products/2/5/3/1/7/3/253173/lcbo_1_750_bottle_h.png",
+          "sourcePage": "https://www.thebeerguy.ca/liquor-store-delivery/tequila/blanco-tequila/xicote-blanco-tequila/?srsltid=AfmBOoptWl0p5UBjgDo7w-gRB1tjcqIEggp1P3oFXbaP6QW_3krmsL-f",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 255
+        }
+      ],
+      "photoNeeded": "Front bottle photo: XICOTE BLANCO. Exact expression, no gift box, label readable."
+    },
+    {
+      "id": 145,
+      "name": "OLMECA ALTOS AÑEJO",
+      "type": "Tequila",
+      "category": "Añejo",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+          "title": "Pernod Ricard USA · Olmeca Altos Añejo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US 1 L listing)",
+        "origin": "Los Altos, Jalisco, Mexico",
+        "agave": "100% Blue agave",
+        "aging": "At least 18 months in 200-litre bourbon barrels",
+        "production": "Producer describes a combination of tahona-extracted and roller-milled liquid.",
+        "tastingNotes": "Citrus and tannin notes with a robust profile."
+      },
+      "factSources": {
+        "abv": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+        "origin": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+        "agave": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+        "aging": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+        "production": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+        "tastingNotes": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof"
+      },
+      "image": {
+        "sourceUrl": "https://images.salsify.com/image/upload/s--VRqofXMg--/1cc56444fce1ac9b418142ad2bbd45c97fb60d20.png",
+        "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+        "localPath": "/images/agave-researched/bottle-145-olmeca-altos-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-145-olmeca-altos-a-ejo.png",
+        "width": 496,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "6da85a17addc5afb8d552e63ea2b69670f3bff8b245b98cb04c35b0580171c53",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-145-olmeca-altos-a-ejo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The source packshot is a 1 L presentation."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://images.salsify.com/image/upload/s--VRqofXMg--/1cc56444fce1ac9b418142ad2bbd45c97fb60d20.png",
+          "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/47709084/Olmeca-Altos-Anejo-Tequila-1-L-Bottle-80-Proof",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "name": "PATRON AÑEJO",
+      "type": "Tequila",
+      "category": "Añejo",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-anejo.html",
+          "title": "Patrón · Añejo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (US producer listing)",
+        "agave": "100% Blue Weber agave",
+        "aging": "12–15 months in oak barrels",
+        "tastingNotes": "Cooked agave, vanilla, caramel and oak, with chocolate and spice accents."
+      },
+      "factSources": {
+        "abv": "https://www.patrontequila.com/products/patron-anejo.html",
+        "agave": "https://www.patrontequila.com/products/patron-anejo.html",
+        "aging": "https://www.patrontequila.com/products/patron-anejo.html",
+        "tastingNotes": "https://www.patrontequila.com/products/patron-anejo.html"
+      },
+      "image": {
+        "sourceUrl": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-anejo/2025_bottle_anejo.png",
+        "sourcePage": "https://www.patrontequila.com/products/patron-anejo.html",
+        "localPath": "/images/agave-researched/bottle-146-patron-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-146-patron-a-ejo.png",
+        "width": 786,
+        "height": 1346,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "71c633e31af5632b560080cde3cd87bb83dace79b9ddedd66b75a4b0884ffd13",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-146-patron-a-ejo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [],
+      "sourceAttempts": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-anejo.html",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.patrontequila.com/binaries/content/gallery/patrontequila/products/patron-anejo/2025_bottle_anejo.png",
+          "sourcePage": "https://www.patrontequila.com/products/patron-anejo.html",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "name": "REVOLUCION AÑEJO",
+      "type": "Tequila",
+      "category": "Añejo",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.tequilarevolucion.com/nuestros-tequilas/",
+          "title": "Tequila Revolución · Añejo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "tastingNotes": "Agave, caramel, wood, honey and tobacco with a smooth finish."
+      },
+      "factSources": {
+        "tastingNotes": "https://www.tequilarevolucion.com/nuestros-tequilas/"
+      },
+      "image": {
+        "sourceUrl": "https://www.realliquor1.com/cdn/shop/files/TequilaRevolucionAnejo-750ML.png?v=1715188105&width=988",
+        "sourcePage": "https://www.realliquor1.com/products/tequila-revolucion-anejo",
+        "localPath": "/images/agave-researched/bottle-147-revolucion-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-147-revolucion-a-ejo.png",
+        "width": 375,
+        "height": 970,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "1e9c82fad1e19ee1d81294fe5ca1b503c3782d86f12e12b6a4ed66e0c781e437",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-147-revolucion-a-ejo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "The primary page differentiates Añejo from Añejo Cristalino. The Cristalino’s 18-month claim was not applied to the regular Añejo."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.tequilarevolucion.com/nuestros-tequilas/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.tequilarevolucion.com/_astro/ACrecortado-1024x1536-1.BeB70z6g.webp",
+          "sourcePage": "https://www.tequilarevolucion.com/nuestros-tequilas/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Rejected or superseded candidate; see candidate contact sheet",
+          "alphaMin": 255
+        },
+        {
+          "url": "https://www.realliquor1.com/cdn/shop/files/TequilaRevolucionAnejo-750ML.png?v=1715188105&width=988",
+          "sourcePage": "https://www.realliquor1.com/products/tequila-revolucion-anejo",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "name": "SAUZA TRES GENERACIONES AÑEJO",
+      "type": "Tequila",
+      "category": "Añejo",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.tresgeneraciones.com/our-tequilas/anejo",
+          "title": "Tres Generaciones · Añejo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (producer global listing)",
+        "origin": "Mexico",
+        "agave": "100% Blue agave",
+        "production": "Triple-distilled."
+      },
+      "factSources": {
+        "abv": "https://www.tresgeneraciones.com/our-tequilas/anejo",
+        "origin": "https://www.tresgeneraciones.com/our-tequilas/anejo",
+        "agave": "https://www.tresgeneraciones.com/our-tequilas/anejo",
+        "production": "https://www.tresgeneraciones.com/our-tequilas/anejo"
+      },
+      "image": {
+        "sourceUrl": "https://www.tresgeneraciones.com/sites/default/files/styles/original/public/2024-02/anejo-bottle-tres-generaciones.png.webp?itok=7e22B5VM",
+        "sourcePage": "https://www.tresgeneraciones.com/our-tequilas",
+        "localPath": "/images/agave-researched/bottle-148-sauza-tres-generaciones-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-148-sauza-tres-generaciones-a-ejo.webp",
+        "width": 525,
+        "height": 976,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "58098f49f7ef6448aa0ada4e934209ae4cc1a304bd6f5d8e921de4800ce78b54",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-148-sauza-tres-generaciones-a-ejo.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Aging and detailed tasting notes were not added without a separately checked expression page."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://www.tresgeneraciones.com/our-tequilas/anejo",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://www.tresgeneraciones.com/sites/default/files/styles/original/public/2024-02/anejo-bottle-tres-generaciones.png.webp?itok=7e22B5VM",
+          "sourcePage": "https://www.tresgeneraciones.com/our-tequilas",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "name": "SIEMPRE AÑEJO",
+      "type": "Tequila",
+      "category": "Añejo",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://siempretequila.com/tequila/anejo",
+          "title": "Siempre · Añejo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (current producer listing)",
+        "origin": "Los Altos Southern, Jalisco",
+        "agave": "Tequilana Weber",
+        "aging": "Producer page describes a 12–36 month aged expression.",
+        "tastingNotes": "Toffee, caramel, chocolate, vanilla, peppercorn and oak."
+      },
+      "factSources": {
+        "abv": "https://siempretequila.com/tequila/anejo",
+        "origin": "https://siempretequila.com/tequila/anejo",
+        "agave": "https://siempretequila.com/tequila/anejo",
+        "aging": "https://siempretequila.com/tequila/anejo",
+        "tastingNotes": "https://siempretequila.com/tequila/anejo"
+      },
+      "image": {
+        "sourceUrl": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/anejo-Cxcp7nob.webp",
+        "sourcePage": "https://siempretequila.com/tequila/anejo",
+        "localPath": "/images/agave-researched/bottle-149-siempre-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-149-siempre-a-ejo.webp",
+        "width": 557,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "No prominent cast shadow observed.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "2deef1535666dfbcb5ff7b38e1b0c7d7abd28468218da8f6a539f21133041553",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-149-siempre-a-ejo.webp"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Producer page attributes some production and barrel details to public third-party references; those details are not independently certified here."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://siempretequila.com/tequila/anejo",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://siempretequila.com/assets/cantina-finish-mobile-20261013/anejo-Cxcp7nob.webp",
+          "sourcePage": "https://siempretequila.com/tequila/anejo",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "name": "TEREMANA AÑEJO",
+      "type": "Tequila",
+      "category": "Añejo",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://teremana.com/pages/tequila",
+          "title": "Teremana · Tequila details",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "origin": "Jalisco Highlands, Mexico",
+        "agave": "100% Blue Weber Highlands agave",
+        "aging": "Aged in American whiskey barrels",
+        "production": "Brick-oven roasted for three days, open-tank fermented and distilled in handmade copper pot stills.",
+        "nom": "1613",
+        "tastingNotes": "Warm oak, vanilla and roasted agave, with a lightly sweet finish."
+      },
+      "factSources": {
+        "origin": "https://teremana.com/pages/tequila",
+        "agave": "https://teremana.com/pages/tequila",
+        "aging": "https://teremana.com/pages/tequila",
+        "production": "https://teremana.com/pages/tequila",
+        "nom": "https://teremana.com/pages/tequila",
+        "tastingNotes": "https://teremana.com/pages/tequila"
+      },
+      "image": {
+        "sourceUrl": "https://teremana.com/cdn/shop/files/Anejo-bottle.png?v=1632274144",
+        "sourcePage": "https://teremana.com/pages/tequila",
+        "localPath": "/images/agave-researched/bottle-150-teremana-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-150-teremana-a-ejo.png",
+        "width": 470,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "6b01506c58dd7f0c041347d813748c84d5609b93339922351a55a5f7f2a678e6",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-150-teremana-a-ejo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "ABV should be read from the actual venue bottle; the producer detail page did not give a numeric ABV in its text."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://teremana.com/pages/tequila",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://teremana.com/cdn/shop/files/Anejo-bottle.png?v=1632274144",
+          "sourcePage": "https://teremana.com/pages/tequila",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "name": "TROMBA AÑEJO",
+      "type": "Tequila",
+      "category": "Añejo",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://tequilatromba.mx/",
+          "title": "Tequila Tromba México · Añejo",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "aging": "20–24 months",
+        "production": "Maturation is overseen by Marco and Rodrigo Cedano.",
+        "tastingNotes": "Producer describes a smooth, smoky and complex profile."
+      },
+      "factSources": {
+        "aging": "https://tequilatromba.mx/",
+        "production": "https://tequilatromba.mx/",
+        "tastingNotes": "https://tequilatromba.mx/"
+      },
+      "image": {
+        "sourceUrl": "https://tequilatromba.mx/wp-content/uploads/2019/11/tequila-tromba-botella-anejo-3-180x700.png",
+        "sourcePage": "https://tequilatromba.mx/",
+        "localPath": "/images/agave-researched/bottle-151-tromba-a-ejo.webp",
+        "originalLocalPath": "work/agave-originals-b/bottle-151-tromba-a-ejo.png",
+        "width": 180,
+        "height": 698,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; single isolated expression bottle; no box or opaque plane.",
+        "embeddedShadow": "A small natural contact shadow is present in the source asset.",
+        "transforms": "Fully transparent padding trimmed; resized to maximum 900 × 1400; WebP delivery with alpha preserved. No background removal or bottle retouching.",
+        "sourceSha256": "2ed48858de7846227cf8d9e866927d0edaf512a6a582ab8f368c7a6e8cab109e",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-151-tromba-a-ejo.png"
+      },
+      "unresolvedReason": null,
+      "notes": [
+        "Mexico producer packaging is shown. Confirm market presentation and ABV against the venue bottle."
+      ],
+      "sourceAttempts": [
+        {
+          "url": "https://tequilatromba.mx/",
+          "method": "Producer/distributor page or search-indexed page reviewed",
+          "result": "Expression-level facts reviewed"
+        },
+        {
+          "url": "https://tequilatromba.mx/wp-content/uploads/2019/11/tequila-tromba-botella-anejo-3-180x700.png",
+          "sourcePage": "https://tequilatromba.mx/",
+          "method": "Image fetched and alpha/visual inspected",
+          "result": "Accepted isolated transparent bottle",
+          "alphaMin": 0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "records": 56,
+    "withVerifiedFacts": 52,
+    "withVerifiedTransparentImage": 44,
+    "imagesStillNeeded": [
+      60,
+      62,
+      67,
+      69,
+      70,
+      73,
+      75,
+      76,
+      77,
+      78,
+      84,
+      127
+    ],
+    "unresolvedExpressions": [
+      70,
+      73,
+      78,
+      84
+    ]
+  }
+}

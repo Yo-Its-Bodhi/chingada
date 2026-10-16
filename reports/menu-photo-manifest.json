@@ -1,0 +1,540 @@
+[
+  {
+    "sourceFilename": "BARBACOA TACO.png",
+    "driveId": "1mHrb1iLlk4w4QWJzqkNbuYvnesOUsi2w",
+    "sourceUrl": "https://drive.google.com/file/d/1mHrb1iLlk4w4QWJzqkNbuYvnesOUsi2w/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Barbacoa Taco",
+    "assetPath": "/images/optimized/barbacoa-taco-600.webp",
+    "status": "reuse existing verified photo"
+  },
+  {
+    "sourceFilename": "BEANS.png",
+    "driveId": "1BQaKzR-d1CEDW8RtRqEy3dyXA10hK0R8",
+    "sourceUrl": "https://drive.google.com/file/d/1BQaKzR-d1CEDW8RtRqEy3dyXA10hK0R8/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": null,
+    "assetPath": null,
+    "status": "not on current menu"
+  },
+  {
+    "sourceFilename": "BEET SALAD.png",
+    "driveId": "1ldDELPk7Yap-wM6FpSGzH0rOJ7AA_R_K",
+    "sourceUrl": "https://drive.google.com/file/d/1ldDELPk7Yap-wM6FpSGzH0rOJ7AA_R_K/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": null,
+    "assetPath": null,
+    "status": "not on current menu"
+  },
+  {
+    "sourceFilename": "burrito.png",
+    "driveId": "1_f3ww4uuQYkctRf0SL4L0fj2WpBZmnU2",
+    "sourceUrl": "https://drive.google.com/file/d/1_f3ww4uuQYkctRf0SL4L0fj2WpBZmnU2/view",
+    "sourceWidth": 1329,
+    "sourceHeight": 884,
+    "proposedMatchingDish": "Burrito",
+    "assetPath": null,
+    "status": "alternate crop not exported",
+    "note": "The square uppercase BURRITO.png is used for consistent menu framing."
+  },
+  {
+    "sourceFilename": "BURRITO.png",
+    "driveId": "1v3lSlo3WU4ZrHtJiUGBdoQiIPVx4ew1d",
+    "sourceUrl": "https://drive.google.com/file/d/1v3lSlo3WU4ZrHtJiUGBdoQiIPVx4ew1d/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Burrito",
+    "assetPath": "/images/menu/burrito-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 45890
+  },
+  {
+    "sourceFilename": "CARNITAS TACO.png",
+    "driveId": "1X_ogCIMHaoomjYRYfcpSz9JgOBXERmq4",
+    "sourceUrl": "https://drive.google.com/file/d/1X_ogCIMHaoomjYRYfcpSz9JgOBXERmq4/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Carnitas Taco",
+    "assetPath": "/images/menu/carnitas-taco-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 55098
+  },
+  {
+    "sourceFilename": "CHILI.png",
+    "driveId": "1tGUlfShxsMLAxkkJ5PjIE4UHHEuSJQ3W",
+    "sourceUrl": "https://drive.google.com/file/d/1tGUlfShxsMLAxkkJ5PjIE4UHHEuSJQ3W/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": null,
+    "assetPath": null,
+    "status": "not on current menu"
+  },
+  {
+    "sourceFilename": "CHINGADA TACO.png",
+    "driveId": "16HILyQdWrSEks-ZmOViN09s6vDZkEO-t",
+    "sourceUrl": "https://drive.google.com/file/d/16HILyQdWrSEks-ZmOViN09s6vDZkEO-t/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Chingada Taco",
+    "assetPath": "/images/menu/chingada-taco-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 82388
+  },
+  {
+    "sourceFilename": "CHIPS AND SALSA.png",
+    "driveId": "1NzKDWb3MrcMnR75BKZiFmS-24ecQxCWW",
+    "sourceUrl": "https://drive.google.com/file/d/1NzKDWb3MrcMnR75BKZiFmS-24ecQxCWW/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Chips & Salsa",
+    "assetPath": "/images/menu/chips-salsa-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 53422
+  },
+  {
+    "sourceFilename": "CHIPS.png",
+    "driveId": "1SfOw6M2eTKSQGW8Oayi3Dj7y2m9So1xI",
+    "sourceUrl": "https://drive.google.com/file/d/1SfOw6M2eTKSQGW8Oayi3Dj7y2m9So1xI/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": null,
+    "assetPath": null,
+    "status": "not on current menu"
+  },
+  {
+    "sourceFilename": "CHORIQUESO.png",
+    "driveId": "10SRVAjCJqADhn8w1xf9YwjABwQ6zkQjo",
+    "sourceUrl": "https://drive.google.com/file/d/10SRVAjCJqADhn8w1xf9YwjABwQ6zkQjo/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": null,
+    "assetPath": null,
+    "status": "not on current menu"
+  },
+  {
+    "sourceFilename": "CHORIZO TACO.png",
+    "driveId": "1y7HOd803vlEp0C-beXfulnDuGdNQPKst",
+    "sourceUrl": "https://drive.google.com/file/d/1y7HOd803vlEp0C-beXfulnDuGdNQPKst/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Chorizo Taco",
+    "assetPath": "/images/menu/chorizo-taco-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 76854
+  },
+  {
+    "sourceFilename": "CHURROS.png",
+    "driveId": "1JsbCcFqPNp1k8ddPlhyN3JS-Ju2hr7kh",
+    "sourceUrl": "https://drive.google.com/file/d/1JsbCcFqPNp1k8ddPlhyN3JS-Ju2hr7kh/view",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Churro Bites",
+    "assetPath": null,
+    "status": "confirmation required",
+    "note": "Short curved miniature churros, not visibly cut into bites; confirm the current serving style before mapping."
+  },
+  {
+    "sourceFilename": "DSC_0068aaaa.png",
+    "driveId": "1g0SFHStOI55BtFyPFOVbgVvle2fFvkuG",
+    "sourceUrl": "https://drive.google.com/file/d/1g0SFHStOI55BtFyPFOVbgVvle2fFvkuG/view",
+    "sourceWidth": 640,
+    "sourceHeight": 426,
+    "proposedMatchingDish": null,
+    "assetPath": null,
+    "status": "unidentified dish, unassigned"
+  },
+  {
+    "sourceFilename": "DSC_0201.jpg",
+    "driveId": "1wLopW2_e8gZyE3vLLQ-onTeb9kFR02hw",
+    "sourceUrl": "https://drive.google.com/file/d/1wLopW2_e8gZyE3vLLQ-onTeb9kFR02hw/view",
+    "sourceWidth": 640,
+    "sourceHeight": 428,
+    "proposedMatchingDish": null,
+    "assetPath": null,
+    "status": "unidentified dish, unassigned"
+  },
+  {
+    "sourceFilename": "GUACAMOLE BOWL.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Guacamole Bowl",
+    "assetPath": "/images/menu/guacamole-bowl-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 51806
+  },
+  {
+    "sourceFilename": "MUSHROOM.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Mushroom Taco",
+    "assetPath": "/images/menu/mushroom-taco-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 61428
+  },
+  {
+    "sourceFilename": "NACHOS.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Nachos",
+    "assetPath": "/images/menu/nachos-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 61472
+  },
+  {
+    "sourceFilename": "POTATOES.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Mexican Potatoes",
+    "assetPath": "/images/menu/mexican-potatoes-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 70404
+  },
+  {
+    "sourceFilename": "QUESO FUNDIDO.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Queso Fundido",
+    "assetPath": "/images/menu/queso-fundido-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 38480
+  },
+  {
+    "sourceFilename": "SWEET POT.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Sweet Potato Taco",
+    "assetPath": "/images/menu/sweet-potato-taco-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 62594
+  },
+  {
+    "sourceFilename": "Taco Bowl.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Taco Bowl",
+    "assetPath": "/images/menu/taco-bowl-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 55860
+  },
+  {
+    "sourceFilename": "Mole 2.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Mole con Pollo",
+    "assetPath": "/images/menu/mole-con-pollo-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 88102
+  },
+  {
+    "sourceFilename": "Michelada.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Michelada",
+    "assetPath": "/images/menu/michelada-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 35136
+  },
+  {
+    "sourceFilename": "Signature Marg.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": null,
+    "assetPath": "/images/menu/signature-margarita-600.webp",
+    "status": "generic margarita photo",
+    "width": 600,
+    "height": 600,
+    "bytes": 36110,
+    "category": "Margaritas",
+    "note": "Filename confirms a signature margarita; the exact recipe is unconfirmed. Use for the bar or Margarita Monday, not a named variation."
+  },
+  {
+    "sourceFilename": "TINGA.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Tinga de Pollo Taco",
+    "assetPath": "/images/menu/tinga-de-pollo-taco-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 64636
+  },
+  {
+    "sourceFilename": "TRES LECHE.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1RpDcjtnv1z_0IgnNRFEF0l5mBXk-MSkF",
+    "sourceWidth": 600,
+    "sourceHeight": 600,
+    "proposedMatchingDish": "Tres Leches Cake",
+    "assetPath": "/images/menu/tres-leches-cake-600.webp",
+    "status": "matched",
+    "width": 600,
+    "height": 600,
+    "bytes": 36472
+  },
+  {
+    "sourceFilename": "DSC_0155.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1Xd30njUpTcjPrZBQ0JTWl0nkz9yu57Xe",
+    "sourceWidth": 1330,
+    "sourceHeight": 884,
+    "proposedMatchingDish": null,
+    "status": "kitchen craft photo",
+    "alt": "Fresh La Chingada corn tortillas stacked after cooking",
+    "outputs": [
+      {
+        "path": "/images/craft/tortilla-stack-640.webp",
+        "width": 640,
+        "height": 425,
+        "bytes": 16610
+      },
+      {
+        "path": "/images/craft/tortilla-stack-960.webp",
+        "width": 960,
+        "height": 638,
+        "bytes": 29044
+      }
+    ]
+  },
+  {
+    "sourceFilename": "DSC_0167.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1Xd30njUpTcjPrZBQ0JTWl0nkz9yu57Xe",
+    "sourceWidth": 1457,
+    "sourceHeight": 884,
+    "proposedMatchingDish": null,
+    "status": "kitchen craft photo",
+    "alt": "La Chingada corn tortillas cooking across the griddle",
+    "outputs": [
+      {
+        "path": "/images/craft/tortillas-on-griddle-640.webp",
+        "width": 640,
+        "height": 388,
+        "bytes": 15002
+      },
+      {
+        "path": "/images/craft/tortillas-on-griddle-960.webp",
+        "width": 960,
+        "height": 582,
+        "bytes": 24938
+      },
+      {
+        "path": "/images/craft/tortillas-on-griddle-1440.webp",
+        "width": 1440,
+        "height": 874,
+        "bytes": 44482
+      }
+    ]
+  },
+  {
+    "sourceFilename": "20241028_165807.jpg",
+    "downloadedFilename": "20241028_165807 (1).jpg",
+    "driveId": "19XOoeo4RAxmlJ-4vXQitrkOsXi01YjeJ",
+    "sourceUrl": "https://drive.google.com/file/d/19XOoeo4RAxmlJ-4vXQitrkOsXi01YjeJ/view",
+    "sourceFolderUrl": "https://drive.google.com/drive/folders/1_pkp3MIiKbU2pd8QLJlPKh8u_JzgdJtf",
+    "sourceFolderName": "Owner-provided Winter24 Google Drive folder",
+    "sourceWidth": 1848,
+    "sourceHeight": 4000,
+    "proposedMatchingDish": "Shrimp Taco",
+    "status": "inferred match from visible ingredients",
+    "classificationBasis": "Grilled shrimp, creamy slaw, sliced jalapeño, pink pickled onions and orange mayonnaise are visible on a black corn tortilla. The filename is a timestamp, not a dish label.",
+    "composition": "Portrait; taco occupies the central portion, with a dark upper background and wooden table below.",
+    "alt": "La Chingada grilled shrimp taco with slaw, jalapeño and pickled onions on a black tortilla",
+    "outputs": [
+      {
+        "path": "/images/food/shrimp-taco-640.webp",
+        "width": 640,
+        "height": 1385,
+        "bytes": 127426
+      },
+      {
+        "path": "/images/food/shrimp-taco-960.webp",
+        "width": 960,
+        "height": 2078,
+        "bytes": 227586
+      },
+      {
+        "path": "/images/food/shrimp-taco-1440.webp",
+        "width": 1440,
+        "height": 3117,
+        "bytes": 419360
+      }
+    ]
+  },
+  {
+    "sourceFilename": "20241028_170654.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1_pkp3MIiKbU2pd8QLJlPKh8u_JzgdJtf",
+    "sourceWidth": 1848,
+    "sourceHeight": 4000,
+    "proposedMatchingDish": "Blackened Fish Taco",
+    "status": "inferred match from visible ingredients",
+    "classificationBasis": "A dark seared fish fillet, creamy slaw and pale green sauce are visible on a black corn tortilla, consistent with the current blackened fish taco. The seasoning and exact sauce are inferred, not identifiable from the timestamp filename.",
+    "outputs": [
+      {
+        "path": "/images/food/blackened-fish-taco-640.webp",
+        "width": 640,
+        "height": 1385,
+        "bytes": 114616
+      },
+      {
+        "path": "/images/food/blackened-fish-taco-960.webp",
+        "width": 960,
+        "height": 2078,
+        "bytes": 211248
+      }
+    ]
+  },
+  {
+    "sourceFilename": "20241028_170834.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1_pkp3MIiKbU2pd8QLJlPKh8u_JzgdJtf",
+    "sourceWidth": 1848,
+    "sourceHeight": 4000,
+    "proposedMatchingDish": "Baja Fish Taco",
+    "status": "inferred match from visible ingredients",
+    "classificationBasis": "A battered fish fillet, pale and yellow fruit/slaw, pink pickled onions and orange mayonnaise are visible on a black corn tortilla, consistent with the current Baja fish taco. The filename is a timestamp, not a dish label.",
+    "outputs": [
+      {
+        "path": "/images/food/baja-fish-taco-640.webp",
+        "width": 640,
+        "height": 1385,
+        "bytes": 103300
+      },
+      {
+        "path": "/images/food/baja-fish-taco-960.webp",
+        "width": 960,
+        "height": 2078,
+        "bytes": 191084
+      }
+    ]
+  },
+  {
+    "sourceFilename": "20241028_171054.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1_pkp3MIiKbU2pd8QLJlPKh8u_JzgdJtf",
+    "sourceWidth": 1848,
+    "sourceHeight": 4000,
+    "proposedMatchingDish": "Aguachile",
+    "status": "probable match from visible ingredients",
+    "classificationBasis": "A bowl of shrimp, sliced avocado, red/pink onions and dark marinade is served with tostadas. This is a probable match to the current Aguachile based on the visible ingredients and serving format; the exact marinade and recipe are unconfirmed by the timestamp filename.",
+    "outputs": [
+      {
+        "path": "/images/food/aguachile-640.webp",
+        "width": 640,
+        "height": 1385,
+        "bytes": 101798
+      },
+      {
+        "path": "/images/food/aguachile-960.webp",
+        "width": 960,
+        "height": 2078,
+        "bytes": 190026
+      }
+    ]
+  },
+  {
+    "sourceFilename": "Carne.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1aUozslFAaUa78neg5JteRG6Y9fRtdzGQ",
+    "sourceWidth": 6016,
+    "sourceHeight": 4000,
+    "proposedMatchingDish": "Carne Asada Taco",
+    "status": "matched by owner filename and visible ingredients",
+    "classificationBasis": "The owner-provided Carne label and visible seared steak with onion and cilantro support the Carne Asada Taco match.",
+    "assetPath": "/images/menu/carne-asada-taco-640.webp",
+    "width": 640,
+    "height": 426,
+    "bytes": 49836
+  },
+  {
+    "sourceFilename": "KFC.png",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1aUozslFAaUa78neg5JteRG6Y9fRtdzGQ",
+    "sourceWidth": 2000,
+    "sourceHeight": 1330,
+    "proposedMatchingDish": "Fried Chicken Taco",
+    "status": "matched by owner filename and visible ingredients",
+    "classificationBasis": "The owner-provided KFC label and visible fried chicken, lettuce, pico and orange mayonnaise support the Fried Chicken Taco match.",
+    "assetPath": "/images/menu/fried-chicken-taco-640.webp",
+    "width": 640,
+    "height": 426,
+    "bytes": 48406
+  },
+  {
+    "sourceFilename": "Pastor.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1aUozslFAaUa78neg5JteRG6Y9fRtdzGQ",
+    "sourceWidth": 2250,
+    "sourceHeight": 1496,
+    "proposedMatchingDish": "Pastor Taco",
+    "status": "matched by owner filename and visible ingredients",
+    "classificationBasis": "The owner-provided Pastor label and visible pork, pineapple and green salsa support the Pastor Taco match.",
+    "assetPath": "/images/menu/pastor-taco-640.webp",
+    "width": 640,
+    "height": 426,
+    "bytes": 47784
+  },
+  {
+    "sourceFilename": "Vegetarian.jpg",
+    "driveId": null,
+    "sourceUrl": "https://drive.google.com/drive/folders/1aUozslFAaUa78neg5JteRG6Y9fRtdzGQ",
+    "sourceWidth": 2250,
+    "sourceHeight": 1496,
+    "proposedMatchingDish": null,
+    "status": "unassigned older vegetarian recipe",
+    "classificationBasis": "Mushrooms, corn and green salsa are visible; this older vegetarian taco is not Halloumi Taco and is left unassigned."
+  }
+]

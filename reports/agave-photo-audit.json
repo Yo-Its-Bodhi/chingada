@@ -1,0 +1,466 @@
+{
+  "summary": {
+    "filesInspected": 63,
+    "originalMappings": 53,
+    "remapped": 49,
+    "removed": 4,
+    "newVerifiedMappings": 4,
+    "finalMappings": 53,
+    "unassignedAssets": 10,
+    "removedRecords": [
+      "1800 REPOSADO",
+      "GRAN CORONEL REPOSADO",
+      "PATRON REPOSADO",
+      "AGUA SANTA JOVEN"
+    ],
+    "addedRecords": [
+      "PATRON SILVER",
+      "TROMBA AÑEJO",
+      "AMORES CENZIO LOGIA",
+      "SOMBRA JOVEN"
+    ]
+  },
+  "assets": [
+    {
+      "file": "1800-anejo.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "1800 Coconut",
+      "status": "not assigned",
+      "note": "Readable brand and Coconut label; no corresponding archive record."
+    },
+    {
+      "file": "1800-coconut.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Aguamiel tequila",
+      "status": "not assigned",
+      "note": "Brand readable; no corresponding archive record."
+    },
+    {
+      "file": "1800-reposado.jpeg",
+      "archiveRecord": "1800 AÑEJO",
+      "observedIdentity": "1800 AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "agua-santa.jpeg",
+      "archiveRecord": "AMORES MOMENTO MEZCAL VERDE",
+      "observedIdentity": "AMORES MOMENTO MEZCAL VERDE",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "aguamiel.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Cabo Wabo Reposado",
+      "status": "not assigned",
+      "note": "Readable brand and Reposado label; no corresponding archive record."
+    },
+    {
+      "file": "amores-cupreata.jpeg",
+      "archiveRecord": "AMORES CENZIO LOGIA",
+      "observedIdentity": "AMORES CENZIO LOGIA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "amores-espadin-joven.jpeg",
+      "archiveRecord": "AMORES REPOSADO",
+      "observedIdentity": "AMORES REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "amores-reposado.jpeg",
+      "archiveRecord": "AMORES CUPREATA",
+      "observedIdentity": "AMORES CUPREATA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "amores-verde-momento.jpeg",
+      "archiveRecord": "AMORES ESPADIN",
+      "observedIdentity": "AMORES ESPADIN",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "bosscal.jpeg",
+      "archiveRecord": "CASAMIGOS",
+      "observedIdentity": "CASAMIGOS",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "bosscal.png",
+      "archiveRecord": "BOSSCAL",
+      "observedIdentity": "BOSSCAL",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "cabo-wabo.jpeg",
+      "archiveRecord": "CASA MAESTRI BLANCO",
+      "observedIdentity": "CASA MAESTRI BLANCO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "casa-maestri-reserva-de-mfm-anejo.jpeg",
+      "archiveRecord": "CASAMIGOS BLANCO",
+      "observedIdentity": "CASAMIGOS BLANCO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "casa-maestri-reserva-de-mfm-blanco.jpeg",
+      "archiveRecord": "CASA MAESTRI REPOSADO",
+      "observedIdentity": "CASA MAESTRI REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "casa-maestri-reserva-de-mfm-reposado.jpeg",
+      "archiveRecord": "CASA MAESTRI AÑEJO",
+      "observedIdentity": "CASA MAESTRI AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "casamigos-anejo.jpeg",
+      "archiveRecord": "CAZADORES BLANCO",
+      "observedIdentity": "CAZADORES BLANCO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "casamigos-blanco.jpeg",
+      "archiveRecord": "CASAMIGOS REPOSADO",
+      "observedIdentity": "CASAMIGOS REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "casamigos-reposado.jpeg",
+      "archiveRecord": "CASAMIGOS AÑEJO",
+      "observedIdentity": "CASAMIGOS AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "casamigos.jpeg",
+      "archiveRecord": "CLASE AZUL",
+      "observedIdentity": "CLASE AZUL",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "cazadores-anejo.jpeg",
+      "archiveRecord": "CENOTE AÑEJO",
+      "observedIdentity": "CENOTE AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "cazadores-blanco.jpeg",
+      "archiveRecord": "CAZADORES REPOSADO",
+      "observedIdentity": "CAZADORES REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "cazadores-reposado.jpeg",
+      "archiveRecord": "CAZADORES AÑEJO",
+      "observedIdentity": "CAZADORES AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "cenote-anejo.jpeg",
+      "archiveRecord": "CLASE AZUL PLATA",
+      "observedIdentity": "CLASE AZUL PLATA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "clase-azul-anejo.jpeg",
+      "archiveRecord": "DON JULIO BLANCO",
+      "observedIdentity": "DON JULIO BLANCO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "clase-azul-plata.jpeg",
+      "archiveRecord": "CLASE AZUL REPOSADO",
+      "observedIdentity": "CLASE AZUL REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "clase-azul-reposado.jpeg",
+      "archiveRecord": "CLASE AZUL AÑEJO",
+      "observedIdentity": "CLASE AZUL AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "clase-azul.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Jaral de Berrio mezcal",
+      "status": "not assigned",
+      "note": "Readable brand; no corresponding archive record."
+    },
+    {
+      "file": "don-julio-1942.jpeg",
+      "archiveRecord": "ESPOLON BLANCO",
+      "observedIdentity": "ESPOLON BLANCO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "don-julio-reposado.jpeg",
+      "archiveRecord": "DON JULIO 1942 EXTRA AÑEJO",
+      "observedIdentity": "DON JULIO 1942 EXTRA AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "don-julio-silver.jpeg",
+      "archiveRecord": "DON JULIO REPOSADO",
+      "observedIdentity": "DON JULIO REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "espolon-blanco.jpeg",
+      "archiveRecord": "ESPOLON REPOSADO",
+      "observedIdentity": "ESPOLON REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "espolon-reposado.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Gran Coronel tequila",
+      "status": "not assigned",
+      "note": "Brand readable, exact aging expression not verified; do not assign to Reposado."
+    },
+    {
+      "file": "gran-coronel-tequila-reposado.jpeg",
+      "archiveRecord": "HORNITOS BLACK BARREL",
+      "observedIdentity": "HORNITOS BLACK BARREL",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "hornitos-black-barrel-anejo.png",
+      "archiveRecord": "HUSSONG'S REPOSADO",
+      "observedIdentity": "HUSSONG'S REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "hussong-s-reposado.jpeg",
+      "archiveRecord": "LA PINTA POMEGRANATE TEQUILA",
+      "observedIdentity": "LA PINTA POMEGRANATE TEQUILA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "jaral-de-berrio.png",
+      "archiveRecord": "LEYENDA 'TLACUACHE'",
+      "observedIdentity": "LEYENDA 'TLACUACHE'",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "la-pinta-pomegranate.png",
+      "archiveRecord": "LOS ARANGO REPOSADO",
+      "observedIdentity": "LOS ARANGO REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "leyenda-tlachuache.jpeg",
+      "archiveRecord": "LOS SIETE MISTERIO",
+      "observedIdentity": "LOS SIETE MISTERIO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-arango-reposado.jpeg",
+      "archiveRecord": "LOS AZULEJOS SILVER",
+      "observedIdentity": "LOS AZULEJOS SILVER",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-azulejos-anejo.jpeg",
+      "archiveRecord": "MAESTRO DOBEL TEQUILA",
+      "observedIdentity": "MAESTRO DOBEL TEQUILA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-azulejos-reposado.png",
+      "archiveRecord": "LOS AZULEJOS AÑEJO",
+      "observedIdentity": "LOS AZULEJOS AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-azulejos-silver.png",
+      "archiveRecord": "LOS AZULEJOS REPOSADO",
+      "observedIdentity": "LOS AZULEJOS REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-azulejos-skeleto-anejo.jpeg",
+      "archiveRecord": "TROMBA BLANCO",
+      "observedIdentity": "TROMBA BLANCO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-azulejos-skeleto-blanco.jpeg",
+      "archiveRecord": "LOS AZULEJOS SKELLY REPOSADO",
+      "observedIdentity": "LOS AZULEJOS SKELLY REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-azulejos-skeleto-reposado.jpeg",
+      "archiveRecord": "LOS AZULEJOS SKELLY AÑEJO BANDITO LTD",
+      "observedIdentity": "LOS AZULEJOS SKELLY AÑEJO BANDITO LTD",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "los-siete-misterios-doba-yej.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Marca Negra mezcal, Tepeztate",
+      "status": "not assigned",
+      "note": "Brand and Tepeztate neck label readable; no corresponding archive record."
+    },
+    {
+      "file": "maestro-dobel-diamond-anejo-extra-anejo.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Milagro Silver",
+      "status": "not assigned",
+      "note": "Readable brand and Silver label; no corresponding archive record."
+    },
+    {
+      "file": "marca-negra-espadin-mezcal.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Mexcalia mezcal",
+      "status": "not assigned",
+      "note": "Brand readable; no corresponding archive record."
+    },
+    {
+      "file": "mexcalia.jpeg",
+      "archiveRecord": "SANTO PURO MEZQUILA",
+      "observedIdentity": "SANTO PURO MEZQUILA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "milagro-reposado.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Olmeca Altos Plata",
+      "status": "not assigned",
+      "note": "Readable brand and Plata label; no corresponding archive record."
+    },
+    {
+      "file": "milagro-silver.jpeg",
+      "archiveRecord": "MILAGRO REPOSADO",
+      "observedIdentity": "MILAGRO REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "olmeca-altos.jpeg",
+      "archiveRecord": "PATRON SILVER",
+      "observedIdentity": "PATRON SILVER",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "patron-anejo.jpeg",
+      "archiveRecord": null,
+      "observedIdentity": "Patron XO Cafe",
+      "status": "not assigned",
+      "note": "Readable brand and XO Cafe label; no corresponding archive record."
+    },
+    {
+      "file": "patron-reposado.jpeg",
+      "archiveRecord": "PATRON AÑEJO",
+      "observedIdentity": "PATRON AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "patron-xo-cafe.png",
+      "archiveRecord": "SAUZA TRES GENERACIONES PLATA",
+      "observedIdentity": "SAUZA TRES GENERACIONES PLATA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "santa-puro-mezquila.png",
+      "archiveRecord": "SOMBRA JOVEN",
+      "observedIdentity": "SOMBRA JOVEN",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "sauza-tres-generaciones-anejo.jpeg",
+      "archiveRecord": "SIEMPRE PLATA",
+      "observedIdentity": "SIEMPRE PLATA",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "sauza-tres-generaciones-plata.jpeg",
+      "archiveRecord": "SAUZA TRES GENERACIONES REPOSADO",
+      "observedIdentity": "SAUZA TRES GENERACIONES REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "sauza-tres-generaciones-reposado.png",
+      "archiveRecord": "SAUZA TRES GENERACIONES AÑEJO",
+      "observedIdentity": "SAUZA TRES GENERACIONES AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "siempre-anejo.jpeg",
+      "archiveRecord": "LOS AZULEJOS 'SKELLY' BLANCO",
+      "observedIdentity": "LOS AZULEJOS 'SKELLY' BLANCO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "siempre-plata.png",
+      "archiveRecord": "SIEMPRE AÑEJO",
+      "observedIdentity": "SIEMPRE AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "tromba-blanco.jpeg",
+      "archiveRecord": "TROMBA REPOSADO",
+      "observedIdentity": "TROMBA REPOSADO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    },
+    {
+      "file": "tromba-reposado.jpeg",
+      "archiveRecord": "TROMBA AÑEJO",
+      "observedIdentity": "TROMBA AÑEJO",
+      "status": "verified assignment",
+      "note": "Label inspected; see decanter/brand-alias exceptions below."
+    }
+  ]
+}

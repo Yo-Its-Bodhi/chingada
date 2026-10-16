@@ -4,9 +4,14 @@
   "description": "Mexican street food, fresh tacos, house margaritas, daily Happy Hour, Thursday AYCE tacos and a hidden patio on Dundas West.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f2e4c8",
-  "theme_color": "#171411",
+  "background_color": "#fffaf0",
+  "theme_color": "#bd3026",
   "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
     {
       "src": "/favicon.png",
       "sizes": "512x512",

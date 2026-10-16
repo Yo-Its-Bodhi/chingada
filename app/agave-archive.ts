@@ -28,7 +28,6 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "French Oak Barrels - No less than 6 months",
     "aroma": "Agave (Cooked) · Vanilla · Alcohol · Oak · Caramel · Pepper. Cinnamon",
     "taste": "Agave (Cooked) · Alcohol · Oak · Pepper · Caramel · Smoke · Vanilla",
-    "image": "/images/agave/1800-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "1800 AÑEJO": {
@@ -41,7 +40,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "French Oak Barrels - Minimum 14 Months",
     "aroma": "Oak · Vanilla · Agave (Cooked) · Alcohol · Whisky · Caramel · Smoke",
     "taste": "Oak · Vanilla · Agave (Cooked) · Alcohol · Caramel · Pepper · Clove",
-    "image": "/images/agave/1800-anejo.jpeg",
+    "image": "/images/agave/1800-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CASA MAESTRI BLANCO": {
@@ -54,7 +53,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Herbal · Aloe · Eucalyptus · Guanabana · Honey · Agave (Cooked)",
     "taste": "Herbal · Aloe · Eucalyptus · Guanabana · Honey · Poblano · Spices",
-    "image": "/images/agave/casa-maestri-reserva-de-mfm-blanco.jpeg",
+    "image": "/images/agave/cabo-wabo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CASA MAESTRI REPOSADO": {
@@ -67,7 +66,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Oak Barrels · Upto 1 Year",
     "aroma": "Vanilla · Butter · Cream Soda · Oak · Agave (Raw) · Citrus · Caramel",
     "taste": "Vanilla · Pepper · Oak · Raisin · Butter · Caramel · Butterscotch",
-    "image": "/images/agave/casa-maestri-reserva-de-mfm-reposado.jpeg",
+    "image": "/images/agave/casa-maestri-reserva-de-mfm-blanco.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CASA MAESTRI AÑEJO": {
@@ -80,7 +79,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Oak Barrels · No less than 1 year",
     "aroma": "Agave · Vanilla · Oak · Butter · Caramel · Pepper · Cinnamon · Grass",
     "taste": "Agave (Raw) · Agave (Cooked) · Butter · Earth · Vanilla · Pepper",
-    "image": "/images/agave/casa-maestri-reserva-de-mfm-anejo.jpeg",
+    "image": "/images/agave/casa-maestri-reserva-de-mfm-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CASAMIGOS BLANCO": {
@@ -93,7 +92,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Agave (Cooked) · Vanilla · Citrus · Pepper · Caramel · Floral · Earth",
     "taste": "Agave (Cooked) · Vanilla · Citrus · Pepper · Caramel · Floral · Cake",
-    "image": "/images/agave/casamigos-blanco.jpeg",
+    "image": "/images/agave/casa-maestri-reserva-de-mfm-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CASAMIGOS REPOSADO": {
@@ -106,7 +105,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American White Oak Whisky Barrel · 7 Months",
     "aroma": "Vanilla · Caramel · Agave (Cooked) · Oak · Butter · Cinnamon · Cacao",
     "taste": "Caramel · Vanilla · Agave (Cooked) · Oak · Butterscotch · Butter",
-    "image": "/images/agave/casamigos-reposado.jpeg",
+    "image": "/images/agave/casamigos-blanco.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CASAMIGOS AÑEJO": {
@@ -119,7 +118,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American White Oak Whisky Barrel · 14 Months",
     "aroma": "Caramel · Vanilla · Agave (Cooked) · Oak · Cinnamon · Butterscotch",
     "taste": "Caramel · Agave (Cooked) · Vanilla · Oak · CInnamon · Whisky · Smoke",
-    "image": "/images/agave/casamigos-anejo.jpeg",
+    "image": "/images/agave/casamigos-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CAZADORES BLANCO": {
@@ -132,7 +131,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Agave (Cooked) · Alcohol · Agave (Raw) · Acetone · Caramel · Banana",
     "taste": "Alcohol · Agave (Cooked) · Medicinal · Caramel · Acetone · Banana",
-    "image": "/images/agave/cazadores-blanco.jpeg",
+    "image": "/images/agave/casamigos-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CAZADORES REPOSADO": {
@@ -145,7 +144,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "New American White Oak Barrels · 2 Months",
     "aroma": "Alcohol · Agave (Cooked) · Vanilla · Oak · Earth · Caramel · Agave (Raw)",
     "taste": "Alcohol · Vanilla · Agave (Cooked) · Caramel · Earth · Clove · Oak",
-    "image": "/images/agave/cazadores-reposado.jpeg",
+    "image": "/images/agave/cazadores-blanco.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CAZADORES AÑEJO": {
@@ -158,7 +157,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "New American White Oak Barrels · 12 Months Minimum",
     "aroma": "Agave (Cooked) · Oak · Vanilla · Caramel · Whisky · Cinnamon · Honey",
     "taste": "Oak · Agave (Cooked) · Vanilla · Butterscotch · Pepper · Whisky · Honey",
-    "image": "/images/agave/cazadores-anejo.jpeg",
+    "image": "/images/agave/cazadores-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CENOTE AÑEJO": {
@@ -171,7 +170,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American White Oak Bourbon Barrels · 1 Year",
     "aroma": "Vanilla · Caranmel · Agave (Cooked) · Oak · Butterscotch · Whisky",
     "taste": "Vanilla · Oak · Caramel · Agave (Cooked) · CInnamon · Chocolate",
-    "image": "/images/agave/cenote-anejo.jpeg",
+    "image": "/images/agave/cazadores-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CLASE AZUL PLATA": {
@@ -182,7 +181,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "fermentation": "100% Agave · Stainless Steel Tanks",
     "distillation": "100% Agave · Stainless Steel Tanks",
     "taste": "Agave (Cooked) · Vanilla · Pepper · Caramel · Cream Soda · Mint · Cinnamon",
-    "image": "/images/agave/clase-azul-plata.jpeg",
+    "image": "/images/agave/cenote-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CLASE AZUL REPOSADO": {
@@ -194,7 +193,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "distillation": "100% Agave · Stainless Steel Tanks",
     "aging": "Used American White Oak Bourbon Barrels · 8 Months",
     "taste": "Vanilla · Caramel · Agave (Cooked) · Oak · Pepper · Honey · Butter",
-    "image": "/images/agave/clase-azul-reposado.jpeg",
+    "image": "/images/agave/clase-azul-plata.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CLASE AZUL AÑEJO": {
@@ -207,7 +206,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American White Oak Bourbon Barrels · 25 Months",
     "aroma": "Agave (Cooked) · Citrus · Pepper · Alcohol · Vanilla · Vegetal · Yeast · Earth",
     "taste": "Vanilla · Caramel · Oak · Butterscotch · Clove · Nutmeg · Banana",
-    "image": "/images/agave/clase-azul-anejo.jpeg",
+    "image": "/images/agave/clase-azul-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "DON JULIO BLANCO": {
@@ -218,7 +217,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "fermentation": "100% Agave · Stainless Steel Tanks",
     "distillation": "x2 Distillation",
     "taste": "Agave (Cooked) · Pepper · Citrus · Vanilla · White Pepper · Earth · Butter",
-    "image": "/images/agave/don-julio-silver.jpeg",
+    "image": "/images/agave/clase-azul-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "DON JULIO REPOSADO": {
@@ -230,7 +229,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "distillation": "100% Agave · Stainless Steel Tanks",
     "aging": "Bourbon Barrels · 8 Months",
     "taste": "Vanilla · Caramel · Agave (Cooked) · Oak · Pepper · Honey · Butter · Cinnamon",
-    "image": "/images/agave/don-julio-reposado.jpeg",
+    "image": "/images/agave/don-julio-silver.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "DON JULIO 1942 EXTRA AÑEJO": {
@@ -242,7 +241,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "distillation": "100% Agave · Stainless Steel Tanks",
     "aging": "Bourbon Barrels · 36 Months",
     "taste": "Vanilla · Caramel · Agave (Cooked) · Oak · Pepper · Honey · Butter",
-    "image": "/images/agave/don-julio-1942.jpeg",
+    "image": "/images/agave/don-julio-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "ESPOLON BLANCO": {
@@ -255,7 +254,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Agave (Cooked) · Alcohol · Pepper · Citrus · Vanilla · Grass · Butter",
     "taste": "Agave (Cooked) · Pepper · Alcohol · Citrus · Vanilla · White Pepper",
-    "image": "/images/agave/espolon-blanco.jpeg",
+    "image": "/images/agave/don-julio-1942.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "ESPOLON REPOSADO": {
@@ -268,7 +267,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "American White Oak Barrels · 6 Months",
     "aroma": "Agave (Cooked) · Oak · Caramel · Alcohol · Vanilla · Pepper · Butter",
     "taste": "Agave (Cooked) · Oak · Pepper · Caramel · Alcohol · Butterscotch",
-    "image": "/images/agave/espolon-reposado.jpeg",
+    "image": "/images/agave/espolon-blanco.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "GRAN CORONEL REPOSADO": {
@@ -281,7 +280,6 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "French & American Oak Barrels · 6 Months Minimum",
     "aroma": "Oak · Molasses · Whisky · Alcohol · Bread · Spice · Tobacco",
     "taste": "Toasted Bread · Smoke · Spices · Vanilla · Oak · Tobacco · Whisky",
-    "image": "/images/agave/gran-coronel-tequila-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "HORNITOS BLACK BARREL": {
@@ -294,7 +292,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Toasted Oak · 12 months · Charred Oak · 4 Months · Toasted Oak · 2 Months",
     "aroma": "Whisky · Agave (Cooked) · Oak · Vanilla · Caramel · Smoke · Pepper",
     "taste": "Whisky · Oak · Agave (Cooked) · Smoke · Vanilla · Pepper · Caramel",
-    "image": "/images/agave/hornitos-black-barrel-anejo.png",
+    "image": "/images/agave/gran-coronel-tequila-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "HUSSONG'S REPOSADO": {
@@ -307,7 +305,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used Bourbon Barrels · 5 Months",
     "aroma": "Citrus · Vanilla · Grass · Agave (Cooked) · Licorice · Almond · Herbal",
     "taste": "Agave (Cooked) · Cinnamon · Pepper · Butter · Caramel · Vanilla · Pineapple",
-    "image": "/images/agave/hussong-s-reposado.jpeg",
+    "image": "/images/agave/hornitos-black-barrel-anejo.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LA PINTA POMEGRANATE TEQUILA": {
@@ -319,7 +317,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "distillation": "100% Agave · Stainless Steel Tanks",
     "aroma": "Sweet · Fruity · Pomegranate · Agave · Alcohol",
     "taste": "Sweet · Fruity · Pomegranate · Agave · Alcohol",
-    "image": "/images/agave/la-pinta-pomegranate.png",
+    "image": "/images/agave/hussong-s-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS ARANGO REPOSADO": {
@@ -332,7 +330,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "American Oak · 7 Months",
     "aroma": "Agave (Cooked) · Alcohol · White Pepper · Jalapeño · Pepper · Caramel",
     "taste": "White Pepper · Agave (Cooked) · Pepper · Jalapeño · Caramel · Citrus",
-    "image": "/images/agave/los-arango-reposado.jpeg",
+    "image": "/images/agave/la-pinta-pomegranate.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS AZULEJOS SILVER": {
@@ -345,7 +343,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Pepper · Agave (Raw) · Lemon · Anise · Tropical Fruits · Vegetal · Grass",
     "taste": "Agave (Raw) · Pepper · Tropical Fruits · Lemon · Citrus · White Pepper",
-    "image": "/images/agave/los-azulejos-silver.png",
+    "image": "/images/agave/los-arango-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS AZULEJOS REPOSADO": {
@@ -358,7 +356,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used Bourbon Barrels · 8 Months",
     "aroma": "Agave (Cooked) · Grapefruit · Pepper · Citrus · Earth · Pear ·  Vanilla",
     "taste": "Pear · Vanilla · Alcohol · Vegetal · Cinnamon",
-    "image": "/images/agave/los-azulejos-reposado.png",
+    "image": "/images/agave/los-azulejos-silver.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS AZULEJOS AÑEJO": {
@@ -371,7 +369,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Oak Barrels · Almost 3 Years",
     "aroma": "Caramel · Vanilla · Butterscotch · Agave (Cooked) · Oak · Cherry · Pineapple",
     "taste": "Vanilla · Agave (Cooked) · Caramel · Oak · Pepper · Cinnamon · Butterscotch",
-    "image": "/images/agave/los-azulejos-anejo.jpeg",
+    "image": "/images/agave/los-azulejos-reposado.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "MAESTRO DOBEL TEQUILA": {
@@ -384,7 +382,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "New European Oak Barrels · 1, 2, & 3 Year Blended",
     "aroma": "Agave (Cooked) · Alcohol · Pepper · Vanilla · Citrus · Floral · Caramel · Oak",
     "taste": "Agave (Cooked) · Pepper · Alcohol · Vanilla · Oak · White Pepper · Citrus",
-    "image": "/images/agave/maestro-dobel-diamond-anejo-extra-anejo.jpeg",
+    "image": "/images/agave/los-azulejos-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "MILAGRO REPOSADO": {
@@ -397,7 +395,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "New American & French Oak Barrels · 3 to 6 months",
     "aroma": "Agave (Cooked) · Oak · Vanilla · Caramel · Earth · Cinnamon · Orange Peel",
     "taste": "Oak · Agave (Cooked) · Vanilla · Caramel · Butter · Earth · Pepper · Banana",
-    "image": "/images/agave/milagro-reposado.jpeg",
+    "image": "/images/agave/milagro-silver.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "PATRON SILVER": {
@@ -410,6 +408,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Agave (Cooked) · Pepper · Citrus · Alcohol · Fruity · Earth · Vailla · Lime",
     "taste": "Agave (Cooked) · Pepper · Citrus · Fruity · Vanilla · Lime · Agave (Raw)",
+    "image": "/images/agave/olmeca-altos.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "PATRON REPOSADO": {
@@ -422,7 +421,6 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "French Oak Barrels · American White Oak Barrels · Hybrid Barrels · 2 Mnths",
     "aroma": "Agave (Cooked) · Vanilla · Caramel · Pepper · Butter · Citrus · Lemon",
     "taste": "Agave (Cooked) · Pepper · Butter · Cinnamon · Vanilla · Honey · Oak",
-    "image": "/images/agave/patron-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "PATRON AÑEJO": {
@@ -435,7 +433,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "French Oak Barrels · American White Oak Barrels · Hybrid Barrels · 12 Months",
     "aroma": "Agave (Cooked) · Vanilla · Oak · Honey · Caramel · Nuts · Pepper · Banana",
     "taste": "Agave (Cooked) · Vanilla · Oak · Honey · Pepper · Caramel · Nuts · Cinnamon",
-    "image": "/images/agave/patron-anejo.jpeg",
+    "image": "/images/agave/patron-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "SAUZA TRES GENERACIONES PLATA": {
@@ -448,7 +446,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Herbal · Earthy · Spicy · Pepper · Citrus · Floral · Melon · All Spice",
     "taste": "Herbal · Earthy · Spicy · Pepper · Citrus · Floral · Green Pepper · Tobacco",
-    "image": "/images/agave/sauza-tres-generaciones-plata.jpeg",
+    "image": "/images/agave/patron-xo-cafe.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "SAUZA TRES GENERACIONES REPOSADO": {
@@ -461,7 +459,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American Oak Bourbon Barrels · 4 Months",
     "aroma": "Oak · Agave (Cooked) · Pepper · Spices · Herbal · Caramel",
     "taste": "Citrus · Earthy · Oak · Agave (Cooked) · Light Mint · Toasted Notes",
-    "image": "/images/agave/sauza-tres-generaciones-reposado.png",
+    "image": "/images/agave/sauza-tres-generaciones-plata.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "SAUZA TRES GENERACIONES AÑEJO": {
@@ -474,7 +472,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American Oak Bourbon Barrels · Minimum 3 Years",
     "aroma": "Toasted Oak · Agave (Cooked) · Caramel · Vanilla · Molasses",
     "taste": "Brown Sugar · Oak · Buttercream · Baking Spices · Light Smoke",
-    "image": "/images/agave/sauza-tres-generaciones-anejo.jpeg",
+    "image": "/images/agave/sauza-tres-generaciones-reposado.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "SIEMPRE PLATA": {
@@ -487,7 +485,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Agave (Cooked) · Citrus · Pepper · Earth · Grass · Vanilla · Herbal · Tropical",
     "taste": "Agave (Cooked) · Pepper · Citrus · Earth · Grass · Caramel · Spices · Pear",
-    "image": "/images/agave/siempre-plata.png",
+    "image": "/images/agave/sauza-tres-generaciones-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "SIEMPRE AÑEJO": {
@@ -500,7 +498,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used Bourbon Barrels · 12 Months",
     "aroma": "Oak · Agave (Cooked) · Caramel · Vanilla · Toffe · Butterscotch",
     "taste": "Oak · Agave (Cooked) · Caramel · Spices · Butter · Vanilla · Cherries · Tropical",
-    "image": "/images/agave/siempre-anejo.jpeg",
+    "image": "/images/agave/siempre-plata.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS AZULEJOS 'SKELLY' BLANCO": {
@@ -513,7 +511,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Butterscotch · Agave (Cooked) · Butter · Cherry · Caramel · Chocolate",
     "taste": "Butterscotch · Agave (Cooked) · Butter · Cherry · Caramel · Chocolate",
-    "image": "/images/agave/los-azulejos-skeleto-blanco.jpeg",
+    "image": "/images/agave/siempre-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS AZULEJOS SKELLY REPOSADO": {
@@ -526,7 +524,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American Bourbon Oak Barrels · 8 - 12 Months",
     "aroma": "Vanilla · Toffe · Earth · Smoke · Caramel · Butter · Cream · Oak · Mineral",
     "taste": "Vanilla · Toffe · Earth · Smoke · Caramel · Butter · Oak · Mineral · Grapefruit",
-    "image": "/images/agave/los-azulejos-skeleto-reposado.jpeg",
+    "image": "/images/agave/los-azulejos-skeleto-blanco.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS AZULEJOS SKELLY AÑEJO BANDITO LTD": {
@@ -539,7 +537,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used French Cognac · 18 - 30 Months",
     "aroma": "Vanilla · Cream Soda · Agave (Cooked) · Oak · Molasses · Baking Spices",
     "taste": "Vanilla · Cream Soda · Agave (Cooked) · Oak · Molasses · Baking Spices",
-    "image": "/images/agave/los-azulejos-skeleto-anejo.jpeg",
+    "image": "/images/agave/los-azulejos-skeleto-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "TROMBA BLANCO": {
@@ -552,7 +550,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "N/A",
     "aroma": "Agave (Cooked) · Pepper · Citrus · Fruity · Earth · Vegetal · Vanilla · Mint",
     "taste": "Agave (Cooked) · Pepper · Citrus · Fruity · Earth · Vegetal · Vanilla · Butter",
-    "image": "/images/agave/tromba-blanco.jpeg",
+    "image": "/images/agave/los-azulejos-skeleto-anejo.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "TROMBA REPOSADO": {
@@ -565,7 +563,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American White Oak Bourbon Barrels · 6 Months",
     "aroma": "Agave (Cooked) · Vanilla · Pepper · Citrus · Oak · Caramel · Banana · Clove",
     "taste": "Agave (Cooked) · Citrus · Banana · Pepper · Oak · Vanilla · Caramel · Earth",
-    "image": "/images/agave/tromba-reposado.jpeg",
+    "image": "/images/agave/tromba-blanco.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "TROMBA AÑEJO": {
@@ -578,6 +576,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "aging": "Used American White Oak Bourbon Barrels · 20 Months Minimum",
     "aroma": "Agave (Cooked) · Caramel · Vanilla · Earth · Pepper · Fruity · Oak · Tropical",
     "taste": "Agave (Cooked) · Caramel · Vanilla · Oak · Pepper · Grapefruit · Caraway",
+    "image": "/images/agave/tromba-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "AGUA SANTA JOVEN": {
@@ -590,7 +589,6 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "7-8 Years",
     "aroma": "Soft Smoke · Crisp · Earth · Tropical · Spices",
     "taste": "Soft Smoke · Crisp · Earth · Tropical",
-    "image": "/images/agave/agua-santa.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "AMORES MOMENTO MEZCAL VERDE": {
@@ -603,7 +601,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "8 Years",
     "aroma": "Soft Smoke · Crisp · Peach · Tropical · Sugared Almonds",
     "taste": "Soft Smoke · Crisp · Earth · Tropical · Grass",
-    "image": "/images/agave/amores-verde-momento.jpeg",
+    "image": "/images/agave/agua-santa.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "AMORES ESPADIN": {
@@ -616,7 +614,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "7-8 Years",
     "aroma": "Vanilla · Chocolate · Smoke · Chestnuts · Caramel",
     "taste": "Floral · Orange · Pineapple · Tropical · Bright · Perfume",
-    "image": "/images/agave/amores-espadin-joven.jpeg",
+    "image": "/images/agave/amores-verde-momento.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "AMORES REPOSADO": {
@@ -629,7 +627,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "9 Years",
     "aroma": "Warm Wood · Agave (cooked) · Toasted Hazelnut",
     "taste": "Vanilla · Wet Wood · Subtle · Long",
-    "image": "/images/agave/amores-reposado.jpeg",
+    "image": "/images/agave/amores-espadin-joven.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "AMORES CUPREATA": {
@@ -642,7 +640,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "7-8 Years",
     "aroma": "Roasted Pumpkin Seeds · Leather · Cocoa · Banana Leaves · Green Herbs",
     "taste": "Soft SMoke · Agave · Fruit · Pepper · Citrus · Vanilla · Cinnamon · Brown Sugar",
-    "image": "/images/agave/amores-cupreata.jpeg",
+    "image": "/images/agave/amores-reposado.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "AMORES CENZIO LOGIA": {
@@ -655,6 +653,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "14 Years",
     "aroma": "Fruit · Earth · Sweet Chipotle · Bell Pepper · Dried Oregano · Bubblegum",
     "taste": "Toasted Coffee · Wood Spice · Raisin Bread · Grilled Green Papaya · Underripe Pineapple",
+    "image": "/images/agave/amores-cupreata.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "BOSSCAL": {
@@ -667,7 +666,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "8-10 Years",
     "aroma": "Slight Smoke · Floral · Herbal · Minerals · Tropical · Banana · Kiwi",
     "taste": "Light Smoke · Crisp · Citrus · Blood Orange · Fruit",
-    "image": "/images/agave/bosscal.jpeg",
+    "image": "/images/agave/bosscal.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CASAMIGOS": {
@@ -679,7 +678,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "distillation": "Copper",
     "aroma": "Smoke · Herbal · Cucumber · Tropical  · White Pepper",
     "taste": "Tamarind ·  Pomegranate · Banana · Mango · Herbal · Oregano · Smoke · Licorice",
-    "image": "/images/agave/casamigos.jpeg",
+    "image": "/images/agave/bosscal.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "CLASE AZUL": {
@@ -692,7 +691,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "12-15 Years",
     "aroma": "Smoke · Sweet · Agave (Roasted) · Spicy · Caramel · Vanilla · Oak · Sherry",
     "taste": "Smoke · Sweet · Agave (Roasted) · Spicy · Caramel · Vanilla · Oak · Sherry",
-    "image": "/images/agave/clase-azul.jpeg",
+    "image": "/images/agave/casamigos.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LEYENDA 'TLACUACHE'": {
@@ -705,7 +704,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "9 Years",
     "aroma": "Lemongrass · Herbal · Cane Sugar · Citrus · Earth · Smoke",
     "taste": "Apples · Pear · Roasted Agave · Smoke · Herbal · Citrus",
-    "image": "/images/agave/leyenda-tlachuache.jpeg",
+    "image": "/images/agave/jaral-de-berrio.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "LOS SIETE MISTERIO": {
@@ -718,7 +717,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "7-9 Years",
     "aroma": "Citrus · Melon · Mint · Herbs · Orange · Apple ·  Toasted Caramel · Violet",
     "taste": "Spice · Honey · Clove · Toasted Oak · Toffee",
-    "image": "/images/agave/los-siete-misterios-doba-yej.jpeg",
+    "image": "/images/agave/leyenda-tlachuache.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "SANTO PURO MEZQUILA": {
@@ -731,7 +730,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "7-8 Years",
     "aroma": "Smoke · Citrus · Herbal · Sea Salt · Oak · Toffee · Caramel",
     "taste": "Smoke · Citrus · Herbal · Sea Salt · Oak · Bubblegum · Toffee",
-    "image": "/images/agave/santa-puro-mezquila.png",
+    "image": "/images/agave/mexcalia.jpeg",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   },
   "SOMBRA JOVEN": {
@@ -744,6 +743,7 @@ export const archiveDetails: Record<string, ArchiveDetail> = {
     "plantAge": "4-12 Years",
     "aroma": "Smoke · Vanilla · Alcohol · Peat · Vegetal · Agave (Cooked) · Campfire",
     "taste": "Sweet · Vanilla · Pepper · Smoke · Spice · Heat · Alcohol · Campfire",
+    "image": "/images/agave/santa-puro-mezquila.png",
     "sourceLabel": "La Chingada tasting archive · August 2019"
   }
 };
