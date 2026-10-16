@@ -220,157 +220,6 @@
   margin: 15px 0 25px;
   font-size: 13px;
 }
-.agave-record-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 130;
-  background: #151512d9;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 36px 24px;
-  overflow: auto;
-}
-.agave-record-overlay > article {
-  position: relative;
-  padding: 45px;
-  width: min(900px, 100%);
-  background: white;
-  color: var(--ink);
-  border-top: 6px solid var(--chile);
-  box-shadow: none;
-  outline: none;
-}
-.agave-record-overlay > article > .close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: var(--ink);
-  color: white;
-  display: grid;
-  place-items: center;
-  border: 0;
-  width: 44px;
-  height: 44px;
-}
-.agave-record-hero {
-  display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  align-items: center;
-  gap: 36px;
-  margin-bottom: 30px;
-}
-.agave-bottle-photo--large {
-  height: 320px;
-  margin: 0;
-}
-.agave-record-hero h2 {
-  font-size: clamp(36px, 4vw, 58px);
-  line-height: 1;
-  margin: 20px 0;
-  overflow-wrap: anywhere;
-}
-.agave-record-hero .eyebrow {
-  color: var(--teal);
-}
-.agave-record-status {
-  font-size: 11px;
-  padding-top: 15px;
-  border-top: 1px solid #25231e40;
-}
-.agave-facts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
-  padding: 25px 0;
-  border-block: 1px solid #25231e40;
-}
-.agave-facts dt {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 7px;
-  color: #59564e;
-}
-.agave-facts dd {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.6;
-}
-.agave-record-note {
-  margin: 25px 0;
-}
-.agave-record-note h3,
-.agave-record-sources h3 {
-  font-size: 29px;
-  margin-bottom: 10px;
-}
-.agave-record-note p {
-  font-size: 13px;
-  line-height: 1.8;
-  max-width: 75ch;
-}
-.agave-record-note p + p {
-  margin-top: 10px;
-}
-.agave-record-sources {
-  padding: 22px;
-  background: var(--teal);
-  color: white;
-  margin-top: 25px;
-}
-.agave-record-sources a {
-  display: block;
-  font-size: 12px;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  line-height: 1.8;
-  padding: 4px 0;
-}
-.agave-research-pending,
-.agave-record-footer {
-  font-size: 11px;
-  line-height: 1.8;
-  margin: 24px 0 0;
-}
-.agave-archive-notes {
-  margin-top: 25px;
-  border-block: 1px solid #25231e40;
-}
-.agave-archive-notes summary {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 16px 0;
-  list-style: none;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 700;
-}
-.agave-archive-notes summary::-webkit-details-marker {
-  display: none;
-}
-.agave-archive-notes summary span {
-  font-size: 20px;
-}
-.agave-archive-notes[open] summary span {
-  transform: rotate(45deg);
-}
-.agave-archive-notes p {
-  font-size: 12px;
-  line-height: 1.8;
-  margin: 0 0 15px;
-}
-.agave-archive-notes p strong {
-  display: block;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.agave-archive-notes .agave-archive-label {
-  color: #655f54;
-  font-size: 11px;
-}
 @media (max-width: 1100px) {
   .agave-collection-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -417,29 +266,6 @@
   .agave-bottle-photo .photo-placeholder strong {
     font-size: 17px;
   }
-  .agave-record-overlay {
-    padding: 12px;
-  }
-  .agave-record-overlay > article {
-    padding: 65px 24px 28px;
-  }
-  .agave-record-hero {
-    grid-template-columns: 120px minmax(0, 1fr);
-    gap: 18px;
-  }
-  .agave-bottle-photo--large {
-    height: 220px;
-  }
-  .agave-record-hero h2 {
-    font-size: 34px;
-  }
-  .agave-record-hero .eyebrow {
-    font-size: 9px;
-  }
-  .agave-facts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-  }
 }
 @media (max-width: 380px) {
   .agave-collection-card h3 {
@@ -460,10 +286,290 @@
   .agave-card-detail {
     font-size: 9px;
   }
-  .agave-record-hero {
-    grid-template-columns: 1fr;
+}
+.agave-record-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  background: #151512d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.agave-record-overlay > article {
+  position: relative;
+  width: min(860px, 100%);
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  padding: 26px;
+  background: white;
+  color: var(--ink);
+  border-top: 5px solid var(--chile);
+  box-shadow: none;
+  outline: none;
+}
+.agave-record-overlay > article > .close {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin: -10px -10px -34px auto;
+  background: var(--ink);
+  color: white;
+  display: grid;
+  place-items: center;
+  border: 0;
+  width: 44px;
+  height: 44px;
+}
+.agave-record-hero {
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 12px 22px;
+  margin-bottom: 18px;
+}
+.agave-record-hero > .agave-bottle-photo--large {
+  grid-row: 1 / 3;
+  align-self: center;
+  height: 230px;
+  margin: 0;
+}
+.agave-record-heading {
+  grid-column: 2;
+  padding-right: 35px;
+  align-self: center;
+  min-width: 0;
+}
+.agave-record-heading h2 {
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+.agave-record-heading .eyebrow {
+  color: var(--teal);
+  font-size: 10px;
+}
+.agave-record-price {
+  font-family: var(--display);
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--teal);
+}
+.agave-record-price span {
+  font-family: var(--body);
+  font-size: 10px;
+  font-weight: 400;
+  white-space: nowrap;
+  color: var(--ink);
+}
+.agave-tasting-grid {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.agave-tasting-panel {
+  min-width: 0;
+  padding: 12px;
+}
+.agave-tasting-panel h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  line-height: 1;
+}
+.agave-tasting-panel svg {
+  width: 21px;
+  height: 21px;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.agave-tasting-panel p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.agave-tasting-aroma {
+  background: var(--teal);
+  color: white;
+}
+.agave-tasting-palate {
+  background: var(--sun);
+  color: var(--ink);
+}
+.agave-glass-note {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.agave-glass-note strong {
+  color: var(--teal);
+  margin-right: 5px;
+}
+.agave-fact-panel {
+  padding: 12px 14px;
+  margin: 0 0 16px;
+  background: #f1f7f7;
+  border-block: 1px solid #006d7030;
+}
+.agave-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+.agave-facts > div {
+  min-width: 0;
+}
+.agave-facts dt,
+.agave-secondary-facts dt {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  color: #59564e;
+}
+.agave-facts dd,
+.agave-secondary-facts dd {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.agave-fact-source {
+  display: block;
+  margin-top: 3px;
+  color: #59564e;
+  font-size: 9px;
+}
+.agave-secondary-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0;
+}
+.agave-facts + .agave-secondary-facts {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #006d7020;
+}
+.agave-secondary-facts > div {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.agave-secondary-facts dt {
+  margin: 0;
+}
+.agave-secondary-facts .agave-fact-source {
+  margin: 0 0 0 2px;
+}
+.agave-record-note {
+  margin: 14px 0;
+}
+.agave-record-note h3 {
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+.agave-record-note p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.agave-research-pending,
+.agave-record-footer {
+  color: #59564e;
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 14px 0 0;
+}
+.agave-record-sources {
+  display: flex;
+  align-items: baseline;
+  gap: 10px 18px;
+  padding-top: 10px;
+  margin-top: 12px;
+  border-top: 1px solid #25231e30;
+}
+.agave-record-sources h3 {
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.agave-record-sources > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 14px;
+}
+.agave-record-sources a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  font-size: 11px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--teal);
+}
+@media (max-width: 760px) {
+  .agave-record-overlay {
+    padding: 10px;
   }
-  .agave-record-hero .agave-bottle-photo--large {
-    height: 230px;
+  .agave-record-overlay > article {
+    padding: 18px;
+    max-height: calc(100dvh - 20px);
+  }
+  .agave-record-hero {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 14px;
+  }
+  .agave-record-hero > .agave-bottle-photo--large {
+    grid-row: 1;
+    height: 160px;
+  }
+  .agave-record-heading {
+    padding-right: 20px;
+  }
+  .agave-record-heading h2 {
+    font-size: 31px;
+  }
+  .agave-record-heading .eyebrow {
+    font-size: 9px;
+  }
+  .agave-tasting-grid {
+    grid-column: 1 / -1;
+  }
+  .agave-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .agave-fact-panel {
+    padding: 12px;
+  }
+  .agave-record-sources {
+    display: block;
+  }
+}
+@media (max-width: 380px) {
+  .agave-record-hero {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .agave-record-heading h2 {
+    font-size: 28px;
+  }
+  .agave-tasting-panel {
+    padding: 10px;
   }
 }

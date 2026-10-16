@@ -3,19 +3,19 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { agaveRecords, type AgaveRecord } from "../agave-data";
-import { archiveDetails } from "../agave-archive";
-import { catalogDetails } from "../agave-catalog";
 import { houseInfusions } from "../house-infusions";
 import { agavePhoto, agaveResearch } from "../agave-research";
 import { agavePrice, formatAgavePrice } from "../agave-prices";
 import { PhotoSlot } from "./PhotoSlot";
+import { AgaveBottleDetails } from "./AgaveBottleDetails";
 import { useAgaveDialogFocus } from "./useAgaveDialogFocus";
 import "./agave-collection.css";
 
 // Keep house records preserved for a later release; only bottled spirits are public.
 const collection = [...agaveRecords, ...houseInfusions].filter(
   (bottle) =>
-    (agaveResearch.get(bottle.id)?.category ?? bottle.category) !== "House Infused",
+    (agaveResearch.get(bottle.id)?.category ?? bottle.category) !==
+    "House Infused",
 );
 const styles = [
   "All",
@@ -58,152 +58,6 @@ function BottlePhoto({
       }
       className={`agave-bottle-photo${large ? " agave-bottle-photo--large" : ""}`}
     />
-  );
-}
-
-function BottleRecord({ bottle }: { bottle: AgaveRecord }) {
-  const research = agaveResearch.get(bottle.id);
-  const facts = research?.expressionVerified ? research.facts : undefined;
-  const archive = archiveDetails[bottle.name];
-  const catalog = catalogDetails[bottle.name];
-  const infused = styleFor(bottle) === "House Infused";
-  const displayType = research?.displayType ?? bottle.type;
-  const historicalNote =
-    catalog?.fact ??
-    (bottle.category === "House Infused" && !infused ? "" : bottle.note);
-  const specificFacts = [
-    ["Origin", facts?.origin],
-    ["Alcohol", facts?.abv],
-    ["Agave", facts?.agave],
-    ["Maturation", facts?.aging],
-    ["Producer", facts?.producer],
-    ["NOM / certification", facts?.nom],
-  ].filter(([, value]) => Boolean(value));
-  return (
-    <>
-      <div className="agave-record-hero">
-        <BottlePhoto bottle={bottle} large />
-        <div>
-          <p className="eyebrow">
-            {styleFor(bottle)} · {displayType}
-          </p>
-          <h2>{titleFor(bottle)}</h2>
-          <p className="agave-record-status">
-            {facts && specificFacts.length
-              ? "Sourced bottle details"
-              : infused
-                ? "From our bar"
-                : "From the collection archive"}
-          </p>
-        </div>
-      </div>
-      {specificFacts.length > 0 && (
-        <dl className="agave-facts">
-          {specificFacts.map(([label, value]) => (
-            <div key={label}>
-              <dt>{label}</dt>
-              <dd>{value}</dd>
-            </div>
-          ))}
-        </dl>
-      )}
-      {facts?.production && (
-        <section className="agave-record-note">
-          <h3>Behind the bottle</h3>
-          <p>{facts.production}</p>
-        </section>
-      )}
-      {facts?.tastingNotes && (
-        <section className="agave-record-note">
-          <h3>In the glass</h3>
-          <p>{facts.tastingNotes}</p>
-        </section>
-      )}
-      {infused && (
-        <section className="agave-record-note">
-          <h3>Made at La Chingada</h3>
-          <p>{bottle.note}</p>
-          <p>
-            The base spirit, final strength and current availability are
-            confirmed by the bar team.
-          </p>
-        </section>
-      )}
-      {research?.sources?.length ? (
-        <div className="agave-record-sources">
-          <h3>Explore the source</h3>
-          {research.sources.map(({ url, title }) => (
-            <a key={url} href={url} target="_blank" rel="noreferrer">
-              {title || new URL(url).hostname} <span aria-hidden="true">↗</span>
-            </a>
-          ))}
-        </div>
-      ) : (
-        !infused && (
-          <p className="agave-research-pending">
-            Exact-expression producer details are still being checked.
-          </p>
-        )
-      )}
-      {(archive || catalog || !infused) && (
-        <details className="agave-archive-notes">
-          <summary>
-            From the house archive <span aria-hidden="true">+</span>
-          </summary>
-          <p className="agave-archive-label">
-            Historical tasting notes. These are kept separately from current
-            producer research; packaging, batches and market strengths can
-            differ.
-          </p>
-          {historicalNote && <p>{historicalNote}</p>}
-          {(catalog?.aroma || archive?.aroma) && (
-            <p>
-              <strong>Aroma</strong> {catalog?.aroma ?? archive?.aroma}
-            </p>
-          )}
-          {(catalog?.taste || archive?.taste) && (
-            <p>
-              <strong>Palate</strong> {catalog?.taste ?? archive?.taste}
-            </p>
-          )}
-          {!facts?.production && (catalog?.how || archive?.cooking) && (
-            <p>
-              <strong>Archived production</strong>{" "}
-              {catalog?.how ??
-                [
-                  archive?.cooking,
-                  archive?.extraction,
-                  archive?.fermentation,
-                  archive?.distillation,
-                ]
-                  .filter(Boolean)
-                  .join(" · ")}
-            </p>
-          )}
-          {!facts?.origin && (catalog?.origin || archive?.region) && (
-            <p>
-              <strong>Archived origin</strong>{" "}
-              {catalog?.origin ?? archive?.region}
-            </p>
-          )}
-          {!facts?.abv && (catalog?.abv || archive?.abv) && (
-            <p>
-              <strong>Archived strength</strong> {catalog?.abv ?? archive?.abv}
-            </p>
-          )}
-          {!facts?.aging && (catalog?.aging || archive?.aging) && (
-            <p>
-              <strong>Archived maturation</strong>{" "}
-              {catalog?.aging ?? archive?.aging}
-            </p>
-          )}
-        </details>
-      )}
-      <p className="agave-record-footer">
-        A collection guide for guests 19+. Ask the bar about today’s bottles and
-        the label on your pour.
-      </p>
-    </>
   );
 }
 
@@ -265,9 +119,7 @@ export function AgaveCollection() {
     >
       <div className="agave-collection-heading">
         <div>
-          <p className="eyebrow">
-            Tequila, mezcal & flavoured spirits
-          </p>
+          <p className="eyebrow">Tequila, mezcal & flavoured spirits</p>
           <h2 id="collection-title">Find your next good story.</h2>
         </div>
         <div>
@@ -395,7 +247,10 @@ export function AgaveCollection() {
               >
                 ×
               </button>
-              <BottleRecord bottle={openBottle} />
+              <AgaveBottleDetails
+                bottle={openBottle}
+                photo={<BottlePhoto bottle={openBottle} large />}
+              />
             </article>
           </div>,
           document.body,
