@@ -1,0 +1,753 @@
+{
+  "source": "Restaurant-provided TouchBistro price list",
+  "currency": "CAD",
+  "taxesIncluded": false,
+  "records": [
+    {
+      "id": 1,
+      "posName": "818 REPOSADO",
+      "priceCad": 14
+    },
+    {
+      "id": 2,
+      "posName": "1800 REPOSADO",
+      "priceCad": 10
+    },
+    {
+      "id": 3,
+      "posName": "ADICTIVO DOUBLE REPOSADO",
+      "priceCad": 26
+    },
+    {
+      "id": 4,
+      "posName": "CABO WABO REPOSADO",
+      "priceCad": 14
+    },
+    {
+      "id": 5,
+      "posName": "CASA MAESTRI REPOSADO",
+      "priceCad": 20
+    },
+    {
+      "id": 6,
+      "posName": "CASAMIGOS REPOSADO",
+      "priceCad": 13
+    },
+    {
+      "id": 7,
+      "posName": "CATRINA LA COFRADIA REPOSADO",
+      "priceCad": 15
+    },
+    {
+      "id": 8,
+      "posName": "CAZADORES REPOSADO",
+      "priceCad": 9
+    },
+    {
+      "id": 9,
+      "posName": "CINCORO REPOSADO",
+      "priceCad": 32
+    },
+    {
+      "id": 10,
+      "posName": "CLASE AZUL REPOSADO",
+      "priceCad": 35
+    },
+    {
+      "id": 11,
+      "posName": "CORRALEJO REPOSADO",
+      "priceCad": 13
+    },
+    {
+      "id": 12,
+      "posName": "DON ADRIANO 1950 REPOSADO",
+      "priceCad": 17
+    },
+    {
+      "id": 13,
+      "posName": "DON JULIO REPOSADO",
+      "priceCad": 14
+    },
+    {
+      "id": 14,
+      "posName": "DOM RAMON DIAMANTÉ REPOSADO",
+      "priceCad": 11
+    },
+    {
+      "id": 15,
+      "posName": "EL MEXICANO REPOSADO",
+      "priceCad": 13
+    },
+    {
+      "id": 16,
+      "posName": "EL TEQUILANO REPOSADO",
+      "priceCad": 10
+    },
+    {
+      "id": 17,
+      "posName": "ESPOLON REPOSADO",
+      "priceCad": 10
+    },
+    {
+      "id": 18,
+      "posName": "CAMARENA FAMILIA REPOSADO",
+      "priceCad": 12
+    },
+    {
+      "id": 19,
+      "posName": "FLECHA AZUL REPOSADO",
+      "priceCad": 14
+    },
+    {
+      "id": 20,
+      "posName": "GRAN COFRADIA REPOSADO",
+      "priceCad": 26
+    },
+    {
+      "id": 21,
+      "posName": "GRAN CORONEL REPOSADO",
+      "priceCad": 11
+    },
+    {
+      "id": 22,
+      "posName": "GRAN ORENDAIN REPOSADO",
+      "priceCad": 15
+    },
+    {
+      "id": 23,
+      "posName": "HERRADURA REPOSADO",
+      "priceCad": 13
+    },
+    {
+      "id": 24,
+      "posName": "HORNITOS REPOSADO",
+      "priceCad": 9
+    },
+    {
+      "id": 25,
+      "posName": "HUSSONG'S REPOSADO",
+      "priceCad": 12
+    },
+    {
+      "id": 26,
+      "posName": "JAJA REPOSADO",
+      "priceCad": 11
+    },
+    {
+      "id": 27,
+      "posName": "JOSE CUERVO TRADICIONAL REPOSADO",
+      "priceCad": 10
+    },
+    {
+      "id": 28,
+      "posName": "LOBOS 1707 REPOSADO",
+      "priceCad": 15
+    },
+    {
+      "id": 29,
+      "posName": "LOS ARANGO REPOSADO",
+      "priceCad": 11
+    },
+    {
+      "id": 30,
+      "posName": "LOS AZULEJOS REPOSADO",
+      "priceCad": 20
+    },
+    {
+      "id": 31,
+      "posName": "LOS AZULEJOS \"SKELLY\" REPOSADO",
+      "priceCad": 28
+    },
+    {
+      "id": 32,
+      "posName": "MAESTRO DOBEL REPOSADO",
+      "priceCad": 14
+    },
+    {
+      "id": 33,
+      "posName": "MILAGRO REPOSADO",
+      "priceCad": 11
+    },
+    {
+      "id": 34,
+      "posName": "OLMECA ALTOS REPOSADO",
+      "priceCad": 11
+    },
+    {
+      "id": 35,
+      "posName": "PATRON REPOSADO",
+      "priceCad": 15
+    },
+    {
+      "id": 36,
+      "posName": "SAUZA TRES GEN. REPOSADO",
+      "priceCad": 15
+    },
+    {
+      "id": 37,
+      "posName": "SIEMPRE REPOSADO",
+      "priceCad": 12
+    },
+    {
+      "id": 38,
+      "posName": "TEREMANA REPOSADO",
+      "priceCad": 12
+    },
+    {
+      "id": 39,
+      "posName": "TROMBA REPOSADO",
+      "priceCad": 12
+    },
+    {
+      "id": 40,
+      "posName": "AVION RESERVA CRISTALINO",
+      "priceCad": 30
+    },
+    {
+      "id": 41,
+      "posName": "CASAMIGOS CRISTALINO",
+      "priceCad": 15
+    },
+    {
+      "id": 42,
+      "posName": "CAZADORES EXTRA AÑEJO",
+      "priceCad": 14
+    },
+    {
+      "id": 43,
+      "posName": "CODIGO 1530 ROSA",
+      "priceCad": 12
+    },
+    {
+      "id": 44,
+      "posName": "DON JULIO 1942 EXTRA AÑEJO",
+      "priceCad": 38
+    },
+    {
+      "id": 45,
+      "posName": "DON JULIO '70 CRISTALINO",
+      "priceCad": 21
+    },
+    {
+      "id": 46,
+      "posName": "DON JULIO PRIMAVERA",
+      "priceCad": 32
+    },
+    {
+      "id": 47,
+      "posName": "DON JULIO ROSADO",
+      "priceCad": 32
+    },
+    {
+      "id": 48,
+      "posName": "DON JULIO ULTIMA EXTRA AÑEJO RESERVA",
+      "priceCad": 99
+    },
+    {
+      "id": 49,
+      "posName": "GRAN MAYAN ULTRA AÑEJO",
+      "priceCad": 25
+    },
+    {
+      "id": 50,
+      "posName": "HERRADURA ULTRA AÑEJO",
+      "priceCad": 20
+    },
+    {
+      "id": 51,
+      "posName": "HORNITOS CRISTALINO",
+      "priceCad": 10
+    },
+    {
+      "id": 52,
+      "posName": "JOSE CUERVO DE LA FAMILIA EXTRA AÑEJO",
+      "priceCad": 35
+    },
+    {
+      "id": 53,
+      "posName": "PATRON EL CIELO SILVER",
+      "priceCad": 32
+    },
+    {
+      "id": 54,
+      "posName": "PATRON EXTRA ANEJO",
+      "priceCad": 35
+    },
+    {
+      "id": 55,
+      "posName": "SIEMPRE REBEL CASK",
+      "priceCad": 23
+    },
+    {
+      "id": 56,
+      "posName": "SIEMPRE SUPREMO BLANCO",
+      "priceCad": 21
+    },
+    {
+      "id": 57,
+      "posName": "TROMBA CEDAON REPOSADO",
+      "priceCad": 18
+    },
+    {
+      "id": 58,
+      "posName": "VOLCAN CRISTALINO AÑEJO",
+      "priceCad": 15
+    },
+    {
+      "id": 59,
+      "posName": "VOLCAN DE MI TIERR X.A.",
+      "priceCad": 55
+    },
+    {
+      "id": 60,
+      "posName": "AGUA SANTA MEZCAL",
+      "priceCad": 12
+    },
+    {
+      "id": 61,
+      "posName": "AGUA SANTA PECHUGA MEZCAL",
+      "priceCad": 15
+    },
+    {
+      "id": 62,
+      "posName": "AMORES CENZIO LOGIA MEZCAL",
+      "priceCad": 23
+    },
+    {
+      "id": 63,
+      "posName": "AMORES CUPREATA MEZCAL",
+      "priceCad": 16
+    },
+    {
+      "id": 64,
+      "posName": "AMORES ESPADIN MEZCAL",
+      "priceCad": 14
+    },
+    {
+      "id": 65,
+      "posName": "AMORES MOMENTO VERDE MEZCAL",
+      "priceCad": 12
+    },
+    {
+      "id": 66,
+      "posName": "AMORES REPOSADO MEZCAL",
+      "priceCad": 19
+    },
+    {
+      "id": 67,
+      "posName": "BANHEZ ESPADIN & BARRIL MEZCAL",
+      "priceCad": 12
+    },
+    {
+      "id": 69,
+      "posName": "CASAMIGOS MEZCAL",
+      "priceCad": 15
+    },
+    {
+      "id": 70,
+      "posName": "CLASE AZUL MEZCAL",
+      "priceCad": 45
+    },
+    {
+      "id": 71,
+      "posName": "DEL MAGUEY CLASICO",
+      "priceCad": 12
+    },
+    {
+      "id": 72,
+      "posName": "DEL MAGUEY LAS MILPAS",
+      "priceCad": 16
+    },
+    {
+      "id": 73,
+      "posName": "DEL MAGUEY PUEBLA",
+      "priceCad": 14
+    },
+    {
+      "id": 74,
+      "posName": "DOS HOMBRES MEZCAL",
+      "priceCad": 16
+    },
+    {
+      "id": 75,
+      "posName": "EL SILENCIO MEZCAL",
+      "priceCad": 13
+    },
+    {
+      "id": 76,
+      "posName": "ILEGAL REPOSADO MEZCAL",
+      "priceCad": 15
+    },
+    {
+      "id": 77,
+      "posName": "LEYENDA 'TLACHUACHE' MEZCAL",
+      "priceCad": 13
+    },
+    {
+      "id": 78,
+      "posName": "LOS SIETE MISTERIO DOBA-YEJ",
+      "priceCad": 12
+    },
+    {
+      "id": 80,
+      "posName": "MADRE MEZCAL",
+      "priceCad": 14
+    },
+    {
+      "id": 81,
+      "posName": "MEZCAL UNION",
+      "priceCad": 15
+    },
+    {
+      "id": 82,
+      "posName": "MONTELOBOS MEZCAL",
+      "priceCad": 14
+    },
+    {
+      "id": 83,
+      "posName": "SANTA PURO MEZCAL",
+      "priceCad": 15
+    },
+    {
+      "id": 84,
+      "posName": "SERPIENTE JOVEN MEZCAL",
+      "priceCad": 20
+    },
+    {
+      "id": 85,
+      "posName": "SOMBRA MEZCAL",
+      "priceCad": 12
+    },
+    {
+      "id": 86,
+      "posName": "LOST EXPLORER MEZCAL",
+      "priceCad": 23
+    },
+    {
+      "id": 87,
+      "posName": "818 BLANCO",
+      "priceCad": 12
+    },
+    {
+      "id": 88,
+      "posName": "1800 SILVER",
+      "priceCad": 9
+    },
+    {
+      "id": 89,
+      "posName": "ALIDA BLANCO",
+      "priceCad": 11
+    },
+    {
+      "id": 90,
+      "posName": "CABO WABO BLANCO",
+      "priceCad": 12
+    },
+    {
+      "id": 91,
+      "posName": "CADA DIA PLATA",
+      "priceCad": 11
+    },
+    {
+      "id": 92,
+      "posName": "CALIROSA BLANCO",
+      "priceCad": 14
+    },
+    {
+      "id": 93,
+      "posName": "CASA DEL SOL BLANCO",
+      "priceCad": 15
+    },
+    {
+      "id": 94,
+      "posName": "CASA DRAGONES BLANCO",
+      "priceCad": 25
+    },
+    {
+      "id": 95,
+      "posName": "CASA MAESTRI BLANCO",
+      "priceCad": 16
+    },
+    {
+      "id": 96,
+      "posName": "CASAMIGOS BLANCO",
+      "priceCad": 12
+    },
+    {
+      "id": 97,
+      "posName": "CAZADORES BLANCO",
+      "priceCad": 8
+    },
+    {
+      "id": 98,
+      "posName": "CENOTE BLANCO",
+      "priceCad": 15
+    },
+    {
+      "id": 99,
+      "posName": "CHAMELEON BLANCO",
+      "priceCad": 11
+    },
+    {
+      "id": 100,
+      "posName": "CHERRY RIVER SILVER",
+      "priceCad": 12
+    },
+    {
+      "id": 101,
+      "posName": "CINCORO BLANCO",
+      "priceCad": 25
+    },
+    {
+      "id": 102,
+      "posName": "CLASE AZUL PLATA",
+      "priceCad": 24
+    },
+    {
+      "id": 103,
+      "posName": "COBALTO BLANCO",
+      "priceCad": 11
+    },
+    {
+      "id": 104,
+      "posName": "CODIGO 1530 BLANCO",
+      "priceCad": 12
+    },
+    {
+      "id": 105,
+      "posName": "DEJADO BLANCO",
+      "priceCad": 10
+    },
+    {
+      "id": 106,
+      "posName": "DON JULIO BLANCO",
+      "priceCad": 12
+    },
+    {
+      "id": 107,
+      "posName": "DOS PRIMOS BLANCO",
+      "priceCad": 14
+    },
+    {
+      "id": 108,
+      "posName": "ELEVACION 1250 BLANCO",
+      "priceCad": 12
+    },
+    {
+      "id": 109,
+      "posName": "ESPOLON BLANCO",
+      "priceCad": 9
+    },
+    {
+      "id": 110,
+      "posName": "FLECHA AZUL BLANCO",
+      "priceCad": 14
+    },
+    {
+      "id": 111,
+      "posName": "HERRADURA SILVER",
+      "priceCad": 11
+    },
+    {
+      "id": 112,
+      "posName": "HORNITOS PLATA",
+      "priceCad": 8
+    },
+    {
+      "id": 113,
+      "posName": "JOSE CUERVO FAMILIA PLATA",
+      "priceCad": 15
+    },
+    {
+      "id": 114,
+      "posName": "JOSE CUERVO TRADICIONAL BLANCO",
+      "priceCad": 9
+    },
+    {
+      "id": 115,
+      "posName": "LOBOS 1707 JOVEN",
+      "priceCad": 11
+    },
+    {
+      "id": 116,
+      "posName": "LOS AZULEJOS SILVER",
+      "priceCad": 11
+    },
+    {
+      "id": 117,
+      "posName": "LOS AZULEJOS \"SKELLY\" BLANCO",
+      "priceCad": 22
+    },
+    {
+      "id": 118,
+      "posName": "MALA VIDA BLANCO",
+      "priceCad": 18
+    },
+    {
+      "id": 119,
+      "posName": "OLMECA ALTOS PLATA",
+      "priceCad": 10
+    },
+    {
+      "id": 121,
+      "posName": "PATRON SILVER",
+      "priceCad": 13
+    },
+    {
+      "id": 122,
+      "posName": "ROOSTER ROJO BLANCO",
+      "priceCad": 11
+    },
+    {
+      "id": 123,
+      "posName": "SAUZA TRES GEN. BLANCO",
+      "priceCad": 13
+    },
+    {
+      "id": 124,
+      "posName": "SIEMPRE PLATA",
+      "priceCad": 12
+    },
+    {
+      "id": 125,
+      "posName": "TEREMANA BLANCO",
+      "priceCad": 10
+    },
+    {
+      "id": 126,
+      "posName": "TROMBA BLANCO",
+      "priceCad": 10
+    },
+    {
+      "id": 127,
+      "posName": "XICOTE BLANCO",
+      "priceCad": 11
+    },
+    {
+      "id": 128,
+      "posName": "1800 AÑEJO",
+      "priceCad": 11
+    },
+    {
+      "id": 129,
+      "posName": "CALIROSA ANEJO",
+      "priceCad": 19
+    },
+    {
+      "id": 130,
+      "posName": "CASA MAESTRI AÑEJO",
+      "priceCad": 24
+    },
+    {
+      "id": 131,
+      "posName": "CASAMIGOS AÑEJO",
+      "priceCad": 18
+    },
+    {
+      "id": 132,
+      "posName": "CAZADORES AÑEJO",
+      "priceCad": 11
+    },
+    {
+      "id": 133,
+      "posName": "CENOTE AÑEJO",
+      "priceCad": 17
+    },
+    {
+      "id": 134,
+      "posName": "CINCORO AÑEJO",
+      "priceCad": 38
+    },
+    {
+      "id": 135,
+      "posName": "CLASE AZUL AÑEJO",
+      "priceCad": 85
+    },
+    {
+      "id": 136,
+      "posName": "DON ADRIANO 1950 AÑEJO",
+      "priceCad": 35
+    },
+    {
+      "id": 137,
+      "posName": "DON JULIO AÑEJO",
+      "priceCad": 16
+    },
+    {
+      "id": 138,
+      "posName": "EL TEQUILANO GRAN RESERVA AÑEJO",
+      "priceCad": 17
+    },
+    {
+      "id": 139,
+      "posName": "EL TESORO AÑEJO",
+      "priceCad": 15
+    },
+    {
+      "id": 140,
+      "posName": "ESPOLON AÑEJO BOURBON BARREL",
+      "priceCad": 12
+    },
+    {
+      "id": 141,
+      "posName": "GRAN CENTENARIO AÑEJO",
+      "priceCad": 10
+    },
+    {
+      "id": 142,
+      "posName": "HORNITOS BLACK BARREL AÑEJO",
+      "priceCad": 12
+    },
+    {
+      "id": 143,
+      "posName": "LOS AZULEJOS AÑEJO",
+      "priceCad": 21
+    },
+    {
+      "id": 144,
+      "posName": "LOS AZULEJOS \"SKELLY\" AÑEJO BANDITO",
+      "priceCad": 39
+    },
+    {
+      "id": 145,
+      "posName": "OLMECA ALTOS AÑEJO",
+      "priceCad": 13
+    },
+    {
+      "id": 146,
+      "posName": "PATRON AÑEJO",
+      "priceCad": 17
+    },
+    {
+      "id": 147,
+      "posName": "REVOLUCION ANEJO",
+      "priceCad": 18
+    },
+    {
+      "id": 148,
+      "posName": "SAUZA TRES GEN. AÑEJO",
+      "priceCad": 17
+    },
+    {
+      "id": 149,
+      "posName": "SIEMPRE AÑEJO",
+      "priceCad": 15
+    },
+    {
+      "id": 150,
+      "posName": "TEREMANA AÑEJO",
+      "priceCad": 16
+    },
+    {
+      "id": 151,
+      "posName": "TROMBA AÑEJO",
+      "priceCad": 14
+    },
+    {
+      "id": 162,
+      "posName": "LA PINTA POMEGRANATE",
+      "priceCad": 12
+    }
+  ],
+  "houseInfusionPriceCad": null
+}

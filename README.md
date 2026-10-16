@@ -30,6 +30,7 @@ npm.cmd test
 - `app/components/Brand.tsx`, `public/brand/`, `public/fonts/`: corn mark, wordmark, favicon/social assets and self-hosted OFL typefaces.
 - `app/globals.css`: responsive visual system, accessible focus states and overlay styling.
 - `app/agave-{data,archive,catalog}.ts`, `app/house-infusions.ts`: preserved collection records. `app/agave-research-data.json` adds checked sources, corrected names/categories and approved transparent bottle assets. Research batches and provenance live in `reports/agave-research-*.json`; merge with `node scripts/merge-agave-research.mjs`. Unverified photos use named camera placeholders.
+- `app/agave-prices.json`: restaurant-supplied CAD prices keyed by inventory ID, with original POS labels for review. Card fronts show prices; unmatched expressions say “Ask at the bar.” House-infusion cards are currently unpublished at the owner's request. See `reports/AGAVE-PRICES.md` for price matching and missing entries.
 - `app/site-config.ts`, `app/layout.tsx`, `app/sitemap.ts`, `app/robots.ts`: canonical domain, shared contact/link configuration and search metadata.
 
 Public routes: `/`, `/menu`, `/happy-hour`, `/all-you-can-eat-tacos`, `/patio`, `/brunch`, `/our-story`, `/arcade`, `/agave`. Brunch remains explicitly coming soon until the restaurant confirms its launch.

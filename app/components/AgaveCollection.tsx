@@ -7,11 +7,16 @@ import { archiveDetails } from "../agave-archive";
 import { catalogDetails } from "../agave-catalog";
 import { houseInfusions } from "../house-infusions";
 import { agavePhoto, agaveResearch } from "../agave-research";
+import { agavePrice, formatAgavePrice } from "../agave-prices";
 import { PhotoSlot } from "./PhotoSlot";
 import { useAgaveDialogFocus } from "./useAgaveDialogFocus";
 import "./agave-collection.css";
 
-const collection = [...agaveRecords, ...houseInfusions];
+// Keep house records preserved for a later release; only bottled spirits are public.
+const collection = [...agaveRecords, ...houseInfusions].filter(
+  (bottle) =>
+    (agaveResearch.get(bottle.id)?.category ?? bottle.category) !== "House Infused",
+);
 const styles = [
   "All",
   "Blanco",
@@ -19,7 +24,6 @@ const styles = [
   "Añejo",
   "Mezcal",
   "Speciality",
-  "House Infused",
   "Flavoured",
 ];
 const titleFor = (bottle: AgaveRecord) =>
@@ -262,11 +266,14 @@ export function AgaveCollection() {
       <div className="agave-collection-heading">
         <div>
           <p className="eyebrow">
-            151 bottles · House infusions & flavoured spirits
+            Tequila, mezcal & flavoured spirits
           </p>
           <h2 id="collection-title">Find your next good story.</h2>
         </div>
-        <p>Choose a style. Pick a bottle. Get to know what’s inside.</p>
+        <div>
+          <p>Choose a style. Pick a bottle. Get to know what’s inside.</p>
+          <p className="agave-pricing-note">Prices in CAD · taxes extra.</p>
+        </div>
       </div>
       <div className="agave-collection-tools">
         <label className="agave-search">
@@ -323,7 +330,8 @@ export function AgaveCollection() {
           <button
             key={bottle.id}
             className="agave-collection-card"
-            aria-label={`Explore ${titleFor(bottle)}`}
+            aria-label={`Explore ${titleFor(bottle)}${agavePrice(bottle.id) !== undefined ? `, ${formatAgavePrice(agavePrice(bottle.id)!)} CAD` : ""}`}
+            data-bottle-id={bottle.id}
             onClick={(event) => {
               opener.current = event.currentTarget;
               setOpenBottle(bottle);
@@ -334,6 +342,16 @@ export function AgaveCollection() {
             </span>
             <BottlePhoto bottle={bottle} />
             <h3>{titleFor(bottle)}</h3>
+            <span className="agave-card-price">
+              {agavePrice(bottle.id) !== undefined ? (
+                <>
+                  <strong>{formatAgavePrice(agavePrice(bottle.id)!)}</strong>
+                  <span>CAD</span>
+                </>
+              ) : (
+                <span className="agave-price-pending">Ask at the bar</span>
+              )}
+            </span>
             <span className="agave-card-detail">
               Explore the bottle <span aria-hidden="true">+</span>
             </span>

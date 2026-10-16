@@ -4,7 +4,7 @@ import { pageMetadata } from "../site-config";
 
 export const metadata = pageMetadata(
   "Agave Library · Tequila & Mezcal in Toronto",
-  "Explore La Chingada’s tequila, mezcal and house-infused spirits on Dundas West, Toronto. Meet the bottles, producers and stories behind a proper bar.",
+  "Explore La Chingada’s tequila and mezcal collection with prices on Dundas West, Toronto. Meet the bottles, producers and stories behind a proper bar.",
   "/agave",
 );
 
@@ -15,7 +15,7 @@ export default function AgavePage() {
       label="Agave Library"
       eyebrow="The Agave Library · For the curious · 19+"
       title="Every bottle has a story."
-      intro="Tequila. Mezcal. House infusions. A collection built for the curious, one very good conversation at a time."
+      intro="Tequila. Mezcal. A collection built for the curious, one very good conversation at a time."
       image="/images/optimized/la-chingada-bar-interior-591.webp"
       imageAlt="Tequila and mezcal bottles glowing behind La Chingada’s bar"
       heroActions={

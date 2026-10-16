@@ -177,6 +177,25 @@ test("editorial routes have distinct titles and descriptions", async () => {
   assert.equal(descriptions.size, routes.length);
 });
 
+test("agave card fronts show supplied CAD prices and keep house infusions unpublished", async () => {
+  const html = withoutScripts(await page("/agave"));
+  for (const [id, name, price] of [
+    [128, "1800 AÑEJO", 11],
+    [88, "1800 BLANCO", 9],
+    [2, "1800 REPOSADO", 10],
+    [3, "ADICTIVO DOUBLE REPOSADO", 26],
+  ]) {
+    const card = html.match(new RegExp(`<button[^>]*data-bottle-id="${id}"[^>]*>[\\s\\S]*?</button>`))?.[0];
+    assert.ok(card, `Missing front card for ${name}`);
+    assert.ok(card.includes(name), `Wrong bottle for ${id}`);
+    assert.match(card, new RegExp(`<strong>\\$${price}</strong>`));
+    assert.match(card, /CAD/);
+  }
+  assert.match(html, /Prices in CAD/);
+  assert.doesNotMatch(html, /House infusions|APPLE TEQUILA|House Infused/);
+  assert.match(contentText(html), /152 records to explore/);
+});
+
 test("full food and drinks menu is in server HTML and valid Menu structured data", async () => {
   const html = await page("/menu");
   const visible = withoutScripts(html);

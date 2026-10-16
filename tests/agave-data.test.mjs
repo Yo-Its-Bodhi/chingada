@@ -26,6 +26,29 @@ const approved = research.filter(
     record.image?.alphaVerified &&
     record.image?.visualVerified,
 );
+const pricing = JSON.parse(
+  await readFile(new URL("../app/agave-prices.json", import.meta.url), "utf8"),
+);
+
+test("POS prices match unique existing bottles without borrowing prices for missing expressions", () => {
+  const ids = pricing.records.map(({ id }) => id);
+  assert.equal(new Set(ids).size, ids.length);
+  const inventoryIds = new Set(known.map(({ id }) => id));
+  for (const record of pricing.records) {
+    assert.ok(inventoryIds.has(record.id));
+    assert.ok(Number.isFinite(record.priceCad) && record.priceCad > 0);
+    assert.ok(record.posName.trim());
+  }
+  const byId = new Map(pricing.records.map((record) => [record.id, record]));
+  assert.equal(byId.get(135).priceCad, 85); // Clase Azul añejo
+  assert.equal(byId.get(48).priceCad, 99); // Don Julio Ultima Reserva
+  assert.equal(byId.get(162).priceCad, 12); // La Pinta is not the $9 house infusion
+  assert.equal(byId.get(78).posName, "LOS SIETE MISTERIO DOBA-YEJ");
+  for (const id of [68, 79, 120]) assert.equal(byId.has(id), false);
+  for (const bottle of houseInfusions.filter(({ id }) => id !== 162)) {
+    assert.equal(byId.has(bottle.id), false);
+  }
+});
 
 function assetUrl(root, path) {
   assert.match(

@@ -14,9 +14,13 @@
   line-height: 1;
   margin-top: 16px;
 }
-.agave-collection-heading > p {
+.agave-collection-heading > div:last-child > p {
   max-width: 260px;
   font-size: 13px;
+}
+.agave-collection-heading .agave-pricing-note {
+  margin-top: 8px;
+  font-size: 11px;
 }
 .agave-collection-tools {
   padding: 28px;
@@ -146,8 +150,31 @@
 .agave-collection-card h3 {
   font-size: clamp(23px, 2.1vw, 31px);
   line-height: 1.05;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
   overflow-wrap: anywhere;
+}
+.agave-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+.agave-card-price strong {
+  color: var(--teal);
+  font-family: var(--display);
+  font-size: 32px;
+  line-height: 1;
+}
+.agave-card-price > span {
+  font-size: 10px;
+  font-weight: 600;
+}
+.agave-card-price .agave-price-pending {
+  color: var(--ink);
+  font-size: 12px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
 }
 .agave-card-detail {
   display: flex;
@@ -353,7 +380,7 @@
   .agave-collection-heading {
     display: block;
   }
-  .agave-collection-heading > p {
+  .agave-collection-heading > div:last-child > p {
     margin-top: 18px;
     max-width: none;
   }
