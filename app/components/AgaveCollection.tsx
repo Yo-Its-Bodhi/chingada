@@ -182,7 +182,7 @@ export function AgaveCollection() {
           <button
             key={bottle.id}
             className="agave-collection-card"
-            aria-label={`Explore ${titleFor(bottle)}${agavePrice(bottle.id) !== undefined ? `, ${formatAgavePrice(agavePrice(bottle.id)!)} CAD` : ""}`}
+            aria-label={`Explore ${titleFor(bottle)}, ${agavePrice(bottle.id) !== undefined ? `${formatAgavePrice(agavePrice(bottle.id)!)} CAD` : "ask at the bar for price"}`}
             data-bottle-id={bottle.id}
             onClick={(event) => {
               opener.current = event.currentTarget;
@@ -196,10 +196,7 @@ export function AgaveCollection() {
             <h3>{titleFor(bottle)}</h3>
             <span className="agave-card-price">
               {agavePrice(bottle.id) !== undefined ? (
-                <>
-                  <strong>{formatAgavePrice(agavePrice(bottle.id)!)}</strong>
-                  <span>CAD</span>
-                </>
+                <strong>{formatAgavePrice(agavePrice(bottle.id)!)}</strong>
               ) : (
                 <span className="agave-price-pending">Ask at the bar</span>
               )}

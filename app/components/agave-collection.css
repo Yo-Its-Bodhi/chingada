@@ -155,24 +155,22 @@
 }
 .agave-card-price {
   display: flex;
+  justify-content: flex-end;
   align-items: baseline;
-  gap: 7px;
-  margin-bottom: 18px;
+  margin-top: auto;
+  margin-bottom: 14px;
 }
 .agave-card-price strong {
   color: var(--teal);
   font-family: var(--display);
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1;
-}
-.agave-card-price > span {
-  font-size: 10px;
-  font-weight: 600;
 }
 .agave-card-price .agave-price-pending {
   color: var(--ink);
   font-size: 12px;
-  min-height: 32px;
+  font-weight: 600;
+  min-height: 28px;
   display: flex;
   align-items: center;
 }
@@ -182,7 +180,7 @@
   gap: 12px;
   border-top: 1px solid #25231e40;
   padding-top: 15px;
-  margin-top: auto;
+  margin-top: 0;
   font-size: 11px;
   font-weight: 700;
   color: var(--chile);
