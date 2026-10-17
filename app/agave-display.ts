@@ -73,8 +73,8 @@ export function getAgaveDisplay(bottle: AgaveRecord): AgaveDisplay {
     (bottle.category === "House Infused" && !infused ? undefined : bottle.note);
 
   return {
-    aroma: text(catalog?.aroma) ?? text(archive?.aroma),
-    palate: text(catalog?.taste) ?? text(archive?.taste),
+    aroma: text(catalog?.aroma) ?? text(archive?.aroma) ?? text(current?.aroma),
+    palate: text(catalog?.taste) ?? text(archive?.taste) ?? text(current?.taste),
     tastingNotes: text(current?.tastingNotes),
     story: text(historicalNote),
     production: text(current?.production) ?? houseProduction,

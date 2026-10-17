@@ -1,0 +1,1499 @@
+{
+  "reviewedAt": "2026-10-17",
+  "sheet": "SPIRITS",
+  "sourceRanges": [
+    "B41:B71",
+    "G41:G71",
+    "B73:B204",
+    "G73:G204"
+  ],
+  "records": [
+    {
+      "id": 60,
+      "row": 41,
+      "name": "AGUA SANTA JOVEN",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 61,
+      "row": 42,
+      "name": "AGUA SANTA PECHUGA",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 62,
+      "row": 43,
+      "name": "AMORES CENZIO LOGIA",
+      "sellPrice": 23,
+      "match": "existing",
+      "previousPrice": 23,
+      "action": "matched"
+    },
+    {
+      "id": 63,
+      "row": 44,
+      "name": "AMORES CUPREATA",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": 16,
+      "action": "matched"
+    },
+    {
+      "id": 64,
+      "row": 45,
+      "name": "AMORES ESPADIN",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 65,
+      "row": 46,
+      "name": "AMORES MOMENTO MEZCAL VERDE",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 66,
+      "row": 47,
+      "name": "AMORES REPOSADO",
+      "sellPrice": 19,
+      "match": "existing",
+      "previousPrice": 19,
+      "action": "matched"
+    },
+    {
+      "id": 67,
+      "row": 48,
+      "name": "BANHEZ ESPADIN & BARRIL",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 68,
+      "row": 49,
+      "name": "BOSSCAL",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": null,
+      "action": "price added from G"
+    },
+    {
+      "id": 69,
+      "row": 50,
+      "name": "CASAMIGOS",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 70,
+      "row": 51,
+      "name": "CLASE AZUL",
+      "sellPrice": 45,
+      "match": "existing",
+      "previousPrice": 45,
+      "action": "matched"
+    },
+    {
+      "id": 71,
+      "row": 52,
+      "name": "DEL MAGUEY VIDA MEZCAL",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 72,
+      "row": 53,
+      "name": "DEL MAGUEY SINGLE VILLAGE LAS MILPAS",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": 16,
+      "action": "matched"
+    },
+    {
+      "id": 73,
+      "row": 54,
+      "name": "DEL MAGUEY SINGLE VILLAGE PUEBLA",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 74,
+      "row": 55,
+      "name": "DOS HOMBRES",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": 16,
+      "action": "matched"
+    },
+    {
+      "id": 75,
+      "row": 56,
+      "name": "EL SILENCIO MEZCAL",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 179,
+      "row": 57,
+      "name": "FANDANGO JOVEN",
+      "sellPrice": 13,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 77,
+      "row": 58,
+      "name": "LEYENDA 'TLACUACHE'",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 180,
+      "row": 59,
+      "name": "ILEGAL MEZCAL BLANCO",
+      "sellPrice": 12,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 76,
+      "row": 60,
+      "name": "ILEGAL MEZCAL REPOSADO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 78,
+      "row": 61,
+      "name": "LOS SIETE MISTERIO DOBA-YEJ",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched",
+      "aliasNote": "Existing generic Siete Misterios record is already priced under the POS Doba-Yej alias; do not assign the Ensamble price to ancestral Espadin ID79."
+    },
+    {
+      "id": 181,
+      "row": 62,
+      "name": "LOS SIETE MISTERIO ENSAMBLE",
+      "sellPrice": 20,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 86,
+      "row": 63,
+      "name": "LOST EXPLORERE",
+      "sellPrice": 23,
+      "match": "existing",
+      "previousPrice": 23,
+      "action": "matched",
+      "aliasNote": "LOST EXPLORERE is a spelling/short-name alias of THE LOST EXPLORER."
+    },
+    {
+      "id": 80,
+      "row": 64,
+      "name": "MADRE",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 81,
+      "row": 65,
+      "name": "MEZCAL UNION",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 82,
+      "row": 66,
+      "name": "MONTELOBOS",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "price updated from G"
+    },
+    {
+      "id": 182,
+      "row": 67,
+      "name": "OJO DE TIGRE JOVEN",
+      "sellPrice": 12,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 183,
+      "row": 68,
+      "name": "SAN COSME JOVEN",
+      "sellPrice": 14,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 83,
+      "row": 69,
+      "name": "SANTO PURO MEZQUILA",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 184,
+      "row": 70,
+      "name": "SENORIO JOVEN",
+      "sellPrice": 13,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 84,
+      "row": 71,
+      "name": "SERPIENTE JOVEN",
+      "sellPrice": 20,
+      "match": "existing",
+      "previousPrice": 20,
+      "action": "matched"
+    },
+    {
+      "id": 88,
+      "row": 73,
+      "name": "1800 SILVER",
+      "sellPrice": 9,
+      "match": "existing",
+      "previousPrice": 9,
+      "action": "matched",
+      "aliasNote": "Silver and Blanco are the same existing 1800 expression."
+    },
+    {
+      "id": 2,
+      "row": 74,
+      "name": "1800 REPOSADO",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched"
+    },
+    {
+      "id": 128,
+      "row": 75,
+      "name": "1800 ANEJO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 185,
+      "row": 76,
+      "name": "1800 COCONUT",
+      "sellPrice": 10,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 87,
+      "row": 77,
+      "name": "818 BLANCO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 1,
+      "row": 78,
+      "name": "818 REPOSADO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 3,
+      "row": 79,
+      "name": "ADICTIVO DOUBLE REPOSADO",
+      "sellPrice": 26,
+      "match": "existing",
+      "previousPrice": 26,
+      "action": "matched"
+    },
+    {
+      "id": 89,
+      "row": 80,
+      "name": "ALIDA BLANCO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 40,
+      "row": 81,
+      "name": "AVION RESERVA CRISTALINO",
+      "sellPrice": 30,
+      "match": "existing",
+      "previousPrice": 30,
+      "action": "matched"
+    },
+    {
+      "id": 90,
+      "row": 82,
+      "name": "CABO WABO BLANCO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 4,
+      "row": 83,
+      "name": "CABO WABO REPOSADO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 91,
+      "row": 84,
+      "name": "CADA DIA TEQUILA PLATA",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 93,
+      "row": 85,
+      "name": "CASA DEL SOL BLANCO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 94,
+      "row": 86,
+      "name": "CASA DRAGONES BLANCO",
+      "sellPrice": 25,
+      "match": "existing",
+      "previousPrice": 25,
+      "action": "matched"
+    },
+    {
+      "id": 92,
+      "row": 87,
+      "name": "CALIROSA BLANCO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 129,
+      "row": 88,
+      "name": "CALIROSA ANEJO",
+      "sellPrice": 19,
+      "match": "existing",
+      "previousPrice": 19,
+      "action": "matched"
+    },
+    {
+      "id": 95,
+      "row": 89,
+      "name": "CASA MAESTRI BLANCO",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": 16,
+      "action": "matched"
+    },
+    {
+      "id": 5,
+      "row": 90,
+      "name": "CASA MAESTRI REPOSADO",
+      "sellPrice": 20,
+      "match": "existing",
+      "previousPrice": 20,
+      "action": "matched"
+    },
+    {
+      "id": 130,
+      "row": 91,
+      "name": "CASA MAESTRI ANEJO",
+      "sellPrice": 24,
+      "match": "existing",
+      "previousPrice": 24,
+      "action": "matched"
+    },
+    {
+      "id": 96,
+      "row": 92,
+      "name": "CASAMIGOS BLANCO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 41,
+      "row": 93,
+      "name": "CASAMIGOS CRISTALINO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 6,
+      "row": 94,
+      "name": "CASAMIGOS REPOSADO",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 131,
+      "row": 95,
+      "name": "CASAMIGOS ANEJO",
+      "sellPrice": 18,
+      "match": "existing",
+      "previousPrice": 18,
+      "action": "matched"
+    },
+    {
+      "id": 7,
+      "row": 96,
+      "name": "CATRINA LA COFRADIA REPOSADO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 97,
+      "row": 97,
+      "name": "CAZADORES BLANCO",
+      "sellPrice": 8,
+      "match": "existing",
+      "previousPrice": 8,
+      "action": "matched"
+    },
+    {
+      "id": 8,
+      "row": 98,
+      "name": "CAZADORES REPOSADO",
+      "sellPrice": 9,
+      "match": "existing",
+      "previousPrice": 9,
+      "action": "matched"
+    },
+    {
+      "id": 132,
+      "row": 99,
+      "name": "CAZADORES ANEJO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 42,
+      "row": 100,
+      "name": "CAZADORES EXTRA ANEJO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 186,
+      "row": 101,
+      "name": "CAZCABEL JALAPENO BLANCO",
+      "sellPrice": 10,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 98,
+      "row": 102,
+      "name": "CENOTE BLANCO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 133,
+      "row": 103,
+      "name": "CENOTE ANEJO",
+      "sellPrice": 17,
+      "match": "existing",
+      "previousPrice": 17,
+      "action": "matched"
+    },
+    {
+      "id": 99,
+      "row": 104,
+      "name": "CHAMELEON BLANCO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 100,
+      "row": 105,
+      "name": "CHERRY RIVER SILVER",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 187,
+      "row": 106,
+      "name": "CHISME TEQUILA BLANCO",
+      "sellPrice": 11,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 101,
+      "row": 107,
+      "name": "CINCORO BLANCO",
+      "sellPrice": 25,
+      "match": "existing",
+      "previousPrice": 25,
+      "action": "matched"
+    },
+    {
+      "id": 9,
+      "row": 108,
+      "name": "CINCORO REPOSADO",
+      "sellPrice": 32,
+      "match": "existing",
+      "previousPrice": 32,
+      "action": "matched"
+    },
+    {
+      "id": 134,
+      "row": 109,
+      "name": "CINCORO ANEJO",
+      "sellPrice": 38,
+      "match": "existing",
+      "previousPrice": 38,
+      "action": "matched"
+    },
+    {
+      "id": 102,
+      "row": 110,
+      "name": "CLASE AZUL PLATA",
+      "sellPrice": 24,
+      "match": "existing",
+      "previousPrice": 24,
+      "action": "matched"
+    },
+    {
+      "id": 10,
+      "row": 111,
+      "name": "CLASE AZUL REPOSADO",
+      "sellPrice": 35,
+      "match": "existing",
+      "previousPrice": 35,
+      "action": "matched"
+    },
+    {
+      "id": 135,
+      "row": 112,
+      "name": "CLASE AZUL ANEJO",
+      "sellPrice": 85,
+      "match": "existing",
+      "previousPrice": 85,
+      "action": "matched"
+    },
+    {
+      "id": 103,
+      "row": 113,
+      "name": "COBALTO BLANCO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 104,
+      "row": 114,
+      "name": "CODIGO 1530 BLANCO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 43,
+      "row": 115,
+      "name": "CODIGO 1530 ROSA",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 11,
+      "row": 116,
+      "name": "CORRALEJO REPOSADO",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 105,
+      "row": 117,
+      "name": "DEJADO TEQUILA BLANCO",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched"
+    },
+    {
+      "id": 136,
+      "row": 118,
+      "name": "DON ADRIANO 1950 ANEJO",
+      "sellPrice": 35,
+      "match": "existing",
+      "previousPrice": 35,
+      "action": "matched"
+    },
+    {
+      "id": 12,
+      "row": 119,
+      "name": "DON ADRIANO 1950 REPOSADO",
+      "sellPrice": 17,
+      "match": "existing",
+      "previousPrice": 17,
+      "action": "matched"
+    },
+    {
+      "id": 106,
+      "row": 120,
+      "name": "DON JULIO BLANCO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 13,
+      "row": 121,
+      "name": "DON JULIO REPOSADO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 137,
+      "row": 122,
+      "name": "DON JULIO ANEJO",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": 16,
+      "action": "matched"
+    },
+    {
+      "id": 44,
+      "row": 123,
+      "name": "DON JULIO 1942 EXTRA ANEJO",
+      "sellPrice": 38,
+      "match": "existing",
+      "previousPrice": 38,
+      "action": "matched",
+      "aliasNote": "Keep verified Don Julio 1942 Anejo classification; spreadsheet historical Extra Anejo wording is not a separate SKU."
+    },
+    {
+      "id": 45,
+      "row": 124,
+      "name": "DON JULIO '70",
+      "sellPrice": 21,
+      "match": "existing",
+      "previousPrice": 21,
+      "action": "matched"
+    },
+    {
+      "id": 46,
+      "row": 125,
+      "name": "DON JULIO PRIMAVERA",
+      "sellPrice": 32,
+      "match": "existing",
+      "previousPrice": 32,
+      "action": "matched"
+    },
+    {
+      "id": 47,
+      "row": 126,
+      "name": "DON JULIO ROSADO",
+      "sellPrice": 32,
+      "match": "existing",
+      "previousPrice": 32,
+      "action": "matched"
+    },
+    {
+      "id": 48,
+      "row": 127,
+      "name": "DON JULIO ULTIMA RESERVA",
+      "sellPrice": 99,
+      "match": "existing",
+      "previousPrice": 99,
+      "action": "matched"
+    },
+    {
+      "id": 14,
+      "row": 128,
+      "name": "DON RAMON PUNTA DIAMANTE  REPOSADO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched",
+      "aliasNote": "Punta Diamante Reposado matches the existing Don Ramon Reposado bottle."
+    },
+    {
+      "id": 107,
+      "row": 129,
+      "name": "DOS PRIMOS BLANCO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 15,
+      "row": 130,
+      "name": "EL MEXICANO REPOSADO",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 16,
+      "row": 131,
+      "name": "EL TEQUILANO REPOSADO",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched",
+      "aliasNote": "EL TEQUILANO is the existing EL TEQUILEÑO spelling alias."
+    },
+    {
+      "id": 138,
+      "row": 132,
+      "name": "EL TEQUILENO ANEJO GRAN RESERVA",
+      "sellPrice": 17,
+      "match": "existing",
+      "previousPrice": 17,
+      "action": "matched",
+      "aliasNote": "Gran Reserva/Anejo word order differs only."
+    },
+    {
+      "id": 139,
+      "row": 133,
+      "name": "EL TESORO ANEJO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 108,
+      "row": 134,
+      "name": "ELEVACION 1250 BLANCO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 109,
+      "row": 135,
+      "name": "ESPOLON BLANCO",
+      "sellPrice": 9,
+      "match": "existing",
+      "previousPrice": 9,
+      "action": "matched"
+    },
+    {
+      "id": 17,
+      "row": 136,
+      "name": "ESPOLON REPOSADO",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched"
+    },
+    {
+      "id": 140,
+      "row": 137,
+      "name": "ESPOLON ANEJO BOURBON BARREL",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 18,
+      "row": 138,
+      "name": "FAMILIA CAMARENA REPOSADO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 110,
+      "row": 139,
+      "name": "FLECHA AZUL BLANCO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched"
+    },
+    {
+      "id": 19,
+      "row": 140,
+      "name": "FLECHA AZULE RESPOSADO",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "price updated from G",
+      "aliasNote": "FLECHA AZULE RESPOSADO is the existing FLECHA AZUL REPOSADO spelling alias."
+    },
+    {
+      "id": 141,
+      "row": 141,
+      "name": "GRAN CENTENARIO ANEJO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "price updated from G"
+    },
+    {
+      "id": 20,
+      "row": 142,
+      "name": "GRAN COFRADIA REPOSADO",
+      "sellPrice": 26,
+      "match": "existing",
+      "previousPrice": 26,
+      "action": "matched"
+    },
+    {
+      "id": 21,
+      "row": 143,
+      "name": "GRAN CORONEL REPOSADO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 49,
+      "row": 144,
+      "name": "GRAND MAYAN ULTRA EXTRA ANEJO",
+      "sellPrice": 25,
+      "match": "existing",
+      "previousPrice": 25,
+      "action": "matched",
+      "aliasNote": "GRAND MAYAN is the producer spelling of the existing GRAN MAYAN record; this does not resolve its historical release edition."
+    },
+    {
+      "id": 22,
+      "row": 145,
+      "name": "GRAND ORENDAIN REPOSADO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 111,
+      "row": 146,
+      "name": "HERRADURA SILVER",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 23,
+      "row": 147,
+      "name": "HERRADURA REPOSADO",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 50,
+      "row": 148,
+      "name": "HERRADURA ULTRA ANEJO",
+      "sellPrice": 20,
+      "match": "existing",
+      "previousPrice": 20,
+      "action": "matched"
+    },
+    {
+      "id": 112,
+      "row": 149,
+      "name": "HORNITOS PLATA",
+      "sellPrice": 8,
+      "match": "existing",
+      "previousPrice": 8,
+      "action": "matched"
+    },
+    {
+      "id": 24,
+      "row": 150,
+      "name": "HORNITOS REPOSADO",
+      "sellPrice": 9,
+      "match": "existing",
+      "previousPrice": 9,
+      "action": "matched"
+    },
+    {
+      "id": 142,
+      "row": 151,
+      "name": "HORNITOS BLACK BARREL",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "price updated from G",
+      "aliasNote": "Existing Hornitos Black Barrel Anejo expression; shortened sheet name."
+    },
+    {
+      "id": 51,
+      "row": 152,
+      "name": "HORNITOS CRISTALINO",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched"
+    },
+    {
+      "id": 25,
+      "row": 153,
+      "name": "HUSSONG'S REPOSADO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 26,
+      "row": 154,
+      "name": "JAJA REPOSADO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 113,
+      "row": 155,
+      "name": "JOSE CUERVO DE LA FAMILIA PLATA",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 52,
+      "row": 156,
+      "name": "JOSE CUERVO DE LA FAMILIA EXTRA ANEJO",
+      "sellPrice": 35,
+      "match": "existing",
+      "previousPrice": 35,
+      "action": "matched"
+    },
+    {
+      "id": 114,
+      "row": 157,
+      "name": "JOSE CUERVO TRADICIONAL PLATA",
+      "sellPrice": 9,
+      "match": "existing",
+      "previousPrice": 9,
+      "action": "matched"
+    },
+    {
+      "id": 27,
+      "row": 158,
+      "name": "JOSE CUERVO TRADICIONAL REP.",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched",
+      "aliasNote": "REP. abbreviates Reposado."
+    },
+    {
+      "id": 162,
+      "row": 159,
+      "name": "LA PINTA POMEGRANATE",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 115,
+      "row": 160,
+      "name": "LOBOS 1707 TEQUILA JOVEN",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 28,
+      "row": 161,
+      "name": "LOBOS 1707 TEQUILA REPOSADO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 29,
+      "row": 162,
+      "name": "LOS ARANGO REPOSADO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 116,
+      "row": 163,
+      "name": "LOS AZULEJOS SILVER",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 30,
+      "row": 164,
+      "name": "LOS AZULEJOS REPOSADO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 20,
+      "action": "price updated from G"
+    },
+    {
+      "id": 143,
+      "row": 165,
+      "name": "LOS AZULEJOS ANEJO",
+      "sellPrice": 21,
+      "match": "existing",
+      "previousPrice": 21,
+      "action": "matched"
+    },
+    {
+      "id": 117,
+      "row": 166,
+      "name": "LOS AZULEJOS SKELLY BLANCO",
+      "sellPrice": 22,
+      "match": "existing",
+      "previousPrice": 22,
+      "action": "matched"
+    },
+    {
+      "id": 31,
+      "row": 167,
+      "name": "LOS AZULEJOS SKELLY REPOSADO",
+      "sellPrice": 28,
+      "match": "existing",
+      "previousPrice": 28,
+      "action": "matched"
+    },
+    {
+      "id": 144,
+      "row": 168,
+      "name": "LOS AZULEJOS SKELLY ANEJO BANDITO LTD",
+      "sellPrice": 38,
+      "match": "existing",
+      "previousPrice": 39,
+      "action": "price updated from G"
+    },
+    {
+      "id": 32,
+      "row": 169,
+      "name": "MAESTRO DOBEL TEQUILA",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "matched",
+      "aliasNote": "Provisional existing-name alias: worksheet says only Maestro Dobel Tequila; the existing website record is Reposado. Exact expression should be confirmed from the bottle, not inferred as Diamante."
+    },
+    {
+      "id": 118,
+      "row": 170,
+      "name": "MALA VIDA BLANCO",
+      "sellPrice": 17,
+      "match": "existing",
+      "previousPrice": 18,
+      "action": "price updated from G"
+    },
+    {
+      "id": 188,
+      "row": 171,
+      "name": "MI CAMPO BLANCO",
+      "sellPrice": 10,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 189,
+      "row": 172,
+      "name": "MILAGRO SILVER",
+      "sellPrice": 11,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 33,
+      "row": 173,
+      "name": "MILAGRO REPOSADO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 119,
+      "row": 174,
+      "name": "OLMECA ALTOS PLATA",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched"
+    },
+    {
+      "id": 34,
+      "row": 175,
+      "name": "OLMECA ALTOS REPOSADO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 145,
+      "row": 176,
+      "name": "OLMECA ALTOS ANEJO",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 120,
+      "row": 177,
+      "name": "PANTELONES",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": null,
+      "action": "price held: expression unspecified",
+      "aliasNote": "Provisional existing-name alias: PANTELONES appears to be Pantalones; worksheet omits Organic Blanco. Existing website has only Organic Blanco, so this is not treated as a new SKU."
+    },
+    {
+      "id": 121,
+      "row": 178,
+      "name": "PATRON SILVER",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched"
+    },
+    {
+      "id": 35,
+      "row": 179,
+      "name": "PATRON REPOSADO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 146,
+      "row": 180,
+      "name": "PATRON ANEJO",
+      "sellPrice": 17,
+      "match": "existing",
+      "previousPrice": 17,
+      "action": "matched"
+    },
+    {
+      "id": 54,
+      "row": 181,
+      "name": "PATRON EXTRA ANEJO",
+      "sellPrice": 35,
+      "match": "existing",
+      "previousPrice": 35,
+      "action": "matched"
+    },
+    {
+      "id": 53,
+      "row": 182,
+      "name": "PATRON EL CIELO",
+      "sellPrice": 32,
+      "match": "existing",
+      "previousPrice": 32,
+      "action": "matched"
+    },
+    {
+      "id": 190,
+      "row": 183,
+      "name": "PATRON XO CAFE",
+      "sellPrice": 10,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 123,
+      "row": 184,
+      "name": "SAUZA TRES GEN. PLATA",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 13,
+      "action": "matched",
+      "aliasNote": "GEN. abbreviates Generaciones."
+    },
+    {
+      "id": 36,
+      "row": 185,
+      "name": "SAUZA TRES GEN. REPOSADO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 148,
+      "row": 186,
+      "name": "SAUZA TRES GEN. ANEJO",
+      "sellPrice": 17,
+      "match": "existing",
+      "previousPrice": 17,
+      "action": "matched"
+    },
+    {
+      "id": 147,
+      "row": 187,
+      "name": "REVOLUCION ANEJO",
+      "sellPrice": 18,
+      "match": "existing",
+      "previousPrice": 18,
+      "action": "matched"
+    },
+    {
+      "id": 122,
+      "row": 188,
+      "name": "ROOSTER ROJO BLANCO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    },
+    {
+      "id": 191,
+      "row": 189,
+      "name": "ROOSTER ROJO REPOSADO",
+      "sellPrice": 14,
+      "match": "new",
+      "previousPrice": null,
+      "action": "bottle and price added"
+    },
+    {
+      "id": 124,
+      "row": 190,
+      "name": "SIEMPRE PLATA",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 37,
+      "row": 191,
+      "name": "SIEMPRE REPOSADO",
+      "sellPrice": 13,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "price updated from G"
+    },
+    {
+      "id": 55,
+      "row": 192,
+      "name": "SIEMPRE REPOSADO REBEL CASK",
+      "sellPrice": 23,
+      "match": "existing",
+      "previousPrice": 23,
+      "action": "matched"
+    },
+    {
+      "id": 149,
+      "row": 193,
+      "name": "SIEMPRE ANEJO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "matched"
+    },
+    {
+      "id": 56,
+      "row": 194,
+      "name": "SIEMPRE SUPREMO",
+      "sellPrice": 21,
+      "match": "existing",
+      "previousPrice": 21,
+      "action": "matched"
+    },
+    {
+      "id": 125,
+      "row": 195,
+      "name": "TEREMANA BLANCO",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched"
+    },
+    {
+      "id": 38,
+      "row": 196,
+      "name": "TEREMANA REPOSADO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 150,
+      "row": 197,
+      "name": "TEREMANA ANEJO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 16,
+      "action": "price updated from G"
+    },
+    {
+      "id": 126,
+      "row": 198,
+      "name": "TROMBA BLANCO",
+      "sellPrice": 10,
+      "match": "existing",
+      "previousPrice": 10,
+      "action": "matched"
+    },
+    {
+      "id": 39,
+      "row": 199,
+      "name": "TROMBA REPOSADO",
+      "sellPrice": 12,
+      "match": "existing",
+      "previousPrice": 12,
+      "action": "matched"
+    },
+    {
+      "id": 151,
+      "row": 200,
+      "name": "TROMBA ANEJO",
+      "sellPrice": 15,
+      "match": "existing",
+      "previousPrice": 14,
+      "action": "price updated from G"
+    },
+    {
+      "id": 57,
+      "row": 201,
+      "name": "TROMBA CEDANO",
+      "sellPrice": 14,
+      "match": "existing",
+      "previousPrice": 18,
+      "action": "price updated from G",
+      "aliasNote": "Existing Tromba Cedano Reposado; sheet omits the style word."
+    },
+    {
+      "id": 58,
+      "row": 202,
+      "name": "VOLCAN CRISTALINO ANEJO",
+      "sellPrice": 16,
+      "match": "existing",
+      "previousPrice": 15,
+      "action": "price updated from G"
+    },
+    {
+      "id": 59,
+      "row": 203,
+      "name": "VOLCAN DE MI TIERRA X.A.",
+      "sellPrice": 55,
+      "match": "existing",
+      "previousPrice": 55,
+      "action": "matched"
+    },
+    {
+      "id": 127,
+      "row": 204,
+      "name": "XICOTE BLANCO",
+      "sellPrice": 11,
+      "match": "existing",
+      "previousPrice": 11,
+      "action": "matched"
+    }
+  ],
+  "retainedExtraIds": [
+    79,
+    85
+  ],
+  "withheldHouseInfusions": 26
+}

@@ -1,0 +1,849 @@
+{
+  "researchedAt": "2026-10-17",
+  "scope": "Thirteen bottles added after comparison with the restaurant-provided SPIRITS inventory; names in B41:B71 and B73:B204, selling prices in G. No purchase costs, stock quantities or other workbook data are published.",
+  "method": "Producer and primary distributor sources. Exact-expression facts, market strength and asset provenance retained. Naturally transparent packshots or clearly recorded background extractions; uncertain blends retain a named photo slot.",
+  "records": [
+    {
+      "id": 179,
+      "name": "FANDANGO JOVEN",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "priceCad": 13,
+      "inventorySource": {
+        "sheet": "SPIRITS",
+        "nameCell": "B57",
+        "sellPriceCell": "G57"
+      },
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.mezcaldistrict.com/fandango",
+          "title": "Fandango — Mezcal District distributor"
+        },
+        {
+          "url": "https://www.mezcaldistrict.com/_files/ugd/87feac_e8f6e1332cdc4422bb0846ca31e7d762.pdf",
+          "title": "Fandango Joven specification sheet — Mezcal District"
+        },
+        {
+          "url": "https://www.saq.com/en/14206211",
+          "title": "Fandango Mezcal Joven — SAQ distributor and bottle image"
+        }
+      ],
+      "facts": {
+        "abv": "40%",
+        "origin": "Mexico.",
+        "agave": "100% Espadin agave.",
+        "aging": "Joven.",
+        "production": "Roasted Espadin agave, double-distilled in copper stills.",
+        "tastingNotes": "Roasted agave, earth and smoke."
+      },
+      "factSources": {
+        "abv": "https://www.mezcaldistrict.com/_files/ugd/87feac_e8f6e1332cdc4422bb0846ca31e7d762.pdf",
+        "origin": "https://www.mezcaldistrict.com/_files/ugd/87feac_e8f6e1332cdc4422bb0846ca31e7d762.pdf",
+        "agave": "https://www.mezcaldistrict.com/_files/ugd/87feac_e8f6e1332cdc4422bb0846ca31e7d762.pdf",
+        "aging": "https://www.mezcaldistrict.com/_files/ugd/87feac_e8f6e1332cdc4422bb0846ca31e7d762.pdf",
+        "production": "https://www.mezcaldistrict.com/_files/ugd/87feac_e8f6e1332cdc4422bb0846ca31e7d762.pdf",
+        "tastingNotes": "https://www.mezcaldistrict.com/_files/ugd/87feac_e8f6e1332cdc4422bb0846ca31e7d762.pdf"
+      },
+      "image": {
+        "sourceUrl": "https://www.saq.com/media/catalog/product/1/4/14206211-1_1703170083.png",
+        "sourcePage": "https://www.saq.com/en/14206211",
+        "localPath": "/images/agave-researched/bottle-179-fandango-joven.webp",
+        "originalLocalPath": "work/staging/new-mezcal-a-candidates/179-fandango-joven.png",
+        "sourceWidth": 1000,
+        "sourceHeight": 1500,
+        "width": 206,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "optimizedBytes": 71654,
+        "sourceSha256": "71c0e8e90f21a685ad4d6da958ced417caa0fb7d88dbed98b948bdd1985b7813",
+        "transforms": "Fully transparent padding trimmed; resized proportionally to at most 1000 px tall; WebP quality 92. No background removal or bottle retouching.",
+        "background": "Transparent, one isolated exact-expression bottle, no gift box."
+      },
+      "unresolvedReason": "",
+      "notes": [
+        "Regional metadata on the SAQ listing is inconsistent with its mezcal description; only Mexico from the distributor specification is used. No specific region or NOM is inferred."
+      ],
+      "note": "A 100% Espadin joven with roasted-agave depth, earthy smoke and two distillations through copper stills."
+    },
+    {
+      "id": 180,
+      "name": "ILEGAL JOVEN",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "priceCad": 12,
+      "inventorySource": {
+        "sheet": "SPIRITS",
+        "nameCell": "B59",
+        "sellPriceCell": "G59"
+      },
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://shop.ilegalmezcal.com/products/joven-750",
+          "title": "Ilegal Joven 750 ml — producer product page"
+        },
+        {
+          "url": "https://www.ilegalmezcal.com/welcome/",
+          "title": "Ilegal — producer craft and origin"
+        },
+        {
+          "url": "https://www.saq.com/en/15498500",
+          "title": "Ilegal Mezcal Joven — SAQ distributor ABV listing"
+        }
+      ],
+      "facts": {
+        "abv": "40%",
+        "origin": "Santiago Matatlan Valley, Oaxaca, Mexico.",
+        "agave": "100% Espadin agave.",
+        "aging": "Unaged; bottled after distillation.",
+        "production": "Handcrafted in small batches by fourth-generation mezcaleros and double-distilled.",
+        "tastingNotes": "Eucalyptus and mineral aromas; green apple, fresh citrus and red chiltepe, with light smoke and lingering warmth."
+      },
+      "factSources": {
+        "abv": "https://www.saq.com/en/15498500",
+        "origin": "https://www.ilegalmezcal.com/welcome/",
+        "agave": "https://www.ilegalmezcal.com/welcome/",
+        "aging": "https://shop.ilegalmezcal.com/products/joven-750",
+        "production": "https://www.ilegalmezcal.com/welcome/",
+        "tastingNotes": "https://shop.ilegalmezcal.com/products/joven-750"
+      },
+      "image": {
+        "sourceUrl": "https://cdn11.bigcommerce.com/s-u9ww3di/images/stencil/1280x1280/products/5108/13337/IM_Joven__86319.1589057088.png?c=2%3Fimbypass%3Don",
+        "sourcePage": "https://www.oldtowntequila.com/ilegal-mezcal-joven/",
+        "localPath": "/images/agave-researched/bottle-180-ilegal-joven.webp",
+        "originalLocalPath": "work/staging/new-mezcal-a-candidates/180-candidate-3.png",
+        "sourceWidth": 1280,
+        "sourceHeight": 1280,
+        "width": 204,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "optimizedBytes": 42818,
+        "sourceSha256": "359fdd01993c98d27034f8371cee87cddc7af57485e174093fb3fbccbe4cf03a",
+        "transforms": "Fully transparent padding trimmed; resized proportionally to at most 1000 px tall; WebP quality 92. No background removal or bottle retouching.",
+        "background": "Transparent, one isolated exact-expression bottle, no gift box."
+      },
+      "unresolvedReason": "",
+      "sourceAttempts": [
+        {
+          "url": "https://shop.ilegalmezcal.com/cdn/shop/files/IlegalMezcalJoven750mlBottle.png?v=1683384313&width=1920",
+          "result": "Official product photograph has an opaque white backdrop; not used as a transparent cutout."
+        }
+      ],
+      "notes": [
+        "Inventory wording ILEGAL MEZCAL BLANCO corresponds to the producer named Joven expression.",
+        "The SAQ taxonomy/region metadata conflicts with the producer; ABV is corroborated by the bottle label, while origin comes from the producer."
+      ],
+      "note": "Small-batch Espadin from Oaxaca, bottled unaged, with light smoke, green apple and fresh citrus."
+    },
+    {
+      "id": 181,
+      "name": "LOS SIETE MISTERIOS ENSAMBLE",
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "priceCad": 20,
+      "inventorySource": {
+        "sheet": "SPIRITS",
+        "nameCell": "B62",
+        "sellPriceCell": "G62"
+      },
+      "status": "family-verified-expression-unresolved",
+      "familyVerified": true,
+      "expressionVerified": false,
+      "sources": [
+        {
+          "url": "https://www.sietemisterios.com/",
+          "title": "Los Siete Misterios — producer Ensambles range"
+        }
+      ],
+      "facts": {
+        "origin": "Oaxaca, Mexico; producer Ensambles range.",
+        "agave": "The producer blends Espadin with other agaves across its Ensambles range; the restaurant inventory does not specify which combination.",
+        "aging": "Joven range.",
+        "production": "The producer describes underground agave roasting, natural fermentation and at least double distillation for its range."
+      },
+      "factSources": {
+        "origin": "https://www.sietemisterios.com/",
+        "agave": "https://www.sietemisterios.com/",
+        "aging": "https://www.sietemisterios.com/",
+        "production": "https://www.sietemisterios.com/"
+      },
+      "factScope": "Producer Ensambles family only; the exact restaurant expression and batch are not identified.",
+      "image": null,
+      "unresolvedReason": "The inventory says only Ensamble. The producer has several different agave blends. The front label and batch are needed before assigning an exact bottle image, fixed ABV, specific blend or batch tasting notes.",
+      "photoNeeded": "Front label of the restaurant’s Los Siete Misterios Ensamble bottle; exact agave blend and batch readable.",
+      "sourceAttempts": [
+        {
+          "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleEspecial.png",
+          "result": "Not assigned: this is the specific Ensamble Especial expression, which the generic inventory entry does not identify."
+        },
+        {
+          "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/ensambles-crop2-scaled.jpg",
+          "result": "Range photograph is not an isolated exact-expression transparent bottle."
+        }
+      ],
+      "notes": [
+        "Do not substitute existing ancestral Espadin ID79, Doba-Yej ID78, or one arbitrary Ensamble Especial / Espadin-wild-agave variant.",
+        "No fixed ABV or specific agave proportions are recorded."
+      ],
+      "note": "The producer’s Ensambles bring Espadin together with other agaves. Ask the bar about the blend in the bottle currently pouring."
+    },
+    {
+      "id": 182,
+      "name": "OJO DE TIGRE JOVEN",
+      "sources": [
+        {
+          "url": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/",
+          "title": "Ojo de Tigre · Joven and artisanal process",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://ojodetigremezcal.com/en/shop-now/",
+          "title": "Ojo de Tigre · English-market 40% listing",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://www.lcbo.com/en/mezcal-ojo-de-tigre-joven-33366",
+          "title": "LCBO · Ojo de Tigre Joven, Canadian 40% listing",
+          "kind": "regional-authority"
+        },
+        {
+          "url": "https://ojodetigremezcal.com/es/asi-nos-califico-profeco/",
+          "title": "Ojo de Tigre · Mexican-market Joven classification and 37% listing",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://www.pernod-ricard.com/en/brand/ojo-de-tigre",
+          "title": "Pernod Ricard · Ojo de Tigre bottle asset",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40% (English producer listing and LCBO Canada; Mexican-market strength differs).",
+        "agave": "Espadín from Oaxaca and Tobalá from Puebla.",
+        "aging": "Joven; no barrel maturation.",
+        "origin": "Oaxaca and Puebla, Mexico (agave origins).",
+        "production": "The agaves are processed separately: roasted, mashed, naturally fermented and distilled twice in copper stills. Their distillates are then blended before bottling.",
+        "aroma": "Apple, green pear, cooked agave, caramel and smoky cacao.",
+        "taste": "A sweet opening, followed by citrus fruit and cucumber.",
+        "tastingNotes": "Fruit and caramel on the nose; a sweet entry with citrus and cucumber, with gentle smoke."
+      },
+      "factSources": {
+        "abv": "https://ojodetigremezcal.com/en/shop-now/",
+        "agave": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/",
+        "aging": "https://ojodetigremezcal.com/es/asi-nos-califico-profeco/",
+        "origin": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/",
+        "production": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/",
+        "aroma": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/",
+        "taste": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/",
+        "tastingNotes": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/"
+      },
+      "story": "Two agaves, two places: Oaxacan Espadín and Pueblan Tobalá are distilled separately, then brought together in a bright, gently smoky blend.",
+      "storySource": "https://ojodetigremezcal.com/en/elaboration-joven-mezcal-white-mezcal/",
+      "notes": [
+        "The English producer shop and LCBO Canadian listing state 40%; the producer’s Mexican-market article lists 37%. Verify the label on the venue’s current bottle rather than treating strength as universal."
+      ],
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "image": {
+        "sourceUrl": "https://www.pernod-ricard.com/sites/default/files/2024-02/fy24_odt_joven_750ml_bottleimage_front_png.png",
+        "sourcePage": "https://www.pernod-ricard.com/en/brand/ojo-de-tigre",
+        "localPath": "/images/agave-researched/bottle-182-ojo-de-tigre-joven.webp",
+        "originalLocalPath": "work/agave-originals-new/bottle-182-ojo-de-tigre-joven-pernod.png",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-182-ojo-de-tigre-joven-pernod.png",
+        "width": 557,
+        "height": 1400,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; exact single Joven bottle. No pedestal, reflection, opaque plane or cast shadow.",
+        "embeddedShadow": "No cast shadow observed.",
+        "transforms": "Proportional resize inside 900 × 1400, without enlargement; WebP quality 92, alpha preserved. No trim, crop, background removal or pixel retouching.",
+        "sourceSha256": "177aa99fb5e8f7ceb9434ca63d49b4979f1e9d7016e399d6a058dc35b47339d2",
+        "sourceWidth": 1978,
+        "sourceHeight": 4973,
+        "optimizedBytes": 107444
+      },
+      "unresolvedReason": null,
+      "sourceAttempts": [
+        {
+          "url": "https://www.pernod-ricard.com/sites/default/files/2024-02/fy24_odt_joven_750ml_bottleimage_front_png.png",
+          "sourcePage": "https://www.pernod-ricard.com/en/brand/ojo-de-tigre",
+          "method": "Downloaded original, checked alpha statistics and visually inspected on cyan",
+          "result": "Accepted exact isolated transparent bottle without a ground plane or shadow."
+        },
+        {
+          "url": "https://ojodetigremezcal.com/wp-content/uploads/2022/06/ODT-JOVEN_US.webp",
+          "method": "Alpha and visual inspection",
+          "result": "Rejected: two bottles in one asset."
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "name": "SAN COSME JOVEN",
+      "sources": [
+        {
+          "url": "https://sancosme.mx/",
+          "title": "San Cosme · Product specifications and bottle image",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://sancosme.mx/proceso/",
+          "title": "San Cosme · Handcrafted production process",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://spiritcartel.com/brands/san-cosme/mezcal-san-cosme/",
+          "title": "Spirit Cartel · San Cosme tasting notes and history",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://qantimagroup.com/marcas/tequila/san-cosme-mezcal/",
+          "title": "Qantima Group · San Cosme Joven, unaged expression",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40%.",
+        "agave": "100% Espadín (Agave angustifolia Haw).",
+        "aging": "Joven; unaged.",
+        "origin": "Santiago Matatlán, Oaxaca, Mexico.",
+        "producer": "Maestros mezcaleros Don Neto and Wil (producer process page).",
+        "production": "Agave cooks in conical stone ovens heated with mesquite, is ground by a horse-drawn tahona, then ferments naturally in wooden tanks. It is double-distilled in copper pot stills before filtration and bottling.",
+        "aroma": "Agave with caramel and woody notes.",
+        "taste": "Smoky agave, leather and earth, ending warm and spicy.",
+        "tastingNotes": "Agave, caramel and wood aromas lead to smoky agave, earthy leather and a warm, spicy finish."
+      },
+      "factSources": {
+        "abv": "https://sancosme.mx/",
+        "agave": "https://sancosme.mx/",
+        "aging": "https://qantimagroup.com/marcas/tequila/san-cosme-mezcal/",
+        "origin": "https://sancosme.mx/proceso/",
+        "producer": "https://sancosme.mx/proceso/",
+        "production": "https://sancosme.mx/proceso/",
+        "aroma": "https://spiritcartel.com/brands/san-cosme/mezcal-san-cosme/",
+        "taste": "https://spiritcartel.com/brands/san-cosme/mezcal-san-cosme/",
+        "tastingNotes": "https://spiritcartel.com/brands/san-cosme/mezcal-san-cosme/"
+      },
+      "story": "Named for Saint Cosmas, this Oaxacan mezcal brings traditional Espadín craft to a contemporary bottle.",
+      "storySource": "https://spiritcartel.com/brands/san-cosme/mezcal-san-cosme/",
+      "notes": [
+        "The producer’s transparent packshot shows a 700 ml market bottle; its site also lists 750 ml. Both are the same 40% Joven expression."
+      ],
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "image": {
+        "sourceUrl": "https://sancosme.mx/wp-content/uploads/2021/04/mezcal-sancosme-product-transparent-02.png",
+        "sourcePage": "https://sancosme.mx/",
+        "localPath": "/images/agave-researched/bottle-183-san-cosme-joven.webp",
+        "originalLocalPath": "work/agave-originals-new/bottle-183-san-cosme-joven-brand.png",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-183-san-cosme-joven-brand.png",
+        "width": 900,
+        "height": 899,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; exact single Joven bottle. No pedestal, reflection, opaque plane or cast shadow.",
+        "embeddedShadow": "No cast shadow observed.",
+        "transforms": "Proportional resize inside 900 × 1400, without enlargement; WebP quality 92, alpha preserved. No trim, crop, background removal or pixel retouching.",
+        "sourceSha256": "682557f3bc9e4bfb1d2e31c80e4b922718ab002b54a8510487b051c4af4904db",
+        "sourceWidth": 1270,
+        "sourceHeight": 1269,
+        "optimizedBytes": 44052
+      },
+      "unresolvedReason": null,
+      "sourceAttempts": [
+        {
+          "url": "https://sancosme.mx/wp-content/uploads/2021/04/mezcal-sancosme-product-transparent-02.png",
+          "sourcePage": "https://sancosme.mx/",
+          "method": "Downloaded original, checked alpha statistics and visually inspected on cyan",
+          "result": "Accepted exact isolated transparent bottle without a ground plane or shadow."
+        },
+        {
+          "url": "https://spiritcartel.com/wp-content/uploads/san_cosme_mezcal_product.png",
+          "method": "Alpha and visual inspection",
+          "result": "Rejected: opaque decorative mat and paper surround."
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "name": "SEÑORÍO JOVEN",
+      "sources": [
+        {
+          "url": "https://senoriomezcal.com/en/mezcal-joven.html",
+          "title": "Señorío · Joven expression and tasting profile",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://senoriomezcal.com/en/our-process.html",
+          "title": "Señorío · Espadín fields and production process",
+          "kind": "producer-or-distributor"
+        },
+        {
+          "url": "https://www.win-sense.com.tw/senorio-mezcal-%E8%8E%8A%E5%9C%92%E9%BE%8D%E8%88%8C%E8%98%AD",
+          "title": "Winsense · Señorío distributor and isolated Joven bottle image",
+          "kind": "producer-or-distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40%.",
+        "agave": "Espadín.",
+        "aging": "Joven (young expression).",
+        "origin": "Tlacolula de Matamoros, Oaxaca, Mexico (producer’s agave fields).",
+        "producer": "Mezcales Casa Armando (MCA).",
+        "production": "Espadín hearts cook in stone ovens. The producer balances two distillations with different intensities and aroma/flavour profiles; its oak maturation applies to the separate Reposado and Añejo expressions.",
+        "aroma": "Lime, grapefruit and mint, with wildflowers, olive and smoke.",
+        "taste": "Herbal and citrus flavours with gentle smoky tones.",
+        "tastingNotes": "Fresh citrus, mint, floral and olive aromas lead to an herbal, gently smoky palate."
+      },
+      "factSources": {
+        "abv": "https://senoriomezcal.com/en/mezcal-joven.html",
+        "agave": "https://senoriomezcal.com/en/mezcal-joven.html",
+        "aging": "https://senoriomezcal.com/en/mezcal-joven.html",
+        "origin": "https://senoriomezcal.com/en/our-process.html",
+        "producer": "https://www.win-sense.com.tw/senorio-mezcal-%E8%8E%8A%E5%9C%92%E9%BE%8D%E8%88%8C%E8%98%AD",
+        "production": "https://senoriomezcal.com/en/our-process.html",
+        "aroma": "https://senoriomezcal.com/en/mezcal-joven.html",
+        "taste": "https://senoriomezcal.com/en/mezcal-joven.html",
+        "tastingNotes": "https://senoriomezcal.com/en/mezcal-joven.html"
+      },
+      "story": "Oaxacan Espadín and a balance of contrasting distillations shape Señorío Joven’s gentle smoke and herbal citrus character.",
+      "storySource": "https://senoriomezcal.com/en/mezcal-joven.html",
+      "notes": [
+        "The producer identifies its fields in Tlacolula de Matamoros; a precise distillery address or NOM was not inferred. Joven classification is recorded without inventing a barrel duration."
+      ],
+      "type": "Mezcal",
+      "category": "Mezcal",
+      "status": "verified",
+      "expressionVerified": true,
+      "image": {
+        "sourceUrl": "https://static.wixstatic.com/media/a5e55f_17e40fc4c402449eae4dffd543d903d4~mv2.png",
+        "sourcePage": "https://www.win-sense.com.tw/senorio-mezcal-%E8%8E%8A%E5%9C%92%E9%BE%8D%E8%88%8C%E8%98%AD",
+        "localPath": "/images/agave-researched/bottle-184-senorio-joven.webp",
+        "originalLocalPath": "work/agave-originals-new/bottle-184-senorio-winsense.png",
+        "originalPublicPath": "/images/agave-researched/originals/bottle-184-senorio-winsense.png",
+        "width": 900,
+        "height": 900,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "background": "Transparent; exact single Joven bottle. No pedestal, reflection, opaque plane or cast shadow.",
+        "embeddedShadow": "No cast shadow observed.",
+        "transforms": "Proportional resize inside 900 × 1400, without enlargement; WebP quality 92, alpha preserved. No trim, crop, background removal or pixel retouching.",
+        "sourceSha256": "7d8c7a8fde16953df1111c22adf97956a30d2083ae607500289a5ab5ba3c2916",
+        "sourceWidth": 3000,
+        "sourceHeight": 3000,
+        "optimizedBytes": 54274
+      },
+      "unresolvedReason": null,
+      "sourceAttempts": [
+        {
+          "url": "https://static.wixstatic.com/media/a5e55f_17e40fc4c402449eae4dffd543d903d4~mv2.png",
+          "sourcePage": "https://www.win-sense.com.tw/senorio-mezcal-%E8%8E%8A%E5%9C%92%E9%BE%8D%E8%88%8C%E8%98%AD",
+          "method": "Downloaded original, checked alpha statistics and visually inspected on cyan",
+          "result": "Accepted exact isolated transparent bottle without a ground plane or shadow."
+        },
+        {
+          "url": "https://senoriomezcal.com/assets/images/joven.png",
+          "method": "Alpha and visual inspection",
+          "result": "Rejected: pedestal and smoke decoration."
+        },
+        {
+          "url": "https://senoriomezcal.com/assets/images/jovenbotella.png",
+          "method": "Alpha and visual inspection",
+          "result": "Rejected: embedded cast shadow."
+        },
+        {
+          "url": "https://senoriomezcal.com/assets/images/joven-sm.png",
+          "method": "Alpha and visual inspection",
+          "result": "Rejected: mirrored reflection below bottle."
+        },
+        {
+          "url": "https://www.vidmexicana.com/cdn/shop/files/b801ae7e.png?v=1764951844",
+          "method": "Alpha statistics and visual inspection",
+          "result": "Rejected: opaque white background."
+        },
+        {
+          "url": "https://vinosylicores.com/cdn/shop/files/Packde6VinoBlancoFincaLasMorasSauvignonBlanc750ml-2025-08-05T214653.238.png?v=1754452012&width=1214",
+          "method": "Alpha statistics and visual inspection",
+          "result": "Rejected: opaque white background."
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "name": "1800 COCONUT",
+      "type": "Tequila",
+      "category": "Flavoured",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.1800tequila.com/products/coconut/",
+          "title": "1800 Coconut — producer"
+        }
+      ],
+      "facts": {
+        "abv": "35%",
+        "agave": "100% Blue Weber agave tequila, infused with natural coconut flavour.",
+        "aroma": "Soft tropical aromas with sweet agave.",
+        "taste": "Medium-bodied coconut with a long, gently sweet coconut finish.",
+        "production": "A selection of double-distilled white tequilas infused with natural ripe coconut flavour.",
+        "origin": "Jalisco, Mexico."
+      },
+      "story": "1800 brings a tropical turn to its white tequila with a natural coconut infusion. The producer suggests it over ice or paired with pineapple juice.",
+      "image": {
+        "sourceUrl": "https://www.1800tequila.com/cdn/shop/files/1800-Coconut-product-image-1_dd374fbd-93a8-4108-ad51-c49c4b169c66.jpg?v=1780069975&width=1000",
+        "sourcePage": "https://www.1800tequila.com/products/coconut/",
+        "localPath": "/images/agave-researched/bottle-185-1800-coconut.webp",
+        "width": 440,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-new/185-1800-coconut-source.jpg",
+        "derivedLocalPath": "work/agave-originals-new/185-1800-coconut-cutout-tight-v2.png",
+        "sourceSha256": "d90898c99d4517775415ed6d68e2f434e3188fbb29b3246ca92a53a8003103c8",
+        "optimizedSha256": "81b4abb221f9d5469bd75b3611658b5b108dab0fab0da485642eb1665b63f664",
+        "optimizedBytes": 110462,
+        "background": "Genuine transparent alpha; single expression bottle with no external box, decorative graphics or drop shadow.",
+        "transforms": "Built-in ImageGen background extraction from the linked source photo; source bottle identity and label visually checked. Mi Campo was also rotated upright. Sharp resized proportionally to maximum 1000 px height and encoded WebP quality 92; no further retouching. Final built-in ImageGen canvas-tightening pass isolated the same exact bottle on a narrow portrait canvas; Sharp only resized and encoded the output, with no pixel masking or crop.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Remove only surroundings of the exact bottle; preserve bottle, cap, label artwork and words; genuine transparent alpha; no added shadow, floor, reflection, halo or opaque rectangle. Mi Campo only: rotate the photographed bottle upright.",
+          "tightCanvasPrompt": "Edit only canvas bounds and background alpha to a tight narrow portrait crop around the exact full bottle; preserve all photographed geometry and label text; remove stray distant alpha; no shadow, reflection, halo or opaque background."
+        },
+        "previousDerivedLocalPath": "work/agave-originals-new/185-1800-coconut-cutout.png",
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 18,
+          "top": 9,
+          "right": 424,
+          "bottom": 986,
+          "width": 407,
+          "height": 978,
+          "fillX": 0.925,
+          "fillY": 0.978
+        }
+      },
+      "unresolvedReason": ""
+    },
+    {
+      "id": 186,
+      "name": "CAZCABEL JALAPEÑO BLANCO",
+      "type": "Tequila",
+      "category": "Flavoured",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://cazcabel.com/collections/tequila",
+          "title": "Cazcabel Blanco Jalapeño — producer"
+        },
+        {
+          "url": "https://www.lcbo.com/en/cazcabel-jalapeno-tequila-50029",
+          "title": "Cazcabel Jalapeño — LCBO product and Canadian ABV"
+        }
+      ],
+      "facts": {
+        "abv": "35%",
+        "agave": "100% Blue Weber agave blanco tequila with natural jalapeño extract.",
+        "aroma": "Green pepper spice layered over agave and citrus.",
+        "taste": "Earthy agave, green jalapeño, citrus and herbs, followed by a lingering roasted-pepper finish.",
+        "production": "Natural jalapeño extract is added to Cazcabel Blanco and left to infuse fully.",
+        "origin": "Los Altos de Jalisco, Mexico.",
+        "producer": "Hacienda Cazcabel.",
+        "nom": "1436"
+      },
+      "story": "Made with estate-grown agave, this Cazcabel expression adds natural jalapeño to its blanco base for a green, spicy profile built for a Spicy Margarita.",
+      "image": {
+        "sourceUrl": "https://cazcabel.com/cdn/shop/files/CAZCABEL_JALAPENO_VISUAL_3_2_2048x2048.png?v=1781084909",
+        "sourcePage": "https://cazcabel.com/",
+        "localPath": "/images/agave-researched/bottle-186-cazcabel-jalapeno-blanco.webp",
+        "width": 531,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-new/186-cazcabel-jalapeno-blanco-source.png",
+        "derivedLocalPath": "work/agave-originals-new/186-cazcabel-jalapeno-blanco-cutout.png",
+        "sourceSha256": "05d6ecda40d880134628ffbbf9d21718d1d0f9811bc3a795c5080c7f64f02ac8",
+        "optimizedSha256": "4f0fc1a112036f987f1fd609d91f1d295fc8a105c3c0891bc9d8923384e0d908",
+        "optimizedBytes": 123846,
+        "background": "Genuine transparent alpha; single expression bottle with no external box, decorative graphics or drop shadow.",
+        "transforms": "Built-in ImageGen background extraction from the linked source photo; source bottle identity and label visually checked. Mi Campo was also rotated upright. Sharp resized proportionally to maximum 1000 px height and encoded WebP quality 92; no further retouching.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Remove only surroundings of the exact bottle; preserve bottle, cap, label artwork and words; genuine transparent alpha; no added shadow, floor, reflection, halo or opaque rectangle. Mi Campo only: rotate the photographed bottle upright."
+        }
+      },
+      "unresolvedReason": ""
+    },
+    {
+      "id": 187,
+      "name": "CHISME BLANCO",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://www.lcbo.com/en/siempre-tequila-chisme-blanco-50082",
+          "title": "Siempre Tequila Chisme Blanco — LCBO"
+        }
+      ],
+      "facts": {
+        "abv": "40%",
+        "agave": "100% Blue agave.",
+        "tastingNotes": "Cooked agave, ripe citrus and white pepper.",
+        "production": "The bottle label identifies this expression as non-diffusor and non-chill filtered.",
+        "origin": "Jalisco, Mexico.",
+        "producer": "Siempre (brand)."
+      },
+      "story": "A clean, versatile blanco that LCBO recommends for Margaritas, Palomas and Ranch Water, with agave, citrus and pepper at the centre.",
+      "image": {
+        "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/5/0/0/050082.jpg",
+        "sourcePage": "https://www.lcbo.com/en/siempre-tequila-chisme-blanco-50082",
+        "localPath": "/images/agave-researched/bottle-187-chisme-blanco.webp",
+        "width": 333,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-new/187-chisme-blanco-source.jpg",
+        "derivedLocalPath": "work/agave-originals-new/187-chisme-blanco-cutout-tight-v3.png",
+        "sourceSha256": "aab4b549f904c31d3338ee550abb678ab5c8a7c90bed2c489c67e241bed74c23",
+        "optimizedSha256": "5a76995e9267a5c182f3bbbf8cce53cc716767a01416f3af7b0920a6cc753253",
+        "optimizedBytes": 84758,
+        "background": "Genuine transparent alpha; single expression bottle with no external box, decorative graphics or drop shadow.",
+        "transforms": "Built-in ImageGen background extraction from the linked source photo; source bottle identity and label visually checked. Mi Campo was also rotated upright. Sharp resized proportionally to maximum 1000 px height and encoded WebP quality 92; no further retouching. Final built-in ImageGen canvas-tightening pass isolated the same exact bottle on a narrow portrait canvas; Sharp only resized and encoded the output, with no pixel masking or crop.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Remove only surroundings of the exact bottle; preserve bottle, cap, label artwork and words; genuine transparent alpha; no added shadow, floor, reflection, halo or opaque rectangle. Mi Campo only: rotate the photographed bottle upright.",
+          "tightCanvasPrompt": "Edit only canvas bounds and background alpha to a tight narrow portrait crop around the exact full bottle; preserve all photographed geometry and label text; remove stray distant alpha; no shadow, reflection, halo or opaque background."
+        },
+        "previousDerivedLocalPath": "work/agave-originals-new/187-chisme-blanco-cutout.png",
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 31,
+          "top": 3,
+          "right": 301,
+          "bottom": 986,
+          "width": 271,
+          "height": 984,
+          "fillX": 0.8138138138138138,
+          "fillY": 0.984
+        }
+      },
+      "unresolvedReason": "",
+      "notes": [
+        "Retailer production and NOM claims conflict (1479, 1580 and 1610). No factory NOM, fermentation or distillation claim has been carried into this record. LCBO and the actual photographed label establish the expression, ABV, agave and Jalisco origin."
+      ]
+    },
+    {
+      "id": 188,
+      "name": "MI CAMPO BLANCO",
+      "type": "Tequila",
+      "category": "Blanco",
+      "status": "verified",
+      "expressionVerified": true,
+      "sources": [
+        {
+          "url": "https://tequilamicampo.com/products/blanco",
+          "title": "Mi Campo Blanco — producer"
+        },
+        {
+          "url": "https://adultbeveragesolutions.com/gallery/1553017091_Mi_CAMPO_Blanco_Tasting_Note.pdf",
+          "title": "Mi Campo Blanco — producer tasting sheet via distributor"
+        }
+      ],
+      "facts": {
+        "abv": "40%",
+        "agave": "100% Blue Weber agave.",
+        "aging": "Rested for up to one month in white-wine barrels.",
+        "aroma": "Cooked agave, banana, coconut, almond, orange, green apple and a touch of vanilla.",
+        "taste": "Orange-blossom tea, honey and sweet orange, balanced by subtle white pepper.",
+        "production": "Mature agave is cooked and gently pressed. Open-air fermentation is followed by double distillation and a short rest in white-wine barrels.",
+        "origin": "Jalisco, Mexico."
+      },
+      "story": "Mi Campo gives its blanco a brief rest in white-wine barrels, combining fresh agave character with fruit, floral notes and a soft touch of oak.",
+      "image": {
+        "sourceUrl": "https://tequilamicampo.com/cdn/shop/files/2023-03-15_Mi_Campo_-_Bottles-5709_f191c201-52a8-4d90-945c-1852bdb8ad26.jpg?v=1759249811&width=1200",
+        "sourcePage": "https://tequilamicampo.com/products/blanco",
+        "localPath": "/images/agave-researched/bottle-188-mi-campo-blanco.webp",
+        "width": 440,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-new/188-mi-campo-blanco-source.jpg",
+        "derivedLocalPath": "work/agave-originals-new/188-mi-campo-blanco-cutout-tight-v2.png",
+        "sourceSha256": "8696765f4f44db24ad340bf5fa6fc19b56de0c5347e2f51ef9777e38336ce1dc",
+        "optimizedSha256": "175da45c504e849ba25321c56612e044488cc55313bd3f70a0af010f58704e2a",
+        "optimizedBytes": 158042,
+        "background": "Genuine transparent alpha; single expression bottle with no external box, decorative graphics or drop shadow.",
+        "transforms": "Built-in ImageGen background extraction from the linked source photo; source bottle identity and label visually checked. Mi Campo was also rotated upright. Sharp resized proportionally to maximum 1000 px height and encoded WebP quality 92; no further retouching. Final built-in ImageGen canvas-tightening pass isolated the same exact bottle on a narrow portrait canvas; Sharp only resized and encoded the output, with no pixel masking or crop.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Remove only surroundings of the exact bottle; preserve bottle, cap, label artwork and words; genuine transparent alpha; no added shadow, floor, reflection, halo or opaque rectangle. Mi Campo only: rotate the photographed bottle upright.",
+          "tightCanvasPrompt": "Edit only canvas bounds and background alpha to a tight narrow portrait crop around the exact full bottle; preserve all photographed geometry and label text; remove stray distant alpha; no shadow, reflection, halo or opaque background."
+        },
+        "previousDerivedLocalPath": "work/agave-originals-new/188-mi-campo-blanco-cutout.png",
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 12,
+          "top": 4,
+          "right": 428,
+          "bottom": 990,
+          "width": 417,
+          "height": 987,
+          "fillX": 0.9477272727272728,
+          "fillY": 0.987
+        }
+      },
+      "unresolvedReason": ""
+    },
+    {
+      "id": 189,
+      "name": "MILAGRO SILVER",
+      "type": "Tequila",
+      "category": "Blanco",
+      "story": "Founded in 1998 by two college friends, Milagro draws on the colour and creative energy of Mexico City. Silver is its fresh, unaged expression.",
+      "sources": [
+        {
+          "url": "https://milagrotequila.com/our-tequilas/silver",
+          "title": "Milagro · Silver"
+        },
+        {
+          "url": "https://milagrotequila.com/our-story",
+          "title": "Milagro · Our story and process"
+        }
+      ],
+      "facts": {
+        "abv": "40% (producer listing)",
+        "agave": "100% Blue agave",
+        "aging": "Unaged",
+        "origin": "Jalisco Highlands, Mexico",
+        "aroma": "Lemongrass and citrus with black pepper.",
+        "taste": "Fresh agave, pear and citrus.",
+        "production": "A portion of the agave is brick-oven roasted for around 36 hours, then shredded and pressed. Fermentation takes around 72 hours; distillation combines pot and column stills."
+      },
+      "status": "verified",
+      "expressionVerified": true,
+      "image": {
+        "sourceUrl": "https://milagrotequila.com/s/new-milagro-silver-bottle-02.DpoB1SzM_Z2oLls7.webp",
+        "sourcePage": "https://milagrotequila.com/buy-online",
+        "localPath": "/images/agave-researched/bottle-189-milagro-silver.webp",
+        "width": 217,
+        "height": 906,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "originalLocalPath": "work/agave-originals-new/bottle-189-milagro-silver-new.webp"
+      }
+    },
+    {
+      "id": 190,
+      "name": "PATRÓN XO CAFE",
+      "type": "Liqueur",
+      "category": "Flavoured",
+      "story": "Coffee meets agave in a tequila-based liqueur built from Patrón Silver and Mexican Arabica coffee essence. Its dry coffee character makes it a natural after-dinner pour.",
+      "sources": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-xo-cafe-coffee-liquor.html",
+          "title": "Patrón · XO Cafe"
+        },
+        {
+          "url": "https://www.academiapatron.com/es/productos/xo-cafe-coffee-liqueur",
+          "title": "Academia Patrón · XO Cafe"
+        }
+      ],
+      "facts": {
+        "abv": "35% (producer listing)",
+        "agave": "Blue Weber agave tequila with Arabica coffee essence",
+        "origin": "Mexico",
+        "aroma": "Fresh coffee, cocoa and vanilla.",
+        "taste": "Roast coffee and chocolate, with a light tequila note.",
+        "production": "Patrón Silver tequila is blended with natural Arabica coffee essence from Veracruz, Mexico."
+      },
+      "status": "verified",
+      "expressionVerified": true,
+      "image": {
+        "sourceUrl": "https://www.patrontequila.com/binaries/mobile/content/gallery/patrontequila/products/xo-cafe/v3/bottle.png",
+        "sourcePage": "https://www.patrontequila.com/products/patron-xo-cafe-coffee-liquor.html",
+        "localPath": "/images/agave-researched/bottle-190-patron-xo-cafe.webp",
+        "width": 650,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "originalLocalPath": "work/agave-originals-new/bottle-190-patron-xo-cafe.png",
+        "derivation": "Built-in ImageGen background extraction removed the producer packshot’s cast shadow. Bottle label and identity were visually checked against the source.",
+        "derivedLocalPath": "work/agave-originals-new/bottle-190-background-extraction.png"
+      }
+    },
+    {
+      "id": 191,
+      "name": "ROOSTER ROJO REPOSADO",
+      "type": "Tequila",
+      "category": "Reposado",
+      "story": "Made at Fábrica de Tequilas Finos at the foot of the Tequila volcano, this reposado adds French-oak warmth to the brand’s blue-agave spirit.",
+      "sources": [
+        {
+          "url": "https://amberbev.com.au/product/tequila-mezcal/rooster-rojo-reposado/",
+          "title": "Amber Beverage · Rooster Rojo Reposado"
+        },
+        {
+          "url": "https://amberbev.com/brand-news/double-gold-medal-for-our-tequila-front-liner-rooster-rojo/",
+          "title": "Amber Beverage Group · Rooster Rojo production"
+        },
+        {
+          "url": "https://www.enotria.com/products/rooster-rojo-rooster-rojo-reposado-tequila",
+          "title": "Enotria distributor · Rooster Rojo Reposado"
+        },
+        {
+          "url": "https://amberbev.com/wp-content/uploads/ADL_EKS_PRODUKTU_katalogs_2020_small.pdf",
+          "title": "Amber Distribution Latvia · Product catalogue, page 63"
+        }
+      ],
+      "facts": {
+        "abv": "40% (pictured 750 ml producer packshot)",
+        "agave": "100% Blue Weber agave",
+        "aging": "At least 2 months in large French-oak casks",
+        "origin": "Tequila, Jalisco, Mexico",
+        "aroma": "Gentle oak, ripe fruit and cooked agave.",
+        "taste": "Vanilla, caramel and roasted agave, with a warm finish.",
+        "production": "Steam-cooked agave is fermented for up to 72 hours and double-distilled in stainless-steel pot stills. The blending water is filtered through Mexican silver."
+      },
+      "status": "verified",
+      "expressionVerified": true,
+      "image": {
+        "sourceUrl": "https://amberbev.com.au/wp-content/uploads/2021/10/RoosterRojo_reposado-380x659.png",
+        "sourcePage": "https://amberbev.com.au/product/tequila-mezcal/rooster-rojo-reposado/",
+        "localPath": "/images/agave-researched/bottle-191-rooster-rojo-reposado.webp",
+        "width": 380,
+        "height": 659,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "originalLocalPath": "work/agave-originals-new/bottle-191-rooster-rojo-reposado.png"
+      },
+      "notes": [
+        "The producer distributor lists 38% for its 700 ml presentation; the pictured 750 ml export bottle is labelled 40%. The displayed alcohol strength follows that packshot, not an assumed venue batch."
+      ]
+    }
+  ]
+}

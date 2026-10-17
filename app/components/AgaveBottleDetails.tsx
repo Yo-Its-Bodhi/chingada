@@ -32,6 +32,8 @@ export function AgaveBottleDetails({
   const details = getAgaveDisplay(bottle);
   const research = agaveResearch.get(bottle.id);
   const title = research?.displayName ?? bottle.name;
+  const category = research?.category ?? bottle.category;
+  const type = research?.displayType ?? bottle.type;
   const price = agavePrice(bottle.id);
   const primaryLabels = new Set(["Alcohol", "Agave", "Maturation"]);
   const primaryFacts = details.facts.filter(({ label }) =>
@@ -46,8 +48,7 @@ export function AgaveBottleDetails({
         {photo}
         <header className="agave-record-heading">
           <p className="eyebrow">
-            {research?.category ?? bottle.category} ·{" "}
-            {research?.displayType ?? bottle.type}
+            {category === type ? category : `${category} · ${type}`}
           </p>
           <h2>{title}</h2>
           {price !== undefined && (

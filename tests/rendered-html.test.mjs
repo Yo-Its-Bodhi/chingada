@@ -193,7 +193,7 @@ test("agave card fronts show supplied CAD prices and keep house infusions unpubl
   }
   assert.match(html, /Prices in CAD/);
   assert.doesNotMatch(html, /House infusions|APPLE TEQUILA|House Infused/);
-  assert.match(contentText(html), /152 records to explore/);
+  assert.match(contentText(html), /165 records to explore/);
 });
 
 test("full food and drinks menu is in server HTML and valid Menu structured data", async () => {

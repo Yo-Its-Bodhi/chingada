@@ -134,8 +134,18 @@ test("unverified expressions expose only existing house fallbacks, without inven
   assert.equal(unknown.story, "Ask the bar.");
 });
 
+test("new bottles use verified producer aroma and palate when historical tasting notes are absent", () => {
+  const bottle = inventory.find(({ id }) => id === 182);
+  const current = research.get(182);
+  assert.ok(bottle && current?.expressionVerified);
+  const display = getAgaveDisplay(bottle);
+  assert.equal(display.aroma, current.facts.aroma);
+  assert.equal(display.palate, current.facts.taste);
+  assert.equal(display.pending, false);
+});
+
 test("all inventory records produce safe, independent display data with no lost current facts", () => {
-  assert.equal(inventory.length, 178);
+  assert.equal(inventory.length, research.size);
   for (const bottle of inventory) {
     const display = getAgaveDisplay(bottle);
     assert.equal(

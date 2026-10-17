@@ -4,7 +4,7 @@ import { houseInfusions } from "../app/house-infusions.ts";
 
 const known = new Map([...agaveRecords, ...houseInfusions].map(record=>[record.id,record]));
 const merged = new Map();
-for (const batch of ["a", "b", "c"]) {
+for (const batch of ["a", "b", "c", "d"]) {
   let input;
   try {input=JSON.parse(await readFile(new URL(`../reports/agave-research-${batch}.json`,import.meta.url),"utf8"));}
   catch(error) {if(error.code === "ENOENT") continue; throw error;}

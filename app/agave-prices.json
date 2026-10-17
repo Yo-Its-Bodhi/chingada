@@ -1,417 +1,671 @@
 {
-  "source": "Restaurant-provided TouchBistro price list",
+  "source": "Restaurant-provided bar inventory: SPIRITS column G selling prices, reviewed 17 October 2026. Earlier POS prices retained for bottles absent from the sheet.",
   "currency": "CAD",
   "taxesIncluded": false,
   "records": [
     {
       "id": 1,
       "posName": "818 REPOSADO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "818 REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 78
     },
     {
       "id": 2,
       "posName": "1800 REPOSADO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "1800 REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 74
     },
     {
       "id": 3,
       "posName": "ADICTIVO DOUBLE REPOSADO",
-      "priceCad": 26
+      "priceCad": 26,
+      "inventoryName": "ADICTIVO DOUBLE REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 79
     },
     {
       "id": 4,
       "posName": "CABO WABO REPOSADO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "CABO WABO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 83
     },
     {
       "id": 5,
       "posName": "CASA MAESTRI REPOSADO",
-      "priceCad": 20
+      "priceCad": 20,
+      "inventoryName": "CASA MAESTRI REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 90
     },
     {
       "id": 6,
       "posName": "CASAMIGOS REPOSADO",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "CASAMIGOS REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 94
     },
     {
       "id": 7,
       "posName": "CATRINA LA COFRADIA REPOSADO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "CATRINA LA COFRADIA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 96
     },
     {
       "id": 8,
       "posName": "CAZADORES REPOSADO",
-      "priceCad": 9
+      "priceCad": 9,
+      "inventoryName": "CAZADORES REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 98
     },
     {
       "id": 9,
       "posName": "CINCORO REPOSADO",
-      "priceCad": 32
+      "priceCad": 32,
+      "inventoryName": "CINCORO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 108
     },
     {
       "id": 10,
       "posName": "CLASE AZUL REPOSADO",
-      "priceCad": 35
+      "priceCad": 35,
+      "inventoryName": "CLASE AZUL REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 111
     },
     {
       "id": 11,
       "posName": "CORRALEJO REPOSADO",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "CORRALEJO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 116
     },
     {
       "id": 12,
       "posName": "DON ADRIANO 1950 REPOSADO",
-      "priceCad": 17
+      "priceCad": 17,
+      "inventoryName": "DON ADRIANO 1950 REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 119
     },
     {
       "id": 13,
       "posName": "DON JULIO REPOSADO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "DON JULIO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 121
     },
     {
       "id": 14,
       "posName": "DOM RAMON DIAMANTÉ REPOSADO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "DON RAMON PUNTA DIAMANTE  REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 128
     },
     {
       "id": 15,
       "posName": "EL MEXICANO REPOSADO",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "EL MEXICANO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 130
     },
     {
       "id": 16,
       "posName": "EL TEQUILANO REPOSADO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "EL TEQUILANO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 131
     },
     {
       "id": 17,
       "posName": "ESPOLON REPOSADO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "ESPOLON REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 136
     },
     {
       "id": 18,
       "posName": "CAMARENA FAMILIA REPOSADO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "FAMILIA CAMARENA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 138
     },
     {
       "id": 19,
       "posName": "FLECHA AZUL REPOSADO",
-      "priceCad": 14
+      "priceCad": 16,
+      "inventoryName": "FLECHA AZULE RESPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 140
     },
     {
       "id": 20,
       "posName": "GRAN COFRADIA REPOSADO",
-      "priceCad": 26
+      "priceCad": 26,
+      "inventoryName": "GRAN COFRADIA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 142
     },
     {
       "id": 21,
       "posName": "GRAN CORONEL REPOSADO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "GRAN CORONEL REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 143
     },
     {
       "id": 22,
       "posName": "GRAN ORENDAIN REPOSADO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "GRAND ORENDAIN REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 145
     },
     {
       "id": 23,
       "posName": "HERRADURA REPOSADO",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "HERRADURA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 147
     },
     {
       "id": 24,
       "posName": "HORNITOS REPOSADO",
-      "priceCad": 9
+      "priceCad": 9,
+      "inventoryName": "HORNITOS REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 150
     },
     {
       "id": 25,
       "posName": "HUSSONG'S REPOSADO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "HUSSONG'S REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 153
     },
     {
       "id": 26,
       "posName": "JAJA REPOSADO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "JAJA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 154
     },
     {
       "id": 27,
       "posName": "JOSE CUERVO TRADICIONAL REPOSADO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "JOSE CUERVO TRADICIONAL REP.",
+      "sheet": "SPIRITS",
+      "sheetRow": 158
     },
     {
       "id": 28,
       "posName": "LOBOS 1707 REPOSADO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "LOBOS 1707 TEQUILA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 161
     },
     {
       "id": 29,
       "posName": "LOS ARANGO REPOSADO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "LOS ARANGO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 162
     },
     {
       "id": 30,
       "posName": "LOS AZULEJOS REPOSADO",
-      "priceCad": 20
+      "priceCad": 15,
+      "inventoryName": "LOS AZULEJOS REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 164
     },
     {
       "id": 31,
       "posName": "LOS AZULEJOS \"SKELLY\" REPOSADO",
-      "priceCad": 28
+      "priceCad": 28,
+      "inventoryName": "LOS AZULEJOS SKELLY REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 167
     },
     {
       "id": 32,
       "posName": "MAESTRO DOBEL REPOSADO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "MAESTRO DOBEL TEQUILA",
+      "sheet": "SPIRITS",
+      "sheetRow": 169
     },
     {
       "id": 33,
       "posName": "MILAGRO REPOSADO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "MILAGRO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 173
     },
     {
       "id": 34,
       "posName": "OLMECA ALTOS REPOSADO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "OLMECA ALTOS REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 175
     },
     {
       "id": 35,
       "posName": "PATRON REPOSADO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "PATRON REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 179
     },
     {
       "id": 36,
       "posName": "SAUZA TRES GEN. REPOSADO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "SAUZA TRES GEN. REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 185
     },
     {
       "id": 37,
       "posName": "SIEMPRE REPOSADO",
-      "priceCad": 12
+      "priceCad": 13,
+      "inventoryName": "SIEMPRE REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 191
     },
     {
       "id": 38,
       "posName": "TEREMANA REPOSADO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "TEREMANA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 196
     },
     {
       "id": 39,
       "posName": "TROMBA REPOSADO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "TROMBA REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 199
     },
     {
       "id": 40,
       "posName": "AVION RESERVA CRISTALINO",
-      "priceCad": 30
+      "priceCad": 30,
+      "inventoryName": "AVION RESERVA CRISTALINO",
+      "sheet": "SPIRITS",
+      "sheetRow": 81
     },
     {
       "id": 41,
       "posName": "CASAMIGOS CRISTALINO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "CASAMIGOS CRISTALINO",
+      "sheet": "SPIRITS",
+      "sheetRow": 93
     },
     {
       "id": 42,
       "posName": "CAZADORES EXTRA AÑEJO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "CAZADORES EXTRA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 100
     },
     {
       "id": 43,
       "posName": "CODIGO 1530 ROSA",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "CODIGO 1530 ROSA",
+      "sheet": "SPIRITS",
+      "sheetRow": 115
     },
     {
       "id": 44,
       "posName": "DON JULIO 1942 EXTRA AÑEJO",
-      "priceCad": 38
+      "priceCad": 38,
+      "inventoryName": "DON JULIO 1942 EXTRA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 123
     },
     {
       "id": 45,
       "posName": "DON JULIO '70 CRISTALINO",
-      "priceCad": 21
+      "priceCad": 21,
+      "inventoryName": "DON JULIO '70",
+      "sheet": "SPIRITS",
+      "sheetRow": 124
     },
     {
       "id": 46,
       "posName": "DON JULIO PRIMAVERA",
-      "priceCad": 32
+      "priceCad": 32,
+      "inventoryName": "DON JULIO PRIMAVERA",
+      "sheet": "SPIRITS",
+      "sheetRow": 125
     },
     {
       "id": 47,
       "posName": "DON JULIO ROSADO",
-      "priceCad": 32
+      "priceCad": 32,
+      "inventoryName": "DON JULIO ROSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 126
     },
     {
       "id": 48,
       "posName": "DON JULIO ULTIMA EXTRA AÑEJO RESERVA",
-      "priceCad": 99
+      "priceCad": 99,
+      "inventoryName": "DON JULIO ULTIMA RESERVA",
+      "sheet": "SPIRITS",
+      "sheetRow": 127
     },
     {
       "id": 49,
       "posName": "GRAN MAYAN ULTRA AÑEJO",
-      "priceCad": 25
+      "priceCad": 25,
+      "inventoryName": "GRAND MAYAN ULTRA EXTRA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 144
     },
     {
       "id": 50,
       "posName": "HERRADURA ULTRA AÑEJO",
-      "priceCad": 20
+      "priceCad": 20,
+      "inventoryName": "HERRADURA ULTRA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 148
     },
     {
       "id": 51,
       "posName": "HORNITOS CRISTALINO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "HORNITOS CRISTALINO",
+      "sheet": "SPIRITS",
+      "sheetRow": 152
     },
     {
       "id": 52,
       "posName": "JOSE CUERVO DE LA FAMILIA EXTRA AÑEJO",
-      "priceCad": 35
+      "priceCad": 35,
+      "inventoryName": "JOSE CUERVO DE LA FAMILIA EXTRA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 156
     },
     {
       "id": 53,
       "posName": "PATRON EL CIELO SILVER",
-      "priceCad": 32
+      "priceCad": 32,
+      "inventoryName": "PATRON EL CIELO",
+      "sheet": "SPIRITS",
+      "sheetRow": 182
     },
     {
       "id": 54,
       "posName": "PATRON EXTRA ANEJO",
-      "priceCad": 35
+      "priceCad": 35,
+      "inventoryName": "PATRON EXTRA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 181
     },
     {
       "id": 55,
       "posName": "SIEMPRE REBEL CASK",
-      "priceCad": 23
+      "priceCad": 23,
+      "inventoryName": "SIEMPRE REPOSADO REBEL CASK",
+      "sheet": "SPIRITS",
+      "sheetRow": 192
     },
     {
       "id": 56,
       "posName": "SIEMPRE SUPREMO BLANCO",
-      "priceCad": 21
+      "priceCad": 21,
+      "inventoryName": "SIEMPRE SUPREMO",
+      "sheet": "SPIRITS",
+      "sheetRow": 194
     },
     {
       "id": 57,
       "posName": "TROMBA CEDAON REPOSADO",
-      "priceCad": 18
+      "priceCad": 14,
+      "inventoryName": "TROMBA CEDANO",
+      "sheet": "SPIRITS",
+      "sheetRow": 201
     },
     {
       "id": 58,
       "posName": "VOLCAN CRISTALINO AÑEJO",
-      "priceCad": 15
+      "priceCad": 16,
+      "inventoryName": "VOLCAN CRISTALINO ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 202
     },
     {
       "id": 59,
       "posName": "VOLCAN DE MI TIERR X.A.",
-      "priceCad": 55
+      "priceCad": 55,
+      "inventoryName": "VOLCAN DE MI TIERRA X.A.",
+      "sheet": "SPIRITS",
+      "sheetRow": 203
     },
     {
       "id": 60,
       "posName": "AGUA SANTA MEZCAL",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "AGUA SANTA JOVEN",
+      "sheet": "SPIRITS",
+      "sheetRow": 41
     },
     {
       "id": 61,
       "posName": "AGUA SANTA PECHUGA MEZCAL",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "AGUA SANTA PECHUGA",
+      "sheet": "SPIRITS",
+      "sheetRow": 42
     },
     {
       "id": 62,
       "posName": "AMORES CENZIO LOGIA MEZCAL",
-      "priceCad": 23
+      "priceCad": 23,
+      "inventoryName": "AMORES CENZIO LOGIA",
+      "sheet": "SPIRITS",
+      "sheetRow": 43
     },
     {
       "id": 63,
       "posName": "AMORES CUPREATA MEZCAL",
-      "priceCad": 16
+      "priceCad": 16,
+      "inventoryName": "AMORES CUPREATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 44
     },
     {
       "id": 64,
       "posName": "AMORES ESPADIN MEZCAL",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "AMORES ESPADIN",
+      "sheet": "SPIRITS",
+      "sheetRow": 45
     },
     {
       "id": 65,
       "posName": "AMORES MOMENTO VERDE MEZCAL",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "AMORES MOMENTO MEZCAL VERDE",
+      "sheet": "SPIRITS",
+      "sheetRow": 46
     },
     {
       "id": 66,
       "posName": "AMORES REPOSADO MEZCAL",
-      "priceCad": 19
+      "priceCad": 19,
+      "inventoryName": "AMORES REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 47
     },
     {
       "id": 67,
       "posName": "BANHEZ ESPADIN & BARRIL MEZCAL",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "BANHEZ ESPADIN & BARRIL",
+      "sheet": "SPIRITS",
+      "sheetRow": 48
+    },
+    {
+      "id": 68,
+      "posName": "BOSSCAL",
+      "priceCad": 16,
+      "inventoryName": "BOSSCAL",
+      "sheet": "SPIRITS",
+      "sheetRow": 49
     },
     {
       "id": 69,
       "posName": "CASAMIGOS MEZCAL",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "CASAMIGOS",
+      "sheet": "SPIRITS",
+      "sheetRow": 50
     },
     {
       "id": 70,
       "posName": "CLASE AZUL MEZCAL",
-      "priceCad": 45
+      "priceCad": 45,
+      "inventoryName": "CLASE AZUL",
+      "sheet": "SPIRITS",
+      "sheetRow": 51
     },
     {
       "id": 71,
       "posName": "DEL MAGUEY CLASICO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "DEL MAGUEY VIDA MEZCAL",
+      "sheet": "SPIRITS",
+      "sheetRow": 52
     },
     {
       "id": 72,
       "posName": "DEL MAGUEY LAS MILPAS",
-      "priceCad": 16
+      "priceCad": 16,
+      "inventoryName": "DEL MAGUEY SINGLE VILLAGE LAS MILPAS",
+      "sheet": "SPIRITS",
+      "sheetRow": 53
     },
     {
       "id": 73,
       "posName": "DEL MAGUEY PUEBLA",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "DEL MAGUEY SINGLE VILLAGE PUEBLA",
+      "sheet": "SPIRITS",
+      "sheetRow": 54
     },
     {
       "id": 74,
       "posName": "DOS HOMBRES MEZCAL",
-      "priceCad": 16
+      "priceCad": 16,
+      "inventoryName": "DOS HOMBRES",
+      "sheet": "SPIRITS",
+      "sheetRow": 55
     },
     {
       "id": 75,
       "posName": "EL SILENCIO MEZCAL",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "EL SILENCIO MEZCAL",
+      "sheet": "SPIRITS",
+      "sheetRow": 56
     },
     {
       "id": 76,
       "posName": "ILEGAL REPOSADO MEZCAL",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "ILEGAL MEZCAL REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 60
     },
     {
       "id": 77,
       "posName": "LEYENDA 'TLACHUACHE' MEZCAL",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "LEYENDA 'TLACUACHE'",
+      "sheet": "SPIRITS",
+      "sheetRow": 58
     },
     {
       "id": 78,
       "posName": "LOS SIETE MISTERIO DOBA-YEJ",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "LOS SIETE MISTERIO DOBA-YEJ",
+      "sheet": "SPIRITS",
+      "sheetRow": 61
     },
     {
       "id": 80,
       "posName": "MADRE MEZCAL",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "MADRE",
+      "sheet": "SPIRITS",
+      "sheetRow": 64
     },
     {
       "id": 81,
       "posName": "MEZCAL UNION",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "MEZCAL UNION",
+      "sheet": "SPIRITS",
+      "sheetRow": 65
     },
     {
       "id": 82,
       "posName": "MONTELOBOS MEZCAL",
-      "priceCad": 14
+      "priceCad": 13,
+      "inventoryName": "MONTELOBOS",
+      "sheet": "SPIRITS",
+      "sheetRow": 66
     },
     {
       "id": 83,
       "posName": "SANTA PURO MEZCAL",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "SANTO PURO MEZQUILA",
+      "sheet": "SPIRITS",
+      "sheetRow": 69
     },
     {
       "id": 84,
       "posName": "SERPIENTE JOVEN MEZCAL",
-      "priceCad": 20
+      "priceCad": 20,
+      "inventoryName": "SERPIENTE JOVEN",
+      "sheet": "SPIRITS",
+      "sheetRow": 71
     },
     {
       "id": 85,
@@ -421,332 +675,634 @@
     {
       "id": 86,
       "posName": "LOST EXPLORER MEZCAL",
-      "priceCad": 23
+      "priceCad": 23,
+      "inventoryName": "LOST EXPLORERE",
+      "sheet": "SPIRITS",
+      "sheetRow": 63
     },
     {
       "id": 87,
       "posName": "818 BLANCO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "818 BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 77
     },
     {
       "id": 88,
       "posName": "1800 SILVER",
-      "priceCad": 9
+      "priceCad": 9,
+      "inventoryName": "1800 SILVER",
+      "sheet": "SPIRITS",
+      "sheetRow": 73
     },
     {
       "id": 89,
       "posName": "ALIDA BLANCO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "ALIDA BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 80
     },
     {
       "id": 90,
       "posName": "CABO WABO BLANCO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "CABO WABO BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 82
     },
     {
       "id": 91,
       "posName": "CADA DIA PLATA",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "CADA DIA TEQUILA PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 84
     },
     {
       "id": 92,
       "posName": "CALIROSA BLANCO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "CALIROSA BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 87
     },
     {
       "id": 93,
       "posName": "CASA DEL SOL BLANCO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "CASA DEL SOL BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 85
     },
     {
       "id": 94,
       "posName": "CASA DRAGONES BLANCO",
-      "priceCad": 25
+      "priceCad": 25,
+      "inventoryName": "CASA DRAGONES BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 86
     },
     {
       "id": 95,
       "posName": "CASA MAESTRI BLANCO",
-      "priceCad": 16
+      "priceCad": 16,
+      "inventoryName": "CASA MAESTRI BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 89
     },
     {
       "id": 96,
       "posName": "CASAMIGOS BLANCO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "CASAMIGOS BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 92
     },
     {
       "id": 97,
       "posName": "CAZADORES BLANCO",
-      "priceCad": 8
+      "priceCad": 8,
+      "inventoryName": "CAZADORES BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 97
     },
     {
       "id": 98,
       "posName": "CENOTE BLANCO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "CENOTE BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 102
     },
     {
       "id": 99,
       "posName": "CHAMELEON BLANCO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "CHAMELEON BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 104
     },
     {
       "id": 100,
       "posName": "CHERRY RIVER SILVER",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "CHERRY RIVER SILVER",
+      "sheet": "SPIRITS",
+      "sheetRow": 105
     },
     {
       "id": 101,
       "posName": "CINCORO BLANCO",
-      "priceCad": 25
+      "priceCad": 25,
+      "inventoryName": "CINCORO BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 107
     },
     {
       "id": 102,
       "posName": "CLASE AZUL PLATA",
-      "priceCad": 24
+      "priceCad": 24,
+      "inventoryName": "CLASE AZUL PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 110
     },
     {
       "id": 103,
       "posName": "COBALTO BLANCO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "COBALTO BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 113
     },
     {
       "id": 104,
       "posName": "CODIGO 1530 BLANCO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "CODIGO 1530 BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 114
     },
     {
       "id": 105,
       "posName": "DEJADO BLANCO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "DEJADO TEQUILA BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 117
     },
     {
       "id": 106,
       "posName": "DON JULIO BLANCO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "DON JULIO BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 120
     },
     {
       "id": 107,
       "posName": "DOS PRIMOS BLANCO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "DOS PRIMOS BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 129
     },
     {
       "id": 108,
       "posName": "ELEVACION 1250 BLANCO",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "ELEVACION 1250 BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 134
     },
     {
       "id": 109,
       "posName": "ESPOLON BLANCO",
-      "priceCad": 9
+      "priceCad": 9,
+      "inventoryName": "ESPOLON BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 135
     },
     {
       "id": 110,
       "posName": "FLECHA AZUL BLANCO",
-      "priceCad": 14
+      "priceCad": 14,
+      "inventoryName": "FLECHA AZUL BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 139
     },
     {
       "id": 111,
       "posName": "HERRADURA SILVER",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "HERRADURA SILVER",
+      "sheet": "SPIRITS",
+      "sheetRow": 146
     },
     {
       "id": 112,
       "posName": "HORNITOS PLATA",
-      "priceCad": 8
+      "priceCad": 8,
+      "inventoryName": "HORNITOS PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 149
     },
     {
       "id": 113,
       "posName": "JOSE CUERVO FAMILIA PLATA",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "JOSE CUERVO DE LA FAMILIA PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 155
     },
     {
       "id": 114,
       "posName": "JOSE CUERVO TRADICIONAL BLANCO",
-      "priceCad": 9
+      "priceCad": 9,
+      "inventoryName": "JOSE CUERVO TRADICIONAL PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 157
     },
     {
       "id": 115,
       "posName": "LOBOS 1707 JOVEN",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "LOBOS 1707 TEQUILA JOVEN",
+      "sheet": "SPIRITS",
+      "sheetRow": 160
     },
     {
       "id": 116,
       "posName": "LOS AZULEJOS SILVER",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "LOS AZULEJOS SILVER",
+      "sheet": "SPIRITS",
+      "sheetRow": 163
     },
     {
       "id": 117,
       "posName": "LOS AZULEJOS \"SKELLY\" BLANCO",
-      "priceCad": 22
+      "priceCad": 22,
+      "inventoryName": "LOS AZULEJOS SKELLY BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 166
     },
     {
       "id": 118,
       "posName": "MALA VIDA BLANCO",
-      "priceCad": 18
+      "priceCad": 17,
+      "inventoryName": "MALA VIDA BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 170
     },
     {
       "id": 119,
       "posName": "OLMECA ALTOS PLATA",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "OLMECA ALTOS PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 174
     },
     {
       "id": 121,
       "posName": "PATRON SILVER",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "PATRON SILVER",
+      "sheet": "SPIRITS",
+      "sheetRow": 178
     },
     {
       "id": 122,
       "posName": "ROOSTER ROJO BLANCO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "ROOSTER ROJO BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 188
     },
     {
       "id": 123,
       "posName": "SAUZA TRES GEN. BLANCO",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "SAUZA TRES GEN. PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 184
     },
     {
       "id": 124,
       "posName": "SIEMPRE PLATA",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "SIEMPRE PLATA",
+      "sheet": "SPIRITS",
+      "sheetRow": 190
     },
     {
       "id": 125,
       "posName": "TEREMANA BLANCO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "TEREMANA BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 195
     },
     {
       "id": 126,
       "posName": "TROMBA BLANCO",
-      "priceCad": 10
+      "priceCad": 10,
+      "inventoryName": "TROMBA BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 198
     },
     {
       "id": 127,
       "posName": "XICOTE BLANCO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "XICOTE BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 204
     },
     {
       "id": 128,
       "posName": "1800 AÑEJO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "1800 ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 75
     },
     {
       "id": 129,
       "posName": "CALIROSA ANEJO",
-      "priceCad": 19
+      "priceCad": 19,
+      "inventoryName": "CALIROSA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 88
     },
     {
       "id": 130,
       "posName": "CASA MAESTRI AÑEJO",
-      "priceCad": 24
+      "priceCad": 24,
+      "inventoryName": "CASA MAESTRI ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 91
     },
     {
       "id": 131,
       "posName": "CASAMIGOS AÑEJO",
-      "priceCad": 18
+      "priceCad": 18,
+      "inventoryName": "CASAMIGOS ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 95
     },
     {
       "id": 132,
       "posName": "CAZADORES AÑEJO",
-      "priceCad": 11
+      "priceCad": 11,
+      "inventoryName": "CAZADORES ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 99
     },
     {
       "id": 133,
       "posName": "CENOTE AÑEJO",
-      "priceCad": 17
+      "priceCad": 17,
+      "inventoryName": "CENOTE ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 103
     },
     {
       "id": 134,
       "posName": "CINCORO AÑEJO",
-      "priceCad": 38
+      "priceCad": 38,
+      "inventoryName": "CINCORO ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 109
     },
     {
       "id": 135,
       "posName": "CLASE AZUL AÑEJO",
-      "priceCad": 85
+      "priceCad": 85,
+      "inventoryName": "CLASE AZUL ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 112
     },
     {
       "id": 136,
       "posName": "DON ADRIANO 1950 AÑEJO",
-      "priceCad": 35
+      "priceCad": 35,
+      "inventoryName": "DON ADRIANO 1950 ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 118
     },
     {
       "id": 137,
       "posName": "DON JULIO AÑEJO",
-      "priceCad": 16
+      "priceCad": 16,
+      "inventoryName": "DON JULIO ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 122
     },
     {
       "id": 138,
       "posName": "EL TEQUILANO GRAN RESERVA AÑEJO",
-      "priceCad": 17
+      "priceCad": 17,
+      "inventoryName": "EL TEQUILENO ANEJO GRAN RESERVA",
+      "sheet": "SPIRITS",
+      "sheetRow": 132
     },
     {
       "id": 139,
       "posName": "EL TESORO AÑEJO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "EL TESORO ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 133
     },
     {
       "id": 140,
       "posName": "ESPOLON AÑEJO BOURBON BARREL",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "ESPOLON ANEJO BOURBON BARREL",
+      "sheet": "SPIRITS",
+      "sheetRow": 137
     },
     {
       "id": 141,
       "posName": "GRAN CENTENARIO AÑEJO",
-      "priceCad": 10
+      "priceCad": 14,
+      "inventoryName": "GRAN CENTENARIO ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 141
     },
     {
       "id": 142,
       "posName": "HORNITOS BLACK BARREL AÑEJO",
-      "priceCad": 12
+      "priceCad": 10,
+      "inventoryName": "HORNITOS BLACK BARREL",
+      "sheet": "SPIRITS",
+      "sheetRow": 151
     },
     {
       "id": 143,
       "posName": "LOS AZULEJOS AÑEJO",
-      "priceCad": 21
+      "priceCad": 21,
+      "inventoryName": "LOS AZULEJOS ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 165
     },
     {
       "id": 144,
       "posName": "LOS AZULEJOS \"SKELLY\" AÑEJO BANDITO",
-      "priceCad": 39
+      "priceCad": 38,
+      "inventoryName": "LOS AZULEJOS SKELLY ANEJO BANDITO LTD",
+      "sheet": "SPIRITS",
+      "sheetRow": 168
     },
     {
       "id": 145,
       "posName": "OLMECA ALTOS AÑEJO",
-      "priceCad": 13
+      "priceCad": 13,
+      "inventoryName": "OLMECA ALTOS ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 176
     },
     {
       "id": 146,
       "posName": "PATRON AÑEJO",
-      "priceCad": 17
+      "priceCad": 17,
+      "inventoryName": "PATRON ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 180
     },
     {
       "id": 147,
       "posName": "REVOLUCION ANEJO",
-      "priceCad": 18
+      "priceCad": 18,
+      "inventoryName": "REVOLUCION ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 187
     },
     {
       "id": 148,
       "posName": "SAUZA TRES GEN. AÑEJO",
-      "priceCad": 17
+      "priceCad": 17,
+      "inventoryName": "SAUZA TRES GEN. ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 186
     },
     {
       "id": 149,
       "posName": "SIEMPRE AÑEJO",
-      "priceCad": 15
+      "priceCad": 15,
+      "inventoryName": "SIEMPRE ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 193
     },
     {
       "id": 150,
       "posName": "TEREMANA AÑEJO",
-      "priceCad": 16
+      "priceCad": 14,
+      "inventoryName": "TEREMANA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 197
     },
     {
       "id": 151,
       "posName": "TROMBA AÑEJO",
-      "priceCad": 14
+      "priceCad": 15,
+      "inventoryName": "TROMBA ANEJO",
+      "sheet": "SPIRITS",
+      "sheetRow": 200
     },
     {
       "id": 162,
       "posName": "LA PINTA POMEGRANATE",
-      "priceCad": 12
+      "priceCad": 12,
+      "inventoryName": "LA PINTA POMEGRANATE",
+      "sheet": "SPIRITS",
+      "sheetRow": 159
+    },
+    {
+      "id": 179,
+      "posName": "FANDANGO JOVEN",
+      "priceCad": 13,
+      "inventoryName": "FANDANGO JOVEN",
+      "sheet": "SPIRITS",
+      "sheetRow": 57
+    },
+    {
+      "id": 180,
+      "posName": "ILEGAL MEZCAL BLANCO",
+      "priceCad": 12,
+      "inventoryName": "ILEGAL MEZCAL BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 59
+    },
+    {
+      "id": 181,
+      "posName": "LOS SIETE MISTERIO ENSAMBLE",
+      "priceCad": 20,
+      "inventoryName": "LOS SIETE MISTERIO ENSAMBLE",
+      "sheet": "SPIRITS",
+      "sheetRow": 62
+    },
+    {
+      "id": 182,
+      "posName": "OJO DE TIGRE JOVEN",
+      "priceCad": 12,
+      "inventoryName": "OJO DE TIGRE JOVEN",
+      "sheet": "SPIRITS",
+      "sheetRow": 67
+    },
+    {
+      "id": 183,
+      "posName": "SAN COSME JOVEN",
+      "priceCad": 14,
+      "inventoryName": "SAN COSME JOVEN",
+      "sheet": "SPIRITS",
+      "sheetRow": 68
+    },
+    {
+      "id": 184,
+      "posName": "SENORIO JOVEN",
+      "priceCad": 13,
+      "inventoryName": "SENORIO JOVEN",
+      "sheet": "SPIRITS",
+      "sheetRow": 70
+    },
+    {
+      "id": 185,
+      "posName": "1800 COCONUT",
+      "priceCad": 10,
+      "inventoryName": "1800 COCONUT",
+      "sheet": "SPIRITS",
+      "sheetRow": 76
+    },
+    {
+      "id": 186,
+      "posName": "CAZCABEL JALAPENO BLANCO",
+      "priceCad": 10,
+      "inventoryName": "CAZCABEL JALAPENO BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 101
+    },
+    {
+      "id": 187,
+      "posName": "CHISME TEQUILA BLANCO",
+      "priceCad": 11,
+      "inventoryName": "CHISME TEQUILA BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 106
+    },
+    {
+      "id": 188,
+      "posName": "MI CAMPO BLANCO",
+      "priceCad": 10,
+      "inventoryName": "MI CAMPO BLANCO",
+      "sheet": "SPIRITS",
+      "sheetRow": 171
+    },
+    {
+      "id": 189,
+      "posName": "MILAGRO SILVER",
+      "priceCad": 11,
+      "inventoryName": "MILAGRO SILVER",
+      "sheet": "SPIRITS",
+      "sheetRow": 172
+    },
+    {
+      "id": 190,
+      "posName": "PATRON XO CAFE",
+      "priceCad": 10,
+      "inventoryName": "PATRON XO CAFE",
+      "sheet": "SPIRITS",
+      "sheetRow": 183
+    },
+    {
+      "id": 191,
+      "posName": "ROOSTER ROJO REPOSADO",
+      "priceCad": 14,
+      "inventoryName": "ROOSTER ROJO REPOSADO",
+      "sheet": "SPIRITS",
+      "sheetRow": 189
     }
   ],
   "houseInfusionPriceCad": null

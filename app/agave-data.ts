@@ -1057,5 +1057,96 @@ export const agaveRecords: AgaveRecord[] = [
     "category": "Añejo",
     "type": "Tequila",
     "note": "Tromba was founded by a group of friends who were inspired by the craftsmanship of tequila production. \"Tromba\" means \"storm\", symbolizing the brand's bold and dynamic spirit."
+  },
+  {
+    "id": 179,
+    "name": "FANDANGO JOVEN",
+    "category": "Mezcal",
+    "type": "Mezcal",
+    "note": "A 100% Espadin joven with roasted-agave depth, earthy smoke and two distillations through copper stills."
+  },
+  {
+    "id": 180,
+    "name": "ILEGAL JOVEN",
+    "category": "Mezcal",
+    "type": "Mezcal",
+    "note": "Small-batch Espadin from Oaxaca, bottled unaged, with light smoke, green apple and fresh citrus."
+  },
+  {
+    "id": 181,
+    "name": "LOS SIETE MISTERIOS ENSAMBLE",
+    "category": "Mezcal",
+    "type": "Mezcal",
+    "note": "The producer’s Ensambles bring Espadin together with other agaves. Ask the bar about the blend in the bottle currently pouring."
+  },
+  {
+    "id": 182,
+    "name": "OJO DE TIGRE JOVEN",
+    "category": "Mezcal",
+    "type": "Mezcal",
+    "note": "Two agaves, two places: Oaxacan Espadín and Pueblan Tobalá are distilled separately, then brought together in a bright, gently smoky blend."
+  },
+  {
+    "id": 183,
+    "name": "SAN COSME JOVEN",
+    "category": "Mezcal",
+    "type": "Mezcal",
+    "note": "Named for Saint Cosmas, this Oaxacan mezcal brings traditional Espadín craft to a contemporary bottle."
+  },
+  {
+    "id": 184,
+    "name": "SEÑORÍO JOVEN",
+    "category": "Mezcal",
+    "type": "Mezcal",
+    "note": "Oaxacan Espadín and a balance of contrasting distillations shape Señorío Joven’s gentle smoke and herbal citrus character."
+  },
+  {
+    "id": 185,
+    "name": "1800 COCONUT",
+    "category": "Flavoured",
+    "type": "Tequila",
+    "note": "1800 brings a tropical turn to its white tequila with a natural coconut infusion. The producer suggests it over ice or paired with pineapple juice."
+  },
+  {
+    "id": 186,
+    "name": "CAZCABEL JALAPEÑO BLANCO",
+    "category": "Flavoured",
+    "type": "Tequila",
+    "note": "Made with estate-grown agave, this Cazcabel expression adds natural jalapeño to its blanco base for a green, spicy profile built for a Spicy Margarita."
+  },
+  {
+    "id": 187,
+    "name": "CHISME BLANCO",
+    "category": "Blanco",
+    "type": "Tequila",
+    "note": "A clean, versatile blanco that LCBO recommends for Margaritas, Palomas and Ranch Water, with agave, citrus and pepper at the centre."
+  },
+  {
+    "id": 188,
+    "name": "MI CAMPO BLANCO",
+    "category": "Blanco",
+    "type": "Tequila",
+    "note": "Mi Campo gives its blanco a brief rest in white-wine barrels, combining fresh agave character with fruit, floral notes and a soft touch of oak."
+  },
+  {
+    "id": 189,
+    "name": "MILAGRO SILVER",
+    "category": "Blanco",
+    "type": "Tequila",
+    "note": "Founded in 1998 by two college friends, Milagro draws on the colour and creative energy of Mexico City. Silver is its fresh, unaged expression."
+  },
+  {
+    "id": 190,
+    "name": "PATRÓN XO CAFE",
+    "category": "Flavoured",
+    "type": "Liqueur",
+    "note": "Coffee meets agave in a tequila-based liqueur built from Patrón Silver and Mexican Arabica coffee essence. Its dry coffee character makes it a natural after-dinner pour."
+  },
+  {
+    "id": 191,
+    "name": "ROOSTER ROJO REPOSADO",
+    "category": "Reposado",
+    "type": "Tequila",
+    "note": "Made at Fábrica de Tequilas Finos at the foot of the Tequila volcano, this reposado adds French-oak warmth to the brand’s blue-agave spirit."
   }
 ];

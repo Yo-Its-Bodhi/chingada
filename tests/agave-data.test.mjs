@@ -44,16 +44,38 @@ test("POS prices match unique existing bottles without borrowing prices for miss
   assert.equal(byId.get(48).priceCad, 99); // Don Julio Ultima Reserva
   assert.equal(byId.get(162).priceCad, 12); // La Pinta is not the $9 house infusion
   assert.equal(byId.get(78).posName, "LOS SIETE MISTERIO DOBA-YEJ");
-  for (const id of [68, 79, 120]) assert.equal(byId.has(id), false);
+  assert.equal(byId.get(68).priceCad, 16); // Bosscal now has a supplied inventory selling price.
+  for (const id of [79, 120]) assert.equal(byId.has(id), false);
   for (const bottle of houseInfusions.filter(({ id }) => id !== 162)) {
     assert.equal(byId.has(bottle.id), false);
   }
 });
 
-function assetUrl(root, path) {
+test("the inventory selling-price reconciliation covers the new bottles and confirmed price updates", async () => {
+  const reconciliation = JSON.parse(
+    await readFile(new URL("../reports/agave-inventory-reconciliation.json", import.meta.url), "utf8"),
+  );
+  assert.equal(reconciliation.records.length, 163);
+  assert.equal(new Set(reconciliation.records.map(({ id }) => id)).size, 163);
+  const pricesById = new Map(pricing.records.map((record) => [record.id, record.priceCad]));
+  for (const record of reconciliation.records) {
+    if (record.id === 120) {
+      assert.equal(pricesById.has(record.id), false, "PANTELONES does not identify a bottle expression");
+    } else {
+      assert.equal(pricesById.get(record.id), record.sellPrice, `Selling price differs from G${record.row}`);
+    }
+  }
+  assert.deepEqual(reconciliation.records.filter(({ match }) => match === "new").map(({ id }) => id).sort((a, b) => a - b), Array.from({ length: 13 }, (_, index) => index + 179));
+  assert.equal(pricesById.get(181), 20); // Generic Ensamble is separate from unpriced ancestral Espadín.
+  assert.equal(pricesById.has(79), false);
+});
+
+function assetUrl(root, path, archivedOriginal = false) {
   assert.match(
     path,
-    /^\/images\/agave-researched\/(?:originals\/)?[a-z0-9_-]+\.(?:png|webp)$/i,
+    archivedOriginal
+      ? /^\/images\/agave-researched\/(?:originals\/)?[a-z0-9_-]+\.(?:png|webp|jpe?g)$/i
+      : /^\/images\/agave-researched\/(?:originals\/)?[a-z0-9_-]+\.(?:png|webp)$/i,
     `Unsafe or unsupported bottle path: ${path}`,
   );
   return new URL(`../${root}${path}`, import.meta.url);
@@ -64,11 +86,16 @@ function httpsUrl(value, description) {
   assert.equal(new URL(value).protocol, "https:", description);
 }
 
-test("research covers every one of the 178 original inventory IDs exactly once", async () => {
-  assert.equal(known.length, 178);
-  const expectedIds = Array.from({ length: 178 }, (_, index) => index + 1);
-  assert.deepEqual(known.map(({ id }) => id).sort((a, b) => a - b), expectedIds);
-  assert.deepEqual(research.map(({ id }) => id).sort((a, b) => a - b), expectedIds);
+test("research preserves the 178 original IDs and covers every appended inventory record exactly once", async () => {
+  const expectedOriginalIds = Array.from({ length: 178 }, (_, index) => index + 1);
+  const knownIds = known.map(({ id }) => id).sort((a, b) => a - b);
+  const researchIds = research.map(({ id }) => id).sort((a, b) => a - b);
+  for (const [label, ids] of [["Inventory", knownIds], ["Research", researchIds]]) {
+    assert.ok(ids.every((id) => Number.isSafeInteger(id) && id > 0), `${label} IDs must be positive integers`);
+    assert.equal(new Set(ids).size, ids.length, `${label} IDs must be unique`);
+  }
+  assert.deepEqual(knownIds.filter((id) => id <= 178), expectedOriginalIds);
+  assert.deepEqual(researchIds, knownIds, "Research must cover the full inventory without extra or missing IDs");
 
   const originals = new Map(known.map((record) => [record.id, record]));
   for (const record of research) {
@@ -77,12 +104,17 @@ test("research covers every one of the 178 original inventory IDs exactly once",
   }
 
   const batches = await Promise.all(
-    ["a", "b", "c"].map(async (batch) => {
+    ["a", "b", "c", "d"].map(async (batch) => {
       const input = JSON.parse(
         await readFile(new URL(`../reports/agave-research-${batch}.json`, import.meta.url), "utf8"),
       );
       return Array.isArray(input) ? input : input.records;
     }),
+  );
+  assert.deepEqual(
+    batches.slice(0, 3).flat().map(({ id }) => id).sort((a, b) => a - b),
+    expectedOriginalIds,
+    "Original source batches must retain IDs 1–178; additions belong in batch d",
   );
   assert.deepEqual(
     research,
@@ -158,7 +190,7 @@ test("the built Sites asset package includes the exact approved photos and exclu
       const rawPath = image.originalPublicPath ?? `/images/agave-researched/${image.originalLocalPath.split("/").at(-1)}`;
       for (const root of ["public", "dist/client"]) {
         await assert.rejects(
-          stat(assetUrl(root, rawPath)),
+          stat(assetUrl(root, rawPath, true)),
           { code: "ENOENT" },
           `${id}: archived original must not ship in ${root}`,
         );

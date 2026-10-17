@@ -1,6 +1,6 @@
 # Agave photo shot list
 
-Prepared 15 October 2026. 46 named camera slots remain in the 178-record collection; the other 132 records have approved transparent photos.
+Prepared 17 October 2026. 47 named camera slots remain in the 191-record collection; the other 144 records have approved transparent photos.
 
 For house infusions, photograph the actual La Chingada bottle with its readable label. For commercial spirits, include the complete bottle and enough label detail to identify the exact expression/edition. Use a clean high-resolution source; retain natural bottle detail and remove the background without adding a box or artificial shadow. Sources and uncertain identities are preserved in the research batches.
 
@@ -52,5 +52,6 @@ For house infusions, photograph the actual La Chingada bottle with its readable 
 | 176 | HABANERO MEZCAL — SPICY | House Infused | Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion. |
 | 177 | ORANGE MEZCAL | House Infused | Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion. |
 | 178 | MINT MEZCAL | House Infused | Custom restaurant infusion: an individual photograph of the house bottle is needed. A commercial tequila packshot would not represent this infusion. |
+| 181 | LOS SIETE MISTERIOS ENSAMBLE | Mezcal | The inventory says only Ensamble. The producer has several different agave blends. The front label and batch are needed before assigning an exact bottle image, fixed ABV, specific blend or batch tasting notes. |
 
 Replace only a verified matching expression. Add its provenance and approved photo metadata to the appropriate research batch, then run `node scripts/merge-agave-research.mjs` and the build/tests. Do not mark an identity verified from a generic brand bottle.
