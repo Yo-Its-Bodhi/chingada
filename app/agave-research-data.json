@@ -466,7 +466,7 @@
     "name": "DON ADRIANO REPOSADO",
     "type": "Tequila",
     "category": "Reposado",
-    "status": "facts-verified-image-unresolved",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -481,8 +481,48 @@
       "aging": "6 months in French oak.",
       "tastingNotes": "Sweet agave, oak, vanilla, caramel and spice."
     },
-    "image": null,
-    "unresolvedReason": "Exact Don Adriano Reposado verified through LCBO. Available retailer photographs have opaque backgrounds; the similarly named Reserva Don Armando bottle was rejected as a different product.",
+    "image": {
+      "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/8/5/038523.jpg",
+      "sourcePage": "https://www.lcbo.com/en/don-adriano-1950-reposado-38523",
+      "localPath": "/images/agave-researched/bottle-12-don-adriano-reposado-sourced-v2.webp",
+      "width": 278,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/12-lcbo.jpg",
+      "derivedLocalPath": "work/agave-originals-gap/12-don-adriano-reposado-cutout-v2.png",
+      "sourceSha256": "e201a54740b98a171725139f168faf645907430f9abb44872069e50e30896642",
+      "optimizedSha256": "eedd81e842a36e2b034001f9c78b9e43369ce786e31c928245a8245f4eb40946",
+      "optimizedBytes": 73446,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Don Adriano Reposado bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 9,
+        "top": 9,
+        "right": 268,
+        "bottom": 1002,
+        "width": 260,
+        "height": 994,
+        "fillX": 0.935251798561151,
+        "fillY": 0.9822134387351779
+      },
+      "deliveryCanvasCrop": {
+        "left": 139,
+        "top": 8,
+        "width": 516,
+        "height": 1940,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "imageAttempts": [
       {
         "url": "https://www.bswliquor.com/cdn/shop/files/Don_Adriano_1950_Reposado_Tequila.png?v=1779309433",
@@ -769,7 +809,7 @@
     "name": "GRAN COFRADIA REPOSADO",
     "type": "Tequila",
     "category": "Reposado",
-    "status": "facts-verified-image-unresolved",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -789,8 +829,48 @@
       "origin": "Mexico.",
       "tastingNotes": "Delicate fruit, vanilla and smoke; smooth and rich with a long finish."
     },
-    "image": null,
-    "unresolvedReason": "Gran Cofradia ceramic reposado verified through the producer and Ontario distributor. Available bottle and gift-pack photographs have opaque backgrounds; an isolated transparent cutout is still needed.",
+    "image": {
+      "sourceUrl": "https://woodmanwinesandspirits.com/cdn/shop/files/WoodmanWines-ProductImages-11.png?v=1761157685&width=2048",
+      "sourcePage": "https://woodmanwinesandspirits.com/products/gran-cofradia-reposado-ceramic-gift-pack",
+      "localPath": "/images/agave-researched/bottle-20-gran-cofradia-reposado-sourced-v2.webp",
+      "width": 414,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/20-source.png",
+      "derivedLocalPath": "work/agave-originals-gap/20-gran-cofradia-reposado-cutout-v2.png",
+      "sourceSha256": "475d322c3d4c8772c1577e3e4a3211e27fa08f94add40a6b931704c28d1a2516",
+      "optimizedSha256": "c1033fecb2a55e22e6382afe4b6a4bed5ef5e9b6826774c624ef5921f1977ff5",
+      "optimizedBytes": 101894,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Gran Cofradía Reposado source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Extract only the ceramic bottle at the left, retaining its complete blue and cream hand-painted decoration and metallic stopper. Remove the gift box entirely. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 10,
+        "top": 10,
+        "right": 403,
+        "bottom": 1001,
+        "width": 394,
+        "height": 992,
+        "fillX": 0.9516908212560387,
+        "fillY": 0.9802371541501976
+      },
+      "deliveryCanvasCrop": {
+        "left": 263,
+        "top": 30,
+        "width": 566,
+        "height": 1407,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "imageAttempts": [
       {
         "url": "https://www.tequilastop.com/cdn/shop/files/La-Cofradia-Tequila-Special-Reserve_600x.png?v=1712818350",
@@ -819,7 +899,7 @@
     "name": "GRAN CORONEL REPOSADO",
     "type": "Tequila",
     "category": "Reposado",
-    "status": "facts-verified-image-unresolved",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -831,8 +911,48 @@
       "aging": "10 months.",
       "tastingNotes": "Chocolate, maple, toffee, baked coconut, caramel, walnut and English mint."
     },
-    "image": null,
-    "unresolvedReason": "Gran Coronel Reposado expression verified through the producer. Available producer, distributor and retailer bottle images have opaque backgrounds.",
+    "image": {
+      "sourceUrl": "https://cdn.prod.website-files.com/6356c3dc1dc22a794518f177/63757ec3777d606211904101_2.png",
+      "sourcePage": "https://www.dosartesbrands.com/brands/gran-coronel",
+      "localPath": "/images/agave-researched/bottle-21-gran-coronel-reposado-sourced-v2.webp",
+      "width": 368,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/21-source.png",
+      "derivedLocalPath": "work/agave-originals-gap/21-gran-coronel-reposado-cutout-v2.png",
+      "sourceSha256": "1a7747c8ae551e2105a6300107b151314ddac158bcbfc852ef5e9aac28eb91e0",
+      "optimizedSha256": "b72090e3bdffdaa4483a70c8efa36efe65be2790c9b60f30ae128e8ed8618369",
+      "optimizedBytes": 91494,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Gran Coronel Reposado source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain the red cap, black neck ribbon including loose end, red and gold label and transparent golden liquid. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 9,
+        "top": 10,
+        "right": 357,
+        "bottom": 1001,
+        "width": 349,
+        "height": 992,
+        "fillX": 0.9483695652173914,
+        "fillY": 0.9802371541501976
+      },
+      "deliveryCanvasCrop": {
+        "left": 259,
+        "top": 7,
+        "width": 531,
+        "height": 1490,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "imageAttempts": [
       {
         "url": "https://casajurado.com/assets/catalogo/reposado-gran-coronel.png",
@@ -2062,17 +2182,77 @@
     "name": "GRAN MAYAN ULTRA EXTRA AÑEJO",
     "type": "Tequila",
     "category": "Speciality",
-    "status": "expression-ambiguous",
-    "expressionVerified": false,
+    "status": "verified",
+    "expressionVerified": true,
     "sources": [
       {
         "url": "https://grandmayantequila.com/product/grand-mayan-ultra/",
         "title": "Grand Mayan Ultra Aged Limited Release — producer"
+      },
+      {
+        "url": "https://reservastequila.com/products/grand-mayan-ultra-aged/",
+        "title": "Classic Grand Mayan Ultra Aged Extra Añejo — Canadian importer Reservas Tequila"
+      },
+      {
+        "url": "https://www.liquormarts.ca/product/grand-mayan-ultra-aged-tequila/750-ml",
+        "title": "Grand Mayan Ultra Aged 28868 — Manitoba provincial distributor"
       }
     ],
-    "facts": {},
-    "image": null,
-    "unresolvedReason": "Inventory says GRAN MAYAN ULTRA EXTRA ANEJO without edition. Producer now lists Grand Mayan Ultra Aged Limited Release aged 5 years; cannot assume that edition or age for the historical inventory bottle."
+    "facts": {
+      "abv": "40% (classic Canadian distributor release)",
+      "agave": "100% agave.",
+      "origin": "Mexico.",
+      "aging": "More than 3 years in new American white oak, according to the classic Canadian distributor release.",
+      "aroma": "Nuts, dark chocolate and agave.",
+      "taste": "Roasted hazelnuts, dark chocolate and salted caramel, followed by oak and pepper.",
+      "story": "A classic hand-painted ceramic decanter, made by Mexican artists, carrying Grand Mayan’s Ultra Aged extra añejo tequila."
+    },
+    "image": {
+      "sourceUrl": "https://www.liquormarts.ca/sites/mbll-lm/files/import/images/28868_40a6af934f8fcd9603fc27b08e337623.png",
+      "sourcePage": "https://www.liquormarts.ca/product/grand-mayan-ultra-aged-tequila/750-ml",
+      "localPath": "/images/agave-researched/bottle-49-grand-mayan-classic-ultra-aged-sourced-v2.webp",
+      "width": 662,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/49-mb-original.png",
+      "derivedLocalPath": "work/agave-originals-gap/49-grand-mayan-classic-ultra-aged-cutout-v2.png",
+      "sourceSha256": "901e89a6723940523337247587860720ac44463802241a1ae95c4a821cb661c1",
+      "optimizedSha256": "84f476a6a8d7468fa994531fd0f9e644a2be4630f8f09fe8aa000253df1e2e80",
+      "optimizedBytes": 168710,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Native transparent source; Sharp encoded WebP quality92 with original alpha. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "source-native alpha",
+        "useCase": "background-extraction",
+        "prompt": ""
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 11,
+        "top": 6,
+        "right": 650,
+        "bottom": 1005,
+        "width": 640,
+        "height": 1000,
+        "fillX": 0.9667673716012085,
+        "fillY": 0.9881422924901185
+      },
+      "deliveryCanvasCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 666,
+        "height": 1024,
+        "padding": 6,
+        "alphaThreshold": 16
+      },
+      "notes": "Native transparent high-resolution provincial distributor packshot, labelled Ultra Aged. Classic Canadian release. The generated candidate was rejected for an external glow; this approved original has no generated pixels or added shadow."
+    },
+    "unresolvedReason": "",
+    "notes": [
+      "Photo and facts refer to the classic Canadian-market Ultra Aged/Extra Añejo release pictured by importer Reservas and Manitoba Liquor Mart. They do not assume the current 5-year Ultra Aged Limited Release, a single-barrel edition or another hand-painted edition."
+    ]
   },
   {
     "id": 50,
@@ -2607,26 +2787,49 @@
     "name": "AGUA SANTA JOVEN MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
         "url": "https://mezcalaguasanta.com/",
         "title": "Mezcal Agua Santa · Producer home",
         "kind": "producer-or-distributor"
+      },
+      {
+        "url": "https://www.bswliquor.com/products/mezcal-agua-santa-espadin",
+        "title": "AGUA SANTA JOVEN MEZCAL · photographed product source",
+        "kind": "image-source"
       }
     ],
     "facts": {
-      "origin": "Oaxaca, Mexico"
+      "origin": "Oaxaca, Mexico",
+      "abv": "42% (pictured Canadian-market bottle).",
+      "agave": "Espadín (Agave angustifolia)."
     },
     "factSources": {
-      "origin": "https://mezcalaguasanta.com/"
+      "origin": "https://mezcalaguasanta.com/",
+      "abv": "https://www.bswliquor.com/products/mezcal-agua-santa-espadin",
+      "agave": "https://www.bswliquor.com/products/mezcal-agua-santa-espadin"
     },
-    "image": null,
-    "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
-    "notes": [
-      "The original record calls this Joven. More expression-specific details and its exact front bottle shot remain unverified."
-    ],
+    "image": {
+      "sourceUrl": "https://www.bswliquor.com/cdn/shop/products/mezcal-agua-santa-espadin.jpg?v=1637060734",
+      "sourcePage": "https://www.bswliquor.com/products/mezcal-agua-santa-espadin",
+      "localPath": "/images/agave-researched/060-agua-santa-joven-sourced-v2.webp",
+      "width": 436,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/60-source-v2.png",
+      "sourceWidth": 500,
+      "sourceHeight": 500,
+      "optimizedBytes": 109938,
+      "optimization": "Trimmed empty alpha only; proportional resize within 976 px; added 12 px transparent safety margin; WebP quality 92.",
+      "derivedLocalPath": "work/agave-originals-gap/60-cutout-v2.png",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed.",
+      "derivationPrompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Agua Santa Joven Espadín source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain black label, all wording, clear glass shoulders and pale liquid; do not change the printed 42%. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+    },
+    "unresolvedReason": "",
+    "notes": [],
     "sourceAttempts": [
       {
         "url": "https://mezcalaguasanta.com/",
@@ -2644,9 +2847,15 @@
         "sourcePage": "https://www.mynslc.com/product/1029672/agua-santa-angustifolia-mezcal",
         "method": "Image fetched and alpha/visual inspected",
         "result": "HTTP 403"
+      },
+      {
+        "url": "https://www.bswliquor.com/cdn/shop/products/mezcal-agua-santa-espadin.jpg?v=1637060734",
+        "sourcePage": "https://www.bswliquor.com/products/mezcal-agua-santa-espadin",
+        "method": "Exact source photograph fetched and verified; built-in image_gen used for background-only extraction",
+        "result": "Approved clean full-bottle transparent image with no cast shadow",
+        "checked": "2026-10-17"
       }
-    ],
-    "photoNeeded": "Front bottle photo: AGUA SANTA JOVEN MEZCAL. Exact expression, no gift box, label readable."
+    ]
   },
   {
     "id": 61,
@@ -2715,13 +2924,18 @@
     "name": "AMORES CENZIO LOGIA MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
         "url": "https://mezcalamaras.com/pages/mezcal-amaras-logia",
         "title": "Mezcal Amarás · Logia Cenizo / Reserva Especial",
         "kind": "producer-or-distributor"
+      },
+      {
+        "url": "https://shingroupcorp.com/products/amaras-mezcal-logia-cenizo/",
+        "title": "AMORES CENZIO LOGIA MEZCAL · photographed product source",
+        "kind": "image-source"
       }
     ],
     "facts": {
@@ -2734,12 +2948,26 @@
       "production": "https://mezcalamaras.com/pages/mezcal-amaras-logia",
       "tastingNotes": "https://mezcalamaras.com/pages/mezcal-amaras-logia"
     },
-    "image": null,
-    "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+    "image": {
+      "sourceUrl": "https://shingroupcorp.com/wp-content/uploads/AMARAS-Mezcal-Logia-Cenizo-Front-Shot-1000x1000-1.jpg",
+      "sourcePage": "https://shingroupcorp.com/products/amaras-mezcal-logia-cenizo/",
+      "localPath": "/images/agave-researched/062-amaras-logia-cenizo-sourced-v2.webp",
+      "width": 296,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/62-source.jpg",
+      "sourceWidth": 1000,
+      "sourceHeight": 1000,
+      "optimizedBytes": 72694,
+      "optimization": "Trimmed empty alpha only; proportional resize within 976 px; added 12 px transparent safety margin; WebP quality 92.",
+      "derivedLocalPath": "work/agave-originals-gap/62-cutout-v2.png",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed.",
+      "derivationPrompt": "Use case: background-extraction. Remove only the background, any ground reflection, white rectangle and cast shadow. Keep the entire real bottle from cap through base, all original typography, label illustrations, cords and hanging tags, glass, material, shape and liquid color unchanged. Do not redraw, reconstruct or invent any lettering or product details. Deliver a single upright bottle cleanly isolated on genuine alpha transparency, tightly framed portrait canvas with only 2–4% clear margin around complete bottle. No box, stand, new lighting, new shadow or glow. Preserve bottle identity exactly."
+    },
+    "unresolvedReason": "",
     "notes": [
-      "Record spelling “CENZIO” should be “CENIZO”. The current producer line is called Cenizo Reserva Especial.",
-      "No current exact old-Logia bottle cutout was verified.",
-      "Candidate PNGs contained an opaque white inner rectangle despite some transparent outer pixels; none was accepted as a bottle cutout."
+      "Record spelling “CENZIO” should be “CENIZO”. The current producer line is called Cenizo Reserva Especial."
     ],
     "sourceAttempts": [
       {
@@ -2765,9 +2993,16 @@
         "method": "Image fetched and alpha/visual inspected",
         "result": "Rejected or superseded candidate; see candidate contact sheet",
         "alphaMin": 0
+      },
+      {
+        "url": "https://shingroupcorp.com/wp-content/uploads/AMARAS-Mezcal-Logia-Cenizo-Front-Shot-1000x1000-1.jpg",
+        "sourcePage": "https://shingroupcorp.com/products/amaras-mezcal-logia-cenizo/",
+        "method": "Exact source photograph fetched and verified; built-in image_gen used for background-only extraction",
+        "result": "Approved clean full-bottle transparent image with no cast shadow",
+        "checked": "2026-10-17"
       }
     ],
-    "photoNeeded": "Front bottle photo: AMORES CENZIO LOGIA MEZCAL. Exact expression, no gift box, label readable."
+    "displayName": "AMARÁS LOGIA CENIZO MEZCAL"
   },
   {
     "id": 63,
@@ -3012,13 +3247,18 @@
     "name": "BANHEZ ESPADIN & BARRIL MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
         "url": "https://www.banhezmezcal.com/ensamble",
         "title": "Banhez · Ensamble",
         "kind": "producer-or-distributor"
+      },
+      {
+        "url": "https://www.cnibrands.com/banhez-mezcal-artesanal",
+        "title": "BANHEZ ESPADIN & BARRIL MEZCAL · photographed product source",
+        "kind": "image-source"
       }
     ],
     "facts": {
@@ -3035,11 +3275,25 @@
       "tastingNotes": "https://www.banhezmezcal.com/ensamble",
       "production": "https://www.banhezmezcal.com/ensamble"
     },
-    "image": null,
-    "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
-    "notes": [
-      "Candidate PNGs contained an opaque white inner rectangle despite some transparent outer pixels; none was accepted as a bottle cutout."
-    ],
+    "image": {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/614a2f22d609052f42bb3f25/482f3fa5-c4e9-442f-87ef-da59f94e036c/ENSAMBLE.png",
+      "sourcePage": "https://www.cnibrands.com/banhez-mezcal-artesanal",
+      "localPath": "/images/agave-researched/067-banhez-espadin-barril-sourced-v2.webp",
+      "width": 371,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/67-source.png",
+      "sourceWidth": 2250,
+      "sourceHeight": 2250,
+      "optimizedBytes": 84328,
+      "optimization": "Trimmed empty alpha only; proportional resize within 976 px; added 12 px transparent safety margin; WebP quality 92.",
+      "derivedLocalPath": "work/agave-originals-gap/67-cutout-v2.png",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed.",
+      "derivationPrompt": "Use case: background-extraction. Remove only the background, any ground reflection, white rectangle and cast shadow. Keep the entire real bottle from cap through base, all original typography, label illustrations, cords and hanging tags, glass, material, shape and liquid color unchanged. Do not redraw, reconstruct or invent any lettering or product details. Deliver a single upright bottle cleanly isolated on genuine alpha transparency, tightly framed portrait canvas with only 2–4% clear margin around complete bottle. No box, stand, new lighting, new shadow or glow. Preserve bottle identity exactly."
+    },
+    "unresolvedReason": "",
+    "notes": [],
     "sourceAttempts": [
       {
         "url": "https://www.banhezmezcal.com/ensamble",
@@ -3071,9 +3325,15 @@
         "method": "Image fetched and alpha/visual inspected",
         "result": "Rejected or superseded candidate; see candidate contact sheet",
         "alphaMin": 0
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/614a2f22d609052f42bb3f25/482f3fa5-c4e9-442f-87ef-da59f94e036c/ENSAMBLE.png",
+        "sourcePage": "https://www.cnibrands.com/banhez-mezcal-artesanal",
+        "method": "Exact source photograph fetched and verified; built-in image_gen used for background-only extraction",
+        "result": "Approved clean full-bottle transparent image with no cast shadow",
+        "checked": "2026-10-17"
       }
-    ],
-    "photoNeeded": "Front bottle photo: BANHEZ ESPADIN & BARRIL MEZCAL. Exact expression, no gift box, label readable."
+    ]
   },
   {
     "id": 68,
@@ -3146,7 +3406,7 @@
     "name": "CASAMIGOS MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -3173,8 +3433,22 @@
       "aroma": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
       "taste": "https://www.casamigos.com/en-us/our-tequilas/mezcal"
     },
-    "image": null,
-    "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+    "image": {
+      "sourceUrl": "https://images.ctfassets.net/hpoa7h16o9wc/6s1DZA4jh5sayWhHcfpUrh/63c1f1acba95e5883c7c56a687203725/mezcal_v2.jpg",
+      "sourcePage": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+      "localPath": "/images/agave-researched/069-casamigos-mezcal-sourced-v2.webp",
+      "width": 310,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/69-source-v2.png",
+      "sourceWidth": 500,
+      "sourceHeight": 1680,
+      "optimizedBytes": 68962,
+      "optimization": "Trimmed empty alpha only; proportional resize within 976 px; added 12 px transparent safety margin; WebP quality 92.",
+      "derivation": "Native producer transparent packshot; no generated image editing."
+    },
+    "unresolvedReason": "",
     "notes": [],
     "sourceAttempts": [
       {
@@ -3200,28 +3474,71 @@
         "sourcePage": "https://bevmo.com/products/14411",
         "method": "Image fetched and alpha/visual inspected",
         "result": "HTTP 403"
+      },
+      {
+        "url": "https://images.ctfassets.net/hpoa7h16o9wc/6s1DZA4jh5sayWhHcfpUrh/63c1f1acba95e5883c7c56a687203725/mezcal_v2.jpg",
+        "sourcePage": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+        "method": "Native producer transparent image fetched, alpha and visually inspected",
+        "result": "Approved clean full-bottle transparent image with no cast shadow",
+        "checked": "2026-10-17"
       }
-    ],
-    "photoNeeded": "Front bottle photo: CASAMIGOS MEZCAL. Exact expression, no gift box, label readable."
+    ]
   },
   {
     "id": 70,
     "name": "CLASE AZUL MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "unresolved",
-    "expressionVerified": false,
+    "status": "verified",
+    "expressionVerified": true,
     "sources": [
       {
-        "url": "https://www.claseazul.com/clase-azul-family/clase-azul-mezcal-durango",
-        "title": "Clase Azul producer · family research",
-        "kind": "identity-research"
+        "url": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+        "title": "Clase Azul México — official Mezcal Durango sell sheet (2022), hosted by distributor"
+      },
+      {
+        "url": "https://claseazul.com/spirits/icons/clase-azul-mezcal-durango/",
+        "title": "Clase Azul México — Mezcal Durango producer page"
       }
     ],
-    "facts": {},
-    "factSources": {},
-    "image": null,
-    "unresolvedReason": "The record says only CLASE AZUL MEZCAL. The old catalogue suggests Cenizo/Durango, but no physical bottle or unambiguous expression name confirms Durango rather than another regional expression. Producer page currently presents an age gate. Exact expression and cutout need confirmation.",
+    "facts": {
+      "abv": "44%",
+      "agave": "Wild Cenizo agave.",
+      "origin": "Durango, Mexico.",
+      "aroma": "Citrus, herbs, green olive, cooked agave and clove.",
+      "taste": "Peanut and brown sugar, with smoky wood, chocolate and ripe fruit.",
+      "production": "Agave hearts roasted for three days in hand-dug pits with firewood and volcanic stone.",
+      "story": "A smoky Cenizo mezcal from Durango, presented in a matte-black ceramic decanter carved by Mazahua artisans and finished with a colourful cap of Wixárika beadwork."
+    },
+    "factSources": {
+      "abv": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "agave": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "origin": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "aroma": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "taste": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "production": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "story": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/"
+    },
+    "image": {
+      "sourceType": "owner-upload",
+      "sourcePage": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "localPath": "/images/agave-researched/070-clase-azul-mezcal-durango-owner-cutout.webp",
+      "width": 329,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/070-owner-clase-azul.jpg",
+      "sourceWidth": 480,
+      "sourceHeight": 640,
+      "ownerConfirmation": "User supplied this exact bottle photograph and identified it in this conversation on 17 October 2026.",
+      "derivedLocalPath": "work/agave-originals-gap/70-owner-derived-final.png",
+      "derivation": "Built-in ImageGen background extraction of the owner-supplied photograph. Complete real bottle retained, background and cast shadow removed; optimized alpha canvas and WebP delivery.",
+      "derivationPrompt": "Use case: background-extraction. Edit target: the attached actual Clase Azul mezcal bottle photograph supplied by the restaurant owner. Remove only the white background and any cast shadow. Preserve the exact photographed matte black ceramic bottle, all embossed and etched geometric and floral patterns, the central agave emblem and the original multicoloured beaded stopper with its red, blue, yellow and green pattern. Do not substitute a different regional bottle or design. Keep the whole bottle from the top beadwork through its base; retain its original shape, proportions, surface texture, highlights and colours. No added text, no redrawing of artwork. Output one faithful complete bottle isolated on genuinely transparent alpha, tightly framed on a portrait canvas with 2–3% transparent edge margin. No floor, halo, drop shadow, white rectangle or checkerboard.",
+      "optimizedBytes": 80870,
+      "sha256": "35ae15329ed24d0d8075d69b4a3223dae9fdd9e79c1aab2f1867f7e7200f3556",
+      "optimization": "Tightened transparent canvas to meaningful alpha subject bounds; proportional resize within 976px,12px transparent safety margin,WebP92."
+    },
+    "unresolvedReason": "",
     "sourceAttempts": [
       {
         "url": "https://www.claseazul.com/clase-azul-family/clase-azul-mezcal-durango",
@@ -3233,10 +3550,31 @@
         "method": "Direct public HTTP fetch",
         "httpStatus": 200,
         "result": "Page and image candidates reviewed"
+      },
+      {
+        "url": "https://www.claseazulasia.com/en/pages/collection",
+        "result": "Official collection confirms three different regional mezcal expressions. Generic restaurant inventory cannot pick one."
+      },
+      {
+        "url": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+        "result": "Producer sell sheet directly reviewed: Durango Cenizo,44%ABV,3-day underground roasting, tasting notes and exact black carved/beaded-cap decanter description. Matched to user photo."
       }
     ],
-    "photoNeeded": "Front bottle photo: CLASE AZUL MEZCAL. Exact expression, no gift box, label readable.",
-    "notes": []
+    "photoNeeded": "Background-only cutout of the user-supplied confirmed Clase Azul Mezcal Durango photo.",
+    "notes": [
+      "Identity is now confirmed by the user-provided image. The former unresolved warning is superseded.",
+      "The historical generic catalogue says42% and a different generic tasting profile; suppress those fields for this clarified Durango record and use the producer44% information.",
+      "The official source is a producer-branded technical sheet, not a retailer-written description. Image will come from the user-supplied bottle photo rather than a guessed regional expression."
+    ],
+    "displayName": "CLASE AZUL MEZCAL DURANGO",
+    "legacyIdentityConflict": true,
+    "identityEvidence": [
+      {
+        "source": "User-supplied venue bottle photo",
+        "localPath": "C:/Users/dj_ba/AppData/Local/Temp/codex-clipboard-6db34123-94eb-4287-9dcc-faf5a0791f2c.jpg",
+        "note": "Matte-black textured carved ceramic, agave emblem, floral-patterned base and multicolour beaded cap match the Durango decanter described and pictured in the producer sell sheet. This resolves the former generic Clase Azul Mezcal inventory name."
+      }
+    ]
   },
   {
     "id": 71,
@@ -3373,19 +3711,66 @@
     "name": "DEL MAGUEY SINGLE VILLAGE PUEBLA MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "unresolved",
-    "expressionVerified": false,
+    "status": "verified",
+    "expressionVerified": true,
     "sources": [
       {
         "url": "https://delmaguey.com/vida-puebla/",
-        "title": "Del Maguey producer · Vida Puebla",
-        "kind": "identity-research"
+        "title": "Del Maguey — producer Vida Puebla expression"
+      },
+      {
+        "url": "https://delmaguey.com/wp-content/uploads/2024/01/VIDA_Puebla_NewBA_Sell_sheet_Del_Maguey.pdf",
+        "title": "Del Maguey — official Vida Puebla technical sheet"
+      },
+      {
+        "url": "https://delmaguey.com/es/puebla/",
+        "title": "Del Maguey — producer Vida Puebla tasting notes"
+      },
+      {
+        "url": "https://www.pernod-ricard.com/sites/default/files/2023-11/Pernod_Ricard_Annual_Report_FY23.pdf",
+        "title": "Pernod Ricard — FY23 report, Vida Puebla aromas (page 40)"
       }
     ],
-    "facts": {},
-    "factSources": {},
-    "image": null,
-    "unresolvedReason": "The record says “Single Village Puebla” while the old catalogue says Papalote, 48%. Current Vida Puebla is Espadín, 40%, from Axocopan. This is a material identity conflict; do not silently replace the old record with Vida Puebla without checking the venue bottle.",
+    "facts": {
+      "abv": "40%",
+      "agave": "Espadín.",
+      "origin": "Axocopan, Puebla, Mexico.",
+      "aroma": "Roasted agave with citrus, white peach and candied pine.",
+      "taste": "Roast agave, citrus, white peach and candied pine.",
+      "production": "Ripe agave roasted underground, naturally fermented and twice distilled in small copper stills.",
+      "story": "An Espadín mezcal from Axocopan at the foot of Popocatépetl, bringing Del Maguey’s single-village approach to Puebla’s volcanic landscape."
+    },
+    "factSources": {
+      "abv": "https://delmaguey.com/vida-puebla/",
+      "agave": "https://delmaguey.com/vida-puebla/",
+      "origin": "https://delmaguey.com/vida-puebla/",
+      "aroma": "https://www.pernod-ricard.com/sites/default/files/2023-11/Pernod_Ricard_Annual_Report_FY23.pdf",
+      "taste": "https://delmaguey.com/es/puebla/",
+      "production": "https://delmaguey.com/vida-puebla/",
+      "story": "https://delmaguey.com/wp-content/uploads/2024/01/VIDA_Puebla_NewBA_Sell_sheet_Del_Maguey.pdf"
+    },
+    "image": {
+      "sourceType": "owner-upload",
+      "sourcePage": "https://delmaguey.com/vida-puebla/",
+      "localPath": "/images/agave-researched/073-del-maguey-vida-puebla-owner-cutout.webp",
+      "width": 261,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/073-owner-bottle.jpg",
+      "sourceWidth": 480,
+      "sourceHeight": 640,
+      "ownerConfirmation": "User supplied this exact bottle photograph and identified it in this conversation on 17 October 2026.",
+      "derivedLocalPath": "work/agave-originals-gap/73-owner-derived-final.png",
+      "derivation": "Built-in ImageGen background extraction of the owner-supplied photograph. Complete real bottle retained, background and cast shadow removed; optimized alpha canvas and WebP delivery.",
+      "derivationPrompt": "Use case: text-localization fidelity correction. Edit only the small alcohol percentage printed at the lower left of the existing label in this transparent Del Maguey Vida Puebla bottle cutout. It must read exactly \"40% ALC BY VOL.\" to match both the original supplied bottle photograph and the producer's actual Vida Puebla40% label. Current cutout erroneously says44%. Change that single second digit from4 to0. Keep every other pixel, all other lettering, green bottle, cap, illustrated label, Puebla script, bottle silhouette, original proportions, highlights and transparent alpha unchanged. No background or shadow. Do not change any other words or numbers.",
+      "initialDerivationPrompt": "Use case: background-extraction. Asset type: transparent spirit bottle cutout. Edit target: attached actual Del Maguey VIDA Puebla bottle photograph supplied by the restaurant owner. Remove only the white background, supporting surface and cast shadow. Preserve the original green glass, dark green cap, blue VIDA label, village illustration and Puebla script. Preserve every original word and label colour. Retain the full actual bottle silhouette, original perspective, proportions, all typography, artwork, liquid colour and photographed glass highlights. Do not invent, redraw or replace any product detail. Produce one complete upright bottle on genuinely transparent alpha, tightly framed in a portrait canvas with only 2–3% transparent margin around the bottle. No floor, no added drop shadow, glow, white rectangle, checkerboard or gift box.",
+      "correction": "Corrected an extraction artifact in the small alcohol marking back to 40%, matching the original owner photograph and producer Vida Puebla label.",
+      "optimizedBytes": 60982,
+      "sha256": "01e2940ad4ae2499dc1d94bcd1d1595654745ff661dbc3f5523014c479efa78a",
+      "optimization": "Tightened transparent canvas to meaningful alpha subject bounds; proportional resize within 976px,12px transparent safety margin,WebP92."
+    },
+    "unresolvedReason": "",
     "sourceAttempts": [
       {
         "url": "https://delmaguey.com/vida-puebla/",
@@ -3403,10 +3788,26 @@
         "sourcePage": "https://delmaguey.com/vida-puebla/",
         "method": "Image fetched and alpha/visual inspected",
         "result": "HTTP 403"
+      },
+      {
+        "url": "https://delmaguey.com/wp-content/uploads/2024/01/VIDA_Puebla_NewBA_Sell_sheet_Del_Maguey.pdf",
+        "result": "Producer technical sheet confirms matching green Vida Puebla bottle, Espadín, AxocopanPuebla,40%, copperstills and roastedagave/citrus/whitepeach/candiedpine tasting profile."
       }
     ],
-    "photoNeeded": "Front bottle photo: DEL MAGUEY SINGLE VILLAGE PUEBLA MEZCAL. Exact expression, no gift box, label readable.",
-    "notes": []
+    "photoNeeded": "Background-only cutout of the user-supplied confirmed Del Maguey Vida Puebla photo.",
+    "notes": [
+      "User-provided bottle image resolves the former generic Puebla ambiguity. This record is Vida Puebla (Espadín40%), not San Pablo Ameyaltepec Papalote/Pizorra47% or the former48% historical notes.",
+      "Suppress conflicting historical Papalote agave,48% strength, generic aroma/palate and production claims for this clarified expression. Producer Vida Puebla facts now apply."
+    ],
+    "displayName": "DEL MAGUEY VIDA PUEBLA",
+    "legacyIdentityConflict": true,
+    "identityEvidence": [
+      {
+        "source": "User-supplied venue bottle photo",
+        "localPath": "C:/Users/dj_ba/AppData/Local/Temp/codex-clipboard-e89f9a13-b35d-45a4-9e8c-a4f792864c36.jpg",
+        "note": "Green bottle, blue VIDA Single Village Mezcal label and explicitly printed Puebla identify Vida Puebla; 40% is printed on the label. Matches the producer expression photo."
+      }
+    ]
   },
   {
     "id": 74,
@@ -3478,7 +3879,7 @@
     "name": "EL SILENCIO MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -3506,8 +3907,24 @@
       "taste": "https://shop.silencio.com/products/espadin",
       "finish": "https://shop.silencio.com/products/espadin"
     },
-    "image": null,
-    "unresolvedReason": "An exact transparent front-bottle cutout remains unverified. Producer and retailer PNG candidates were opaque or could not be downloaded.",
+    "image": {
+      "sourceUrl": "https://shop.silencio.com/cdn/shop/files/main-img-final.jpg?v=1779096521",
+      "sourcePage": "https://shop.silencio.com/products/espadin",
+      "localPath": "/images/agave-researched/075-el-silencio-espadin-sourced-v2.webp",
+      "width": 445,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/75-source.jpg",
+      "sourceWidth": 1600,
+      "sourceHeight": 1500,
+      "optimizedBytes": 96312,
+      "optimization": "Trimmed empty alpha only; proportional resize within 976 px; added 12 px transparent safety margin; WebP quality 92.",
+      "derivedLocalPath": "work/agave-originals-gap/75-cutout-v2.png",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed.",
+      "derivationPrompt": "Use case: background-extraction. Remove only the background, any ground reflection, white rectangle and cast shadow. Keep the entire real bottle from cap through base, all original typography, label illustrations, cords and hanging tags, glass, material, shape and liquid color unchanged. Do not redraw, reconstruct or invent any lettering or product details. Deliver a single upright bottle cleanly isolated on genuine alpha transparency, tightly framed portrait canvas with only 2–4% clear margin around complete bottle. No box, stand, new lighting, new shadow or glow. Preserve bottle identity exactly."
+    },
+    "unresolvedReason": "",
     "notes": [
       "Existing catalogue identifies the otherwise generic El Silencio record as Espadín. The current producer shop confirms this expression."
     ],
@@ -3540,22 +3957,33 @@
         "sourcePage": "https://bevmo.com/products/33366",
         "method": "Image fetched and alpha/visual inspected",
         "result": "HTTP 403"
+      },
+      {
+        "url": "https://shop.silencio.com/cdn/shop/files/main-img-final.jpg?v=1779096521",
+        "sourcePage": "https://shop.silencio.com/products/espadin",
+        "method": "Exact source photograph fetched and verified; built-in image_gen used for background-only extraction",
+        "result": "Approved clean full-bottle transparent image with no cast shadow",
+        "checked": "2026-10-17"
       }
-    ],
-    "photoNeeded": "Front bottle photo: EL SILENCIO MEZCAL. Exact expression, no gift box, label readable."
+    ]
   },
   {
     "id": 76,
     "name": "ILEGAL REPOSADO MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
         "url": "https://www.ilegalmezcal.com/mezcal/",
         "title": "Ilegal producer · Reposado",
         "kind": "producer-or-distributor"
+      },
+      {
+        "url": "https://shop.ilegalmezcal.com/products/reposado-750",
+        "title": "ILEGAL REPOSADO MEZCAL · photographed product source",
+        "kind": "image-source"
       }
     ],
     "facts": {
@@ -3570,11 +3998,26 @@
       "aging": "https://www.ilegalmezcal.com/mezcal/",
       "production": "https://www.ilegalmezcal.com/mezcal/"
     },
-    "image": null,
-    "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+    "image": {
+      "sourceUrl": "https://shop.ilegalmezcal.com/cdn/shop/files/IlegalMezcalReposado750mlBottle.png?v=1683384450&width=1920",
+      "sourcePage": "https://shop.ilegalmezcal.com/products/reposado-750",
+      "localPath": "/images/agave-researched/076-ilegal-reposado-sourced-v2.webp",
+      "width": 237,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/76-source-v2.png",
+      "sourceWidth": 1920,
+      "sourceHeight": 1920,
+      "optimizedBytes": 58808,
+      "optimization": "Trimmed empty alpha only; proportional resize within 976 px; added 12 px transparent safety margin; WebP quality 92.",
+      "derivedLocalPath": "work/agave-originals-gap/76-cutout-v2.png",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed.",
+      "derivationPrompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Ilegal Reposado source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain the complete photographed bottle, green wax cap and tan labels including its existing handwritten marks. Do not alter any printed or handwritten text. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+    },
+    "unresolvedReason": "",
     "notes": [
-      "Correction: current producer page says six months, versus four months in the old catalogue. Market/batch differences should be checked against the actual bottle.",
-      "Candidate PNGs contained an opaque white inner rectangle despite some transparent outer pixels; none was accepted as a bottle cutout."
+      "Correction: current producer page says six months, versus four months in the old catalogue. Market/batch differences should be checked against the actual bottle."
     ],
     "sourceAttempts": [
       {
@@ -3607,16 +4050,22 @@
         "method": "Image fetched and alpha/visual inspected",
         "result": "Rejected or superseded candidate; see candidate contact sheet",
         "alphaMin": 255
+      },
+      {
+        "url": "https://shop.ilegalmezcal.com/cdn/shop/files/IlegalMezcalReposado750mlBottle.png?v=1683384450&width=1920",
+        "sourcePage": "https://shop.ilegalmezcal.com/products/reposado-750",
+        "method": "Exact source photograph fetched and verified; built-in image_gen used for background-only extraction",
+        "result": "Approved clean full-bottle transparent image with no cast shadow",
+        "checked": "2026-10-17"
       }
-    ],
-    "photoNeeded": "Front bottle photo: ILEGAL REPOSADO MEZCAL. Exact expression, no gift box, label readable."
+    ]
   },
   {
     "id": 77,
     "name": "LEYENDA 'TLACUACHE' MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -3633,8 +4082,24 @@
       "abv": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420",
       "tastingNotes": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420"
     },
-    "image": null,
-    "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+    "image": {
+      "sourceUrl": "https://www.lcbo.com/content/dam/lcbo/products/275420.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "sourcePage": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420",
+      "localPath": "/images/agave-researched/077-leyenda-tlacuache-sourced-v2.webp",
+      "width": 472,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/77-source-v2.png",
+      "sourceWidth": 960,
+      "sourceHeight": 1280,
+      "optimizedBytes": 147038,
+      "optimization": "Trimmed empty alpha only; proportional resize within 976 px; added 12 px transparent safety margin; WebP quality 92.",
+      "derivedLocalPath": "work/agave-originals-gap/77-cutout-v2.png",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed.",
+      "derivationPrompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Leyenda Tlacuache Oaxaca source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain complete bottle, cork, green neck band, brown label, green animal illustration and every printed word. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+    },
+    "unresolvedReason": "",
     "notes": [
       "LCBO’s description says Oaxaca while its “Made In” field says Jalisco; origin is withheld because the same source conflicts."
     ],
@@ -3655,37 +4120,105 @@
         "method": "Direct public HTTP fetch",
         "httpStatus": 200,
         "result": "Page and image candidates reviewed"
+      },
+      {
+        "url": "https://www.lcbo.com/content/dam/lcbo/products/275420.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+        "sourcePage": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420",
+        "method": "Exact source photograph fetched and verified; built-in image_gen used for background-only extraction",
+        "result": "Approved clean full-bottle transparent image with no cast shadow",
+        "checked": "2026-10-17"
       }
-    ],
-    "photoNeeded": "Front bottle photo: LEYENDA 'TLACUACHE' MEZCAL. Exact expression, no gift box, label readable."
+    ]
   },
   {
     "id": 78,
     "name": "LOS SIETE MISTERIOS MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "unresolved",
-    "expressionVerified": false,
+    "status": "verified",
+    "expressionVerified": true,
     "sources": [
       {
         "url": "https://www.sietemisterios.com/",
-        "title": "Los Siete Misterios producer · Complete range",
-        "kind": "identity-research"
+        "title": "Los Siete Misterios — producer Doba-Yej expression and 44% ABV"
+      },
+      {
+        "url": "https://www.sietemisterios.com/en/",
+        "title": "Los Siete Misterios — producer Doba-Yej process and story"
+      },
+      {
+        "url": "https://www.chathamimports.com/brands/los-siete-misterios/",
+        "title": "Chatham Imports — official importer Doba Yej tasting notes and bottle"
       }
     ],
-    "facts": {},
-    "factSources": {},
-    "image": null,
-    "unresolvedReason": "The record gives only the brand. The producer makes Doba-Yej, multiple ensambles and ancestral expressions. No exact bottle may be assigned from a generic brand name; request the full front label and batch.",
+    "facts": {
+      "abv": "44%",
+      "agave": "Espadín (Agave angustifolia Haw).",
+      "aging": "Unaged (joven).",
+      "origin": "Oaxaca, Mexico. The producer names Santiago Matatlán, San Dionisio and Yautepec.",
+      "aroma": "Lime and orange, with baked apple, pear and gentle smoke.",
+      "taste": "Smooth, with a long, subtle citrus finish.",
+      "production": "Earth-oven roasted with local wood and river stones, then double distilled in copper pot stills.",
+      "story": "Doba-Yej takes its name from the Zapotec word for Espadín. Los Siete Misterios created this bright, citrus-led mezcal for sipping and cocktails; its labels honour Mexican historical figures."
+    },
+    "factSources": {
+      "abv": "https://www.sietemisterios.com/",
+      "agave": "https://www.sietemisterios.com/en/",
+      "aging": "https://www.sietemisterios.com/en/",
+      "origin": "https://www.sietemisterios.com/en/",
+      "aroma": "https://www.chathamimports.com/brands/los-siete-misterios/",
+      "taste": "https://www.chathamimports.com/brands/los-siete-misterios/",
+      "production": "https://www.sietemisterios.com/en/",
+      "story": "https://www.sietemisterios.com/en/"
+    },
+    "image": {
+      "sourceUrl": "https://www.chathamimports.com/wp-content/uploads/2021/03/2.png",
+      "sourcePage": "https://www.chathamimports.com/brands/los-siete-misterios/",
+      "localPath": "/images/agave-researched/078-los-siete-misterios-doba-yej-importer-cutout.webp",
+      "width": 126,
+      "height": 551,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/078-chatham-2.png",
+      "sourceWidth": 400,
+      "sourceHeight": 600,
+      "optimizedBytes": 25226,
+      "sourceSha256": "c5de5f8678fb87eb3759040e13f204fcbc37c5baf7a45c40e2630731c3ec6cef",
+      "optimizedSha256": "5af9940e828dae7ea399da4b37eadffa1ef431936ba04f2fb72746ea434eeb79",
+      "optimization": "Tight alpha bounds with 3 px transparent margin; WebP quality 94, alpha quality 100. Native transparent importer image; no synthetic bottle, box or added shadow."
+    },
     "sourceAttempts": [
       {
         "url": "https://www.sietemisterios.com/",
         "method": "Producer/distributor page or search-indexed page reviewed",
         "result": "Identity remains ambiguous"
+      },
+      {
+        "url": "https://www.sietemisterios.com/wp-content/uploads/2020/01/DBY1.png",
+        "result": "Exact Doba-Yej but rejected in favour of cleaner importer alpha image: faint background artefacts beside neck."
+      },
+      {
+        "url": "https://www.chathamimports.com/wp-content/uploads/2021/03/2.png",
+        "result": "Downloaded native-transparent exact Doba-Yej image; label and full bottle visually verified; optimized and approved."
       }
     ],
-    "photoNeeded": "Front bottle photo: LOS SIETE MISTERIOS MEZCAL. Exact expression, no gift box, label readable.",
-    "notes": []
+    "notes": [
+      "The old generic house catalogue gave mixed-agave, 45% and Sola de Vega details. This is contradicted by the explicit human Doba-Yej inventory match and producer facts; retain archived content in source files but do not inherit it in the resolved Doba-Yej display.",
+      "The label artwork varies within Doba-Yej; the importer bottle photo is one producer-authorised historical-figure label for this expression, not a different agave or product."
+    ],
+    "displayName": "LOS SIETE MISTERIOS DOBA-YEJ",
+    "legacyIdentityConflict": true,
+    "identityEvidence": [
+      {
+        "source": "Human-supplied POS inventory",
+        "name": "LOS SIETE MISTERIO DOBA-YEJ",
+        "priceCad": 12
+      },
+      {
+        "source": "SPIRITS inventory reconciliation",
+        "note": "ID78 is matched to the explicit Doba-Yej inventory row and remains separate from ancestral Espadín ID79 and unspecified Ensamble ID181."
+      }
+    ]
   },
   {
     "id": 79,
@@ -4009,28 +4542,101 @@
     "name": "SERPIENTE JOVEN MEZCAL",
     "type": "Mezcal",
     "category": "Mezcal",
-    "status": "unresolved",
-    "expressionVerified": false,
+    "status": "verified",
+    "expressionVerified": true,
     "sources": [
       {
-        "url": "https://www.worldmezcalawards.com/winner-mezcal/mezcal/2023/best-joven-45115-world-mezcal-awards-2023",
-        "title": "Identity research · Serpiente named products",
-        "kind": "identity-research"
+        "url": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/",
+        "title": "Bella Vita — Canadian importer La Serpiente Emplumada Tobalá Joven"
+      },
+      {
+        "url": "https://cmx.org.mx/wp-content/uploads/2023/06/Listado-70.pdf",
+        "title": "CMX — Tobalá (Agave potatorum) product certification register"
+      },
+      {
+        "url": "https://www.saq.com/fr/15082192",
+        "title": "SAQ — La Serpiente Emplumada Tobalá Joven 750mL"
       }
     ],
-    "facts": {},
-    "factSources": {},
-    "image": null,
-    "unresolvedReason": "No unambiguous producer or distributor match was found for SERPIENTE JOVEN MEZCAL. Search finds Serpiente Emplumada Tobalá, which is not enough to identify this Espadín-like catalogue record. Do not substitute that bottle or its facts.",
+    "facts": {
+      "agave": "Tobalá (Agave potatorum).",
+      "aging": "Unaged (joven).",
+      "origin": "San Juan del Río, Oaxaca, Mexico.",
+      "producer": "Mezcales y Agaves Metl SPR de RI.",
+      "aroma": "Earthy and vegetal, with lemon, banana and green pepper.",
+      "taste": "Agave, citrus and banana, with earthy depth, a silky texture and a peppery finish.",
+      "story": "Created by friends Miguel Ángel Vargas from Mexico and Pascal Desjardins from Québec, La Serpiente Emplumada’s Tobalá Joven comes from San Juan del Río, Oaxaca."
+    },
+    "factSources": {
+      "agave": "https://cmx.org.mx/wp-content/uploads/2023/06/Listado-70.pdf",
+      "aging": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/",
+      "origin": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/",
+      "producer": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/",
+      "aroma": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/",
+      "taste": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/",
+      "story": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/"
+    },
+    "image": {
+      "sourceUrl": "https://www.saq.com/media/catalog/product/1/5/15082192-1_1674772267.png",
+      "sourcePage": "https://www.saq.com/en/15082192",
+      "localPath": "/images/agave-researched/084-la-serpiente-emplumada-tobala-joven-saq-native.webp",
+      "width": 226,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/84-saq-original.png",
+      "sourceWidth": 1000,
+      "sourceHeight": 1500,
+      "sourceSha256": "86089d6404f828be1dda671beeffe5a85838596c9ff6863cdace822afa75c9d1",
+      "optimizedSha256": "b367900e6abb0042de6f8a067f7ada877e8b91ba91c3310a6892ce8ad7c4647d",
+      "optimizedBytes": 83086,
+      "optimization": "Native transparent SAQ product photo: trim empty alpha with6px safety margin, resize proportionally to1000px, encodeWebPquality94. No generated pixels, label edits or added shadow.",
+      "labelVerified": "The actual high-resolution source label reads TOBALÁ Joven and47%alc/vol; crop inspected. The transparent exterior contains unassociated RGB bands at alpha0 which disappear when composited correctly."
+    },
     "sourceAttempts": [
       {
         "url": "https://www.worldmezcalawards.com/winner-mezcal/mezcal/2023/best-joven-45115-world-mezcal-awards-2023",
         "method": "Producer/distributor page or search-indexed page reviewed",
         "result": "Identity remains ambiguous"
+      },
+      {
+        "url": "https://www.saq.com/en/13519830",
+        "result": "Candidate found: La Serpiente Emplumada Joven Espadín 750 mL, 45%. No direct restaurant identity match."
+      },
+      {
+        "url": "https://cmx.org.mx/wp-content/uploads/2023/06/Listado-70.pdf",
+        "result": "Certification register distinguishes Espadín 700mL40% Europe /750mL45% Canada and Tobalá47%, explaining why old40% metadata alone cannot identify a Canadian bottle."
+      },
+      {
+        "url": "https://bellavitagrandscrus.com/produit/la-serpiente-emplumadamezcal-artesanal-tobala-joven/",
+        "result": "Exact Tobalá Joven expression verified against user image; importer givesSanJuandelRioOaxaca,producerMezcalesyAgavesMetl and explicit Tobalá aromas/taste. Unrelated tequila template aging text rejected."
+      },
+      {
+        "url": "https://www.saq.com/fr/15082192",
+        "result": "Current Canadian Tobalá product750mL47%; nofixedABVassignedbecauseowner-suppliedphoto’ssmallbottomprintappearsdifferent."
+      },
+      {
+        "url": "https://www.saq.com/media/catalog/product/1/5/15082192-1_1674772267.png",
+        "result": "Exact native-transparent1000×1500TobaláJoven packshot downloaded. Source label47% inspected at pixel crop; full bottle, alpha and no external shadow visually verified. Approved as authentic current-market representation of the owner-confirmed expression."
       }
     ],
-    "photoNeeded": "Front bottle photo: SERPIENTE JOVEN MEZCAL. Exact expression, no gift box, label readable.",
-    "notes": []
+    "notes": [
+      "The user-provided bottle identifies Tobalá Joven, superseding the generic inventory title and old Espadín assumptions. Preserve the original ID/name but show the clarified expression name.",
+      "Importer product page contains unrelated tequila template sections, including13-month barrel aging. Those sections are excluded; the explicit Tobalá product title, producer, Oaxaca origin and tasting notes are used.",
+      "Do not inherit old generic Espadín production,40% house metadata or aroma/palate for the now identified Tobalá.",
+      "For delivery use the authentic high-resolution native-transparent SAQ15082192 bottle photo. Its photographed47%label is directly readable and matches SAQ/importer/certification. The original user attachment was a lower-resolution rendition; no digits were generated or repainted.",
+      "An earlier generated cutout that changed the label to48% was rejected by review and must not be published.",
+      "Fixed ABV remains unpublished for the venue pour: the owner-supplied low-resolution photo did not make its strength reliable. The approved SAQ photo represents the confirmed Tobalá Joven expression in a clearly marked47%Canadianrelease; current venue batch strength still requires its own readable label."
+    ],
+    "displayName": "LA SERPIENTE EMPLUMADA TOBALÁ JOVEN",
+    "legacyIdentityConflict": true,
+    "identityEvidence": [
+      {
+        "source": "User-supplied venue bottle photo",
+        "localPath": "C:/Users/dj_ba/AppData/Local/Temp/codex-clipboard-6d4e2c2d-538f-4149-9c7e-ff552749faf9.jpg",
+        "note": "Turquoise serpent label clearly reads La Serpiente Emplumada, Mezcal Artesanal and Tobalá Joven; matching turquoise neck strip. This identifies the Tobalá expression, not the formerly assumed Espadín."
+      }
+    ]
   },
   {
     "id": 85,
@@ -4673,7 +5279,7 @@
     "name": "CHAMELEON BLANCO",
     "type": "Tequila",
     "category": "Blanco",
-    "status": "facts-verified-image-unresolved",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -4685,8 +5291,48 @@
       "abv": "40%",
       "origin": "Jalisco, Mexico."
     },
-    "image": null,
-    "unresolvedReason": "Chameleon Blanco expression verified through LCBO. Available retailer photographs have opaque backgrounds; other differently named brands were not substituted.",
+    "image": {
+      "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/2/6/4/026421.jpg",
+      "sourcePage": "https://www.lcbo.com/en/chameleon-tequila-blanco-26421",
+      "localPath": "/images/agave-researched/bottle-99-chameleon-blanco-sourced-v2.webp",
+      "width": 378,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/99-lcbo.jpg",
+      "derivedLocalPath": "work/agave-originals-gap/99-chameleon-blanco-cutout-v2.png",
+      "sourceSha256": "a8718de939d8675afddddc13186b17a29fca54700f3a60f61272b3680d0f6510",
+      "optimizedSha256": "a857ad5a56c22cdd48a1d838221d883ab81c72769e19436887e251ffe0aa5105",
+      "optimizedBytes": 96758,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Chameleon Blanco bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 520 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 9,
+        "top": 9,
+        "right": 368,
+        "bottom": 1003,
+        "width": 360,
+        "height": 995,
+        "fillX": 0.9523809523809523,
+        "fillY": 0.983201581027668
+      },
+      "deliveryCanvasCrop": {
+        "left": 1,
+        "top": 5,
+        "width": 752,
+        "height": 2056,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "imageAttempts": [
       {
         "url": "https://shopliquoryxe.ca/cdn/shop/products/ChameleonBlancoTequila1080.png?v=1739892310",
@@ -4858,12 +5504,16 @@
     "name": "COBALTO BLANCO",
     "type": "Tequila",
     "category": "Blanco",
-    "status": "facts-verified-image-unresolved",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
         "url": "https://tequilacobalto.com/us/tequila-blanco.html",
         "title": "COBALTO BLANCO — producer"
+      },
+      {
+        "url": "https://www.lcbo.com/content/dam/lcbo/PDFs/vintages/releases/2021/210612_en.pdf",
+        "title": "Cobalto Organic Blanco 19461 — LCBO 2021 release, page 61"
       }
     ],
     "facts": {
@@ -4873,8 +5523,48 @@
       "production": "Double-distilled and carefully filtered.",
       "tastingNotes": "Agave, vanilla, pine, herbs, flowers, citrus and acacia."
     },
-    "image": null,
-    "unresolvedReason": "Historic producer Blanco page verifies this expression. Current Organic packaging is not assumed to match the historic inventory bottle; no exact isolated transparent cutout was verified.",
+    "image": {
+      "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/9/4/019461.jpg",
+      "sourcePage": "https://www.lcbo.com/content/dam/lcbo/PDFs/vintages/releases/2021/210612_en.pdf",
+      "localPath": "/images/agave-researched/bottle-103-cobalto-blanco-sourced-v2.webp",
+      "width": 241,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/103-lcbo.jpg",
+      "derivedLocalPath": "work/agave-originals-gap/103-cobalto-blanco-cutout-v2.png",
+      "sourceSha256": "96aa7157c651d85547fb17fbfb50175a409582919df24329e2cfe1bda7c40943",
+      "optimizedSha256": "3f0f61a06198b8b68f4ee14c63cef4d15a9492b346a06c72b8c6e842c708f063",
+      "optimizedBytes": 64040,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Edit target: the attached actual LCBO Cobalto Blanco Organic tequila photograph. Remove ONLY the white background and ground/cast shadow to true transparent alpha. Preserve exact bottle shape, cap, clear glass and reflections, all original printed labels, logo and wording without repainting, inventing, replacing or changing the label. Single complete upright bottle from cap to base on a tightly framed narrow PORTRAIT canvas (about 1:4 ratio), only2% transparent margin. No backdrop, external shadow, halo, floor reflection, checkerboard or box. Faithful photographic cutout of the supplied existing bottle, not new product imagery."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 9,
+        "top": 9,
+        "right": 231,
+        "bottom": 1002,
+        "width": 223,
+        "height": 994,
+        "fillX": 0.9253112033195021,
+        "fillY": 0.9822134387351779
+      },
+      "deliveryCanvasCrop": {
+        "left": 162,
+        "top": 5,
+        "width": 457,
+        "height": 1999,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "imageAttempts": [
       {
         "url": "https://image.pngaaa.com/69/7899069-middle.png",
@@ -4900,6 +5590,9 @@
         "url": "https://tequilacobalto.com/wp-content/uploads/2025/03/COBALTO-BLANCO-tequila-premium.png",
         "result": "HTTP 404"
       }
+    ],
+    "notes": [
+      "The LCBO 019461 photo identifies the Canadian-market Blanco Organic bottle. The historical producer Blanco facts and the LCBO 2021 release agree on the agave, pine, vanilla and citrus profile. No unrelated Cobalto variant was substituted."
     ]
   },
   {
@@ -5061,7 +5754,7 @@
     "name": "ELEVACION 1250 BLANCO",
     "type": "Tequila",
     "category": "Blanco",
-    "status": "facts-verified-image-unresolved",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -5076,8 +5769,48 @@
       "production": "Crafted by master distiller Iliana Partida.",
       "tastingNotes": "Cooked agave, grass, cinnamon and pear."
     },
-    "image": null,
-    "unresolvedReason": "Elevacion 1250 Blanco expression verified through LCBO. Producer and retailer photographs found have opaque backgrounds; other Elevacion spirits and Rosa expressions were not substituted.",
+    "image": {
+      "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/1/9/031949.jpg",
+      "sourcePage": "https://www.lcbo.com/en/elevacion-1250-tequila-31949",
+      "localPath": "/images/agave-researched/bottle-108-elevacion-1250-blanco-sourced-v2.webp",
+      "width": 239,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/108-lcbo.jpg",
+      "derivedLocalPath": "work/agave-originals-gap/108-elevacion-1250-blanco-cutout-v2.png",
+      "sourceSha256": "fe9bbec8d4ab95830d3bb276cd85b80d263929aae8b7e57efaeecf7c5251cb78",
+      "optimizedSha256": "441773d32dbe66df5e63b7d231f9f3e4d9c925c557d0f14cd25bdc43b0a5cb1d",
+      "optimizedBytes": 72426,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Elevación 1250 Blanco bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 10,
+        "top": 9,
+        "right": 228,
+        "bottom": 1002,
+        "width": 219,
+        "height": 994,
+        "fillX": 0.9163179916317992,
+        "fillY": 0.9822134387351779
+      },
+      "deliveryCanvasCrop": {
+        "left": 361,
+        "top": 0,
+        "width": 337,
+        "height": 1487,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "imageAttempts": [
       {
         "url": "https://shopliquoryxe.ca/cdn/shop/files/Shopify1080_17_13af3210-6084-4863-a74a-5dddf97418e0.png?v=1748532439",
@@ -6005,7 +6738,7 @@
     "name": "XICOTE BLANCO",
     "type": "Tequila",
     "category": "Blanco",
-    "status": "facts-verified-image-pending",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -6026,8 +6759,48 @@
       "agave": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf",
       "tastingNotes": "https://mexcor.com/wp-content/uploads/2025/10/SC-Sales-book-OCT-2025.pdf"
     },
-    "image": null,
-    "unresolvedReason": "A clean single-bottle transparent cutout without a background or cast shadow has not yet been verified.",
+    "image": {
+      "sourceUrl": "https://www.delmesaliquor.com/cdn/shop/products/XicoteBlancoTequila.jpg?v=1633290687",
+      "sourcePage": "https://www.delmesaliquor.com/products/xicote-blanco-tequila",
+      "localPath": "/images/agave-researched/bottle-127-xicote-blanco-sourced-v2.webp",
+      "width": 498,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/127-source.jpg",
+      "derivedLocalPath": "work/agave-originals-gap/127-xicote-blanco-cutout-v2.png",
+      "sourceSha256": "f2da001906c75f63b2e33bf3dc04ad09c65f73ec8611564a13d63f82925e5ae2",
+      "optimizedSha256": "541ba9cd11854dc5c409c5d69c710b57b3bf75eac6c1b7b12534a0a8a6b0a786",
+      "optimizedBytes": 118802,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Xicote Blanco source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain the whole blue bottle, cap, lizard illustration, XICOTE and BLANCO lettering exactly. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 11,
+        "top": 10,
+        "right": 487,
+        "bottom": 1001,
+        "width": 477,
+        "height": 992,
+        "fillX": 0.9578313253012049,
+        "fillY": 0.9802371541501976
+      },
+      "deliveryCanvasCrop": {
+        "left": 196,
+        "top": 9,
+        "width": 695,
+        "height": 1431,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "notes": [
       "Do not infer detailed distillation or aging from the name alone."
     ],
@@ -6056,8 +6829,7 @@
         "result": "Rejected or superseded candidate; see candidate contact sheet",
         "alphaMin": 255
       }
-    ],
-    "photoNeeded": "Front bottle photo: XICOTE BLANCO. Exact expression, no gift box, label readable."
+    ]
   },
   {
     "id": 128,
@@ -6383,7 +7155,7 @@
     "name": "DON ADRIANO 1950 AÑEJO",
     "type": "Tequila",
     "category": "Añejo",
-    "status": "facts-verified-image-unresolved",
+    "status": "verified",
     "expressionVerified": true,
     "sources": [
       {
@@ -6398,8 +7170,48 @@
       "aging": "18 months in previously used French oak wine barrels.",
       "tastingNotes": "Sweet cooked agave, vanilla, warm spice, hazelnut and creme brulee."
     },
-    "image": null,
-    "unresolvedReason": "Don Adriano 1950 Anejo expression verified through LCBO. Available retailer photographs have opaque backgrounds; no exact isolated transparent cutout was verified.",
+    "image": {
+      "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/3/7/033777.jpg",
+      "sourcePage": "https://www.lcbo.com/en/don-adriano-1950-anejo-ultra-premium-tequila-33777",
+      "localPath": "/images/agave-researched/bottle-136-don-adriano-1950-anejo-sourced-v2.webp",
+      "width": 287,
+      "height": 1012,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "identityVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/136-lcbo.jpg",
+      "derivedLocalPath": "work/agave-originals-gap/136-don-adriano-1950-anejo-cutout-v2.png",
+      "sourceSha256": "648a0fdce39d39131006fad400f2ff4854b636483a4bf1bee560d8d0853915a9",
+      "optimizedSha256": "c55288348a8ac08b1f6a0c2a55ecd574f33d4a9084293de8d6b0d0086d386581",
+      "optimizedBytes": 66732,
+      "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+      "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Don Adriano Añejo bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      },
+      "meaningfulAlphaBounds": {
+        "threshold": 16,
+        "left": 10,
+        "top": 9,
+        "right": 276,
+        "bottom": 1001,
+        "width": 267,
+        "height": 993,
+        "fillX": 0.9303135888501742,
+        "fillY": 0.9812252964426877
+      },
+      "deliveryCanvasCrop": {
+        "left": 326,
+        "top": 0,
+        "width": 409,
+        "height": 1487,
+        "padding": 6,
+        "alphaThreshold": 16
+      }
+    },
+    "unresolvedReason": "",
     "imageAttempts": [
       {
         "url": "https://www.bswliquor.com/cdn/shop/files/Screenshot_20230210_134309_WhatsApp_1200x1200_9f5c93f5-fa40-4984-9dd4-419cff27fdf3.webp?v=1700242402",
@@ -7853,31 +8665,58 @@
       "nameCell": "B62",
       "sellPriceCell": "G62"
     },
-    "status": "family-verified-expression-unresolved",
+    "status": "verified",
     "familyVerified": true,
-    "expressionVerified": false,
+    "expressionVerified": true,
     "sources": [
       {
-        "url": "https://www.sietemisterios.com/",
-        "title": "Los Siete Misterios — producer Ensambles range"
+        "url": "https://www.sietemisterios.com/en/",
+        "title": "Los Siete Misterios — producer Espadín/Cuishe expression and exact blue skull-girl bottle"
+      },
+      {
+        "url": "https://www.whisky.fr/los-siete-misterios-mezcal-ensamble-espadin-cuishe-61350a.html",
+        "title": "La Maison du Whisky — official French importer Espadín/Cuishe tasting notes"
+      },
+      {
+        "url": "https://specialitybrands.com/range/los-siete-misterios/los-siete-misterios-espadin-cuishe/",
+        "title": "Speciality Brands — UK importer Espadín/Cuishe expression"
       }
     ],
     "facts": {
-      "origin": "Oaxaca, Mexico; producer Ensambles range.",
-      "agave": "The producer blends Espadin with other agaves across its Ensambles range; the restaurant inventory does not specify which combination.",
-      "aging": "Joven range.",
-      "production": "The producer describes underground agave roasting, natural fermentation and at least double distillation for its range."
+      "agave": "Espadín (Agave angustifolia) and Cuishe (Agave karwinskii).",
+      "aging": "Unaged (joven).",
+      "origin": "San Dionisio, Oaxaca, Mexico.",
+      "production": "Earth-oven roasted with wood and river stones, then double distilled in copper pot stills.",
+      "aroma": "Cucumber, dill and dried grapefruit peel, with gentle smoke, honey and vanilla.",
+      "taste": "Herbs and citrus zest lead into dry tobacco, ground pepper and olives, with earthy, smoky and buttery accents.",
+      "story": "Two agaves, one traditional ensamble: Espadín brings an approachable base while the tall, trunk-like Cuishe contributes earthy depth and minerality."
     },
     "factSources": {
-      "origin": "https://www.sietemisterios.com/",
-      "agave": "https://www.sietemisterios.com/",
-      "aging": "https://www.sietemisterios.com/",
-      "production": "https://www.sietemisterios.com/"
+      "agave": "https://www.sietemisterios.com/en/",
+      "aging": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleESP_CUI.png",
+      "origin": "https://www.sietemisterios.com/en/",
+      "production": "https://www.sietemisterios.com/en/",
+      "aroma": "https://www.whisky.fr/los-siete-misterios-mezcal-ensamble-espadin-cuishe-61350a.html",
+      "taste": "https://www.whisky.fr/los-siete-misterios-mezcal-ensamble-espadin-cuishe-61350a.html",
+      "story": "https://specialitybrands.com/range/los-siete-misterios/los-siete-misterios-espadin-cuishe/"
     },
-    "factScope": "Producer Ensambles family only; the exact restaurant expression and batch are not identified.",
-    "image": null,
-    "unresolvedReason": "The inventory says only Ensamble. The producer has several different agave blends. The front label and batch are needed before assigning an exact bottle image, fixed ABV, specific blend or batch tasting notes.",
-    "photoNeeded": "Front label of the restaurant’s Los Siete Misterios Ensamble bottle; exact agave blend and batch readable.",
+    "image": {
+      "sourceUrl": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleESP_CUI.png",
+      "sourcePage": "https://www.sietemisterios.com/en/",
+      "localPath": "/images/agave-researched/181-los-siete-misterios-espadin-cuishe-producer-native.webp",
+      "width": 225,
+      "height": 1000,
+      "alphaVerified": true,
+      "visualVerified": true,
+      "originalLocalPath": "work/agave-originals-gap/181-producer-CUI.png",
+      "sourceWidth": 1764,
+      "sourceHeight": 3000,
+      "sourceSha256": "82645375427855364d70fc769c3fdefb62460cb7bac206deec9afe7a2bcdb348",
+      "optimizedSha256": "e8730f886e6a01d752aca38fbbcec5590931af25b4f354987ce3dc33082aa70a",
+      "optimizedBytes": 64346,
+      "optimization": "Native transparent producer photo. Trim empty alpha with10px safety margin; proportional resize to1000pxheight; WebPquality94/alpha100. No generation, recolouring, label changes, added shadow or box.",
+      "labelVerified": "Exact skull girl with twin braids and circular side hair ornaments, blue border/floral motifs and blue bottom roundel match owner photo. Producer label clearly reads ESPADÍN-CUISHE and45%AlcVol. Other range variants have visibly different characters/colours."
+    },
     "sourceAttempts": [
       {
         "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleEspecial.png",
@@ -7886,13 +8725,32 @@
       {
         "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/ensambles-crop2-scaled.jpg",
         "result": "Range photograph is not an isolated exact-expression transparent bottle."
+      },
+      {
+        "url": "https://www.sietemisterios.com/en/",
+        "result": "Producer currently presents different Espadín blends including Cuishe, Mexicano, Tepeztate and a four-agave Especial. Human inventory still says only Ensamble; no arbitrary blend photo assigned."
+      },
+      {
+        "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleESP_CUI.png",
+        "result": "Downloaded primary1764×3000native-alphaEspadínCuishephoto. Direct visualmatchtoownerphotobraidgirl+blueMroundel. Labelandotherthreeproducerexpressionphotoscompared;exactexpressionresolved."
       }
     ],
     "notes": [
-      "Do not substitute existing ancestral Espadin ID79, Doba-Yej ID78, or one arbitrary Ensamble Especial / Espadin-wild-agave variant.",
-      "No fixed ABV or specific agave proportions are recorded."
+      "The owner-supplied photo resolves the former generic Ensamble inventory to the Espadín/Cuishe expression. Preserve baseID181/name and$20price, showing the clarified displayname.",
+      "No fixed ABV is published for the venue bottle: producer photo/French importer currently show45%, UK importer44%; owner attachment strength is too small to confirm. The authentic producer image is the matching expression and retains its original45%label.",
+      "No exact agave proportions, batch or named mezcalero are assumed.",
+      "The stock producer photo is used with native alpha, avoiding any generated alteration of its fine label text."
     ],
-    "note": "The producer’s Ensambles bring Espadin together with other agaves. Ask the bar about the blend in the bottle currently pouring."
+    "note": "The producer’s Ensambles bring Espadin together with other agaves. Ask the bar about the blend in the bottle currently pouring.",
+    "displayName": "LOS SIETE MISTERIOS ESPADÍN / CUISHE ENSAMBLE",
+    "legacyIdentityConflict": true,
+    "identityEvidence": [
+      {
+        "source": "User-supplied actual Ensamble bottle photo",
+        "localPath": "C:/Users/dj_ba/AppData/Local/Temp/codex-clipboard-a55cbcec-abbd-426f-adf9-b78c32f02a56.jpg",
+        "note": "The exact paired-braid skull-girl artwork, blue bottom Mroundel and blue Ensamble accents match producer Espadín/Cuishe. Producer Tobalá uses an orange fox, Tepeztate a green-hatted skull, Mexicanito a different orange skull; these were compared and rejected."
+      }
+    ]
   },
   {
     "id": 182,

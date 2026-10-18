@@ -1,0 +1,192 @@
+{
+  "reviewedAt": "2026-10-18T01:16:57.950Z",
+  "publicBottles": 165,
+  "previousPublicPhotos": 144,
+  "publicPhotos": 165,
+  "recovered": [
+    {
+      "id": 12,
+      "name": "DON ADRIANO REPOSADO",
+      "photo": "/images/agave-researched/bottle-12-don-adriano-reposado-sourced-v2.webp",
+      "source": "https://www.lcbo.com/en/don-adriano-1950-reposado-38523",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Don Adriano Reposado bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      }
+    },
+    {
+      "id": 20,
+      "name": "GRAN COFRADIA REPOSADO",
+      "photo": "/images/agave-researched/bottle-20-gran-cofradia-reposado-sourced-v2.webp",
+      "source": "https://woodmanwinesandspirits.com/products/gran-cofradia-reposado-ceramic-gift-pack",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Gran Cofradía Reposado source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Extract only the ceramic bottle at the left, retaining its complete blue and cream hand-painted decoration and metallic stopper. Remove the gift box entirely. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+      }
+    },
+    {
+      "id": 21,
+      "name": "GRAN CORONEL REPOSADO",
+      "photo": "/images/agave-researched/bottle-21-gran-coronel-reposado-sourced-v2.webp",
+      "source": "https://www.dosartesbrands.com/brands/gran-coronel",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Gran Coronel Reposado source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain the red cap, black neck ribbon including loose end, red and gold label and transparent golden liquid. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+      }
+    },
+    {
+      "id": 49,
+      "name": "GRAN MAYAN ULTRA EXTRA AÑEJO",
+      "photo": "/images/agave-researched/bottle-49-grand-mayan-classic-ultra-aged-sourced-v2.webp",
+      "source": "https://www.liquormarts.ca/product/grand-mayan-ultra-aged-tequila/750-ml",
+      "derivation": {
+        "tool": "source-native alpha",
+        "useCase": "background-extraction",
+        "prompt": ""
+      }
+    },
+    {
+      "id": 60,
+      "name": "AGUA SANTA JOVEN MEZCAL",
+      "photo": "/images/agave-researched/060-agua-santa-joven-sourced-v2.webp",
+      "source": "https://www.bswliquor.com/products/mezcal-agua-santa-espadin",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed."
+    },
+    {
+      "id": 62,
+      "name": "AMARÁS LOGIA CENIZO MEZCAL",
+      "photo": "/images/agave-researched/062-amaras-logia-cenizo-sourced-v2.webp",
+      "source": "https://shingroupcorp.com/products/amaras-mezcal-logia-cenizo/",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed."
+    },
+    {
+      "id": 67,
+      "name": "BANHEZ ESPADIN & BARRIL MEZCAL",
+      "photo": "/images/agave-researched/067-banhez-espadin-barril-sourced-v2.webp",
+      "source": "https://www.cnibrands.com/banhez-mezcal-artesanal",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed."
+    },
+    {
+      "id": 69,
+      "name": "CASAMIGOS MEZCAL",
+      "photo": "/images/agave-researched/069-casamigos-mezcal-sourced-v2.webp",
+      "source": "https://www.casamigos.com/en-us/our-tequilas/mezcal",
+      "derivation": "Native producer transparent packshot; no generated image editing."
+    },
+    {
+      "id": 70,
+      "name": "CLASE AZUL MEZCAL DURANGO",
+      "photo": "/images/agave-researched/070-clase-azul-mezcal-durango-owner-cutout.webp",
+      "source": "https://www.grandcruwijnen.nl/amfile/file/download/file/zLWNJplXpJqteJjg2x8YJJuV0gVDYs6Z/product/11526/",
+      "derivation": "Built-in ImageGen background extraction of the owner-supplied photograph. Complete real bottle retained, background and cast shadow removed; optimized alpha canvas and WebP delivery."
+    },
+    {
+      "id": 73,
+      "name": "DEL MAGUEY VIDA PUEBLA",
+      "photo": "/images/agave-researched/073-del-maguey-vida-puebla-owner-cutout.webp",
+      "source": "https://delmaguey.com/vida-puebla/",
+      "derivation": "Built-in ImageGen background extraction of the owner-supplied photograph. Complete real bottle retained, background and cast shadow removed; optimized alpha canvas and WebP delivery."
+    },
+    {
+      "id": 75,
+      "name": "EL SILENCIO MEZCAL",
+      "photo": "/images/agave-researched/075-el-silencio-espadin-sourced-v2.webp",
+      "source": "https://shop.silencio.com/products/espadin",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed."
+    },
+    {
+      "id": 76,
+      "name": "ILEGAL REPOSADO MEZCAL",
+      "photo": "/images/agave-researched/076-ilegal-reposado-sourced-v2.webp",
+      "source": "https://shop.ilegalmezcal.com/products/reposado-750",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed."
+    },
+    {
+      "id": 77,
+      "name": "LEYENDA 'TLACUACHE' MEZCAL",
+      "photo": "/images/agave-researched/077-leyenda-tlacuache-sourced-v2.webp",
+      "source": "https://www.lcbo.com/en/leyenda-tlacuache-organic-mezcal-275420",
+      "derivation": "Background-only extraction using the built-in image_gen tool. Original product photograph and labels retained; white or black backdrop, ground reflection and cast shadow removed."
+    },
+    {
+      "id": 78,
+      "name": "LOS SIETE MISTERIOS DOBA-YEJ",
+      "photo": "/images/agave-researched/078-los-siete-misterios-doba-yej-importer-cutout.webp",
+      "source": "https://www.chathamimports.com/brands/los-siete-misterios/",
+      "derivation": "Tight alpha bounds with 3 px transparent margin; WebP quality 94, alpha quality 100. Native transparent importer image; no synthetic bottle, box or added shadow."
+    },
+    {
+      "id": 84,
+      "name": "LA SERPIENTE EMPLUMADA TOBALÁ JOVEN",
+      "photo": "/images/agave-researched/084-la-serpiente-emplumada-tobala-joven-saq-native.webp",
+      "source": "https://www.saq.com/en/15082192",
+      "derivation": "Native transparent SAQ product photo: trim empty alpha with6px safety margin, resize proportionally to1000px, encodeWebPquality94. No generated pixels, label edits or added shadow."
+    },
+    {
+      "id": 99,
+      "name": "CHAMELEON BLANCO",
+      "photo": "/images/agave-researched/bottle-99-chameleon-blanco-sourced-v2.webp",
+      "source": "https://www.lcbo.com/en/chameleon-tequila-blanco-26421",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Chameleon Blanco bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 520 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      }
+    },
+    {
+      "id": 103,
+      "name": "COBALTO BLANCO",
+      "photo": "/images/agave-researched/bottle-103-cobalto-blanco-sourced-v2.webp",
+      "source": "https://www.lcbo.com/content/dam/lcbo/PDFs/vintages/releases/2021/210612_en.pdf",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Edit target: the attached actual LCBO Cobalto Blanco Organic tequila photograph. Remove ONLY the white background and ground/cast shadow to true transparent alpha. Preserve exact bottle shape, cap, clear glass and reflections, all original printed labels, logo and wording without repainting, inventing, replacing or changing the label. Single complete upright bottle from cap to base on a tightly framed narrow PORTRAIT canvas (about 1:4 ratio), only2% transparent margin. No backdrop, external shadow, halo, floor reflection, checkerboard or box. Faithful photographic cutout of the supplied existing bottle, not new product imagery."
+      }
+    },
+    {
+      "id": 108,
+      "name": "ELEVACION 1250 BLANCO",
+      "photo": "/images/agave-researched/bottle-108-elevacion-1250-blanco-sourced-v2.webp",
+      "source": "https://www.lcbo.com/en/elevacion-1250-tequila-31949",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Elevación 1250 Blanco bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      }
+    },
+    {
+      "id": 127,
+      "name": "XICOTE BLANCO",
+      "photo": "/images/agave-researched/bottle-127-xicote-blanco-sourced-v2.webp",
+      "source": "https://www.delmesaliquor.com/products/xicote-blanco-tequila",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Xicote Blanco source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain the whole blue bottle, cap, lizard illustration, XICOTE and BLANCO lettering exactly. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+      }
+    },
+    {
+      "id": 136,
+      "name": "DON ADRIANO 1950 AÑEJO",
+      "photo": "/images/agave-researched/bottle-136-don-adriano-1950-anejo-sourced-v2.webp",
+      "source": "https://www.lcbo.com/en/don-adriano-1950-anejo-ultra-premium-tequila-33777",
+      "derivation": {
+        "tool": "image_gen built-in",
+        "useCase": "background-extraction",
+        "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Don Adriano Añejo bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+      }
+    },
+    {
+      "id": 181,
+      "name": "LOS SIETE MISTERIOS ESPADÍN / CUISHE ENSAMBLE",
+      "photo": "/images/agave-researched/181-los-siete-misterios-espadin-cuishe-producer-native.webp",
+      "source": "https://www.sietemisterios.com/en/",
+      "derivation": "Native transparent producer photo. Trim empty alpha with10px safety margin; proportional resize to1000pxheight; WebPquality94/alpha100. No generation, recolouring, label changes, added shadow or box."
+    }
+  ],
+  "remaining": []
+}

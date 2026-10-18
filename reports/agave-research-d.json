@@ -153,31 +153,58 @@
         "nameCell": "B62",
         "sellPriceCell": "G62"
       },
-      "status": "family-verified-expression-unresolved",
+      "status": "verified",
       "familyVerified": true,
-      "expressionVerified": false,
+      "expressionVerified": true,
       "sources": [
         {
-          "url": "https://www.sietemisterios.com/",
-          "title": "Los Siete Misterios — producer Ensambles range"
+          "url": "https://www.sietemisterios.com/en/",
+          "title": "Los Siete Misterios — producer Espadín/Cuishe expression and exact blue skull-girl bottle"
+        },
+        {
+          "url": "https://www.whisky.fr/los-siete-misterios-mezcal-ensamble-espadin-cuishe-61350a.html",
+          "title": "La Maison du Whisky — official French importer Espadín/Cuishe tasting notes"
+        },
+        {
+          "url": "https://specialitybrands.com/range/los-siete-misterios/los-siete-misterios-espadin-cuishe/",
+          "title": "Speciality Brands — UK importer Espadín/Cuishe expression"
         }
       ],
       "facts": {
-        "origin": "Oaxaca, Mexico; producer Ensambles range.",
-        "agave": "The producer blends Espadin with other agaves across its Ensambles range; the restaurant inventory does not specify which combination.",
-        "aging": "Joven range.",
-        "production": "The producer describes underground agave roasting, natural fermentation and at least double distillation for its range."
+        "agave": "Espadín (Agave angustifolia) and Cuishe (Agave karwinskii).",
+        "aging": "Unaged (joven).",
+        "origin": "San Dionisio, Oaxaca, Mexico.",
+        "production": "Earth-oven roasted with wood and river stones, then double distilled in copper pot stills.",
+        "aroma": "Cucumber, dill and dried grapefruit peel, with gentle smoke, honey and vanilla.",
+        "taste": "Herbs and citrus zest lead into dry tobacco, ground pepper and olives, with earthy, smoky and buttery accents.",
+        "story": "Two agaves, one traditional ensamble: Espadín brings an approachable base while the tall, trunk-like Cuishe contributes earthy depth and minerality."
       },
       "factSources": {
-        "origin": "https://www.sietemisterios.com/",
-        "agave": "https://www.sietemisterios.com/",
-        "aging": "https://www.sietemisterios.com/",
-        "production": "https://www.sietemisterios.com/"
+        "agave": "https://www.sietemisterios.com/en/",
+        "aging": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleESP_CUI.png",
+        "origin": "https://www.sietemisterios.com/en/",
+        "production": "https://www.sietemisterios.com/en/",
+        "aroma": "https://www.whisky.fr/los-siete-misterios-mezcal-ensamble-espadin-cuishe-61350a.html",
+        "taste": "https://www.whisky.fr/los-siete-misterios-mezcal-ensamble-espadin-cuishe-61350a.html",
+        "story": "https://specialitybrands.com/range/los-siete-misterios/los-siete-misterios-espadin-cuishe/"
       },
-      "factScope": "Producer Ensambles family only; the exact restaurant expression and batch are not identified.",
-      "image": null,
-      "unresolvedReason": "The inventory says only Ensamble. The producer has several different agave blends. The front label and batch are needed before assigning an exact bottle image, fixed ABV, specific blend or batch tasting notes.",
-      "photoNeeded": "Front label of the restaurant’s Los Siete Misterios Ensamble bottle; exact agave blend and batch readable.",
+      "image": {
+        "sourceUrl": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleESP_CUI.png",
+        "sourcePage": "https://www.sietemisterios.com/en/",
+        "localPath": "/images/agave-researched/181-los-siete-misterios-espadin-cuishe-producer-native.webp",
+        "width": 225,
+        "height": 1000,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/181-producer-CUI.png",
+        "sourceWidth": 1764,
+        "sourceHeight": 3000,
+        "sourceSha256": "82645375427855364d70fc769c3fdefb62460cb7bac206deec9afe7a2bcdb348",
+        "optimizedSha256": "e8730f886e6a01d752aca38fbbcec5590931af25b4f354987ce3dc33082aa70a",
+        "optimizedBytes": 64346,
+        "optimization": "Native transparent producer photo. Trim empty alpha with10px safety margin; proportional resize to1000pxheight; WebPquality94/alpha100. No generation, recolouring, label changes, added shadow or box.",
+        "labelVerified": "Exact skull girl with twin braids and circular side hair ornaments, blue border/floral motifs and blue bottom roundel match owner photo. Producer label clearly reads ESPADÍN-CUISHE and45%AlcVol. Other range variants have visibly different characters/colours."
+      },
       "sourceAttempts": [
         {
           "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleEspecial.png",
@@ -186,13 +213,32 @@
         {
           "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/ensambles-crop2-scaled.jpg",
           "result": "Range photograph is not an isolated exact-expression transparent bottle."
+        },
+        {
+          "url": "https://www.sietemisterios.com/en/",
+          "result": "Producer currently presents different Espadín blends including Cuishe, Mexicano, Tepeztate and a four-agave Especial. Human inventory still says only Ensamble; no arbitrary blend photo assigned."
+        },
+        {
+          "url": "https://www.sietemisterios.com/wp-content/uploads/2023/01/EnsambleESP_CUI.png",
+          "result": "Downloaded primary1764×3000native-alphaEspadínCuishephoto. Direct visualmatchtoownerphotobraidgirl+blueMroundel. Labelandotherthreeproducerexpressionphotoscompared;exactexpressionresolved."
         }
       ],
       "notes": [
-        "Do not substitute existing ancestral Espadin ID79, Doba-Yej ID78, or one arbitrary Ensamble Especial / Espadin-wild-agave variant.",
-        "No fixed ABV or specific agave proportions are recorded."
+        "The owner-supplied photo resolves the former generic Ensamble inventory to the Espadín/Cuishe expression. Preserve baseID181/name and$20price, showing the clarified displayname.",
+        "No fixed ABV is published for the venue bottle: producer photo/French importer currently show45%, UK importer44%; owner attachment strength is too small to confirm. The authentic producer image is the matching expression and retains its original45%label.",
+        "No exact agave proportions, batch or named mezcalero are assumed.",
+        "The stock producer photo is used with native alpha, avoiding any generated alteration of its fine label text."
       ],
-      "note": "The producer’s Ensambles bring Espadin together with other agaves. Ask the bar about the blend in the bottle currently pouring."
+      "note": "The producer’s Ensambles bring Espadin together with other agaves. Ask the bar about the blend in the bottle currently pouring.",
+      "displayName": "LOS SIETE MISTERIOS ESPADÍN / CUISHE ENSAMBLE",
+      "legacyIdentityConflict": true,
+      "identityEvidence": [
+        {
+          "source": "User-supplied actual Ensamble bottle photo",
+          "localPath": "C:/Users/dj_ba/AppData/Local/Temp/codex-clipboard-a55cbcec-abbd-426f-adf9-b78c32f02a56.jpg",
+          "note": "The exact paired-braid skull-girl artwork, blue bottom Mroundel and blue Ensamble accents match producer Espadín/Cuishe. Producer Tobalá uses an orange fox, Tepeztate a green-hatted skull, Mexicanito a different orange skull; these were compared and rejected."
+        }
+      ]
     },
     {
       "id": 182,

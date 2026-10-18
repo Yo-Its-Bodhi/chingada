@@ -36,7 +36,7 @@ npm.cmd test
 
 Public routes: `/`, `/menu`, `/happy-hour`, `/all-you-can-eat-tacos`, `/patio`, `/brunch`, `/our-story`, `/arcade`, `/agave`. Brunch remains explicitly coming soon until the restaurant confirms its launch.
 
-The collection stores 191 records: 165 public commercial bottles and 26 hidden house infusions. There are 185 verified or owner-sourced expressions, 144 approved photos (11,926,102 bytes) and 47 named photo gaps. Confirmed prices cover 163 public bottles; records 79 and 120 remain unpriced. The supplied SPIRITS worksheet's 163 mezcal/tequila rows were reconciled using names B41:B71/B73:B204 and sell prices G; 13 bottles were added, 12 existing prices updated and Bosscal priced at $16. New research/provenance is in `reports/agave-research-d.json`; the minimal row comparison remains in ignored work/staging/. No costs or stock counts were copied.
+The collection stores 191 records: 165 public commercial bottles and 26 hidden house infusions. Every public bottle now has an approved transparent photo: 165 files, 13,732,994 bytes (13.73 MB). All 191 identities are verified or owner-sourced. The 26 remaining photo slots belong only to unpublished house infusions. Confirmed prices cover 163 public bottles; records 79 and 120 remain unpriced. The supplied SPIRITS worksheet's 163 mezcal/tequila rows were reconciled using names B41:B71/B73:B204 and sell prices G; 13 bottles were added, 12 existing prices updated and Bosscal priced at $16. The follow-up photo pass recovered 21 commercial photos, using owner confirmations to resolve Durango, Vida Puebla, Tobalá Joven and Espadín/Cuishe Ensamble. Current sourced notes supersede conflicting historical notes for those expressions. See `reports/AGAVE-PHOTO-REPAIR.md` and the research batches for source and editing provenance. No costs or stock counts were copied.
 
 Set build-time `NEXT_PUBLIC_ARCADE_URL` and `NEXT_PUBLIC_ARCADE_REQUIRES_SIGN_IN=false` for the owner staging arcade destination. Its current tunnel returns 502 because automatic approval review blocked three background-launch attempts, including loopback; no state changed and no account reconnection is needed. With no URL override the older ChatGPT prototype remains the fallback and is labelled as requiring sign-in. Table play at the venue and merch, gift-card and free AYCE prizes are still in preparation. No prize competition is active.
 
@@ -50,7 +50,15 @@ Set build-time `NEXT_PUBLIC_RESERVATION_URL` to the Rezzo staging preview to use
 
 `node scripts/preview-server.mjs` serves the built restaurant through a small HTTP gateway (default loopback port 8787, Worker 8786). Override `PORT`, `WORKER_PORT`, `PREVIEW_HOST` and `PREVIEW_STATE_DIR` as needed. Development management/editor endpoints and WebSocket upgrades are blocked. The Dockerfile runs this gateway as an unprivileged user, with the Worker bound only to loopback. Build URL overrides into the image using its public build arguments. No live database is used by this restaurant package.
 
-Current temporary previews (17 October 2026): [restaurant](https://roads-needs-almost-manuals.trycloudflare.com/), [Agave collection](https://roads-needs-almost-manuals.trycloudflare.com/agave#collection), [Rezzo sample demo](https://evolution-actions-ship-plot.trycloudflare.com/) and [arcade (currently 502)](https://patrol-expressed-newman-harris.trycloudflare.com/). The restaurant production build passed 37 tests; 158 public checks passed across its nine routes, 144 approved photo assets, four blocked development paths and Rezzo sample mode. Arcade availability is excluded from that passing count. Final desktop and 390-pixel phone checks passed for the new cards/prices, filters/search, bottle dialogs and Escape/focus behaviour; phone dialogs have no horizontal overflow.
+Temporary previews (17 October 2026): [restaurant / Agave collection](https://roads-needs-almost-manuals.trycloudflare.com/agave#collection) and [arcade](https://patrol-expressed-newman-harris.trycloudflare.com/) currently return 502. [Rezzo sample demo](https://evolution-actions-ship-plot.trycloudflare.com/) remains separate. The restaurant photo update is production-built; automatic approval review rejected its restart with “blocked by policy.” No alternate launch method was attempted after that rejection. Restart the restaurant manually with the existing foreground command below, then recheck the public library. Earlier desktop/390-pixel checks and 158 public checks belong to the previous 144-photo build; the latest package verifies all 165 photos locally.
+
+```powershell
+$env:PORT='7344'
+$env:WORKER_PORT='7345'
+npm.cmd run preview:staging
+```
+
+Run this from the repository directory and keep the terminal open. The existing restaurant tunnel still points to port 7344. This command starts only the restaurant preview; it does not start the arcade or deploy the business domain.
 
 See `reports/STAGING-MILESTONES.md`, [STAGING-REVIEW.md](reports/STAGING-REVIEW.md) and [HANDOFF.md](reports/HANDOFF.md) for dated checks, the owner review journey, staging limits and source branches. Main source is `codex/la-chingada-redesign`. Arcade loopback fix 624a75d is saved on `codex/arcade-loopback-preview`; the older remote review branch advanced in another chat and its 24 racing changes were preserved. Rezzo source is `codex/rezzo-staging`. Temporary tunnel URLs change when tunnels restart; rebuild all public cross-links before sharing replacement URLs.
 
@@ -59,7 +67,7 @@ See `reports/STAGING-MILESTONES.md`, [STAGING-REVIEW.md](reports/STAGING-REVIEW.
 - `reports/AUDIT.md`: baseline findings and evidence.
 - `reports/BRAND.md`: palette, fonts, identity assets and photo optimization.
 - `reports/PHOTO-SLOTS.md`: named camera placeholders and instructions for adding each missing food photograph.
-- `reports/AGAVE-PHOTO-SLOTS.md`: the 47 remaining bottle/house-infusion camera slots (26 house, 21 commercial), inventory IDs and research reasons. Six commercial identities remain unresolved; generic Ensamble record 181 has no asserted blend, ABV or photo.
+- `reports/AGAVE-PHOTO-SLOTS.md`: the 26 unpublished house-infusion photo slots. All 165 public commercial cards have matched transparent photos; the 21-photo repair and user-confirmed identity corrections are in `reports/AGAVE-PHOTO-REPAIR.md`. Batch-specific alcohol strengths are not assumed for Serpiente Tobalá or Siete Misterios Ensamble.
 - `reports/DRIVE-PHOTOS.md` and `reports/NEW-PHOTOS.md`: provenance for owner-provided menu, kitchen, restaurant and patio photos.
 - `reports/PHOTO-AUDIT.md`: inherited bottle-photo corrections, when available.
 - `reports/SEO-PLAN.md`: implementation and account/hosting work for search visibility.

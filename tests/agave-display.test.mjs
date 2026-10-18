@@ -109,7 +109,14 @@ test("unverified expressions expose only existing house fallbacks, without inven
   const unverified = inventory.filter(
     (bottle) => !research.get(bottle.id)?.expressionVerified,
   );
-  assert.ok(unverified.length > 0);
+  // Retain an unverified fixture even after the owner identifies every stocked bottle.
+  unverified.push({
+    id: -3,
+    name: "CLASE AZUL MEZCAL",
+    type: "Mezcal",
+    category: "Mezcal",
+    note: "Historical unverified bottle.",
+  });
   for (const bottle of unverified) {
     const display = getAgaveDisplay(bottle);
     assert.equal(display.pending, true);
@@ -142,6 +149,29 @@ test("new bottles use verified producer aroma and palate when historical tasting
   assert.equal(display.aroma, current.facts.aroma);
   assert.equal(display.palate, current.facts.taste);
   assert.equal(display.pending, false);
+});
+
+test("the owner's Doba-Yej identification does not reuse a different archived Siete Misterios expression", () => {
+  const bottle = byId.get(78);
+  const current = research.get(78);
+  assert.equal(current.legacyIdentityConflict, true);
+  assert.equal(current.expressionVerified, true);
+  const display = getAgaveDisplay(bottle);
+  assert.equal(display.aroma, current.facts.aroma);
+  assert.equal(display.palate, current.facts.taste);
+  assert.equal(display.story, current.facts.story);
+  assert.equal(fact(display, "Alcohol").value, current.facts.abv);
+  assert.doesNotMatch(display.production ?? "", /clay pot|Sola de Vega/i);
+  for (const id of [70, 73, 84]) {
+    const current = research.get(id);
+    const display = getAgaveDisplay(byId.get(id));
+    assert.equal(current.legacyIdentityConflict, true);
+    assert.equal(display.aroma, current.facts.aroma);
+    assert.equal(display.palate, current.facts.taste);
+    assert.equal(display.story, current.facts.story);
+    if (current.facts.abv) assert.equal(fact(display, "Alcohol").value, current.facts.abv);
+    else assert.equal(fact(display, "Alcohol"), undefined, "An old expression's alcohol must not leak into the clarified bottle");
+  }
 });
 
 test("all inventory records produce safe, independent display data with no lost current facts", () => {

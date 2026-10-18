@@ -32,8 +32,12 @@ const text = (value?: string) => (value?.trim() ? value : undefined);
 export function getAgaveDisplay(bottle: AgaveRecord): AgaveDisplay {
   const research = researchById.get(bottle.id);
   const current = research?.expressionVerified ? research.facts : undefined;
-  const catalog = catalogDetails[bottle.name];
-  const archive = archiveDetails[bottle.name];
+  const catalog = research?.legacyIdentityConflict
+    ? undefined
+    : catalogDetails[bottle.name];
+  const archive = research?.legacyIdentityConflict
+    ? undefined
+    : archiveDetails[bottle.name];
   const infused = (research?.category ?? bottle.category) === "House Infused";
   const facts: AgaveDisplayFact[] = [];
 
@@ -70,13 +74,16 @@ export function getAgaveDisplay(bottle: AgaveRecord): AgaveDisplay {
   // Its old generic "prepared in-house" note must not become its product story.
   const historicalNote =
     catalog?.fact ??
-    (bottle.category === "House Infused" && !infused ? undefined : bottle.note);
+    (research?.legacyIdentityConflict ||
+    (bottle.category === "House Infused" && !infused)
+      ? undefined
+      : bottle.note);
 
   return {
     aroma: text(catalog?.aroma) ?? text(archive?.aroma) ?? text(current?.aroma),
     palate: text(catalog?.taste) ?? text(archive?.taste) ?? text(current?.taste),
     tastingNotes: text(current?.tastingNotes),
-    story: text(historicalNote),
+    story: text(current?.story) ?? text(historicalNote),
     production: text(current?.production) ?? houseProduction,
     facts,
     sources: (research?.sources ?? []).map(({ url, title }) => ({

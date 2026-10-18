@@ -469,7 +469,7 @@
       "name": "DON ADRIANO REPOSADO",
       "type": "Tequila",
       "category": "Reposado",
-      "status": "facts-verified-image-unresolved",
+      "status": "verified",
       "expressionVerified": true,
       "sources": [
         {
@@ -484,8 +484,48 @@
         "aging": "6 months in French oak.",
         "tastingNotes": "Sweet agave, oak, vanilla, caramel and spice."
       },
-      "image": null,
-      "unresolvedReason": "Exact Don Adriano Reposado verified through LCBO. Available retailer photographs have opaque backgrounds; the similarly named Reserva Don Armando bottle was rejected as a different product.",
+      "image": {
+        "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/8/5/038523.jpg",
+        "sourcePage": "https://www.lcbo.com/en/don-adriano-1950-reposado-38523",
+        "localPath": "/images/agave-researched/bottle-12-don-adriano-reposado-sourced-v2.webp",
+        "width": 278,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/12-lcbo.jpg",
+        "derivedLocalPath": "work/agave-originals-gap/12-don-adriano-reposado-cutout-v2.png",
+        "sourceSha256": "e201a54740b98a171725139f168faf645907430f9abb44872069e50e30896642",
+        "optimizedSha256": "eedd81e842a36e2b034001f9c78b9e43369ce786e31c928245a8245f4eb40946",
+        "optimizedBytes": 73446,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Don Adriano Reposado bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 9,
+          "top": 9,
+          "right": 268,
+          "bottom": 1002,
+          "width": 260,
+          "height": 994,
+          "fillX": 0.935251798561151,
+          "fillY": 0.9822134387351779
+        },
+        "deliveryCanvasCrop": {
+          "left": 139,
+          "top": 8,
+          "width": 516,
+          "height": 1940,
+          "padding": 6,
+          "alphaThreshold": 16
+        }
+      },
+      "unresolvedReason": "",
       "imageAttempts": [
         {
           "url": "https://www.bswliquor.com/cdn/shop/files/Don_Adriano_1950_Reposado_Tequila.png?v=1779309433",
@@ -772,7 +812,7 @@
       "name": "GRAN COFRADIA REPOSADO",
       "type": "Tequila",
       "category": "Reposado",
-      "status": "facts-verified-image-unresolved",
+      "status": "verified",
       "expressionVerified": true,
       "sources": [
         {
@@ -792,8 +832,48 @@
         "origin": "Mexico.",
         "tastingNotes": "Delicate fruit, vanilla and smoke; smooth and rich with a long finish."
       },
-      "image": null,
-      "unresolvedReason": "Gran Cofradia ceramic reposado verified through the producer and Ontario distributor. Available bottle and gift-pack photographs have opaque backgrounds; an isolated transparent cutout is still needed.",
+      "image": {
+        "sourceUrl": "https://woodmanwinesandspirits.com/cdn/shop/files/WoodmanWines-ProductImages-11.png?v=1761157685&width=2048",
+        "sourcePage": "https://woodmanwinesandspirits.com/products/gran-cofradia-reposado-ceramic-gift-pack",
+        "localPath": "/images/agave-researched/bottle-20-gran-cofradia-reposado-sourced-v2.webp",
+        "width": 414,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/20-source.png",
+        "derivedLocalPath": "work/agave-originals-gap/20-gran-cofradia-reposado-cutout-v2.png",
+        "sourceSha256": "475d322c3d4c8772c1577e3e4a3211e27fa08f94add40a6b931704c28d1a2516",
+        "optimizedSha256": "c1033fecb2a55e22e6382afe4b6a4bed5ef5e9b6826774c624ef5921f1977ff5",
+        "optimizedBytes": 101894,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Gran Cofradía Reposado source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Extract only the ceramic bottle at the left, retaining its complete blue and cream hand-painted decoration and metallic stopper. Remove the gift box entirely. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 10,
+          "top": 10,
+          "right": 403,
+          "bottom": 1001,
+          "width": 394,
+          "height": 992,
+          "fillX": 0.9516908212560387,
+          "fillY": 0.9802371541501976
+        },
+        "deliveryCanvasCrop": {
+          "left": 263,
+          "top": 30,
+          "width": 566,
+          "height": 1407,
+          "padding": 6,
+          "alphaThreshold": 16
+        }
+      },
+      "unresolvedReason": "",
       "imageAttempts": [
         {
           "url": "https://www.tequilastop.com/cdn/shop/files/La-Cofradia-Tequila-Special-Reserve_600x.png?v=1712818350",
@@ -822,7 +902,7 @@
       "name": "GRAN CORONEL REPOSADO",
       "type": "Tequila",
       "category": "Reposado",
-      "status": "facts-verified-image-unresolved",
+      "status": "verified",
       "expressionVerified": true,
       "sources": [
         {
@@ -834,8 +914,48 @@
         "aging": "10 months.",
         "tastingNotes": "Chocolate, maple, toffee, baked coconut, caramel, walnut and English mint."
       },
-      "image": null,
-      "unresolvedReason": "Gran Coronel Reposado expression verified through the producer. Available producer, distributor and retailer bottle images have opaque backgrounds.",
+      "image": {
+        "sourceUrl": "https://cdn.prod.website-files.com/6356c3dc1dc22a794518f177/63757ec3777d606211904101_2.png",
+        "sourcePage": "https://www.dosartesbrands.com/brands/gran-coronel",
+        "localPath": "/images/agave-researched/bottle-21-gran-coronel-reposado-sourced-v2.webp",
+        "width": 368,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/21-source.png",
+        "derivedLocalPath": "work/agave-originals-gap/21-gran-coronel-reposado-cutout-v2.png",
+        "sourceSha256": "1a7747c8ae551e2105a6300107b151314ddac158bcbfc852ef5e9aac28eb91e0",
+        "optimizedSha256": "b72090e3bdffdaa4483a70c8efa36efe65be2790c9b60f30ae128e8ed8618369",
+        "optimizedBytes": 91494,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Use case: background-extraction. Asset type: transparent bottle photograph for a restaurant spirits library. Edit target: the attached exact Gran Coronel Reposado source photograph. Remove only the background, supporting surface, reflections outside the bottle and cast shadow. Retain the red cap, black neck ribbon including loose end, red and gold label and transparent golden liquid. Preserve the actual product silhouette, cap, original label typography, markings, colors, texture, highlights and photographed perspective. Do not invent, redraw or replace the bottle or add text. Produce one clean upright complete bottle on genuinely transparent alpha, tightly framed in a portrait canvas, with roughly 2–3% transparent margin around bottle silhouette. No gift box, no floor, no drop shadow, no checkerboard or white rectangle."
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 9,
+          "top": 10,
+          "right": 357,
+          "bottom": 1001,
+          "width": 349,
+          "height": 992,
+          "fillX": 0.9483695652173914,
+          "fillY": 0.9802371541501976
+        },
+        "deliveryCanvasCrop": {
+          "left": 259,
+          "top": 7,
+          "width": 531,
+          "height": 1490,
+          "padding": 6,
+          "alphaThreshold": 16
+        }
+      },
+      "unresolvedReason": "",
       "imageAttempts": [
         {
           "url": "https://casajurado.com/assets/catalogo/reposado-gran-coronel.png",
@@ -1691,17 +1811,77 @@
       "name": "GRAN MAYAN ULTRA EXTRA AÑEJO",
       "type": "Tequila",
       "category": "Speciality",
-      "status": "expression-ambiguous",
-      "expressionVerified": false,
+      "status": "verified",
+      "expressionVerified": true,
       "sources": [
         {
           "url": "https://grandmayantequila.com/product/grand-mayan-ultra/",
           "title": "Grand Mayan Ultra Aged Limited Release — producer"
+        },
+        {
+          "url": "https://reservastequila.com/products/grand-mayan-ultra-aged/",
+          "title": "Classic Grand Mayan Ultra Aged Extra Añejo — Canadian importer Reservas Tequila"
+        },
+        {
+          "url": "https://www.liquormarts.ca/product/grand-mayan-ultra-aged-tequila/750-ml",
+          "title": "Grand Mayan Ultra Aged 28868 — Manitoba provincial distributor"
         }
       ],
-      "facts": {},
-      "image": null,
-      "unresolvedReason": "Inventory says GRAN MAYAN ULTRA EXTRA ANEJO without edition. Producer now lists Grand Mayan Ultra Aged Limited Release aged 5 years; cannot assume that edition or age for the historical inventory bottle."
+      "facts": {
+        "abv": "40% (classic Canadian distributor release)",
+        "agave": "100% agave.",
+        "origin": "Mexico.",
+        "aging": "More than 3 years in new American white oak, according to the classic Canadian distributor release.",
+        "aroma": "Nuts, dark chocolate and agave.",
+        "taste": "Roasted hazelnuts, dark chocolate and salted caramel, followed by oak and pepper.",
+        "story": "A classic hand-painted ceramic decanter, made by Mexican artists, carrying Grand Mayan’s Ultra Aged extra añejo tequila."
+      },
+      "image": {
+        "sourceUrl": "https://www.liquormarts.ca/sites/mbll-lm/files/import/images/28868_40a6af934f8fcd9603fc27b08e337623.png",
+        "sourcePage": "https://www.liquormarts.ca/product/grand-mayan-ultra-aged-tequila/750-ml",
+        "localPath": "/images/agave-researched/bottle-49-grand-mayan-classic-ultra-aged-sourced-v2.webp",
+        "width": 662,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/49-mb-original.png",
+        "derivedLocalPath": "work/agave-originals-gap/49-grand-mayan-classic-ultra-aged-cutout-v2.png",
+        "sourceSha256": "901e89a6723940523337247587860720ac44463802241a1ae95c4a821cb661c1",
+        "optimizedSha256": "84f476a6a8d7468fa994531fd0f9e644a2be4630f8f09fe8aa000253df1e2e80",
+        "optimizedBytes": 168710,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Native transparent source; Sharp encoded WebP quality92 with original alpha. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "source-native alpha",
+          "useCase": "background-extraction",
+          "prompt": ""
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 11,
+          "top": 6,
+          "right": 650,
+          "bottom": 1005,
+          "width": 640,
+          "height": 1000,
+          "fillX": 0.9667673716012085,
+          "fillY": 0.9881422924901185
+        },
+        "deliveryCanvasCrop": {
+          "left": 0,
+          "top": 0,
+          "width": 666,
+          "height": 1024,
+          "padding": 6,
+          "alphaThreshold": 16
+        },
+        "notes": "Native transparent high-resolution provincial distributor packshot, labelled Ultra Aged. Classic Canadian release. The generated candidate was rejected for an external glow; this approved original has no generated pixels or added shadow."
+      },
+      "unresolvedReason": "",
+      "notes": [
+        "Photo and facts refer to the classic Canadian-market Ultra Aged/Extra Añejo release pictured by importer Reservas and Manitoba Liquor Mart. They do not assume the current 5-year Ultra Aged Limited Release, a single-barrel edition or another hand-painted edition."
+      ]
     },
     {
       "id": 50,
@@ -2316,7 +2496,7 @@
       "name": "CHAMELEON BLANCO",
       "type": "Tequila",
       "category": "Blanco",
-      "status": "facts-verified-image-unresolved",
+      "status": "verified",
       "expressionVerified": true,
       "sources": [
         {
@@ -2328,8 +2508,48 @@
         "abv": "40%",
         "origin": "Jalisco, Mexico."
       },
-      "image": null,
-      "unresolvedReason": "Chameleon Blanco expression verified through LCBO. Available retailer photographs have opaque backgrounds; other differently named brands were not substituted.",
+      "image": {
+        "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/2/6/4/026421.jpg",
+        "sourcePage": "https://www.lcbo.com/en/chameleon-tequila-blanco-26421",
+        "localPath": "/images/agave-researched/bottle-99-chameleon-blanco-sourced-v2.webp",
+        "width": 378,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/99-lcbo.jpg",
+        "derivedLocalPath": "work/agave-originals-gap/99-chameleon-blanco-cutout-v2.png",
+        "sourceSha256": "a8718de939d8675afddddc13186b17a29fca54700f3a60f61272b3680d0f6510",
+        "optimizedSha256": "a857ad5a56c22cdd48a1d838221d883ab81c72769e19436887e251ffe0aa5105",
+        "optimizedBytes": 96758,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Chameleon Blanco bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 520 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 9,
+          "top": 9,
+          "right": 368,
+          "bottom": 1003,
+          "width": 360,
+          "height": 995,
+          "fillX": 0.9523809523809523,
+          "fillY": 0.983201581027668
+        },
+        "deliveryCanvasCrop": {
+          "left": 1,
+          "top": 5,
+          "width": 752,
+          "height": 2056,
+          "padding": 6,
+          "alphaThreshold": 16
+        }
+      },
+      "unresolvedReason": "",
       "imageAttempts": [
         {
           "url": "https://shopliquoryxe.ca/cdn/shop/products/ChameleonBlancoTequila1080.png?v=1739892310",
@@ -2501,12 +2721,16 @@
       "name": "COBALTO BLANCO",
       "type": "Tequila",
       "category": "Blanco",
-      "status": "facts-verified-image-unresolved",
+      "status": "verified",
       "expressionVerified": true,
       "sources": [
         {
           "url": "https://tequilacobalto.com/us/tequila-blanco.html",
           "title": "COBALTO BLANCO — producer"
+        },
+        {
+          "url": "https://www.lcbo.com/content/dam/lcbo/PDFs/vintages/releases/2021/210612_en.pdf",
+          "title": "Cobalto Organic Blanco 19461 — LCBO 2021 release, page 61"
         }
       ],
       "facts": {
@@ -2516,8 +2740,48 @@
         "production": "Double-distilled and carefully filtered.",
         "tastingNotes": "Agave, vanilla, pine, herbs, flowers, citrus and acacia."
       },
-      "image": null,
-      "unresolvedReason": "Historic producer Blanco page verifies this expression. Current Organic packaging is not assumed to match the historic inventory bottle; no exact isolated transparent cutout was verified.",
+      "image": {
+        "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/9/4/019461.jpg",
+        "sourcePage": "https://www.lcbo.com/content/dam/lcbo/PDFs/vintages/releases/2021/210612_en.pdf",
+        "localPath": "/images/agave-researched/bottle-103-cobalto-blanco-sourced-v2.webp",
+        "width": 241,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/103-lcbo.jpg",
+        "derivedLocalPath": "work/agave-originals-gap/103-cobalto-blanco-cutout-v2.png",
+        "sourceSha256": "96aa7157c651d85547fb17fbfb50175a409582919df24329e2cfe1bda7c40943",
+        "optimizedSha256": "3f0f61a06198b8b68f4ee14c63cef4d15a9492b346a06c72b8c6e842c708f063",
+        "optimizedBytes": 64040,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Use case: background-extraction. Edit target: the attached actual LCBO Cobalto Blanco Organic tequila photograph. Remove ONLY the white background and ground/cast shadow to true transparent alpha. Preserve exact bottle shape, cap, clear glass and reflections, all original printed labels, logo and wording without repainting, inventing, replacing or changing the label. Single complete upright bottle from cap to base on a tightly framed narrow PORTRAIT canvas (about 1:4 ratio), only2% transparent margin. No backdrop, external shadow, halo, floor reflection, checkerboard or box. Faithful photographic cutout of the supplied existing bottle, not new product imagery."
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 9,
+          "top": 9,
+          "right": 231,
+          "bottom": 1002,
+          "width": 223,
+          "height": 994,
+          "fillX": 0.9253112033195021,
+          "fillY": 0.9822134387351779
+        },
+        "deliveryCanvasCrop": {
+          "left": 162,
+          "top": 5,
+          "width": 457,
+          "height": 1999,
+          "padding": 6,
+          "alphaThreshold": 16
+        }
+      },
+      "unresolvedReason": "",
       "imageAttempts": [
         {
           "url": "https://image.pngaaa.com/69/7899069-middle.png",
@@ -2543,6 +2807,9 @@
           "url": "https://tequilacobalto.com/wp-content/uploads/2025/03/COBALTO-BLANCO-tequila-premium.png",
           "result": "HTTP 404"
         }
+      ],
+      "notes": [
+        "The LCBO 019461 photo identifies the Canadian-market Blanco Organic bottle. The historical producer Blanco facts and the LCBO 2021 release agree on the agave, pine, vanilla and citrus profile. No unrelated Cobalto variant was substituted."
       ]
     },
     {
@@ -2704,7 +2971,7 @@
       "name": "ELEVACION 1250 BLANCO",
       "type": "Tequila",
       "category": "Blanco",
-      "status": "facts-verified-image-unresolved",
+      "status": "verified",
       "expressionVerified": true,
       "sources": [
         {
@@ -2719,8 +2986,48 @@
         "production": "Crafted by master distiller Iliana Partida.",
         "tastingNotes": "Cooked agave, grass, cinnamon and pear."
       },
-      "image": null,
-      "unresolvedReason": "Elevacion 1250 Blanco expression verified through LCBO. Producer and retailer photographs found have opaque backgrounds; other Elevacion spirits and Rosa expressions were not substituted.",
+      "image": {
+        "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/1/9/031949.jpg",
+        "sourcePage": "https://www.lcbo.com/en/elevacion-1250-tequila-31949",
+        "localPath": "/images/agave-researched/bottle-108-elevacion-1250-blanco-sourced-v2.webp",
+        "width": 239,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/108-lcbo.jpg",
+        "derivedLocalPath": "work/agave-originals-gap/108-elevacion-1250-blanco-cutout-v2.png",
+        "sourceSha256": "fe9bbec8d4ab95830d3bb276cd85b80d263929aae8b7e57efaeecf7c5251cb78",
+        "optimizedSha256": "441773d32dbe66df5e63b7d231f9f3e4d9c925c557d0f14cd25bdc43b0a5cb1d",
+        "optimizedBytes": 72426,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Elevación 1250 Blanco bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 10,
+          "top": 9,
+          "right": 228,
+          "bottom": 1002,
+          "width": 219,
+          "height": 994,
+          "fillX": 0.9163179916317992,
+          "fillY": 0.9822134387351779
+        },
+        "deliveryCanvasCrop": {
+          "left": 361,
+          "top": 0,
+          "width": 337,
+          "height": 1487,
+          "padding": 6,
+          "alphaThreshold": 16
+        }
+      },
+      "unresolvedReason": "",
       "imageAttempts": [
         {
           "url": "https://shopliquoryxe.ca/cdn/shop/files/Shopify1080_17_13af3210-6084-4863-a74a-5dddf97418e0.png?v=1748532439",
@@ -3450,7 +3757,7 @@
       "name": "DON ADRIANO 1950 AÑEJO",
       "type": "Tequila",
       "category": "Añejo",
-      "status": "facts-verified-image-unresolved",
+      "status": "verified",
       "expressionVerified": true,
       "sources": [
         {
@@ -3465,8 +3772,48 @@
         "aging": "18 months in previously used French oak wine barrels.",
         "tastingNotes": "Sweet cooked agave, vanilla, warm spice, hazelnut and creme brulee."
       },
-      "image": null,
-      "unresolvedReason": "Don Adriano 1950 Anejo expression verified through LCBO. Available retailer photographs have opaque backgrounds; no exact isolated transparent cutout was verified.",
+      "image": {
+        "sourceUrl": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/3/7/033777.jpg",
+        "sourcePage": "https://www.lcbo.com/en/don-adriano-1950-anejo-ultra-premium-tequila-33777",
+        "localPath": "/images/agave-researched/bottle-136-don-adriano-1950-anejo-sourced-v2.webp",
+        "width": 287,
+        "height": 1012,
+        "alphaVerified": true,
+        "visualVerified": true,
+        "identityVerified": true,
+        "originalLocalPath": "work/agave-originals-gap/136-lcbo.jpg",
+        "derivedLocalPath": "work/agave-originals-gap/136-don-adriano-1950-anejo-cutout-v2.png",
+        "sourceSha256": "648a0fdce39d39131006fad400f2ff4854b636483a4bf1bee560d8d0853915a9",
+        "optimizedSha256": "c55288348a8ac08b1f6a0c2a55ecd574f33d4a9084293de8d6b0d0086d386581",
+        "optimizedBytes": 66732,
+        "background": "Genuine transparent alpha; exact single bottle without external box, floor, cast shadow or added graphics.",
+        "transforms": "Built-in ImageGen extracted the verified real source photograph without replacing bottle identity; Sharp resized proportionally and encoded WebP quality92. Delivery optimization cropped only excess transparent canvas around meaningful alpha bounds (threshold16 plus6px safety padding), added6px true-alpha margin, preserved original product pixels, then resized proportionally. Raw extraction retained.",
+        "derivation": {
+          "tool": "image_gen built-in",
+          "useCase": "background-extraction",
+          "prompt": "Use case: background-extraction. Canvas adjustment only for a photographed bottle cutout. Using the supplied complete Don Adriano Añejo bottle, trim the empty alpha margins so output is a very narrow tall PORTRAIT asset, approximately 360 pixels wide by1440pixels tall. Bottle must occupy 90–96% of canvas width and 96% of canvas height. Maintain true transparent alpha. The entire bottle including cap and base must remain visible with a little transparent gap on all four sides. Preserve exact photographed bottle proportions, materials, cap, label, fine words and artwork; do not redesign, repaint, invent, warp, rotate or cut into the bottle. ONLY remove surplus transparent canvas and any stray distant edge pixels; no added shadow, backdrop, ground, box, reflection or checkerboard."
+        },
+        "meaningfulAlphaBounds": {
+          "threshold": 16,
+          "left": 10,
+          "top": 9,
+          "right": 276,
+          "bottom": 1001,
+          "width": 267,
+          "height": 993,
+          "fillX": 0.9303135888501742,
+          "fillY": 0.9812252964426877
+        },
+        "deliveryCanvasCrop": {
+          "left": 326,
+          "top": 0,
+          "width": 409,
+          "height": 1487,
+          "padding": 6,
+          "alphaThreshold": 16
+        }
+      },
+      "unresolvedReason": "",
       "imageAttempts": [
         {
           "url": "https://www.bswliquor.com/cdn/shop/files/Screenshot_20230210_134309_WhatsApp_1200x1200_9f5c93f5-fa40-4984-9dd4-419cff27fdf3.webp?v=1700242402",

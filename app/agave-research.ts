@@ -8,10 +8,13 @@ export type AgaveResearchRecord = {
   category?: string;
   status?: string;
   expressionVerified: boolean;
+  /** A clarified expression must not inherit notes from a different old bottle. */
+  legacyIdentityConflict?: boolean;
   sources: { url: string; title: string }[];
   facts?: Record<string, string | undefined>;
   image?: {
-    sourceUrl: string;
+    sourceType?: "owner-upload";
+    sourceUrl?: string;
     sourcePage: string;
     localPath: string;
     width: number;

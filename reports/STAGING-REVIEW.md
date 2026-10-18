@@ -4,14 +4,14 @@ Updated 17 October 2026. These are temporary owner-demo addresses, not replaceme
 
 | Preview | Address | Current status |
 | --- | --- | --- |
-| Restaurant | [Open restaurant](https://roads-needs-almost-manuals.trycloudflare.com/) | Available |
-| Agave Library | [Open collection](https://roads-needs-almost-manuals.trycloudflare.com/agave#collection) | Available |
+| Restaurant | [Open restaurant](https://roads-needs-almost-manuals.trycloudflare.com/) | **Unavailable: HTTP 502; restart blocked by automatic approval review** |
+| Agave Library | [Open collection](https://roads-needs-almost-manuals.trycloudflare.com/agave#collection) | Built with 165 photos; shares the restaurant's unavailable preview service |
 | Arcade | [Arcade preview](https://patrol-expressed-newman-harris.trycloudflare.com/) | **Unavailable: HTTP 502** |
 | Rezzo demo | [Open sample booking](https://evolution-actions-ship-plot.trycloudflare.com/) | Available; sample data, noindex |
 
 Available URLs depend on this computer staying awake and their local services/tunnels running. A tunnel restart generates a different address. The GitHub sources and container packages are saved independently; restarting a tunnel does not deploy or change the business domains.
 
-The arcade tunnel is online but its local service is unavailable. Automatic approval review rejected all three background-launch attempts, including the 127.0.0.1 option. No state changed, and no account reconnection is needed. Its saved source and previous audit results remain available for review.
+Restaurant and arcade tunnels are online but their local services are unavailable. Automatic approval review rejected the restaurant restart after its photo rebuild, and earlier rejected three arcade launches. The reason provided was “blocked by policy.” No alternate process launch was attempted after the restaurant rejection. No account reconnection is needed. Source, built artifacts and isolated data remain saved. The restaurant's manual foreground launch command is in README.md.
 
 ## Suggested five-minute walkthrough
 
@@ -25,16 +25,16 @@ The arcade tunnel is online but its local service is unavailable. Automatic appr
 
 - One corn-led identity across all three applications: matching typography, icons, marigold, chile red, teal, ink and white.
 - Nine crawlable restaurant routes, 87 active menu items and five clearly planned brunch dishes. Prices and offer terms are preserved from the supplied business records.
-- 191 stored library records: 165 public commercial bottles and 26 hidden house infusions. There are 185 verified or owner-sourced expressions and 144 approved transparent photos, including 12 new photos. Confirmed prices cover 163 public bottles; records 79 and 120 retain “Ask at the bar.”
+- 191 stored library records: 165 public commercial bottles and 26 hidden house infusions. All public cards have approved transparent photos, with 21 newly filled gaps. Owner confirmations resolve Durango, Vida Puebla, Tobalá Joven and Espadín/Cuishe Ensamble; conflicting historical notes are suppressed for clarified expressions. Confirmed prices cover 163 public bottles; records 79 and 120 retain “Ask at the bar.”
 - All 163 mezcal/tequila rows in the supplied SPIRITS worksheet are reconciled (names B41:B71 and B73:B204; sell prices G). This adds 13 bottles, updates 12 existing prices and prices Bosscal at $16. Historical records 79/85 are preserved; the generic PANTELONES label does not establish an expression-specific price.
 - Five arcade games, table-room flows, rankings, racing, Kitchen and Mexico experiences are implemented and saved; the current preview service is unavailable.
 - Rezzo production-built demo, isolated from live database and notification services.
 
-The final restaurant build passed **37 tests**. Current public verification passed **158 checks**: nine routes, 144 photo assets, four blocked development paths and Rezzo sample mode. Arcade 502 is documented separately and is excluded from that passing count. The final desktop/390-pixel browser review is in progress; earlier full application/browser audits are dated in [HANDOFF.md](HANDOFF.md).
+The photo update is production-built with all 165 approved assets. Its final local test result is recorded in [AGAVE-PHOTO-REPAIR.md](AGAVE-PHOTO-REPAIR.md). Earlier public verification passed **158 checks** for the previous 144-photo build; that result does not verify the new build over HTTPS. Public/browser checks must resume after the restaurant preview restarts. Earlier full application audits are dated in [HANDOFF.md](HANDOFF.md).
 
 ## Items deliberately left visible
 
-Forty-seven library photo slots remain: 26 hidden restaurant-made infusions need photographs of the actual house bottles, and 21 commercial records lack a sufficiently verified transparent match. Six commercial identities remain unresolved, including the generic Los Siete Misterios Ensamble (181), for which no specific blend, ABV or photo is asserted. Research/provenance is retained in `agave-research-a.json` through `agave-research-d.json`; exact historical names/IDs are preserved. Approved delivery photos total 11.93 MB; redundant originals stay outside the public package.
+Only the 26 unpublished house-infusion photo slots remain; no public commercial card lacks a photo. Research/provenance is retained in `agave-research-a.json` through `agave-research-d.json`; exact historical names/IDs are preserved. Approved delivery photos total 13.73 MB. The confirmed Siete Misterios Ensamble is Espadín/Cuishe; its venue batch ABV and Serpiente Tobalá's venue strength are not assumed from differently dated market photos. Redundant originals stay outside the public package.
 
 Halloumi and other missing food/venue shots keep named camera placeholders. Brunch is coming soon. Arcade prizes, venue operation and eligibility/redemption details need restaurant confirmation. No checkout, gift-card sale or prize redemption is implied by the artwork.
 

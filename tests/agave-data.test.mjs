@@ -139,7 +139,13 @@ test("verified facts and photographs retain sources; unresolved bottles retain a
     const photoApproved = approved.includes(record);
     if (!photoApproved) assert.ok(record.unresolvedReason?.trim(), `${label}: missing photo explanation`);
     if (record.image) {
-      httpsUrl(record.image.sourceUrl, `${label}: original image URL`);
+      if (record.image.sourceType === "owner-upload") {
+        assert.equal(record.image.sourceUrl, undefined, `${label}: an owner upload must not claim a web origin`);
+        assert.match(record.image.originalLocalPath, /^work\/agave-originals-gap\//);
+        assert.ok(record.image.ownerConfirmation?.trim(), `${label}: missing owner photo provenance`);
+      } else {
+        httpsUrl(record.image.sourceUrl, `${label}: original image URL`);
+      }
       httpsUrl(record.image.sourcePage, `${label}: image source page`);
       assetUrl("public", record.image.localPath);
     }
