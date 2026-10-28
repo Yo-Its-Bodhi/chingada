@@ -7,8 +7,10 @@ const siteOrigin = (
   process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://lachingada.ca"
 ).replace(/\/$/, "");
 const arcadePreview =
-  process.env.NEXT_PUBLIC_ARCADE_URL?.trim() ||
-  "https://taco-smack-table.lachingada1242.chatgpt.site/";
+  process.env.NEXT_PUBLIC_ARCADE_OFFLINE === "true"
+    ? ""
+    : process.env.NEXT_PUBLIC_ARCADE_URL?.trim() ||
+      "https://taco-smack-table.lachingada1242.chatgpt.site/";
 const bookingDestination =
   process.env.NEXT_PUBLIC_RESERVATION_URL?.trim() || "https://rezzo.bodhix.io";
 const requiresArcadeSignIn =
@@ -300,7 +302,9 @@ test("arcade preview and proposed prizes are clearly distinguished from live res
     const text = contentText(html);
     assert.match(
       text,
-      requiresArcadeSignIn
+      !arcadePreview
+        ? path === "/" ? /Explore the arcade/i : /Preview link coming soon/i
+        : requiresArcadeSignIn
         ? /ChatGPT sign-in required/i
         : /Playable staging preview/i,
     );
@@ -312,11 +316,13 @@ test("arcade preview and proposed prizes are clearly distinguished from live res
       text,
       /rewards, eligibility and redemption details to be confirmed/i,
     );
-    assert.ok(
-      tagAttributes(withoutScripts(html), "a").some(
-        ({ href }) => href === arcadePreview,
-      ),
-    );
+    if (arcadePreview) {
+      assert.ok(
+        tagAttributes(withoutScripts(html), "a").some(
+          ({ href }) => href === arcadePreview,
+        ),
+      );
+    }
   }
 });
 

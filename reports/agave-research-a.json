@@ -2725,8 +2725,8 @@
       "expressionVerified": true,
       "sources": [
         {
-          "url": "https://tequilacobalto.com/us/tequila-blanco.html",
-          "title": "COBALTO BLANCO — producer"
+          "url": "https://tequilacobalto.com/tequila-cobalto-blanco-organic/",
+          "title": "Cobalto Blanco · producer"
         },
         {
           "url": "https://www.lcbo.com/content/dam/lcbo/PDFs/vintages/releases/2021/210612_en.pdf",
@@ -2809,7 +2809,8 @@
         }
       ],
       "notes": [
-        "The LCBO 019461 photo identifies the Canadian-market Blanco Organic bottle. The historical producer Blanco facts and the LCBO 2021 release agree on the agave, pine, vanilla and citrus profile. No unrelated Cobalto variant was substituted."
+        "The LCBO 019461 photo identifies the Canadian-market Blanco Organic bottle. The historical producer Blanco facts and the LCBO 2021 release agree on the agave, pine, vanilla and citrus profile. No unrelated Cobalto variant was substituted.",
+        "2026-10-28: the former source https://tequilacobalto.com/us/tequila-blanco.html did not respond; current guest-facing source links were refreshed. Historical fact-source references remain for provenance."
       ]
     },
     {
@@ -3403,10 +3404,6 @@
         {
           "url": "https://tequilamalavida.com/en/tequila-mala-vida-blanco/",
           "title": "MALA VIDA BLANCO — producer"
-        },
-        {
-          "url": "https://shop.tequilamalavida.com/products/tequila-blanco",
-          "title": "Mala Vida Blanco — producer shop"
         }
       ],
       "facts": {
@@ -3431,7 +3428,10 @@
         "optimization": "Trimmed empty alpha; resized proportionally to at most 1000 px tall; WebP quality 92."
       },
       "unresolvedReason": "",
-      "imageAttempts": []
+      "imageAttempts": [],
+      "notes": [
+        "2026-10-28: the former source https://shop.tequilamalavida.com/products/tequila-blanco did not respond; current guest-facing source links were refreshed. Historical fact-source references remain for provenance."
+      ]
     },
     {
       "id": 128,

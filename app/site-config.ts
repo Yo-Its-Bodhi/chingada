@@ -7,8 +7,10 @@ export const restaurantId = `${siteUrl}/#restaurant`;
 export const reservationUrl =
   process.env.NEXT_PUBLIC_RESERVATION_URL?.trim() || "https://rezzo.bodhix.io";
 export const arcadeGamesUrl =
-  process.env.NEXT_PUBLIC_ARCADE_URL?.trim() ||
-  "https://taco-smack-table.lachingada1242.chatgpt.site/";
+  process.env.NEXT_PUBLIC_ARCADE_OFFLINE === "true"
+    ? ""
+    : process.env.NEXT_PUBLIC_ARCADE_URL?.trim() ||
+      "https://taco-smack-table.lachingada1242.chatgpt.site/";
 export const arcadeRequiresSignIn =
   process.env.NEXT_PUBLIC_ARCADE_REQUIRES_SIGN_IN !== "false";
 export const orderUrl =

@@ -949,8 +949,8 @@
       "expressionVerified": true,
       "sources": [
         {
-          "url": "https://mezcalamaras.com/pages/mezcal-amaras-logia",
-          "title": "Mezcal Amarás · Logia Cenizo / Reserva Especial",
+          "url": "https://mezcalamaras.com/en/products/logia-cenizo?view=bottle-nexus",
+          "title": "Mezcal Amarás · Logia Cenizo",
           "kind": "producer-or-distributor"
         },
         {
@@ -988,7 +988,8 @@
       },
       "unresolvedReason": "",
       "notes": [
-        "Record spelling “CENZIO” should be “CENIZO”. The current producer line is called Cenizo Reserva Especial."
+        "Record spelling “CENZIO” should be “CENIZO”. The current producer line is called Cenizo Reserva Especial.",
+        "2026-10-28: the former source https://mezcalamaras.com/pages/mezcal-amaras-logia did not respond; current guest-facing source links were refreshed. Historical fact-source references remain for provenance."
       ],
       "sourceAttempts": [
         {
@@ -1365,8 +1366,8 @@
       "expressionVerified": true,
       "sources": [
         {
-          "url": "https://bosscalcompany.com/producto/mezcal-bosscal-joven/",
-          "title": "Bosscal producer · Joven",
+          "url": "https://bosscalcompany.com/",
+          "title": "Bosscal · producer",
           "kind": "producer-or-distributor"
         }
       ],
@@ -1405,7 +1406,8 @@
       "unresolvedReason": null,
       "notes": [
         "Existing catalogue identifies the generic BOSSCAL MEZCAL record as the Cenizo Joven expression.",
-        "Producer pages differ on still materials, so the still type is omitted."
+        "Producer pages differ on still materials, so the still type is omitted.",
+        "2026-10-28: the former source https://bosscalcompany.com/producto/mezcal-bosscal-joven/ did not respond; current guest-facing source links were refreshed. Historical fact-source references remain for provenance."
       ],
       "sourceAttempts": [
         {
@@ -2668,8 +2670,8 @@
       "expressionVerified": true,
       "sources": [
         {
-          "url": "https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal",
-          "title": "Diageo Bar Academy · Sombra Mezcal",
+          "url": "https://www.thebar.com/en-us/brands/sombra",
+          "title": "Sombra · official brand page",
           "kind": "producer-or-distributor"
         }
       ],
@@ -2709,7 +2711,8 @@
       },
       "unresolvedReason": null,
       "notes": [
-        "The Diageo producer/distributor text is search-indexed but its live URL currently returns 410. No ABV is added without a current primary or Ontario distributor listing."
+        "The Diageo producer/distributor text is search-indexed but its live URL currently returns 410. No ABV is added without a current primary or Ontario distributor listing.",
+        "2026-10-28: the former source https://www.diageobaracademy.com/en-us/home/our-brands/sombra-mezcal did not respond; current guest-facing source links were refreshed. Historical fact-source references remain for provenance."
       ],
       "sourceAttempts": [
         {

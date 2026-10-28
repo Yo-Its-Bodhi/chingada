@@ -142,8 +142,8 @@ export default function MenuPage() {
           </h2>
           {group === "Tacos" && (
             <p>
-              Our corn tortillas are cooked, ground, pressed and grilled
-              in-house every morning.
+              We cook and grind Mexican corn into masa, then press and grill
+              our tortillas here every morning.
             </p>
           )}
           {group === "Margaritas" && (

@@ -168,7 +168,7 @@ const specialDetails: Record<string, SpecialDetail> = {
     body: "All twelve Happy Hour food items are $6 each from open to close. Time is merely a suggestion.",
     items: happyHourFood,
     drinks: happyHourDrinks,
-    note: "All twelve $6 food items run all day. Drink offers remain subject to current service conditions. Dine-in only.",
+    note: "All twelve $6 food items run all day. Happy Hour drink offers run 4–7 PM. Dine-in only; availability applies.",
   },
   Thursday: {
     title: "AYCE Tacos",
@@ -331,6 +331,12 @@ export default function Home() {
     setReservationOpen(false);
     setReservationSlow(false);
     window.requestAnimationFrame(() => reservationOpener.current?.focus());
+  };
+
+  const retryReservation = () => {
+    setReservationSlow(false);
+    setReservationLoaded(false);
+    setReservationAttempt((value) => value + 1);
   };
 
   const filtered = useMemo(
@@ -799,8 +805,8 @@ export default function Home() {
                 <label className="menu-search">
                   <span aria-hidden="true">⌕</span>
                   <input
-                    aria-label="Search menu"
-                    placeholder="Find your favourite…"
+                    aria-label={`Search ${group}`}
+                    placeholder={`Search ${group.toLowerCase()}…`}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                   />
@@ -1321,7 +1327,7 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-bottom">
-            <span>© 2026 LA CHINGADA TORONTO</span>
+            <span>© {new Date().getUTCFullYear()} LA CHINGADA TORONTO</span>
             <span>1242 DUNDAS ST. W · ALL ATTITUDE, NO SHORTCUTS.</span>
             <a href="#top">BACK TO TOP ↑</a>
           </div>
@@ -1454,6 +1460,7 @@ export default function Home() {
                       className="special-drinks promo-offers"
                       aria-label="Happy Hour drink offers"
                     >
+                      <p className="promo-offers-heading">Drink offers · 4–7 PM</p>
                       {happyHourDrinks.map((drink, index) => (
                         <div key={drink}>
                           <span>{["◒", "↘", "●", "◇"][index]}</span>
@@ -1519,7 +1526,7 @@ export default function Home() {
                   <div className="modal-actions">
                     <a
                       className="button red"
-                      href="#menu"
+                      href="/menu"
                       onClick={() => setOpenSpecial(null)}
                     >
                       Browse the full menu
@@ -1610,16 +1617,18 @@ export default function Home() {
                   </p>
                   <button
                     type="button"
-                    onClick={() => {
-                      setReservationSlow(false);
-                      setReservationLoaded(false);
-                      setReservationAttempt((value) => value + 1);
-                    }}
+                    onClick={retryReservation}
                   >
                     Reload booking
                   </button>
                 </div>
               )}
+            </div>
+            <div className="reservation-help">
+              <span>
+                Booking not showing? <a href="tel:+14165352242">Call 416-535-2242</a>
+              </span>
+              <button type="button" onClick={retryReservation}>Reload booking</button>
             </div>
           </div>
         </div>

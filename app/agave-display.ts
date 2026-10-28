@@ -78,6 +78,10 @@ export function getAgaveDisplay(bottle: AgaveRecord): AgaveDisplay {
     (bottle.category === "House Infused" && !infused)
       ? undefined
       : bottle.note);
+  const sources = new Map<string, { url: string; title: string }>();
+  for (const { url, title } of research?.sources ?? []) {
+    if (!sources.has(url)) sources.set(url, { url, title });
+  }
 
   return {
     aroma: text(catalog?.aroma) ?? text(archive?.aroma) ?? text(current?.aroma),
@@ -86,10 +90,31 @@ export function getAgaveDisplay(bottle: AgaveRecord): AgaveDisplay {
     story: text(current?.story) ?? text(historicalNote),
     production: text(current?.production) ?? houseProduction,
     facts,
-    sources: (research?.sources ?? []).map(({ url, title }) => ({
-      url,
-      title,
-    })),
+    sources: [...sources.values()],
     pending: !research?.expressionVerified,
   };
+}
+
+/** Index the same facts guests can see, including verified and house origins. */
+export function getAgaveSearchText(bottle: AgaveRecord): string {
+  const research = researchById.get(bottle.id);
+  const display = getAgaveDisplay(bottle);
+  return [
+    research?.displayName,
+    bottle.name,
+    bottle.type,
+    research?.category ?? bottle.category,
+    ...Object.values(research?.facts ?? {}),
+    ...display.facts.map(({ value }) => value),
+    display.aroma,
+    display.palate,
+    display.tastingNotes,
+    display.story,
+    display.production,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
 }

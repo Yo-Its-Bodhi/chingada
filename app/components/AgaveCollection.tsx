@@ -6,6 +6,7 @@ import { agaveRecords, type AgaveRecord } from "../agave-data";
 import { houseInfusions } from "../house-infusions";
 import { agavePhoto, agaveResearch } from "../agave-research";
 import { agavePrice, formatAgavePrice } from "../agave-prices";
+import { getAgaveSearchText } from "../agave-display";
 import { PhotoSlot } from "./PhotoSlot";
 import { AgaveBottleDetails } from "./AgaveBottleDetails";
 import { useAgaveDialogFocus } from "./useAgaveDialogFocus";
@@ -35,6 +36,9 @@ const normalized = (text: string) =>
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase();
+const searchIndex = new Map(
+  collection.map((bottle) => [bottle.id, getAgaveSearchText(bottle)]),
+);
 
 function BottlePhoto({
   bottle,
@@ -88,21 +92,11 @@ export function AgaveCollection() {
   const filtered = useMemo(
     () =>
       collection
-        .filter((bottle) => {
-          const research = agaveResearch.get(bottle.id);
-          return (
+        .filter(
+          (bottle) =>
             (style === "All" || styleFor(bottle) === style) &&
-            normalized(
-              [
-                titleFor(bottle),
-                bottle.name,
-                bottle.type,
-                styleFor(bottle),
-                ...Object.values(research?.facts ?? {}),
-              ].join(" "),
-            ).includes(normalized(query.trim()))
-          );
-        })
+            searchIndex.get(bottle.id)!.includes(normalized(query.trim())),
+        )
         .sort((a, b) => titleFor(a).localeCompare(titleFor(b))),
     [query, style],
   );

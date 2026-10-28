@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { getAgaveDisplay } from "../app/agave-display.ts";
+import { getAgaveDisplay, getAgaveSearchText } from "../app/agave-display.ts";
 import { agaveRecords } from "../app/agave-data.ts";
 import { houseInfusions } from "../app/house-infusions.ts";
 import { catalogDetails } from "../app/agave-catalog.ts";
@@ -19,6 +19,24 @@ const research = new Map(
 );
 const fact = (display, label) =>
   display.facts.find((item) => item.label === label);
+
+test("region search includes the origins actually shown to guests", () => {
+  for (const id of [2, 62]) {
+    const bottle = byId.get(id);
+    const origin = fact(getAgaveDisplay(bottle), "Origin").value;
+    const expected = origin.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    assert.ok(getAgaveSearchText(bottle).includes(expected), `${bottle.name}: ${origin}`);
+  }
+  assert.ok(getAgaveSearchText(byId.get(2)).includes("jalisco"));
+  assert.ok(getAgaveSearchText(byId.get(62)).includes("durango"));
+});
+
+test("duplicate research URLs render only once without changing the saved provenance", () => {
+  const record = research.get(101);
+  assert.ok(record.sources.length > new Set(record.sources.map(({ url }) => url)).size);
+  const sources = getAgaveDisplay(byId.get(101)).sources;
+  assert.equal(sources.length, new Set(sources.map(({ url }) => url)).size);
+});
 
 test("1800 retains its aroma, palate and story alongside current and partial fallback facts", () => {
   const bottle = byId.get(2);

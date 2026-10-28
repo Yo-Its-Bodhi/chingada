@@ -1517,6 +1517,12 @@ svg {
   border-top: 1px solid var(--line);
   padding-top: 20px;
 }
+.promo-offers-heading {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
 .promo-offers > div {
   padding: 10px;
   font-size: 12px;
@@ -1852,6 +1858,19 @@ svg {
   background: transparent;
   font-size: 12px;
 }
+.reservation-help {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  flex-shrink: 0;
+  padding: 12px 30px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+.reservation-help a { font-weight: 700; text-decoration: underline; }
+.reservation-help button { background: transparent; text-decoration: underline; }
 .reservation-frame-shell {
   position: relative;
   flex: 1;
